@@ -1,0 +1,8 @@
+[
+  {
+    "id": "digoxin",
+    "name": "Digoxin",
+    "class": "Cardiac Glycoside",
+    "organs": ["heart"]
+  }
+]

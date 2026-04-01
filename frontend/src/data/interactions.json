@@ -1,0 +1,28 @@
+[
+  {
+    "id": "atenolol_verapamil",
+    "drugA": "atenolol",
+    "drugB": "verapamil",
+    "organs": ["heart"],
+    "mechanism": "Both drugs slow heart rate through different mechanisms. Atenolol blocks beta-1 receptors; Verapamil blocks calcium channels. Combined effect increases risk of bradycardia and heart block.",
+    "risk": "Bradycardia, heart block, hypotension",
+    "nursingConsiderations": [
+      "Monitor heart rate >before each dose - hold if < 60 bpm",
+      "Check blood pressure - hold if systolic < 100 mmHg",
+      "Watch for signs of heart block: dizziness, fatigue, syncope"
+    ]
+  },
+  {
+    "id": "warfarin_ibuprofen",
+    "drugA": "warfarin",
+    "drugB": "ibuprofen",
+    "organs": ["GI", "blood"],
+    "mechanism": "Ibuprofen inhibits platelet function AND increases warfarin levels by displacing it from protein binding. Combined anticoagulant effect increases bleeding risk.",
+    "risk": "GI bleeding, increased INR, bruising, hemorrhage",
+    "nursingConsiderations": [
+      "Check for signs of bleeding: blood in stool, dark tarry stools, nosebleeds",
+      "Monitor INR more frequently when used together",
+      "Teach patient to avoid NSAIDs while on warfarin"
+    ]
+  }
+]
