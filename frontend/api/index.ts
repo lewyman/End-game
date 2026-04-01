@@ -17,7 +17,11 @@ function json(data: unknown, status = 200) {
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === "OPTIONS") return res.status(204).end();
 
-  const path = (req.query.path as string) || "health";
+  // Extract path from URL - Vercel passes it via query when using rewrites
+  const url = new URL(req.url || "", `https://${req.headers.host || "localhost"}`);
+  let path = url.pathname.replace(/^\/api\//, "") || "health";
+  if (!path || path === "/api") path = "health";
+
   const method = req.method;
 
   try {
@@ -29,7 +33,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     if (path === "login" && method === "POST") {
-      const { email, password } = req.body;
+      const { email, password } = req.body || {};
       const { data: user } = await supabase.from("users").select("*").eq("email", email?.trim().toLowerCase()).single();
       if (!user || !(await bcrypt.compare(password, user.password))) {
         return json({ error: "Invalid credentials" }, 401);
@@ -38,7 +42,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     if (path === "signup" && method === "POST") {
-      const { email, password } = req.body;
+      const { email, password } = req.body || {};
       if (!email || !password || password.length < 6) return json({ error: "Invalid input" }, 400);
       const hash = await bcrypt.hash(password, 10);
       const { error } = await supabase.from("users").insert([{ email: email.trim().toLowerCase(), password: hash, tier: "free", is_admin: false }]);
@@ -46,16 +50,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return json({ success: true });
     }
 
-    const adminMatch = path.match(/^admin\/drugs\/(.+)/);
-    if (adminMatch && method === "PUT") {
-      const slug = adminMatch[1];
-      const { name, class: drugClass, description, tier, image } = req.body;
-      const { error } = await supabase.from("drugs").update({ name, class: drugClass, description, tier, image }).eq("slug", slug);
-      if (error) return json({ error: error.message }, 400);
-      return json({ success: true });
-    }
-
-    return json({ error: "Not found" }, 404);
+    return json({ error: `Route not found: ${path}` }, 404);
   } catch (err) {
     console.error("API Error:", err);
     return json({ error: "Internal error" }, 500);
