@@ -2,5 +2,10 @@
   "version": 2,
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
-  "framework": null
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/drugs/:path*", "destination": "/" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
