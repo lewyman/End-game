@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Visual pharmacology flashcards with anatomy, physi" />
+    <meta name="description" content="Visual pharmacology flashcards with anatomy, physiology, and nursing implications for nursing students." />
     <meta name="google-site-verification" content="google7d032df5ee342367" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Nursing Pharmacology | Visual Drug Cards for Nursing Students</title>
@@ -11,31 +11,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Self-hosted Analytics -->
-    <script>
-      (function() {
-        // Get or create session ID
-        let sessionId = document.cookie.match(/bedside_session=([^;]+)/)?.[1];
-        if (!sessionId) {
-          sessionId = Math.random().toString(36).substring(2) + Date.now().toString(36);
-          document.cookie = `bedside_session=${sessionId}; path=/; max-age=86400; SameSite=Lax`;
-        }
-        
-        // Track page view
-        fetch('https://crusius.zo.space/api/analytics/track', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            path: window.location.pathname,
-            referrer: document.referrer || null,
-            userAgent: navigator.userAgent,
-            sessionId: sessionId
-          }),
-          keepalive: true
-        }).catch(() => {}); // Silent fail
-      })();
-    </script>
   </body>
 </html>
-
