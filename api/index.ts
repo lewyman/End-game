@@ -2,142 +2,48 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createClient } from "@supabase/supabase-js";
 import bcrypt from "bcryptjs";
 
-const supabase = createClient(
-  process.env.SUPABASE_URL!,
-  process.env.SUPABASE_ANON_KEY!
-);
-const supabaseAdmin = createClient(
-  process.env.SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY!
-);
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, X-Session-Key, Authorization, X-User-Email",
-};
+const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_KEY!);
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method === "OPTIONS") {
-    res.status(204).setHeader("Access-Control-Allow-Origin", "*").setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS").setHeader("Access-Control-Allow-Headers", "Content-Type, X-Session-Key, Authorization, X-User-Email").send(null);
-    return;
-  }
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Session-Key");
 
-  const path = (req.query.path as string) || "/";
+  if (req.method === "OPTIONS") { res.status(204).end(); return; }
+
+  const url = new URL(req.url || "", "https://localhost");
+  const path = url.pathname.replace(/^\/api\//, "") || "health";
   const method = req.method;
 
   try {
-    // GET /api?path=/drugs
-    if (path === "/drugs" && method === "GET") {
+    if (path === "health") { res.status(200).json({ status: "ok" }); return; }
+
+    if (path === "drugs" && method === "GET") {
       const { data } = await supabase.from("drugs").select("*").order("name");
-      res.json({ drugs: data || [] });
-      return;
+      res.status(200).json({ drugs: data || [] }); return;
     }
 
-    // GET /api?path=/drugs/:slug
-    const drugMatch = path.match(/^\/drugs\/([^/]+)$/);
-    if (drugMatch && method === "GET") {
-      const slug = drugMatch[1];
-      const { data: drug } = await supabase.from("drugs").select("*").eq("slug", slug).single();
-      if (!drug) { res.status(404).json({ error: "Not found" }); return; }
-      const { data: blocks } = await supabase.from("content_blocks").select("*").eq("drug_slug", slug).order("block_order");
-      res.json({ drug: { ...drug, blocks: blocks || [] } });
-      return;
-    }
-
-    // POST /api?path=/login
-    if (path === "/login" && method === "POST") {
-      const { email, password } = req.body;
+    if (path === "login" && method === "POST") {
+      const { email, password } = req.body || {};
       const { data: user } = await supabase.from("users").select("*").eq("email", email?.trim().toLowerCase()).single();
       if (!user || !(await bcrypt.compare(password, user.password))) {
-        res.status(401).json({ error: "Invalid credentials" });
-        return;
+        res.status(401).json({ error: "Invalid credentials" }); return;
       }
-      res.json({ success: true, user: { email: user.email, tier: user.tier, isAdmin: user.is_admin } });
-      return;
+      res.status(200).json({ success: true, user: { email: user.email, tier: user.tier, isAdmin: user.is_admin } }); return;
     }
 
-    // POST /api?path=/signup
-    if (path === "/signup" && method === "POST") {
-      const { email, password } = req.body;
-      if (!email || !password || password.length < 6) {
-        res.status(400).json({ error: "Invalid input" });
-        return;
-      }
+    if (path === "signup" && method === "POST") {
+      const { email, password } = req.body || {};
+      if (!email || !password || password.length < 6) { res.status(400).json({ error: "Invalid input" }); return; }
       const hash = await bcrypt.hash(password, 10);
       const { error } = await supabase.from("users").insert([{ email: email.trim().toLowerCase(), password: hash, tier: "free", is_admin: false }]);
       if (error) { res.status(400).json({ error: "Email registered" }); return; }
-      res.json({ success: true, user: { email: email.trim().toLowerCase(), tier: "free", isAdmin: false } });
-      return;
+      res.status(200).json({ success: true }); return;
     }
 
-    // Admin routes - check session
-    const sessionKey = req.headers["x-session-key"] as string;
-    const userEmail = req.headers["x-user-email"] as string;
-    let isAdmin = false;
-    if (sessionKey?.startsWith("admin-") && userEmail) {
-      const { data: u } = await supabase.from("users").select("is_admin").eq("email", userEmail).single();
-      isAdmin = u?.is_admin === true;
-    }
-
-    // POST /api?path=/admin/drugs
-    if (path === "/admin/drugs" && method === "POST") {
-      if (!isAdmin) { res.status(401).json({ error: "Unauthorized" }); return; }
-      const { slug, name, class: drugClass, description, tier = "free", image } = req.body;
-      const { error } = await supabase.from("drugs").insert([{ slug, name, class: drugClass, description, tier, image: image || "" }]);
-      if (error) { res.status(400).json({ error: error.message }); return; }
-      res.json({ success: true, slug });
-      return;
-    }
-
-    // PUT/DELETE /api?path=/admin/drugs/:slug
-    const adminMatch = path.match(/^\/admin\/drugs\/(.+)$/);
-    if (adminMatch) {
-      const slug = adminMatch[1];
-      if (!isAdmin) { res.status(401).json({ error: "Unauthorized" }); return; }
-      if (method === "PUT") {
-        const { name, class: drugClass, description, tier, image } = req.body;
-        const { error } = await supabase.from("drugs").update({ name, class: drugClass, description, tier, image: image || "" }).eq("slug", slug);
-        if (error) { res.status(400).json({ error: error.message }); return; }
-        res.json({ success: true });
-        return;
-      }
-      if (method === "DELETE") {
-        await supabase.from("content_blocks").delete().eq("drug_slug", slug);
-        await supabase.from("drugs").delete().eq("slug", slug);
-        res.json({ success: true });
-        return;
-      }
-    }
-
-    // PUT /api?path=/admin/drugs/:slug/blocks
-    const blocksMatch = path.match(/^\/admin\/drugs\/([^/]+)\/blocks$/);
-    if (blocksMatch && method === "PUT") {
-      if (!isAdmin) { res.status(401).json({ error: "Unauthorized" }); return; }
-      const slug = blocksMatch[1];
-      const { blocks } = req.body;
-      // Delete existing blocks and insert new ones
-      await supabase.from("content_blocks").delete().eq("drug_slug", slug);
-      if (blocks?.length > 0) {
-        const blocksWithSlug = blocks.map((b: any) => ({ ...b, drug_slug: slug }));
-        const { error } = await supabase.from("content_blocks").insert(blocksWithSlug);
-        if (error) { res.status(400).json({ error: error.message }); return; }
-      }
-      res.json({ success: true });
-      return;
-    }
-
-    // GET /api?path=/admin/users
-    if (path === "/admin/users" && method === "GET") {
-      if (!isAdmin) { res.status(401).json({ error: "Unauthorized" }); return; }
-      const { data } = await supabase.from("users").select("*").order("joined_at", { ascending: false });
-      res.json({ users: data || [] });
-      return;
-    }
-
-    res.status(404).json({ error: "Not found" });
-  } catch (err: any) {
+    res.status(404).json({ error: `Not found: ${path}` });
+  } catch (err) {
     console.error("API Error:", err);
-    res.status(500).json({ error: "Internal server error" });
+    res.status(500).json({ error: "Internal error" });
   }
 }
