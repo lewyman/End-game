@@ -1,7 +1,10 @@
 {
   "version": 2,
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.ts" }
+  "builds": [
+    { "src": "frontend/dist/**", "dest": "/frontend/dist/**" }
   ],
-  "outputDirectory": "frontend/dist"
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/frontend/dist/$1" }
+  ]
 }
