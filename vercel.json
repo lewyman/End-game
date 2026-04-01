@@ -5,6 +5,7 @@
     { "src": "frontend/dist/**", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/api/test", "dest": "/api/test" },
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/frontend/dist/$1" }
   ]
