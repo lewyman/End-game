@@ -75,6 +75,8 @@ export default function DrugDetail() {
             options: b.options ? b.options.split("|") : undefined,
             correct: b.correct?.includes(",") 
               ? b.correct.split(",").map((n: string) => parseInt(n.trim()))
+              : b.correct && /^[A-D]$/i.test(b.correct)
+              ? b.correct.toUpperCase().charCodeAt(0) - 65  // A=0, B=1, C=2, D=3
               : b.correct ? parseInt(b.correct) : undefined,
             explanation: b.explanation || "",
             rationale: b.rationale || "",
