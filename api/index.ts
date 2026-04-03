@@ -6,7 +6,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_KEY!
 );
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Handle CORS preflight immediately - before any other logic
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
@@ -23,7 +23,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 
   // GET /api?path=/drugs
   if (path === "/drugs" && method === "GET") {
-    const { data } = supabase.from("drugs").select("*").order("name");
+    const { data } = await supabase.from("drugs").select("*").order("name");
     res.json({ drugs: data || [] });
     return;
   }
@@ -32,9 +32,9 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const drugMatch = path.match(/^\/drugs\/([^/]+)$/);
   if (drugMatch && method === "GET") {
     const slug = drugMatch[1];
-    const { data: drug } = supabase.from("drugs").select("*").eq("slug", slug).single();
+    const { data: drug } = await supabase.from("drugs").select("*").eq("slug", slug).single();
     if (!drug) { res.status(404).json({ error: "Not found" }); return; }
-    const { data: blocks } = supabase.from("content_blocks").select("*").eq("drug_slug", slug).order("block_order");
+    const { data: blocks } = await supabase.from("content_blocks").select("*").eq("drug_slug", slug).order("block_order");
     res.json({ drug: { ...drug, blocks: blocks || [] } });
     return;
   }
@@ -42,7 +42,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   // POST /api?path=/login
   if (path === "/login" && method === "POST") {
     const { email, password } = req.body;
-    const { data: user } = supabase.from("users").select("*").eq("email", email?.trim().toLowerCase()).single();
+    const { data: user } = await supabase.from("users").select("*").eq("email", email?.trim().toLowerCase()).single();
     if (!user) { res.status(401).json({ error: "Invalid credentials" }); return; }
     const bcrypt = await import("bcryptjs");
     if (!(await bcrypt.compare(password, user.password))) {
