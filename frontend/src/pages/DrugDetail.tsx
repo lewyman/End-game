@@ -63,8 +63,9 @@ export default function DrugDetail() {
           return;
         }
         
-        if (data.blocks) {
-          const mappedBlocks = data.blocks.map((b: any, idx: number) => ({
+        const blocksFromApi = data.drug?.blocks || data.blocks;
+        if (blocksFromApi && blocksFromApi.length > 0) {
+          const mappedBlocks = blocksFromApi.map((b: any, idx: number) => ({
             id: idx + 1,
             type: b.type,
             title: b.title,
@@ -80,6 +81,8 @@ export default function DrugDetail() {
             image: b.image || ""
           }));
           setBlocks(mappedBlocks);
+        } else {
+          setError("No content blocks found for this drug");
         }
         
         // Check if this drug is already completed
