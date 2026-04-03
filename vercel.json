@@ -1,7 +1,8 @@
 {
   "version": 2,
+  "framework": null,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.js?path=/$1" },
+    { "source": "/api/(.*)", "destination": "/api/index.ts?path=/$1" },
     { "source": "/drugs/:path*", "destination": "/" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
