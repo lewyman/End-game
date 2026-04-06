@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes, Link, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 import Home from "./pages/Home";
+import Nursing from "./pages/Nursing";
 import Drugs from "./pages/Drugs";
 import DrugDetail from "./pages/DrugDetail";
 import Admin from "./pages/Admin";
@@ -11,7 +12,7 @@ import Pricing from "./pages/Pricing";
 import Downloads from "./pages/Downloads";
 import Interactions from "./pages/interactions";
 import MyBookmarks from "./pages/MyBookmarks";
-import { Pill, Menu, X, Moon, Sun } from "lucide-react";
+import { Pill, Menu, X, Moon, Sun, GraduationCap } from "lucide-react";
 import { useState, useEffect } from "react";
 
 interface User {
@@ -72,13 +73,16 @@ function Navigation() {
     <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto flex h-14 items-center px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg">
-          <Pill className="w-5 h-5 text-blue-600" />
-          <span>NursingPharmacology</span>
+          <img src="/images/bio-sync-academy-logo.png" alt="Bio-Sync Academy" className="h-10" />
         </Link>
         
         <nav className="hidden md:flex gap-6 text-sm ml-auto items-center">
           <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</Link>
-          <Link to="/drugs" className="text-muted-foreground hover:text-foreground transition-colors">DrugCards</Link>
+          <Link to="/nursing" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+            <GraduationCap className="w-4 h-4" />
+            Nursing
+          </Link>
+          <Link to="/nursing/pharmacology" className="text-muted-foreground hover:text-foreground transition-colors">Pharmacology</Link>
           <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
           
           <button
@@ -118,8 +122,9 @@ function Footer() {
     <footer className="border-t bg-muted py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-sm text-muted-foreground">2026 NursingPharmacology. Pharmacology resources for nursing students.</p>
+          <p className="text-sm text-muted-foreground">2026 Bio-Sync Academy. Educational resources for healthcare professionals.</p>
           <nav className="flex gap-6 text-sm">
+            <Link to="/nursing" className="text-muted-foreground hover:text-foreground transition-colors">Nursing</Link>
             <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
             <Link to="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">Privacy</Link>
           </nav>
@@ -136,7 +141,8 @@ export default function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/drugs" element={<Drugs />} />
+          <Route path="/nursing" element={<Nursing />} />
+          <Route path="/nursing/pharmacology" element={<Drugs />} />
           <Route path="/drugs/:slug" element={<DrugDetail />} />
           <Route path="/admin" element={<AdminContent />} />
           <Route path="/admin/content" element={<AdminContent />} />

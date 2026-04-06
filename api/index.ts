@@ -12,7 +12,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Session-Key, Authorization, X-User-Tier");
   res.setHeader("Access-Control-Max-Age", "86400");
-  
+
   if (req.method === "OPTIONS") {
     res.status(204).send("");
     return;
