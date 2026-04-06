@@ -1,9 +1,13 @@
 {
   "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
   "framework": null,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.ts?path=/$1" },
+    { "source": "/api/(.*)", "destination": "/api" },
     { "source": "/drugs/:path*", "destination": "/" },
+    { "source": "/nursing/:path*", "destination": "/index.html" },
+    { "source": "/nursing", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
