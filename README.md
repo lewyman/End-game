@@ -122,3 +122,4 @@ Your team only needs GitHub access:
 **Originally built on Zo Computer** | **Migrated for team collaboration**
 # Wed Apr  1 04:05:22 UTC 2026
 # Bio-Sync Academy Deployment
+# Trigger deployment after making repo public
