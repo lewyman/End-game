@@ -3,9 +3,13 @@
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": null,
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/drugs/:path*", "destination": "/" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/api/drugs", "dest": "/api?path=/drugs", "continue": true },
+    { "src": "/api/drugs/(.*)", "dest": "/api?path=/drugs/$1", "continue": true },
+    { "src": "/api/admin/drugs", "dest": "/api?path=/admin/drugs", "continue": true },
+    { "src": "/api/admin/drugs/(.*)", "dest": "/api?path=/admin/drugs/$1", "continue": true },
+    { "src": "/api/(.*)", "dest": "/api?path=$1", "continue": true },
+    { "src": "/drugs/:path*", "dest": "/" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
