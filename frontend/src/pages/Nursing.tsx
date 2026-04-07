@@ -54,7 +54,16 @@ export default function Nursing() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Logo - Upper Right (2.5 inches = 240px) */}
+      <div className="absolute top-4 right-4 z-10">
+        <img 
+          src="/images/bio-sync-academy-logo.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[240px] h-[240px] object-contain"
+        />
+      </div>
+
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 py-16">

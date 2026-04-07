@@ -107,15 +107,6 @@ function Navigation() {
           )}
         </nav>
 
-        {/* Logo - Upper Right (2.5 inches = 240px) */}
-        <div className="hidden md:block ml-6">
-          <img 
-            src="/images/bio-sync-academy-logo.png" 
-            alt="Bio-Sync Academy" 
-            className="w-[240px] h-[240px] object-contain"
-          />
-        </div>
-
         <button className="md:hidden ml-auto p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
