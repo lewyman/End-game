@@ -112,16 +112,16 @@ export default function Drugs() {
 
   return (
     <div className="min-h-screen bg-white relative">
-      {/* Logo - Upper Right (2.5 inches = 240px) */}
-      <div className="absolute top-4 right-4 z-10">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
         <img 
           src="/images/bio-sync-academy-logo.png" 
           alt="Bio-Sync Academy Logo" 
-          className="w-[240px] h-[240px] object-contain"
+          className="w-[288px] h-[288px] object-contain"
         />
       </div>
 
-      <header className="border-b px-4 py-4">
+      <header className="border-b px-4 py-4 pt-[300px]">
         <div className="container mx-auto flex items-center gap-2">
           <Pill className="w-5 h-5 text-blue-600" />
           <span className="font-bold text-lg">NursingPharmacology</span>
