@@ -73,7 +73,7 @@ function Navigation() {
     <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto flex h-20 items-center px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg">
-          <img src="/images/bio-sync-academy-logo.png" alt="Bio-Sync Academy" className="h-12" />
+          <span className="text-blue-600">Bio-Sync Academy</span>
         </Link>
         
         <nav className="hidden md:flex gap-6 text-sm ml-auto items-center">
