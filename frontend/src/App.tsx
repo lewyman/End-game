@@ -82,7 +82,6 @@ function Navigation() {
             <GraduationCap className="w-4 h-4" />
             Nursing
           </Link>
-          <Link to="/nursing/pharmacology" className="text-muted-foreground hover:text-foreground transition-colors">Pharmacology</Link>
           <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
           
           <button
