@@ -71,16 +71,15 @@ function Navigation() {
 
   return (
     <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-      <div className="container mx-auto flex h-14 items-center px-4">
+      <div className="container mx-auto flex h-20 items-center px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg">
-          <img src="/images/bio-sync-academy-logo.png" alt="Bio-Sync Academy" className="h-10" />
+          <img src="/images/bio-sync-academy-logo.png" alt="Bio-Sync Academy" className="h-12" />
         </Link>
         
         <nav className="hidden md:flex gap-6 text-sm ml-auto items-center">
           <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</Link>
           <Link to="/nursing" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
-            <GraduationCap className="w-4 h-4" />
-            Nursing
+            <span>🎓</span> Nursing
           </Link>
           <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
           
@@ -107,6 +106,15 @@ function Navigation() {
             </div>
           )}
         </nav>
+
+        {/* Logo - Upper Right (2.5 inches = 240px) */}
+        <div className="hidden md:block ml-6">
+          <img 
+            src="/images/bio-sync-academy-logo.png" 
+            alt="Bio-Sync Academy" 
+            className="w-[240px] h-[240px] object-contain"
+          />
+        </div>
 
         <button className="md:hidden ml-auto p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
