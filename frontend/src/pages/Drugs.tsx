@@ -112,8 +112,8 @@ export default function Drugs() {
 
   return (
     <div className="min-h-screen bg-white relative">
-      {/* Logo - Upper Left (3 inches = 288px) with dark background */}
-      <div className="absolute top-4 left-4 z-10 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-4 shadow-xl">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10 bg-white rounded-lg p-2 shadow-sm">
         <img 
           src="/images/bio-sync-academy-logo.png" 
           alt="Bio-Sync Academy Logo" 
