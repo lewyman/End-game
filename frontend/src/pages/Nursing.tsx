@@ -1,7 +1,24 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Stethoscope, Heart, Brain, Activity, ArrowRight, Pill } from "lucide-react";
+import { BookOpen, Stethoscope, Heart, Brain, Activity, ArrowRight, Pill, MessageSquare } from "lucide-react";
+import EducatorChat from "@/components/EducatorChat";
+import { useState, useEffect } from "react";
 
 export default function Nursing() {
+  const [userId, setUserId] = useState<string>("guest");
+  const [showChat, setShowChat] = useState(false);
+
+  useEffect(() => {
+    const user = localStorage.getItem("pharma_current_user");
+    if (user) {
+      try {
+        const parsed = JSON.parse(user);
+        setUserId(parsed.email || "guest");
+      } catch {
+        setUserId("guest");
+      }
+    }
+  }, []);
+
   const nursingSections = [
     {
       title: "Pharmacology",
@@ -84,6 +101,29 @@ export default function Nursing() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* AI Educator Section */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">AI Medical Educator</h2>
+            <p className="text-gray-600">Chat with your personal nursing tutor</p>
+          </div>
+          <button
+            onClick={() => setShowChat(!showChat)}
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            <MessageSquare className="w-5 h-5" />
+            {showChat ? "Hide Chat" : "Open Chat"}
+          </button>
+        </div>
+        
+        {showChat && (
+          <div className="mb-8">
+            <EducatorChat userId={userId} />
+          </div>
+        )}
       </div>
 
       {/* Content Sections */}

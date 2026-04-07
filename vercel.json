@@ -4,7 +4,8 @@
   "outputDirectory": "frontend/dist",
   "framework": null,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/api/educator", "destination": "/api/educator" },
+    { "source": "/api/:path*", "destination": "/api/index.ts" },
     { "source": "/drugs/:path*", "destination": "/" },
     { "source": "/nursing/:path*", "destination": "/index.html" },
     { "source": "/nursing", "destination": "/index.html" },
