@@ -3,13 +3,15 @@
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": null,
-  "routes": [
-    { "src": "/api/drugs", "dest": "/api?path=/drugs", "continue": true },
-    { "src": "/api/drugs/(.*)", "dest": "/api?path=/drugs/$1", "continue": true },
-    { "src": "/api/admin/drugs", "dest": "/api?path=/admin/drugs", "continue": true },
-    { "src": "/api/admin/drugs/(.*)", "dest": "/api?path=/admin/drugs/$1", "continue": true },
-    { "src": "/api/(.*)", "dest": "/api?path=$1", "continue": true },
-    { "src": "/drugs/:path*", "dest": "/" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/api/drugs", "destination": "/api?path=/drugs" },
+    { "source": "/api/drugs/:slug", "destination": "/api?path=/drugs/:slug" },
+    { "source": "/api/admin/drugs", "destination": "/api?path=/admin/drugs" },
+    { "source": "/api/admin/drugs/:path*", "destination": "/api?path=/admin/drugs/:path*" },
+    { "source": "/api/login", "destination": "/api?path=/login" },
+    { "source": "/api/signup", "destination": "/api?path=/signup" },
+    { "source": "/api/health", "destination": "/api?path=/health" },
+    { "source": "/drugs/:path*", "destination": "/" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
