@@ -6,9 +6,10 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_KEY!
 );
 
-const SYSTEM_PROMPT = `You are a medical educator for nursing students. You explain concepts, walk through case studies, and quiz students. You do NOT diagnose or give medical advice. Everything is educational only.`;
+const SYSTEM_PROMPT = `You are a medical educator for nursing students. You explain concepts, walk through case studies, and quiz students. You do NOT diagnose or give medical advice. Everything is educational only. Be thorough but clear.`;
 
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+// Groq API
+const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -41,46 +42,40 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         content: message,
       }
     ]);
-
     if (userError) {
       console.error("Error saving user message:", userError);
     }
 
-    // Call Gemini API
-    const apiKey = process.env.GEMINI_API_KEY;
+    // Call Groq API
+    const apiKey = process.env.GROK_KEY;
     if (!apiKey) {
-      throw new Error("GEMINI_API_KEY not configured");
+      throw new Error("GROK_KEY not configured");
     }
 
-    const geminiResponse = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
+    const groqResponse = await fetch(GROQ_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        contents: [
-          {
-            role: "user",
-            parts: [{ text: message }],
-          }
+        model: "llama-3.3-70b-versatile",
+        messages: [
+          { role: "system", content: SYSTEM_PROMPT },
+          { role: "user", content: message }
         ],
-        systemInstruction: {
-          parts: [{ text: SYSTEM_PROMPT }]
-        },
-        generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 2048,
-        }
+        temperature: 0.7,
+        max_tokens: 2048,
       })
     });
 
-    if (!geminiResponse.ok) {
-      const errorText = await geminiResponse.text();
-      throw new Error(`Gemini API error: ${geminiResponse.status} - ${errorText}`);
+    if (!groqResponse.ok) {
+      const errorText = await groqResponse.text();
+      throw new Error(`Groq API error: ${groqResponse.status} - ${errorText}`);
     }
 
-    const geminiData = await geminiResponse.json();
-    const aiResponse = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    const groqData = await groqResponse.json();
+    const aiResponse = groqData.choices?.[0]?.message?.content || "";
 
     // Save AI response to Supabase
     const { error: aiError } = await supabase.from("messages").insert([
@@ -98,6 +93,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.json({ response: aiResponse });
   } catch (error) {
     console.error("Educator API error:", error);
-    res.status(500).json({ error: "Internal server error", details: error instanceof Error ? error.message : String(error) });
+    res.status(500).json({ 
+      error: "Internal server error", 
+      details: error instanceof Error ? error.message : String(error) 
+    });
   }
 }
