@@ -63,8 +63,9 @@ export default function DrugDetail() {
           return;
         }
         
-        if (data.blocks) {
-          const mappedBlocks = data.blocks.map((b: any, idx: number) => ({
+        const blocksData = data.drug?.blocks || data.blocks;
+        if (blocksData) {
+          const mappedBlocks = blocksData.map((b: any, idx: number) => ({
             id: idx + 1,
             type: b.type,
             title: b.title,
