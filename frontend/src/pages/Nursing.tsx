@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function Nursing() {
   const [userId, setUserId] = useState<string>("guest");
-  const [showChat, setShowChat] = useState(false);
+  const [showChat, setShowChat] = useState(true);
 
   useEffect(() => {
     const user = localStorage.getItem("pharma_current_user");
