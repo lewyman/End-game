@@ -1,6 +1,22 @@
 import { Link } from "react-router-dom";
+import EducatorChat from "@/components/EducatorChat";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [userId, setUserId] = useState<string>("guest");
+
+  useEffect(() => {
+    const user = localStorage.getItem("pharma_current_user");
+    if (user) {
+      try {
+        const parsed = JSON.parse(user);
+        setUserId(parsed.email || "guest");
+      } catch {
+        setUserId("guest");
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white flex flex-col relative">
       {/* Logo - Upper Left (3 inches = 288px) */}
@@ -12,8 +28,15 @@ export default function Home() {
         />
       </div>
       
-      {/* Empty main content area */}
-      <div className="flex-1">
+      {/* Chat in Center */}
+      <div className="flex-1 flex items-center justify-center p-8">
+        <div className="w-full max-w-2xl">
+          <div className="text-center mb-4">
+            <h2 className="text-2xl font-bold text-gray-900">AI Medical Educator</h2>
+            <p className="text-gray-600">Chat with your personal nursing tutor</p>
+          </div>
+          <EducatorChat userId={userId} />
+        </div>
       </div>
     </div>
   );
