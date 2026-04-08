@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createClient } from "@supabase/supabase-js";
+import { TextToSpeechClient } from "@google-cloud/text-to-speech";
 
 const supabase = createClient(
   process.env.SUPABASE_URL!,
@@ -85,12 +86,36 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         content: aiResponse,
       }
     ]);
-
     if (aiError) {
       console.error("Error saving AI response:", aiError);
     }
 
-    res.json({ response: aiResponse });
+    // Generate speech with Google TTS
+    let audioUrl = null;
+    try {
+      const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || "{}");
+      const ttsClient = new TextToSpeechClient({ credentials });
+      
+      const ttsRequest = {
+        input: { text: aiResponse.substring(0, 5000) }, // TTS limit
+        voice: { languageCode: "en-US", name: "en-US-Neural2-D", ssmlGender: "MALE" as const },
+        audioConfig: { audioEncoding: "MP3" as const, speakingRate: 0.95, pitch: 0 },
+      };
+      
+      const [ttsResponse] = await ttsClient.speak(ttsRequest);
+      const audioContent = ttsResponse.audioContent;
+      
+      if (audioContent) {
+        // Save audio to Supabase storage or return base64
+        const base64Audio = Buffer.from(audioContent as string, "base64").toString("base64");
+        audioUrl = `data:audio/mp3;base64,${base64Audio}`;
+      }
+    } catch (ttsError) {
+      console.error("TTS error:", ttsError);
+      // Continue without audio if TTS fails
+    }
+
+    res.json({ response: aiResponse, audioUrl });
   } catch (error) {
     console.error("Educator API error:", error);
     res.status(500).json({ 

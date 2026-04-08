@@ -3,16 +3,11 @@ import { useState, useRef, useEffect } from "react";
 interface Message {
   role: "user" | "assistant";
   content: string;
+  audioUrl?: string;
 }
 
 interface EducatorChatProps {
   userId: string;
-}
-
-// Placeholder function - connect this to your avatar system
-function sendToAvatar(text: string) {
-  console.log("Avatar received:", text);
-  // Add your avatar integration here
 }
 
 export default function EducatorChat({ userId }: EducatorChatProps) {
@@ -20,7 +15,9 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [conversationId] = useState(() => `conv_${Date.now()}`);
+  const [isMuted, setIsMuted] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -30,6 +27,13 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
     scrollToBottom();
   }, [messages]);
 
+  const playAudio = (audioUrl: string) => {
+    if (audioRef.current) {
+      audioRef.current.src = audioUrl;
+      audioRef.current.play().catch(console.error);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
@@ -38,33 +42,32 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
     setInput("");
     setIsLoading(true);
 
-    // Add user message immediately
     setMessages(prev => [...prev, { role: "user", content: userMessage }]);
 
     try {
       const response = await fetch("/api/educator", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: userMessage,
           userId: `${userId}_${conversationId}`,
         }),
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to get response");
-      }
+      if (!response.ok) throw new Error("Failed to get response");
 
       const data = await response.json();
       const aiResponse = data.response;
+      const audioUrl = data.audioUrl;
 
-      // Add AI response
-      setMessages(prev => [...prev, { role: "assistant", content: aiResponse }]);
+      const newMessage: Message = { role: "assistant", content: aiResponse };
+      if (audioUrl) newMessage.audioUrl = audioUrl;
 
-      // Send to avatar
-      sendToAvatar(aiResponse);
+      setMessages(prev => [...prev, newMessage]);
+
+      if (audioUrl && !isMuted) {
+        setTimeout(() => playAudio(audioUrl), 500);
+      }
     } catch (error) {
       console.error("Error:", error);
       setMessages(prev => [...prev, { 
@@ -77,48 +80,61 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
   };
 
   return (
-    <div className="flex flex-col h-[500px] max-w-2xl mx-auto border rounded-lg bg-white shadow-lg">
-      {/* Header */}
-      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg">
-        <h3 className="font-semibold text-lg">Medical Educator</h3>
-        <p className="text-sm text-blue-100">Learn concepts, case studies, and quiz yourself</p>
+    <div className="flex flex-col h-[600px] max-w-2xl mx-auto border rounded-lg bg-white shadow-lg">
+      {/* Header with avatar */}
+      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg flex items-center gap-4">
+        <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-3xl">
+          👨‍⚕️
+        </div>
+        <div className="flex-1">
+          <h3 className="font-semibold text-lg">Dr. AI - Medical Educator</h3>
+          <p className="text-sm text-blue-100">Your personal nursing tutor • Speaks responses aloud</p>
+        </div>
+        <button
+          onClick={() => setIsMuted(!isMuted)}
+          className="p-2 rounded-lg hover:bg-white/20 transition-colors text-xl"
+          title={isMuted ? "Unmute" : "Mute"}
+        >
+          {isMuted ? "🔇" : "🔊"}
+        </button>
       </div>
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
           <div className="text-center text-gray-500 py-8">
-            <p className="text-lg mb-2">👋 Welcome!</p>
+            <p className="text-4xl mb-4">👋</p>
+            <p className="text-lg mb-2">Welcome!</p>
             <p className="text-sm">
               Ask me about medical concepts, pharmacology, or I'll quiz you on nursing topics.
+              I'll speak my responses aloud!
             </p>
           </div>
         )}
         
         {messages.map((msg, idx) => (
-          <div 
-            key={idx} 
-            className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-          >
-            <div 
-              className={`max-w-[80%] p-3 rounded-lg ${
-                msg.role === "user" 
-                  ? "bg-blue-600 text-white" 
-                  : "bg-gray-100 text-gray-800"
-              }`}
-            >
+          <div key={idx} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
+            <div className={`max-w-[80%] p-4 rounded-lg ${msg.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-800"}`}>
               <p className="whitespace-pre-wrap">{msg.content}</p>
+              {msg.role === "assistant" && msg.audioUrl && !isMuted && (
+                <button
+                  onClick={() => playAudio(msg.audioUrl!)}
+                  className="mt-2 text-sm flex items-center gap-1 hover:underline"
+                >
+                  🔊 Play Audio
+                </button>
+              )}
             </div>
           </div>
         ))}
 
         {isLoading && (
           <div className="flex justify-start">
-            <div className="bg-gray-100 text-gray-800 p-3 rounded-lg">
+            <div className="bg-gray-100 text-gray-800 p-4 rounded-lg">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
               </div>
             </div>
           </div>
@@ -126,6 +142,9 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
 
         <div ref={messagesEndRef} />
       </div>
+
+      {/* Audio element */}
+      <audio ref={audioRef} />
 
       {/* Input */}
       <form onSubmit={handleSubmit} className="p-4 border-t">
@@ -136,12 +155,12 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask a question or say 'quiz me'..."
             disabled={isLoading}
-            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
+            className="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors font-medium"
           >
             Send
           </button>
