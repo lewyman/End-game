@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import AnimatedAvatar from "./AnimatedAvatar";
 
 interface Message {
   role: "user" | "assistant";
@@ -14,6 +15,7 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const [conversationId] = useState(() => `conv_${Date.now()}`);
   const [isMuted, setIsMuted] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -28,9 +30,11 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
   }, [messages]);
 
   const playAudio = (audioUrl: string) => {
-    if (audioRef.current) {
+    if (audioRef.current && !isMuted) {
       audioRef.current.src = audioUrl;
+      setIsSpeaking(true);
       audioRef.current.play().catch(console.error);
+      audioRef.current.onended = () => setIsSpeaking(false);
     }
   };
 
@@ -41,6 +45,7 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
     const userMessage = input.trim();
     setInput("");
     setIsLoading(true);
+    setIsSpeaking(true);
 
     setMessages(prev => [...prev, { role: "user", content: userMessage }]);
 
@@ -65,44 +70,59 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
 
       setMessages(prev => [...prev, newMessage]);
 
-      if (audioUrl && !isMuted) {
+      if (audioUrl) {
         setTimeout(() => playAudio(audioUrl), 500);
       }
     } catch (error) {
       console.error("Error:", error);
-      setMessages(prev => [...prev, { 
-        role: "assistant", 
+      setMessages(prev => [...prev => { 
+        role: "assistant"; 
         content: "I'm sorry, I encountered an error. Please try again." 
       }]);
     } finally {
       setIsLoading(false);
+      setTimeout(() => setIsSpeaking(false), 1000);
     }
   };
 
   return (
     <div className="flex flex-col h-[600px] max-w-2xl mx-auto border rounded-lg bg-white shadow-lg">
-      {/* Header */}
-      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg">
-        <h3 className="font-semibold text-lg">M.A.I.A</h3>
-        <p className="text-sm text-blue-100">Your Medical Anatomy & Intelligence Assistant - Ask me anything!</p>
+      {/* Header with Avatar */}
+      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg flex items-center gap-4">
+        <AnimatedAvatar isSpeaking={isSpeaking} />
+        <div>
+          <h3 className="font-semibold text-lg">M.A.I.A</h3>
+          <p className="text-sm text-blue-100">Your Medical Anatomy & Intelligence Assistant</p>
+        </div>
+        {/* Mute button */}
+        <button
+          onClick={() => setIsMuted(!isMuted)}
+          className="ml-auto p-2 hover:bg-blue-700 rounded-lg transition-colors"
+          title={isMuted ? "Unmute" : "Mute"}
+        >
+          {isMuted ? "🔇" : "🔊"}
+        </button>
       </div>
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
-          <div className="text-center text-gray-500 py-8">
-            <p className="text-4xl mb-4">👋</p>
-            <p className="text-lg mb-2">Welcome!</p>
+          <div className="flex flex-col items-center justify-center h-full text-center text-gray-500">
+            <AnimatedAvatar isSpeaking={false} />
+            <p className="text-lg mt-4 mb-2">Welcome!</p>
             <p className="text-sm">
               Ask me about medical concepts, pharmacology, or I'll quiz you on nursing topics.
-              I'll speak my responses aloud!
             </p>
           </div>
         )}
         
         {messages.map((msg, idx) => (
           <div key={idx} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
-            <div className={`max-w-[80%] p-4 rounded-lg ${msg.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-800"}`}>
+            <div className={`max-w-[80%] p-4 rounded-lg ${
+              msg.role === "user" 
+                ? "bg-blue-600 text-white" 
+                : "bg-gray-100 text-gray-800"
+            }`}>
               <p className="whitespace-pre-wrap">{msg.content}</p>
               {msg.role === "assistant" && msg.audioUrl && !isMuted && (
                 <button
