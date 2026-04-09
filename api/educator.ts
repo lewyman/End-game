@@ -95,8 +95,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Generate speech with Google TTS using service account
     let audioUrl = null;
+    let ttsError = null;
+    
     try {
-      const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || "{}");
+      const credJson = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || "{}";
+      console.log("Credentials available:", credJson.length > 0 ? "YES" : "NO");
+      console.log("Credentials preview:", credJson.substring(0, 100));
+      
+      const credentials = JSON.parse(credJson);
+      console.log("Parsed project_id:", credentials.project_id);
       
       const auth = new GoogleAuth({
         credentials,
@@ -104,38 +111,54 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       });
 
       const client = await auth.getClient();
-      const token = await client.getAccessToken();
+      const tokenResponse = await client.getAccessToken();
+      const token = tokenResponse?.token;
+      
+      console.log("Token obtained:", token ? "YES" : "NO");
+      console.log("Token preview:", token ? token.substring(0, 50) + "..." : "null");
 
       if (token) {
+        const ttsRequestBody = {
+          input: { text: aiResponse.substring(0, 5000) },
+          voice: { languageCode: "en-US", name: "en-US-Neural2-D", ssmlGender: "MALE" },
+          audioConfig: { audioEncoding: "MP3", speakingRate: 0.95, pitch: 0 },
+        };
+        
         const ttsResponse = await fetch(TTS_API_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
             "Authorization": `Bearer ${token}`,
           },
-          body: JSON.stringify({
-            input: { text: aiResponse.substring(0, 5000) },
-            voice: { languageCode: "en-US", name: "en-US-Neural2-D", ssmlGender: "MALE" },
-            audioConfig: { audioEncoding: "MP3", speakingRate: 0.95, pitch: 0 },
-          }),
+          body: JSON.stringify(ttsRequestBody),
         });
 
+        console.log("TTS response status:", ttsResponse.status);
+        
         if (ttsResponse.ok) {
           const ttsData = await ttsResponse.json();
+          console.log("TTS audioContent available:", ttsData.audioContent ? "YES" : "NO");
           if (ttsData.audioContent) {
             audioUrl = `data:audio/mp3;base64,${ttsData.audioContent}`;
           }
         } else {
-          console.error("TTS API error:", await ttsResponse.text());
+          ttsError = await ttsResponse.text();
+          console.error("TTS API error:", ttsError);
         }
       } else {
-        console.error("No access token obtained");
+        console.error("No access token - credentials may be invalid");
+        ttsError = "No access token obtained";
       }
-    } catch (ttsError) {
-      console.error("TTS error:", ttsError);
+    } catch (ttsErr) {
+      console.error("TTS exception:", ttsErr);
+      ttsError = String(ttsErr);
     }
 
-    res.json({ response: aiResponse, audioUrl });
+    res.json({ 
+      response: aiResponse, 
+      audioUrl,
+      ttsError: ttsError // Include error info for debugging
+    });
   } catch (error) {
     console.error("Educator API error:", error);
     res.status(500).json({ 
