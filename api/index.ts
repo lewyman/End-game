@@ -26,6 +26,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const path = (req.query.path as string) || "/";
   const method = req.method;
 
+  // GET /api?path=/health
+  if (path === "/health" && method === "GET") {
+    res.json({ status: "ok", timestamp: new Date().toISOString() });
+    return;
+  }
+
   // GET /api?path=/drugs
   if (path === "/drugs" && method === "GET") {
     const { data } = await supabase.from("drugs").select("*").order("name");
