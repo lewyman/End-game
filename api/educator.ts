@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createClient } from "@supabase/supabase-js";
-import { TextToSpeechClient } from "@google-cloud/text-to-speech";
+import { GoogleAuth } from "google-auth-library";
 
 const supabase = createClient(
   process.env.SUPABASE_URL!,
@@ -11,6 +11,9 @@ const SYSTEM_PROMPT = `You are a medical educator for nursing students. You expl
 
 // Groq API
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
+
+// Google TTS REST API
+const TTS_API_URL = "https://texttospeech.googleapis.com/v1/text:synthesize";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -90,29 +93,46 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       console.error("Error saving AI response:", aiError);
     }
 
-    // Generate speech with Google TTS
+    // Generate speech with Google TTS using service account
     let audioUrl = null;
     try {
       const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || "{}");
-      const ttsClient = new TextToSpeechClient({ credentials });
       
-      const ttsRequest = {
-        input: { text: aiResponse.substring(0, 5000) }, // TTS limit
-        voice: { languageCode: "en-US", name: "en-US-Neural2-D", ssmlGender: "MALE" as const },
-        audioConfig: { audioEncoding: "MP3" as const, speakingRate: 0.95, pitch: 0 },
-      };
-      
-      const [ttsResponse] = await ttsClient.speak(ttsRequest);
-      const audioContent = ttsResponse.audioContent;
-      
-      if (audioContent) {
-        // Save audio to Supabase storage or return base64
-        const base64Audio = Buffer.from(audioContent as string, "base64").toString("base64");
-        audioUrl = `data:audio/mp3;base64,${base64Audio}`;
+      const auth = new GoogleAuth({
+        credentials,
+        scopes: ["https://www.googleapis.com/auth/cloud-platform"],
+      });
+
+      const client = await auth.getClient();
+      const token = await client.getAccessToken();
+
+      if (token) {
+        const ttsResponse = await fetch(TTS_API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            input: { text: aiResponse.substring(0, 5000) },
+            voice: { languageCode: "en-US", name: "en-US-Neural2-D", ssmlGender: "MALE" },
+            audioConfig: { audioEncoding: "MP3", speakingRate: 0.95, pitch: 0 },
+          }),
+        });
+
+        if (ttsResponse.ok) {
+          const ttsData = await ttsResponse.json();
+          if (ttsData.audioContent) {
+            audioUrl = `data:audio/mp3;base64,${ttsData.audioContent}`;
+          }
+        } else {
+          console.error("TTS API error:", await ttsResponse.text());
+        }
+      } else {
+        console.error("No access token obtained");
       }
     } catch (ttsError) {
       console.error("TTS error:", ttsError);
-      // Continue without audio if TTS fails
     }
 
     res.json({ response: aiResponse, audioUrl });
