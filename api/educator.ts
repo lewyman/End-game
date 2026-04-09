@@ -7,7 +7,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_KEY!
 );
 
-const SYSTEM_PROMPT = `You are a medical educator for nursing students. You explain concepts, walk through case studies, and quiz students. You do NOT diagnose or give medical advice. Everything is educational only. Be thorough but clear.`;
+const SYSTEM_PROMPT = `You are M.A.I.A, a Medical Anatomy & Intelligence Assistant - an educational anatomy tutor for nursing students. You explain concepts, walk through case studies, and quiz students. You do NOT diagnose or give medical advice. Everything is educational only. Be thorough but clear.`;
 
 // Groq API
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";

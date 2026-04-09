@@ -84,7 +84,7 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
       {/* Header */}
       <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg">
         <h3 className="font-semibold text-lg">M.A.I.A</h3>
-        <p className="text-sm text-blue-100">Your Medical AI Assistant - Ask me anything!</p>
+        <p className="text-sm text-blue-100">Your Medical Anatomy & Intelligence Assistant - Ask me anything!</p>
       </div>
 
       {/* Messages */}
