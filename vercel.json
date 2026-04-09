@@ -4,13 +4,13 @@
   "outputDirectory": "frontend/dist",
   "framework": null,
   "rewrites": [
-    { "source": "/api/drugs", "destination": "/api%3Fpath=/drugs" },
-    { "source": "/api/drugs/:slug", "destination": "/api%3Fpath=/drugs/:slug" },
-    { "source": "/api/admin/drugs", "destination": "/api%3Fpath=/admin/drugs" },
-    { "source": "/api/admin/drugs/:path*", "destination": "/api%3Fpath=/admin/drugs/:path*" },
-    { "source": "/api/login", "destination": "/api%3Fpath=/login" },
-    { "source": "/api/signup", "destination": "/api%3Fpath=/signup" },
-    { "source": "/api/health", "destination": "/api%3Fpath=/health" },
+    { "source": "/api/drugs", "destination": "/api?path=/drugs" },
+    { "source": "/api/drugs/:slug", "destination": "/api?path=/drugs/:slug" },
+    { "source": "/api/admin/drugs", "destination": "/api?path=/admin/drugs" },
+    { "source": "/api/admin/drugs/:path*", "destination": "/api?path=/admin/drugs/:path*" },
+    { "source": "/api/login", "destination": "/api?path=/login" },
+    { "source": "/api/signup", "destination": "/api?path=/signup" },
+    { "source": "/api/health", "destination": "/api?path=/health" },
     { "source": "/drugs/:path*", "destination": "/" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
