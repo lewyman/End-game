@@ -81,22 +81,10 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
 
   return (
     <div className="flex flex-col h-[600px] max-w-2xl mx-auto border rounded-lg bg-white shadow-lg">
-      {/* Header with avatar */}
-      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg flex items-center gap-4">
-        <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-3xl">
-          👨‍⚕️
-        </div>
-        <div className="flex-1">
-          <h3 className="font-semibold text-lg">Dr. AI - Medical Educator</h3>
-          <p className="text-sm text-blue-100">Your personal nursing tutor • Speaks responses aloud</p>
-        </div>
-        <button
-          onClick={() => setIsMuted(!isMuted)}
-          className="p-2 rounded-lg hover:bg-white/20 transition-colors text-xl"
-          title={isMuted ? "Unmute" : "Mute"}
-        >
-          {isMuted ? "🔇" : "🔊"}
-        </button>
+      {/* Header */}
+      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg">
+        <h3 className="font-semibold text-lg">M.A.I.A</h3>
+        <p className="text-sm text-blue-100">Your Medical AI Assistant - Ask me anything!</p>
       </div>
 
       {/* Messages */}
