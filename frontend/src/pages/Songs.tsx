@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Play, Pause, Music, Clock, Headphones, Search, Filter, ChevronDown } from "lucide-react";
 
-const API_URL = import.meta.env.VITE_API_URL || "";
+const API_URL = "" || "https://endgame-platform.vercel.app";
 
 interface Song {
   id: number;
