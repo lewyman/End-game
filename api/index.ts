@@ -123,5 +123,58 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
+  // GET /api?path=/songs
+  if (path === "/songs" && method === "GET") {
+    const { data } = await supabase.from("songs").select("*").order("created_at", { ascending: false });
+    res.json({ songs: data || [] });
+    return;
+  }
+
+  // GET /api?path=/songs/:slug
+  const songMatch = path.match(/^\/songs\/([^/]+)$/);
+  if (songMatch && method === "GET") {
+    const slug = songMatch[1];
+    const { data: song } = await supabase.from("songs").select("*").eq("slug", slug).single();
+    if (!song) { res.status(404).json({ error: "Not found" }); return; }
+    // Increment play count
+    await supabase.from("songs").update({ play_count: (song.play_count || 0) + 1 }).eq("slug", slug);
+    res.json({ song });
+    return;
+  }
+
+  // GET /api?path=/playlists
+  if (path === "/playlists" && method === "GET") {
+    const email = req.headers["x-user-email"] as string;
+    const { data } = await supabase.from("playlists").select("*").or(`is_public.eq.true,user_email.eq.${email || 'null'}`).order("created_at", { ascending: false });
+    res.json({ playlists: data || [] });
+    return;
+  }
+
+  // POST /api?path=/admin/songs (admin only)
+  if (path === "/admin/songs" && method === "POST") {
+    const adminEmail = req.headers["x-admin-email"] as string;
+    if (!adminEmail) { res.status(401).json({ error: "Unauthorized" }); return; }
+    const { data: admin } = await supabase.from("users").select("is_admin").eq("email", adminEmail).single();
+    if (!admin?.is_admin) { res.status(403).json({ error: "Admin only" }); return; }
+    const { slug, title, artist, drug_name, drug_class, description, lyrics, audio_path, cover_path, duration_seconds, tier, genre } = req.body;
+    if (!slug || !title || !drug_name || !audio_path) { res.status(400).json({ error: "slug, title, drug_name, audio_path required" }); return; }
+    const { error } = await supabase.from("songs").insert([{ slug, title, artist: artist || 'NursingPharmacology', drug_name, drug_class: drug_class || '', description: description || '', lyrics: lyrics || '', audio_path, cover_path: cover_path || '', duration_seconds: duration_seconds || 180, tier: tier || 'free', genre: genre || 'pop' }]);
+    if (error) { res.status(400).json({ error: error.message }); return; }
+    res.json({ success: true });
+    return;
+  }
+
+  // DELETE /api?path=/admin/songs/:slug (admin only)
+  const deleteSongMatch = path.match(/^\/admin\/songs\/([^/]+)$/);
+  if (deleteSongMatch && method === "DELETE") {
+    const adminEmail = req.headers["x-admin-email"] as string;
+    if (!adminEmail) { res.status(401).json({ error: "Unauthorized" }); return; }
+    const { data: admin } = await supabase.from("users").select("is_admin").eq("email", adminEmail).single();
+    if (!admin?.is_admin) { res.status(403).json({ error: "Admin only" }); return; }
+    await supabase.from("songs").delete().eq("slug", deleteSongMatch[1]);
+    res.json({ success: true });
+    return;
+  }
+
   res.status(404).json({ error: "Not found" });
 }
