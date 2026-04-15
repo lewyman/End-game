@@ -28,7 +28,8 @@ export default function Songs() {
   const [currentSong, setCurrentSong] = useState<Song | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [search, setSearch] = useState("");
-  const [genreFilter, setGenreFilter] = useState("");
+  const [genreFilter, setGenreFilter] = useState("all");
+  const [showLyrics, setShowLyrics] = useState(false);
   const [expandedLyrics, setExpandedLyrics] = useState<number | null>(null);
   const [user, setUser] = useState<any>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -83,6 +84,12 @@ export default function Songs() {
     const matchGenre = !genreFilter || s.genre === genreFilter;
     return matchSearch && matchGenre;
   });
+
+  const toggleLyrics = (song: Song) => {
+    setCurrentSong(song);
+    setShowLyrics(true);
+    setIsPlaying(false);
+  };
 
   if (loading) {
     return (
