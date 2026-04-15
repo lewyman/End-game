@@ -19,11 +19,8 @@ import {
   HeartOff,
   Plus,
   Share2,
-  DownloadCloud,
   Repeat,
-  Image,
   X,
-  Trash2,
 } from "lucide-react";
 
 const API_URL = "" || "https://endgame-platform.vercel.app";
@@ -53,8 +50,6 @@ interface Playlist {
   songIds: number[];
   coverUrl?: string;
 }
-
-const DEFAULT_COVER = "/images/drug-song-cover.png";
 
 const formatTime = (seconds: number) => {
   const m = Math.floor(seconds / 60);
@@ -89,7 +84,6 @@ export default function Songs() {
   const [showRecent, setShowRecent] = useState(false);
   const [showShareModal, setShowShareModal] = useState<Song | null>(null);
   const [shareFeedback, setShareFeedback] = useState("");
-  const [showDownloadMenu, setShowDownloadMenu] = useState<Song | null>(null);
   const [volume, setVolume] = useState(1);
   const [isMuted, setIsMuted] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -277,17 +271,25 @@ export default function Songs() {
     });
   };
 
-  const handleDownload = (song: Song) => {
-    setShowDownloadMenu(song);
-  };
-
-  const coverForSong = (song: Song) => song.cover_path || DEFAULT_COVER;
-
   const shareLink = showShareModal ? `${window.location.origin}/songs?highlight=${showShareModal.slug}` : "";
-  const lyricsBlobUrl = useMemo(() => {
-    if (!showDownloadMenu?.lyrics) return "";
-    return `data:text/plain;charset=utf-8,${encodeURIComponent(showDownloadMenu.lyrics)}`;
-  }, [showDownloadMenu]);
+
+  const gradientPairs = [
+    ["#FF6F61", "#6B5B95"],
+    ["#6B5B95", "#8DC26F"],
+    ["#8DC26F", "#F7CAC9"],
+    ["#F7CAC9", "#92A8D1"],
+    ["#92A8D1", "#F39F86"],
+    ["#F39F86", "#F9E79F"],
+    ["#F9E79F", "#81ECA9"],
+    ["#81ECA9", "#74B9FF"],
+    ["#74B9FF", "#A1C4FD"],
+    ["#A1C4FD", "#C2E9FB"],
+    ["#C2E9FB", "#FF6F61"],
+  ];
+
+  const gradientStyles = (idx: number) => ({
+    backgroundImage: `linear-gradient(135deg, ${gradientPairs[idx % gradientPairs.length].join(", ")})`,
+  });
 
   if (loading) {
     return (
@@ -378,10 +380,9 @@ export default function Songs() {
             {displaySongs.map((song) => (
               <div key={song.id} className="bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-sm border border-gray-100 dark:border-gray-700 transition-all hover:shadow-lg">
                 <div className="flex items-start gap-4">
-                  <img
-                    src={coverForSong(song)}
-                    alt={`${song.title} cover`}
-                    className="w-16 h-16 rounded-2xl object-cover flex-shrink-0"
+                  <div
+                    style={gradientStyles(song.id)}
+                    className="w-16 h-16 rounded-2xl flex-shrink-0"
                   />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-4">
@@ -423,12 +424,6 @@ export default function Songs() {
                         <Share2 className="w-5 h-5" />
                       </button>
                       <button
-                        onClick={() => handleDownload(song)}
-                        className="p-1 rounded-full text-gray-500 hover:text-white hover:bg-slate-500"
-                      >
-                        <DownloadCloud className="w-5 h-5" />
-                      </button>
-                      <button
                         onClick={() => setShowAddToPlaylist(song)}
                         className="p-1 rounded-full text-gray-500 hover:text-white hover:bg-emerald-600"
                       >
@@ -451,11 +446,12 @@ export default function Songs() {
       <div className="fixed bottom-0 left-0 right-0 bg-slate-900 text-white border-t border-slate-800 px-4 py-3 z-50">
         <div className="container mx-auto max-w-6xl flex items-center gap-4">
           <div className="flex items-center gap-3 w-1/4 min-w-0">
-            <img
-              src={currentSong ? coverForSong(currentSong) : DEFAULT_COVER}
-              alt="now playing cover"
-              className="w-12 h-12 rounded-lg object-cover"
-            />
+            <div
+              style={gradientStyles(currentSong?.id ?? 0)}
+              className="w-12 h-12 rounded-lg flex items-center justify-center"
+            >
+              <Music className="w-8 h-8" />
+            </div>
             <div className="min-w-0">
               <p className="font-semibold text-sm truncate">{currentSong?.title || "Select a song"}</p>
               <p className="text-xs text-slate-400 truncate">{currentSong?.drug_name || ""}</p>
@@ -517,13 +513,6 @@ export default function Songs() {
               disabled={!currentSong}
             >
               <Share2 className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => handleDownload(currentSong!)}
-              className="p-1 rounded-full text-slate-300 hover:text-white"
-              disabled={!currentSong}
-            >
-              <DownloadCloud className="w-5 h-5" />
             </button>
             <button
               onClick={() => toggleFavorite(currentSong!)}
@@ -643,37 +632,6 @@ export default function Songs() {
               </button>
             </div>
             {shareFeedback && <p className="mt-2 text-xs text-emerald-400">{shareFeedback}</p>}
-          </div>
-        </div>
-      )}
-
-      {showDownloadMenu && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-6 w-full max-w-sm space-y-4">
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold">Download</h3>
-              <button onClick={() => setShowDownloadMenu(null)}>
-                <X className="w-4 h-4" />
-              </button>
-            </div>
-            <a
-              href={showDownloadMenu.audio_path}
-              download
-              className="flex items-center justify-between px-4 py-3 rounded-xl border border-gray-200 hover:bg-slate-50"
-            >
-              <span>MP3</span>
-              <DownloadCloud className="w-5 h-5" />
-            </a>
-            {lyricsBlobUrl && (
-              <a
-                href={lyricsBlobUrl}
-                download={`${showDownloadMenu.title}-lyrics.txt`}
-                className="flex items-center justify-between px-4 py-3 rounded-xl border border-gray-200 hover:bg-slate-50"
-              >
-                <span>Lyrics</span>
-                <DownloadCloud className="w-5 h-5" />
-              </a>
-            )}
           </div>
         </div>
       )}
