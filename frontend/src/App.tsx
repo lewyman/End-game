@@ -14,7 +14,8 @@ import ClinicalSkills from "./pages/ClinicalSkills";
 import PatientCare from "./pages/PatientCare";
 import MedSurg from "./pages/MedSurg";
 import CriticalCare from "./pages/CriticalCare";
-import { GraduationCap, Bot, Menu, X, HomeIcon, Pill, ArrowLeft } from "lucide-react";
+import Songs from "./pages/Songs";
+import { GraduationCap, Bot, Menu, X, HomeIcon, Pill, ArrowLeft, Music } from "lucide-react";
 import { useState, useEffect } from "react";
 
 function NavBar() {
@@ -50,6 +51,9 @@ function NavBar() {
             <Link to="/nursing/pharmacology" className="px-4 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-blue-600 to-violet-600 text-white hover:from-blue-500 hover:to-violet-500 transition-all shadow-lg shadow-blue-600/25">
               <Bot className="w-4 h-4 inline mr-1.5" />AI Educator
             </Link>
+            <Link to="/songs" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-1.5 ${isActive("/songs") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>
+              <Music className="w-4 h-4" />Songs
+            </Link>
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-slate-400 hover:text-white">
@@ -67,6 +71,9 @@ function NavBar() {
             <Link to="/interactions" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Interactions</Link>
             <Link to="/nursing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Learning Paths</Link>
             <Link to="/nursing/pharmacology" className="block px-4 py-3 text-sm bg-gradient-to-r from-blue-600 to-violet-600 text-white rounded-lg font-medium">AI Educator</Link>
+            <Link to="/songs" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg flex items-center gap-2">
+              <Music className="w-4 h-4" />Drug Songs
+            </Link>
           </div>
         </div>
       )}
@@ -96,6 +103,7 @@ export default function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/admin/content" element={<AdminContent />} />
             <Route path="/blog-demo" element={<BlogDemo />} />
+            <Route path="/songs" element={<Songs />} />
           </Routes>
         </div>
       </BrowserRouter>
