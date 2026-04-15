@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Play, Pause, Music, Clock, Headphones, Search, Filter, ChevronDown } from "lucide-react";
+import { Play, Pause, Music, Clock, Headphones, Search, Filter, ChevronDown, SkipBack, SkipForward, Shuffle, List, Volume2, VolumeX } from "lucide-react";
 
 const API_URL = "" || "https://endgame-platform.vercel.app";
 
@@ -32,6 +32,13 @@ export default function Songs() {
   const [showLyrics, setShowLyrics] = useState(false);
   const [expandedLyrics, setExpandedLyrics] = useState<number | null>(null);
   const [user, setUser] = useState<any>(null);
+  const [isShuffled, setIsShuffled] = useState(false);
+  const [playlist, setPlaylist] = useState<Song[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [showPlaylist, setShowPlaylist] = useState(false);
+  const [volume, setVolume] = useState(1);
+  const [isMuted, setIsMuted] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -39,6 +46,12 @@ export default function Songs() {
     if (u) setUser(JSON.parse(u));
     fetchSongs();
   }, []);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = isMuted ? 0 : volume;
+    }
+  }, [volume, isMuted]);
 
   useEffect(() => {
     if (currentSong && audioRef.current) {
@@ -55,7 +68,6 @@ export default function Songs() {
       setLoading(true);
       const res = await fetch(`${API_URL}/api?path=/songs`);
       const data = await res.json();
-      console.log("Songs response:", JSON.stringify(data).substring(0, 300));
       setSongs(data.songs || []);
     } catch (e) {
       console.error("Failed to fetch songs:", e);
@@ -64,12 +76,58 @@ export default function Songs() {
     }
   }
 
-  function playSong(song: Song) {
+  function buildPlaylist(songList: Song[]) {
+    if (isShuffled) {
+      const shuffled = [...songList].sort(() => Math.random() - 0.5);
+      setPlaylist(shuffled);
+    } else {
+      setPlaylist(songList);
+    }
+  }
+
+  function playSong(song: Song, songList: Song[]) {
+    buildPlaylist(songList);
+    const idx = songList.findIndex((s) => s.id === song.id);
     if (currentSong?.id === song.id) {
       setIsPlaying(!isPlaying);
     } else {
       setCurrentSong(song);
+      setCurrentIndex(idx);
       setIsPlaying(true);
+    }
+  }
+
+  function handleNext() {
+    if (playlist.length === 0) return;
+    const nextIdx = currentIndex < playlist.length - 1 ? currentIndex + 1 : 0;
+    const nextSong = playlist[nextIdx];
+    setCurrentIndex(nextIdx);
+    setCurrentSong(nextSong);
+    setIsPlaying(true);
+  }
+
+  function handlePrev() {
+    if (playlist.length === 0) return;
+    const prevIdx = currentIndex > 0 ? currentIndex - 1 : playlist.length - 1;
+    const prevSong = playlist[prevIdx];
+    setCurrentIndex(prevIdx);
+    setCurrentSong(prevSong);
+    setIsPlaying(true);
+  }
+
+  function handleShuffle() {
+    const newShuffled = !isShuffled;
+    setIsShuffled(newShuffled);
+    if (currentSong) {
+      buildPlaylist(songs.filter((s) => {
+        const matchSearch = !search || s.title.toLowerCase().includes(search.toLowerCase()) || s.drug_name.toLowerCase().includes(search.toLowerCase());
+        const matchGenre = genreFilter === "all" || s.genre === genreFilter;
+        return matchSearch && matchGenre;
+      }));
+      if (newShuffled) {
+        const newIdx = playlist.findIndex((s) => s.id === currentSong?.id);
+        setCurrentIndex(newIdx >= 0 ? newIdx : 0);
+      }
     }
   }
 
@@ -102,7 +160,7 @@ export default function Songs() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 pb-28">
       {/* Hero */}
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-12 px-6">
         <div className="container mx-auto max-w-6xl">
@@ -160,7 +218,7 @@ export default function Songs() {
                 <div className="flex items-center gap-4">
                   {/* Play Button */}
                   <button
-                    onClick={() => playSong(song)}
+                    onClick={() => playSong(song, filtered)}
                     className="w-14 h-14 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center flex-shrink-0 transition-colors"
                   >
                     {currentSong?.id === song.id && isPlaying ? (
@@ -222,8 +280,86 @@ export default function Songs() {
         )}
       </div>
 
-      {/* Audio element (hidden) */}
-      <audio ref={audioRef} src={currentSong?.audio_path} onEnded={() => setIsPlaying(false)} />
+      {/* Now Playing Bar */}
+      {currentSong && (
+        <div className="fixed bottom-0 left-0 right-0 bg-slate-900 text-white border-t border-slate-700 px-4 py-3 z-50">
+          <div className="container mx-auto max-w-6xl flex items-center gap-4">
+            {/* Song Info */}
+            <div className="flex items-center gap-3 w-1/4 min-w-0">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+                <Music className="w-5 h-5 text-white" />
+              </div>
+              <div className="min-w-0">
+                <p className="font-medium text-sm truncate">{currentSong.title}</p>
+                <p className="text-xs text-slate-400 truncate">{currentSong.drug_name}</p>
+              </div>
+            </div>
+
+            {/* Controls */}
+            <div className="flex-1 flex flex-col items-center gap-2">
+              <div className="flex items-center gap-4">
+                <button onClick={handleShuffle} className={`p-1.5 rounded-full transition-colors ${isShuffled ? "text-blue-400" : "text-slate-400 hover:text-white"}`}>
+                  <Shuffle className="w-4 h-4" />
+                </button>
+                <button onClick={handlePrev} className="p-1.5 text-slate-300 hover:text-white transition-colors">
+                  <SkipBack className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => setIsPlaying(!isPlaying)}
+                  className="w-10 h-10 rounded-full bg-white text-slate-900 flex items-center justify-center hover:scale-105 transition-transform"
+                >
+                  {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-0.5" />}
+                </button>
+                <button onClick={handleNext} className="p-1.5 text-slate-300 hover:text-white transition-colors">
+                  <SkipForward className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => setShowPlaylist(!showPlaylist)}
+                  className={`p-1.5 rounded-full transition-colors ${showPlaylist ? "text-blue-400" : "text-slate-400 hover:text-white"}`}
+                >
+                  <List className="w-4 h-4" />
+                </button>
+              </div>
+              {/* Progress Bar */}
+              <div className="w-full flex items-center gap-2">
+                <span className="text-xs text-slate-400 w-10 text-right">{formatTime(currentTime)}</span>
+                <div className="flex-1 h-1 bg-slate-700 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-blue-500 rounded-full transition-all"
+                    style={{ width: `${currentSong.duration_seconds ? (currentTime / currentSong.duration_seconds) * 100 : 0}%` }}
+                  />
+                </div>
+                <span className="text-xs text-slate-400 w-10">{formatTime(currentSong.duration_seconds || 0)}</span>
+              </div>
+            </div>
+
+            {/* Volume */}
+            <div className="w-1/4 flex items-center justify-end gap-2">
+              <button onClick={() => setIsMuted(!isMuted)} className="p-1.5 text-slate-400 hover:text-white transition-colors">
+                {isMuted || volume === 0 ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+              </button>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value={isMuted ? 0 : volume}
+                onChange={(e) => { setVolume(parseFloat(e.target.value)); setIsMuted(false); }}
+                className="w-20 h-1 bg-slate-700 rounded-full appearance-none cursor-pointer accent-blue-500"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Audio element */}
+      <audio
+        ref={audioRef}
+        src={currentSong?.audio_path}
+        onTimeUpdate={() => setCurrentTime(audioRef.current?.currentTime || 0)}
+        onEnded={() => handleNext()}
+        onLoadedMetadata={() => setCurrentTime(0)}
+      />
     </div>
   );
 }
