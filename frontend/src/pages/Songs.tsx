@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import {
   Play,
   Pause,
@@ -259,19 +258,21 @@ export default function Songs() {
   };
 
   const handleShare = (song: Song) => {
+    if (!song) return;
     setShareFeedback("");
     setShowShareModal(song);
   };
 
   const handleCopyShareLink = () => {
     if (!showShareModal) return;
-    const link = `${window.location.origin}/songs?highlight=${showShareModal.slug}`;
+    const link = typeof window !== "undefined" ? `${window.location.origin}/songs?highlight=${showShareModal.slug}` : "";
+    if (!link) return;
     navigator.clipboard.writeText(link).then(() => {
       setShareFeedback("Link copied!");
     });
   };
 
-  const shareLink = showShareModal ? `${window.location.origin}/songs?highlight=${showShareModal.slug}` : "";
+  const shareLink = showShareModal && typeof window !== "undefined" ? `${window.location.origin}/songs?highlight=${showShareModal.slug}` : "";
 
   const gradientPairs = [
     ["#FF6F61", "#6B5B95"],
@@ -300,7 +301,7 @@ export default function Songs() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 pb-32">
+    <div className="min-h-screen bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 pb-32">
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-12 px-6">
         <div className="container mx-auto max-w-6xl flex flex-col gap-3">
           <div className="flex items-center gap-3">
@@ -382,7 +383,7 @@ export default function Songs() {
                 <div className="flex items-start gap-4">
                   <div
                     style={gradientStyles(song.id)}
-                    className="w-16 h-16 rounded-2xl flex-shrink-0"
+                    className="w-16 h-16 rounded-2xl flex-shrink-0 animate-pulse"
                   />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-4">
@@ -448,7 +449,7 @@ export default function Songs() {
           <div className="flex items-center gap-3 w-1/4 min-w-0">
             <div
               style={gradientStyles(currentSong?.id ?? 0)}
-              className="w-12 h-12 rounded-lg flex items-center justify-center"
+              className="w-12 h-12 rounded-lg flex items-center justify-center animate-pulse"
             >
               <Music className="w-8 h-8" />
             </div>
