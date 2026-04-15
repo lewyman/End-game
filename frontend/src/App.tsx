@@ -110,3 +110,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
+import './src/pages/Songs'
