@@ -51,7 +51,7 @@ export default function Songs() {
 
   async function fetchSongs() {
     try {
-      const res = await fetch(`${API_URL}/api?song_path=/songs`);
+      const res = await fetch(`${API_URL}/api?path=/songs`);
       const data = await res.json();
       setSongs(data.songs || []);
     } catch (e) {
