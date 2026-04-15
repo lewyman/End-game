@@ -83,7 +83,7 @@ export default function Songs() {
 
   const filtered = songs.filter((s) => {
     const matchSearch = !search || s.title.toLowerCase().includes(search.toLowerCase()) || s.drug_name.toLowerCase().includes(search.toLowerCase());
-    const matchGenre = !genreFilter || s.genre === genreFilter;
+    const matchGenre = genreFilter === "all" || s.genre === genreFilter;
     return matchSearch && matchGenre;
   });
 
