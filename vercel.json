@@ -12,6 +12,11 @@
     { "source": "/api/login", "destination": "/api?path=/login" },
     { "source": "/api/signup", "destination": "/api?path=/signup" },
     { "source": "/api/health", "destination": "/api?path=/health" },
+    { "source": "/api/songs", "destination": "/api?path=/songs" },
+    { "source": "/api/songs/:slug", "destination": "/api?path=/songs/:slug" },
+    { "source": "/api/playlists", "destination": "/api?path=/playlists" },
+    { "source": "/api/admin/songs", "destination": "/api?path=/admin/songs" },
+    { "source": "/api/admin/songs/:slug", "destination": "/api?path=/admin/songs/:slug" },
     { "source": "/drugs/:path*", "destination": "/" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
