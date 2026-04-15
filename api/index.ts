@@ -12,6 +12,19 @@ const SYSTEM_PROMPT = `You are a medical educator for nursing students. You expl
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 const TTS_API_URL = "https://texttospeech.googleapis.com/v1/text:synthesize";
 
+async function resolveUserId(req: VercelRequest) {
+  const headerId = req.headers["x-user-id"] as string | undefined;
+  if (headerId) return headerId;
+  const email = req.headers["x-user-email"] as string | undefined;
+  if (!email) return null;
+  const { data } = await supabase.from("users").select("id").eq("email", email.trim().toLowerCase()).maybeSingle();
+  return data?.id ?? null;
+}
+
+function getUserEmail(req: VercelRequest) {
+  return (req.headers["x-user-email"] as string | undefined) || null;
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
@@ -142,11 +155,103 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
-  // GET /api?path=/playlists
+  // Playlists, favorites, recently played helpers
   if (path === "/playlists" && method === "GET") {
-    const email = req.headers["x-user-email"] as string;
-    const { data } = await supabase.from("playlists").select("*").or(`is_public.eq.true,user_email.eq.${email || 'null'}`).order("created_at", { ascending: false });
+    const uid = await resolveUserId(req);
+    const query = supabase.from("playlists").select("*, playlist_songs(song_id)").order("created_at", { ascending: false });
+    const finalQuery = uid ? query.or(`is_public.eq.true,user_id.eq.${uid}`) : query.eq("is_public", true);
+    const { data } = await finalQuery;
     res.json({ playlists: data || [] });
+    return;
+  }
+
+  if (path === "/playlists" && method === "POST") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user info" }); return; }
+    const { name, description, isPublic } = req.body;
+    if (!name) { res.status(400).json({ error: "Playlist name required" }); return; }
+    const { data, error } = await supabase.from("playlists").insert([{ user_id: uid, name, description: description || "", is_public: !!isPublic }]).select().single();
+    if (error) { res.status(400).json({ error: error.message }); return; }
+    res.json({ playlist: data });
+    return;
+  }
+
+  const playlistSongMatch = path.match(/^\/playlists\/([^/]+)\/songs$/);
+  if (playlistSongMatch && method === "POST") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    const playlistId = playlistSongMatch[1];
+    const playlist = await supabase.from("playlists").select("user_id").eq("id", playlistId).single();
+    if (!playlist.data || playlist.data.user_id !== uid) { res.status(403).json({ error: "Not owner" }); return; }
+    const { songId } = req.body;
+    if (!songId) { res.status(400).json({ error: "songId required" }); return; }
+    const { error } = await supabase.from("playlist_songs").insert([{ playlist_id: playlistId, song_id: songId }]);
+    if (error) { res.status(400).json({ error: error.message }); return; }
+    res.json({ success: true });
+    return;
+  }
+
+  const playlistSongDeleteMatch = path.match(/^\/playlists\/([^/]+)\/songs\/([^/]+)$/);
+  if (playlistSongDeleteMatch && method === "DELETE") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    const playlistId = playlistSongDeleteMatch[1];
+    const songId = playlistSongDeleteMatch[2];
+    const playlist = await supabase.from("playlists").select("user_id").eq("id", playlistId).single();
+    if (!playlist.data || playlist.data.user_id !== uid) { res.status(403).json({ error: "Not owner" }); return; }
+    await supabase.from("playlist_songs").delete().eq("playlist_id", playlistId).eq("song_id", songId);
+    res.json({ success: true });
+    return;
+  }
+
+  if (path === "/favorites" && method === "GET") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    const { data } = await supabase.from("favorites").select("song_id").eq("user_id", uid);
+    res.json({ favorites: (data || []).map((row) => row.song_id) });
+    return;
+  }
+
+  if (path === "/favorites" && method === "POST") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    const { songId } = req.body;
+    if (!songId) { res.status(400).json({ error: "songId required" }); return; }
+    const { error } = await supabase.from("favorites").insert([{ user_id: uid, song_id: songId }]);
+    if (error) { res.status(400).json({ error: error.message }); return; }
+    res.json({ success: true });
+    return;
+  }
+
+  const favoriteDeleteMatch = path.match(/^\/favorites\/([^/]+)$/);
+  if (favoriteDeleteMatch && method === "DELETE") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    await supabase.from("favorites").delete().eq("user_id", uid).eq("song_id", favoriteDeleteMatch[1]);
+    res.json({ success: true });
+    return;
+  }
+
+  if (path === "/recently-played" && method === "GET") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    const { data } = await supabase
+      .from("recently_played")
+      .select("song_id, played_at")
+      .eq("user_id", uid)
+      .order("played_at", { ascending: false })
+      .limit(20);
+    res.json({ recentlyPlayed: data || [] });
+    return;
+  }
+
+  if (path === "/recently-played" && method === "POST") {
+    const uid = await resolveUserId(req);
+    if (!uid) { res.status(401).json({ error: "Missing user" }); return; }
+    const { songId } = req.body;
+    if (!songId) { res.status(400).json({ error: "songId required" }); return; }
+    await supabase.from("recently_played").insert([{ user_id: uid, song_id: songId }]);
+    res.json({ success: true });
     return;
   }
 
