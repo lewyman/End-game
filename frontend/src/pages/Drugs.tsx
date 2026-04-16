@@ -111,18 +111,23 @@ export default function Drugs() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Logo */}
+      <div className="absolute top-4 left-4 z-10">
+        <img src="/images/bio-sync-academy-logo.png" alt="Bio-Sync Academy Logo" className="w-[288px] h-[288px] object-contain" />
+      </div>
+      {/* Header */}
       <header className="border-b px-4 py-4">
         <div className="container mx-auto flex items-center gap-2">
           <Pill className="w-5 h-5 text-blue-600" />
-          <span className="font-bold text-lg">NursingPharmacology</span>
+          <span className="font-bold text-lg">Pharmacology</span>
         </div>
       </header>
       
       <div className="container mx-auto px-4 py-8">
-        <Link to="/" className="inline-flex items-center gap-1 text-gray-500 hover:text-gray-700 mb-6">
+        <Link to="/nursing" className="inline-flex items-center gap-1 text-gray-500 hover:text-gray-700 mb-6">
           <ArrowLeft className="w-4 h-4" />
-          Back
+          Back to Nursing
         </Link>
         
         {/* Progress, Search, and View Toggle */}

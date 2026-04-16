@@ -1,24 +1,42 @@
 import { Link } from "react-router-dom";
+import EducatorChat from "@/components/EducatorChat";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [userId, setUserId] = useState<string>("guest");
+
+  useEffect(() => {
+    const user = localStorage.getItem("pharma_current_user");
+    if (user) {
+      try {
+        const parsed = JSON.parse(user);
+        setUserId(parsed.email || "guest");
+      } catch {
+        setUserId("guest");
+      }
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4">
-      <div className="text-center">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-2xl mb-6">
-          <img src="/images/bio-sync-academy-logo.png" alt="Bio-Sync Academy Logo" className="max-w-md" />
+    <div className="min-h-screen bg-white flex flex-col relative">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/bio-sync-academy-logo.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+      
+      {/* Chat in Center */}
+      <div className="flex-1 flex items-center justify-center p-8">
+        <div className="w-full max-w-2xl">
+          <div className="text-center mb-4">
+            <h2 className="text-2xl font-bold text-gray-900">M.A.I.A</h2>
+            <p className="text-gray-600">Your Medical AI Assistant - Ask me anything!</p>
+          </div>
+          <EducatorChat userId={userId} />
         </div>
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Nursing Pharmacology
-        </h1>
-        <p className="text-xl text-gray-500 mb-8">
-          Coming Soon
-        </p>
-        <Link 
-          to="/drugs" 
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
-        >
-          View Drug Library →
-        </Link>
       </div>
     </div>
   );
