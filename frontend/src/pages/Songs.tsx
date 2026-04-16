@@ -22,7 +22,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_URL = "";
+const API_URL = "https://www.endgameenhancements.com";
 
 interface Song {
   id: number;
