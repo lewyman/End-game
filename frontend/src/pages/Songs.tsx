@@ -22,7 +22,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_URL = "" || "https://endgame-platform.vercel.app";
+const API_URL = "";
 
 interface Song {
   id: number;
