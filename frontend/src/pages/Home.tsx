@@ -2,9 +2,14 @@ import { Link } from "react-router-dom";
 import EducatorChat from "@/components/EducatorChat";
 import { useState, useEffect } from "react";
 
+const MASTER_CODE = "MAIA-TEST-2024";
+
 export default function Home() {
   const [userId, setUserId] = useState<string>("guest");
   const [hasMaiaAccess, setHasMaiaAccess] = useState(false);
+  const [showCodeInput, setShowCodeInput] = useState(false);
+  const [codeInput, setCodeInput] = useState("");
+  const [codeError, setCodeError] = useState(false);
 
   useEffect(() => {
     const user = localStorage.getItem("pharma_current_user");
@@ -20,6 +25,19 @@ export default function Home() {
       }
     }
   }, []);
+
+  const handleCodeSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (codeInput.trim().toUpperCase() === MASTER_CODE) {
+      setHasMaiaAccess(true);
+      setShowCodeInput(false);
+      setCodeError(false);
+      // Store the code in localStorage so it persists
+      localStorage.setItem("maia_test_code", MASTER_CODE);
+    } else {
+      setCodeError(true);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white flex flex-col relative">
@@ -41,14 +59,55 @@ export default function Home() {
           </div>
           {hasMaiaAccess ? (
             <EducatorChat userId={userId} />
+          ) : showCodeInput ? (
+            <div className="bg-gray-100 rounded-lg p-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Enter Test Code</h3>
+              <form onSubmit={handleCodeSubmit} className="space-y-4">
+                <input
+                  type="text"
+                  value={codeInput}
+                  onChange={(e) => {
+                    setCodeInput(e.target.value);
+                    setCodeError(false);
+                  }}
+                  placeholder="Enter master code..."
+                  className="w-full p-3 border border-gray-300 rounded-lg text-black bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  autoFocus
+                />
+                {codeError && (
+                  <p className="text-red-600 text-sm">Invalid code. Please try again.</p>
+                )}
+                <div className="flex gap-2">
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                  >
+                    Submit Code
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setShowCodeInput(false)}
+                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
           ) : (
             <div className="bg-gray-100 rounded-lg p-8 text-center">
               <p className="text-gray-600 mb-4">
                 MAIA is available with Pro Monthly or Pro Yearly subscription.
               </p>
-              <Link to="/pricing" className="text-blue-600 hover:text-blue-800 font-semibold">
+              <Link to="/pricing" className="block text-blue-600 hover:text-blue-800 font-semibold mb-4">
                 Upgrade to Access MAIA →
               </Link>
+              <button
+                onClick={() => setShowCodeInput(true)}
+                className="text-gray-500 hover:text-gray-700 text-sm underline"
+              >
+                Have a test code?
+              </button>
             </div>
           )}
         </div>
