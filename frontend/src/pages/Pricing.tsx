@@ -37,6 +37,7 @@ const pricingTiers: PricingTier[] = [
       "Interactive quizzes & SATA",
       "Printable study guides",
       "Progress tracking",
+      "MAIA AI Chat Assistant",
       "Cancel anytime"
     ],
     priceId: "price_monthly",
@@ -53,6 +54,7 @@ const pricingTiers: PricingTier[] = [
       "Printable study guides",
       "Progress tracking",
       "Priority support",
+      "MAIA AI Chat Assistant",
       "New drugs added monthly"
     ],
     priceId: "price_yearly"
