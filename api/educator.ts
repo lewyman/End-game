@@ -120,7 +120,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       if (token) {
         const ttsRequestBody = {
           input: { text: aiResponse.substring(0, 5000) },
-          voice: { languageCode: "en-US", name: "en-US-Neural2-D", ssmlGender: "MALE" },
+          voice: { languageCode: "en-US", name: "en-US-Neural2-J", ssmlGender: "FEMALE" },
           audioConfig: { audioEncoding: "MP3", speakingRate: 0.95, pitch: 0 },
         };
         
