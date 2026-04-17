@@ -83,7 +83,7 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
     <div className="flex flex-col h-[600px] max-w-2xl mx-auto border rounded-lg bg-white shadow-lg">
       {/* Header */}
       <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg">
-        <h3 className="font-semibold text-lg">M.A.I.A</h3>
+        <h3 className="font-semibold text-lg">MAIA</h3>
         <p className="text-sm text-blue-100">Your Medical Anatomy & Intelligence Assistant - Ask me anything!</p>
       </div>
 

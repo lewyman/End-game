@@ -32,7 +32,7 @@ export default function Home() {
       <div className="flex-1 flex items-center justify-center p-8">
         <div className="w-full max-w-2xl">
           <div className="text-center mb-4">
-            <h2 className="text-2xl font-bold text-gray-900">M.A.I.A</h2>
+            <h2 className="text-2xl font-bold text-gray-900">MAIA</h2>
             <p className="text-gray-600">Your Medical AI Assistant - Ask me anything!</p>
           </div>
           <EducatorChat userId={userId} />

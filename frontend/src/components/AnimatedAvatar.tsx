@@ -120,7 +120,7 @@ export default function AnimatedAvatar({ isSpeaking }: AnimatedAvatarProps) {
 
         {/* Lab Coat Name Badge */}
         <rect x="130" y="140" width="20" height="12" fill="#ffffff" stroke="#1e3a5f" strokeWidth="0.5" rx="1" />
-        <text x="140" y="148" fontSize="5" fill="#1e3a5f" textAnchor="middle" fontFamily="Arial">M.A.I.A</text>
+        <text x="140" y="148" fontSize="5" fill="#1e3a5f" textAnchor="middle" fontFamily="Arial">MAIA</text>
 
         {/* Stethoscope hint */}
         <path d="M 70 145 Q 65 160 75 175" fill="none" stroke="#374151" strokeWidth="2" />
@@ -138,7 +138,7 @@ export default function AnimatedAvatar({ isSpeaking }: AnimatedAvatarProps) {
 
       {/* Name tag */}
       <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap">
-        M.A.I.A
+        MAIA
       </div>
     </div>
   );
