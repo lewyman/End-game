@@ -164,7 +164,7 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask a question or say 'quiz me'..."
             disabled={isLoading}
-            className="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 text-black placeholder-gray-400"
+            className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 bg-white text-gray-900 placeholder-gray-500"
           />
           <button
             type="submit"
