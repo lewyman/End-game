@@ -3,7 +3,7 @@ import { ArrowLeft, Download, Clock } from "lucide-react";
 
 export default function Downloads() {
   return (
-    <div className="min-h-screen pt-16 bg-gray-50 py-16 px-4">
+    <div className="min-h-screen pt-24 bg-gray-50 py-16 px-4">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 

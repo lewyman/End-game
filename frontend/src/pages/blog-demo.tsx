@@ -138,7 +138,7 @@ export default function BlogDemo() {
 
   if (currentPost) {
     return (
-      <main className="min-h-screen pt-16 bg-background">
+      <main className="min-h-screen pt-24 bg-background">
         <div className="mx-auto max-w-3xl px-6 py-16">
           <Button
             variant="ghost"
@@ -188,7 +188,7 @@ export default function BlogDemo() {
   }
 
   return (
-    <main className="min-h-screen pt-16 bg-background">
+    <main className="min-h-screen pt-24 bg-background">
       <div className="mx-auto max-w-4xl px-6 py-16">
         <header className="mb-12">
           <Badge variant="outline" className="mb-4">

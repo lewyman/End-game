@@ -26,7 +26,7 @@ export default function Article() {
   if (!article) return <div className="p-8 text-center text-red-500">Article not found.</div>;
 
   return (
-    <div className="min-h-screen pt-16 bg-background">
+    <div className="min-h-screen pt-24 bg-background">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
