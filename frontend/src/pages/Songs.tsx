@@ -321,13 +321,13 @@ export default function Songs() {
         />
       </Link>
       
-      <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-12 px-6">
+      <div className="bg-gray-100 text-gray-900 py-12 px-6">
         <div className="container mx-auto max-w-6xl flex flex-col gap-3">
           <div className="flex items-center gap-3">
             <Music className="w-8 h-8" />
             <h1 className="text-4xl font-bold">Drug Songs</h1>
           </div>
-          <p className="text-purple-100 text-lg max-w-2xl">
+          <p className="text-gray-600 text-lg max-w-2xl">
             Pharmacology taught through playlists. Build routines, favorite the hits, and queue up your NCLEX study soundtrack.
           </p>
           <div className="flex flex-wrap gap-3 mt-2 text-sm font-medium">
