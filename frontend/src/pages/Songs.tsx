@@ -302,7 +302,7 @@ export default function Songs() {
   }
 
   return (
-    <div className="min-h-screen bg-white pb-32">
+    <div className="min-h-screen bg-white pb-32 pt-24">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <Link to="/">
@@ -326,7 +326,7 @@ export default function Songs() {
           <div className="flex flex-wrap gap-3 mt-2 text-sm font-medium">
             <button
               onClick={() => setShowFavorites((prev) => !prev)}
-              className={`px-4 py-2 rounded-full border ${showFavorites ? "border-white bg-white/10" : "border-gray-400"}`}
+              className={`px-4 py-2 rounded-full border ${showFavorites ? "border-gray-500 bg-gray-200" : "border-gray-400"}`}
             >
               {showFavorites ? "Showing Favorites" : "Favorites"}
             </button>
