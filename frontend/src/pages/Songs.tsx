@@ -311,7 +311,7 @@ export default function Songs() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 pb-32">
+    <div className="min-h-screen bg-white pb-32">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <Link to="/" className="absolute top-4 left-4 z-10">
         <img 
