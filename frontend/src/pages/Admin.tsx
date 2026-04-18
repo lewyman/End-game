@@ -150,7 +150,7 @@ export default function Admin() {
 
   if (!loggedIn) {
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center p-4">
+      <div className="min-h-screen pt-16 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center p-4">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -198,7 +198,7 @@ export default function Admin() {
   ];
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900 p-6">
+    <div className="min-h-screen pt-16 bg-zinc-50 dark:bg-zinc-900 p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-2xl font-bold flex items-center gap-2">

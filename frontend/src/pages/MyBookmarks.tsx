@@ -48,7 +48,7 @@ export default function MyBookmarks() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen pt-16 bg-white">
       <div className="container mx-auto px-4 py-8">
         <Link to="/drugs" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-6">
           <ArrowLeft className="w-5 h-5" />

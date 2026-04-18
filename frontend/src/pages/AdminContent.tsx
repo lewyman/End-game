@@ -521,7 +521,7 @@ export default function AdminContent() {
   // ========== LOGIN SCREEN ==========
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="min-h-screen pt-16 bg-gray-100 flex items-center justify-center">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -577,7 +577,7 @@ export default function AdminContent() {
     const currentBlock = blocks[previewIndex];
     
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen pt-16 bg-gray-50">
         <header className="bg-white border-b px-4 py-4">
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -912,7 +912,7 @@ export default function AdminContent() {
 
   // ========== MAIN ADMIN DASHBOARD ==========
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen pt-16 bg-gray-50">
       <header className="bg-white border-b px-4 py-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
