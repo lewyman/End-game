@@ -296,15 +296,6 @@ export default function Songs() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center relative">
-      {/* Logo - Upper Left (3 inches = 288px) */}
-      <Link to="/" className="absolute top-4 left-4 z-10">
-        <img 
-          src="/images/Bio_Logo_white-87f86ab6b807.png" 
-          alt="Bio-Sync Academy Logo" 
-          className="w-[288px] h-[288px] object-contain"
-        />
-      </Link>
-
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
       </div>
     );
@@ -313,13 +304,15 @@ export default function Songs() {
   return (
     <div className="min-h-screen bg-white pb-32">
       {/* Logo - Upper Left (3 inches = 288px) */}
-      <Link to="/" className="absolute top-4 left-4 z-10">
-        <img 
-          src="/images/Bio_Logo_white-87f86ab6b807.png" 
-          alt="Bio-Sync Academy Logo" 
-          className="w-[288px] h-[288px] object-contain"
-        />
-      </Link>
+      <div className="absolute top-4 left-4 z-10">
+        <Link to="/">
+          <img 
+            src="/images/Bio_Logo_white-87f86ab6b807.png" 
+            alt="Bio-Sync Academy Logo" 
+            className="w-[288px] h-[288px] object-contain"
+          />
+        </Link>
+      </div>
       
       <div className="bg-gray-100 text-gray-900 py-12 px-6">
         <div className="container mx-auto max-w-6xl flex flex-col gap-3">
