@@ -30,7 +30,7 @@ function NavBar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-slate-950/95 backdrop-blur-md shadow-lg shadow-black/20" : "bg-transparent"}`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950 shadow-lg shadow-black/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
@@ -83,7 +83,7 @@ export default function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="maia-ui-theme">
       <BrowserRouter>
-        <div className="min-h-screen bg-slate-950 text-white">
+        <div className="min-h-screen bg-white text-gray-900">
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
