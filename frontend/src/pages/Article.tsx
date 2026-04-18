@@ -27,6 +27,15 @@ export default function Article() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+
       <div className="container mx-auto max-w-3xl px-4 py-12">
         <p className="text-sm text-muted-foreground mb-4">
           <a href="/" className="hover:underline">Tech at the Bedside</a> by EndGameEnhancements

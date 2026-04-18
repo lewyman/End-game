@@ -40,7 +40,15 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col pt-16">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 pt-16 relative">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
       {/* NavBar is already showing Bio-Sync Academy branding - no additional logo needed */}
       
       {/* Chat in Center - Only show for paid tiers */}

@@ -21,6 +21,15 @@ export default function PatientCare() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+
       <div className="max-w-5xl mx-auto px-6 py-10">
         <Link to="/nursing" className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to M.A.I.A.

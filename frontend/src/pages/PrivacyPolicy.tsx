@@ -1,6 +1,15 @@
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background py-12">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+
       <div className="container mx-auto max-w-3xl px-4">
         <h1 className="mb-6 text-4xl font-bold">Privacy Policy</h1>
         <p className="mb-8 text-muted-foreground">

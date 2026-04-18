@@ -4,6 +4,15 @@ import { ArrowLeft, Pill, Clock } from "lucide-react";
 export default function Interactions() {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+
       <div className="max-w-2xl mx-auto text-center">
         <Link to="/" className="inline-flex items-center gap-2 text-gray-500 hover:text-gray-700 mb-8">
           <ArrowLeft className="w-4 h-4" />

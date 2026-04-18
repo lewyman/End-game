@@ -77,6 +77,15 @@ function ProductCard({ item }: { item: any }) {
 export default function Products() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+
       {/* Hero */}
       <section className="bg-primary py-16 text-center text-primary-foreground">
         <h1 className="text-4xl font-bold md:text-5xl mb-4">

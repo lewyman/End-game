@@ -33,6 +33,15 @@ export default function MyBookmarks() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <div className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </div>
+
         <div className="animate-spin w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full" />
       </div>
     );
