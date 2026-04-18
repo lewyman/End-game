@@ -21,6 +21,7 @@ import {
   Repeat,
   X,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const API_URL = "https://www.endgameenhancements.com";
 
@@ -294,15 +295,15 @@ export default function Songs() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center relative">
       {/* Logo - Upper Left (3 inches = 288px) */}
-      <div className="absolute top-4 left-4 z-10">
+      <Link to="/" className="absolute top-4 left-4 z-10">
         <img 
           src="/images/Bio_Logo_white-87f86ab6b807.png" 
           alt="Bio-Sync Academy Logo" 
           className="w-[288px] h-[288px] object-contain"
         />
-      </div>
+      </Link>
 
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
       </div>
@@ -311,6 +312,15 @@ export default function Songs() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 pb-32">
+      {/* Logo - Upper Left (3 inches = 288px) */}
+      <Link to="/" className="absolute top-4 left-4 z-10">
+        <img 
+          src="/images/Bio_Logo_white-87f86ab6b807.png" 
+          alt="Bio-Sync Academy Logo" 
+          className="w-[288px] h-[288px] object-contain"
+        />
+      </Link>
+      
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-12 px-6">
         <div className="container mx-auto max-w-6xl flex flex-col gap-3">
           <div className="flex items-center gap-3">
