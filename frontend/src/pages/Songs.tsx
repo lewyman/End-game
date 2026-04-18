@@ -302,7 +302,7 @@ export default function Songs() {
   }
 
   return (
-    <div className="min-h-screen bg-white pb-32 pt-24">
+    <div className="min-h-screen pb-32 pt-24" style={{ backgroundColor: "white" }}>
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <Link to="/">
