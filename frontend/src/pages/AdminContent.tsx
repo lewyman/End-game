@@ -521,7 +521,7 @@ export default function AdminContent() {
   // ========== LOGIN SCREEN ==========
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen pt-24 bg-gray-100 flex items-center justify-center">
+      <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -533,7 +533,7 @@ export default function AdminContent() {
 
         <div className="bg-white p-8 rounded-xl shadow-lg max-w-md w-full">
           <div className="text-center mb-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
               <Database className="w-8 h-8 text-blue-600" />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Admin Access</h1>
@@ -556,7 +556,7 @@ export default function AdminContent() {
             
             <button
               onClick={handleLogin}
-              className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+              className="w-full py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
             >
               Access Admin
             </button>
@@ -577,7 +577,7 @@ export default function AdminContent() {
     const currentBlock = blocks[previewIndex];
     
     return (
-      <div className="min-h-screen pt-24 bg-gray-50">
+      <div className="min-h-screen pt-24 bg-white">
         <header className="bg-white border-b px-4 py-4">
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -592,11 +592,11 @@ export default function AdminContent() {
             </div>
             <div className="flex items-center gap-2">
               {saved && <span className="text-green-600 text-sm">Saved!</span>}
-              <button onClick={handleLogout} className="flex items-center gap-1 px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 text-sm">
+              <button onClick={handleLogout} className="flex items-center gap-1 px-4 py-2 bg-white text-white rounded-lg hover:bg-white text-sm">
                 <X className="w-4 h-4" />
                 Logout
               </button>
-              <button onClick={handleSaveAll} className="flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+              <button onClick={handleSaveAll} className="flex items-center gap-1 px-4 py-2 bg-white text-white rounded-lg hover:bg-white">
                 <Save className="w-4 h-4" />
                 Save All
               </button>
@@ -614,22 +614,22 @@ export default function AdminContent() {
                     key={idx}
                     onClick={() => setPreviewIndex(idx)}
                     className={`flex-shrink-0 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      idx === previewIndex ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                      idx === previewIndex ? "bg-white text-white" : "bg-white text-gray-700 hover:bg-white"
                     }`}
                   >
                     <span className="mr-2">{idx + 1}.</span>
                     <span className="truncate max-w-[100px]">{row.title}</span>
                     <span className={`ml-2 text-xs px-1.5 py-0.5 rounded ${
-                      row.type === "content" ? "bg-blue-200 text-blue-800" :
-                      row.type === "mc" ? "bg-purple-200 text-purple-800" :
-                      "bg-orange-200 text-orange-800"
+                      row.type === "content" ? "bg-white text-blue-800" :
+                      row.type === "mc" ? "bg-white text-purple-800" :
+                      "bg-white text-orange-800"
                     }`}>
                       {row.type}
                     </span>
                   </button>
                 ))}
               </div>
-              <button onClick={handleAddBlock} className="flex items-center gap-1 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm">
+              <button onClick={handleAddBlock} className="flex items-center gap-1 px-3 py-2 bg-white text-white rounded-lg hover:bg-white text-sm">
                 <Plus className="w-4 h-4" />
                 Add
               </button>
@@ -646,7 +646,7 @@ export default function AdminContent() {
               </div>
               {currentBlock ? (
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
+                  <div className="bg-white">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         {currentBlock.type === "content" ? <Activity className="w-6 h-6 text-white" /> :
@@ -655,8 +655,8 @@ export default function AdminContent() {
                         <h2 className="text-xl font-bold text-white">{currentBlock.title}</h2>
                       </div>
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                        currentBlock.type === "content" ? "bg-blue-500" :
-                        currentBlock.type === "mc" ? "bg-purple-500" : "bg-orange-500"
+                        currentBlock.type === "content" ? "bg-white" :
+                        currentBlock.type === "mc" ? "bg-white" : "bg-white"
                       } text-white`}>
                         {currentBlock.type === "content" ? "LEARN" : currentBlock.type === "mc" ? "MC" : "SATA"}
                       </span>
@@ -670,11 +670,11 @@ export default function AdminContent() {
                     
                     {currentBlock.type === "content" ? (
                       <div className="space-y-4">
-                        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                        <div className="bg-white border-l-4 border-blue-500 p-4 rounded-r-lg">
                           <p className="text-gray-800">{currentBlock.content || "No content"}</p>
                         </div>
                         {currentBlock.keyPoints && (
-                          <div className="bg-gray-50 rounded-xl p-4">
+                          <div className="bg-white rounded-xl p-4">
                             <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                               <Heart className="w-4 h-4 text-red-500" />
                               Key Points
@@ -682,7 +682,7 @@ export default function AdminContent() {
                             <ul className="space-y-1">
                               {currentBlock.keyPoints.split("|").map((p, i) => (
                                 <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5" />
+                                  <span className="w-1.5 h-1.5 bg-white rounded-full mt-1.5" />
                                   {p.trim()}
                                 </li>
                               ))}
@@ -708,9 +708,9 @@ export default function AdminContent() {
                               correct = correctAnswers.split(",").map(n => parseInt(n.trim())).filter(n => !isNaN(n)).includes(i);
                             }
                             return (
-                              <div key={i} className={`p-3 rounded-lg border-2 ${correct ? "border-green-500 bg-green-50" : "border-gray-200 bg-gray-50"}`}>
+                              <div key={i} className={`p-3 rounded-lg border-2 ${correct ? "border-green-500 bg-white" : "border-gray-200 bg-white"}`}>
                                 <div className="flex items-center gap-3">
-                                  <span className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold ${correct ? "bg-green-500 text-white" : "bg-gray-200"}`}>
+                                  <span className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold ${correct ? "bg-white text-white" : "bg-white"}`}>
                                     {String.fromCharCode(65 + i)}
                                   </span>
                                   <span className="text-black">{opt}</span>
@@ -724,10 +724,10 @@ export default function AdminContent() {
                     )}
                   </div>
 
-                  <div className="bg-gray-100 px-6 py-3 flex items-center justify-between">
+                  <div className="bg-white px-6 py-3 flex items-center justify-between">
                     <div className="flex gap-1">
                       {blocks.map((_, i) => (
-                        <div key={i} className={`w-2 h-2 rounded-full ${i === previewIndex ? "bg-blue-500" : i < previewIndex ? "bg-green-500" : "bg-gray-300"}`} />
+                        <div key={i} className={`w-2 h-2 rounded-full ${i === previewIndex ? "bg-white" : i < previewIndex ? "bg-white" : "bg-white"}`} />
                       ))}
                     </div>
                     <span className="text-sm text-gray-500">Block {previewIndex + 1} of {blocks.length}</span>
@@ -779,7 +779,7 @@ export default function AdminContent() {
                           placeholder="/images/drug.png or data:image..."
                           className="flex-1 border rounded-lg px-3 py-2 text-black"
                         />
-                        <label className="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg cursor-pointer">
+                        <label className="px-3 py-2 bg-white hover:bg-white rounded-lg cursor-pointer">
                           <Upload className="w-5 h-5" />
                           <input type="file" accept="image/*" className="hidden" onChange={(e) => handleImageUpload(previewIndex, e)} />
                         </label>
@@ -876,21 +876,21 @@ export default function AdminContent() {
                         <button
                           onClick={() => moveBlock(previewIndex, "up")}
                           disabled={previewIndex === 0}
-                          className="px-3 py-1 text-sm bg-purple-100 hover:bg-purple-200 text-purple-700 rounded disabled:opacity-50 disabled:bg-gray-100 disabled:text-gray-500"
+                          className="px-3 py-1 text-sm bg-white hover:bg-white text-purple-700 rounded disabled:opacity-50 disabled:bg-white disabled:text-gray-500"
                         >
                           <ChevronLeft className="w-4 h-4 inline" /> Move Up
                         </button>
                         <button
                           onClick={() => moveBlock(previewIndex, "down")}
                           disabled={previewIndex === blocks.length - 1}
-                          className="px-3 py-1 text-sm bg-purple-100 hover:bg-purple-200 text-purple-700 rounded disabled:opacity-50 disabled:bg-gray-100 disabled:text-gray-500"
+                          className="px-3 py-1 text-sm bg-white hover:bg-white text-purple-700 rounded disabled:opacity-50 disabled:bg-white disabled:text-gray-500"
                         >
                           Move Down <ChevronRight className="w-4 h-4 inline" />
                         </button>
                       </div>
                       <button
                         onClick={() => handleDeleteBlock(previewIndex)}
-                        className="flex items-center gap-1 px-3 py-1 text-red-600 hover:bg-red-50 rounded text-sm"
+                        className="flex items-center gap-1 px-3 py-1 text-red-600 hover:bg-white rounded text-sm"
                       >
                         <Trash2 className="w-4 h-4" />
                         Delete Block
@@ -912,7 +912,7 @@ export default function AdminContent() {
 
   // ========== MAIN ADMIN DASHBOARD ==========
   return (
-    <div className="min-h-screen pt-24 bg-gray-50">
+    <div className="min-h-screen pt-24 bg-white">
       <header className="bg-white border-b px-4 py-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -927,14 +927,14 @@ export default function AdminContent() {
           </div>
           <div className="flex items-center gap-2">
             {saved && <span className="text-green-600 text-sm">Saved!</span>}
-            <button onClick={() => setView("drugs")} className={`px-4 py-2 rounded ${view === "drugs" ? "bg-blue-100 text-blue-700" : "text-gray-600 hover:text-gray-800"}`}>Drugs</button>
-                        <button onClick={() => setView("users")} className={`px-4 py-2 rounded ${view === "users" ? "bg-blue-100 text-blue-700" : "text-gray-600 hover:text-gray-800"}`}>Users</button>
+            <button onClick={() => setView("drugs")} className={`px-4 py-2 rounded ${view === "drugs" ? "bg-white text-blue-700" : "text-gray-600 hover:text-gray-800"}`}>Drugs</button>
+                        <button onClick={() => setView("users")} className={`px-4 py-2 rounded ${view === "users" ? "bg-white text-blue-700" : "text-gray-600 hover:text-gray-800"}`}>Users</button>
             <button onClick={() => setView("tiers")} className={`px-4 py-2 rounded ${view === "tiers" ? "bg-yellow-100 text-yellow-700" : "text-gray-600 hover:text-gray-800"}`}>Tiers</button>
-            <button onClick={() => setShowCreateModal(true)} className="flex items-center gap-1 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+            <button onClick={() => setShowCreateModal(true)} className="flex items-center gap-1 px-4 py-2 bg-white text-white rounded-lg hover:bg-white">
               <Plus className="w-4 h-4" />
               Create Drug
             </button>
-            <button onClick={handleLogout} className="flex items-center gap-1 px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 text-sm">
+            <button onClick={handleLogout} className="flex items-center gap-1 px-4 py-2 bg-white text-white rounded-lg hover:bg-white text-sm">
               <X className="w-4 h-4" />
               Logout
             </button>
@@ -952,7 +952,7 @@ export default function AdminContent() {
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
                           {drug.image ? (
                             <img src={drug.image} alt="" className="w-10 h-10 object-contain" />
                           ) : (
@@ -964,7 +964,7 @@ export default function AdminContent() {
                           <p className="text-sm text-blue-600">{drug.class}</p>
                         </div>
                       </div>
-                      <button onClick={() => handleDeleteDrug(drug.slug)} className="p-1 text-red-500 hover:bg-red-50 rounded" title="Delete">
+                      <button onClick={() => handleDeleteDrug(drug.slug)} className="p-1 text-red-500 hover:bg-white rounded" title="Delete">
                         <Trash2 className="w-4 h-4" />
                       </button>
                     </div>
@@ -976,17 +976,17 @@ export default function AdminContent() {
                         className={`px-3 py-1 rounded text-xs font-semibold border ${
                           drug.tier === "premium" 
                             ? "bg-yellow-100 text-yellow-800 border-yellow-300" 
-                            : "bg-gray-100 text-gray-800 border-gray-300"
+                            : "bg-white text-gray-800 border-gray-300"
                         }`}
                       >
                         <Star className="w-3 h-3 inline mr-1" />
                         {drug.tier === "premium" ? "PREMIUM" : "FREE"}
                       </button>
                     </div>
-                    <button onClick={() => setSelectedDrug(drug.slug)} className="w-full flex items-center justify-center gap-1 text-blue-600 hover:text-blue-800 font-medium text-sm py-2 border rounded-lg hover:bg-blue-50">
+                    <button onClick={() => setSelectedDrug(drug.slug)} className="w-full flex items-center justify-center gap-1 text-blue-600 hover:text-blue-800 font-medium text-sm py-2 border rounded-lg hover:bg-white">
                       Edit Content <ArrowRight className="w-4 h-4" />
                     </button>
-                    <label className="w-full flex items-center justify-center gap-1 text-gray-600 hover:text-gray-800 font-medium text-sm py-2 border rounded-lg hover:bg-gray-50 cursor-pointer mt-2">
+                    <label className="w-full flex items-center justify-center gap-1 text-gray-600 hover:text-gray-800 font-medium text-sm py-2 border rounded-lg hover:bg-white cursor-pointer mt-2">
                       <Upload className="w-4 h-4" />
                       Upload Thumbnail
                       <input
@@ -1031,19 +1031,19 @@ export default function AdminContent() {
             <div className="flex items-center gap-2 mb-6">
               <button 
                 onClick={() => setTierFilter("all")}
-                className={`px-4 py-2 rounded-lg font-medium ${tierFilter === "all" ? "bg-blue-600 text-white" : "bg-white text-gray-600 hover:bg-gray-100"}`}
+                className={`px-4 py-2 rounded-lg font-medium ${tierFilter === "all" ? "bg-white text-white" : "bg-white text-gray-600 hover:bg-white"}`}
               >
                 All Drugs
               </button>
               <button 
                 onClick={() => setTierFilter("free")}
-                className={`px-4 py-2 rounded-lg font-medium ${tierFilter === "free" ? "bg-green-600 text-white" : "bg-white text-gray-600 hover:bg-gray-100"}`}
+                className={`px-4 py-2 rounded-lg font-medium ${tierFilter === "free" ? "bg-white text-white" : "bg-white text-gray-600 hover:bg-white"}`}
               >
                 Free Only
               </button>
               <button 
                 onClick={() => setTierFilter("premium")}
-                className={`px-4 py-2 rounded-lg font-medium ${tierFilter === "premium" ? "bg-yellow-600 text-white" : "bg-white text-gray-600 hover:bg-gray-100"}`}
+                className={`px-4 py-2 rounded-lg font-medium ${tierFilter === "premium" ? "bg-yellow-600 text-white" : "bg-white text-gray-600 hover:bg-white"}`}
               >
                 Premium Only
               </button>
@@ -1055,7 +1055,7 @@ export default function AdminContent() {
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
-                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${drug.tier === "premium" ? "bg-yellow-100" : "bg-blue-100"}`}>
+                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${drug.tier === "premium" ? "bg-yellow-100" : "bg-white"}`}>
                           {drug.image ? (
                             <img src={drug.image} alt="" className="w-10 h-10 object-contain" />
                           ) : (
@@ -1076,7 +1076,7 @@ export default function AdminContent() {
                         className={`w-full py-3 rounded-lg font-bold text-sm border-2 transition-all ${
                           drug.tier === "premium" 
                             ? "bg-yellow-100 text-yellow-800 border-yellow-400 hover:bg-yellow-200" 
-                            : "bg-green-100 text-green-800 border-green-400 hover:bg-green-200"
+                            : "bg-white text-green-800 border-green-400 hover:bg-white"
                         }`}
                       >
                         <Star className={`w-4 h-4 inline mr-2 ${drug.tier === "premium" ? "fill-yellow-600" : ""}`} />
@@ -1093,7 +1093,7 @@ export default function AdminContent() {
                       </span>
                     </div>
                     
-                    <button onClick={() => setSelectedDrug(drug.slug)} className="w-full flex items-center justify-center gap-1 text-blue-600 hover:text-blue-800 font-medium text-sm py-2 border rounded-lg hover:bg-blue-50">
+                    <button onClick={() => setSelectedDrug(drug.slug)} className="w-full flex items-center justify-center gap-1 text-blue-600 hover:text-blue-800 font-medium text-sm py-2 border rounded-lg hover:bg-white">
                       Edit Content <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -1111,14 +1111,14 @@ export default function AdminContent() {
           <>
             <div className="flex items-center justify-between mb-6">
               <h1 className="text-2xl font-bold text-gray-900">User Management</h1>
-              <button onClick={handleAddUser} className="flex items-center gap-1 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+              <button onClick={handleAddUser} className="flex items-center gap-1 px-4 py-2 bg-white text-white rounded-lg hover:bg-white">
                 <Plus className="w-4 h-4" />
                 Add User
               </button>
             </div>
             <div className="bg-white rounded-xl shadow overflow-hidden">
               <table className="w-full">
-                <thead className="bg-gray-100">
+                <thead className="bg-white">
                   <tr>
                     <th className="px-4 py-3 text-left font-semibold text-black">Email</th>
                     <th className="px-4 py-3 text-left font-semibold text-black">Tier</th>
@@ -1129,7 +1129,7 @@ export default function AdminContent() {
                 </thead>
                 <tbody>
                   {users.map((user) => (
-                    <tr key={user.id} className="border-t hover:bg-gray-50">
+                    <tr key={user.id} className="border-t hover:bg-white">
                       <td className="px-4 py-3 font-medium text-black">{user.email}</td>
                       <td className="px-4 py-3">
                         <button
@@ -1137,7 +1137,7 @@ export default function AdminContent() {
                           className={`px-3 py-1 rounded-full text-xs font-semibold border ${
                             user.tier === "premium" 
                               ? "bg-yellow-100 text-yellow-800 border-yellow-300" 
-                              : "bg-gray-100 text-gray-800 border-gray-300"
+                              : "bg-white text-gray-800 border-gray-300"
                           }`}
                         >
                           <Star className="w-3 h-3 inline mr-1" />
@@ -1148,7 +1148,7 @@ export default function AdminContent() {
                         <button
                           onClick={() => handleToggleAdmin(user.id, user.is_admin)}
                           className={`px-3 py-1 rounded text-xs font-semibold ${
-                            user.is_admin ? "bg-purple-100 text-purple-800" : "bg-gray-100 text-gray-600"
+                            user.is_admin ? "bg-white text-purple-800" : "bg-white text-gray-600"
                           }`}
                         >
                           {user.is_admin ? "ADMIN" : "USER"}
@@ -1156,7 +1156,7 @@ export default function AdminContent() {
                       </td>
                       <td className="px-4 py-3 text-gray-600">{user.joined_at}</td>
                       <td className="px-4 py-3">
-                        <button onClick={() => handleDeleteUser(user.id)} className="p-1 text-red-600 hover:bg-red-50 rounded">
+                        <button onClick={() => handleDeleteUser(user.id)} className="p-1 text-red-600 hover:bg-white rounded">
                           <Trash2 className="w-4 h-4" />
                         </button>
                       </td>
@@ -1176,7 +1176,7 @@ export default function AdminContent() {
           <div className="bg-white rounded-xl shadow-lg max-w-md w-full p-6">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold text-gray-900">Create New Drug</h2>
-              <button onClick={() => setShowCreateModal(false)} className="p-1 hover:bg-gray-100 rounded">
+              <button onClick={() => setShowCreateModal(false)} className="p-1 hover:bg-white rounded">
                 <X className="w-5 h-5" />
               </button>
             </div>
@@ -1219,8 +1219,8 @@ export default function AdminContent() {
                 />
               </div>
               <div className="flex gap-3">
-                <button onClick={() => setShowCreateModal(false)} className="flex-1 py-2 border rounded-lg hover:bg-gray-50">Cancel</button>
-                <button onClick={handleCreateDrug} className="flex-1 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Create</button>
+                <button onClick={() => setShowCreateModal(false)} className="flex-1 py-2 border rounded-lg hover:bg-white">Cancel</button>
+                <button onClick={handleCreateDrug} className="flex-1 py-2 bg-white text-white rounded-lg hover:bg-white">Create</button>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function CriticalCare() {
     .filter(cat => cat.items.length > 0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+    <div className="min-h-screen bg-white">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -36,7 +36,7 @@ export default function CriticalCare() {
         </Link>
 
         <div className="flex items-center gap-4 mb-10">
-          <div className="p-4 rounded-2xl bg-gradient-to-br from-yellow-500/20 to-orange-600/20 border border-yellow-500/30">
+          <div className="p-4 rounded-2xl bg-white">
             <Zap className="w-10 h-10 text-yellow-400" />
           </div>
           <div>
@@ -52,16 +52,16 @@ export default function CriticalCare() {
             placeholder="Search topics..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
-            className="w-full bg-slate-800/50 border border-slate-700 rounded-xl pl-12 pr-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-yellow-500/50"
+            className="w-full bg-white/50 border border-slate-700 rounded-xl pl-12 pr-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-yellow-500/50"
           />
         </div>
 
         <div className="grid gap-4">
           {filtered.map(cat => (
-            <div key={cat.name} className="bg-slate-800/40 rounded-xl border border-slate-700/50 overflow-hidden">
+            <div key={cat.name} className="bg-white/40 rounded-xl border border-slate-700/50 overflow-hidden">
               <button
                 onClick={() => setExpandedCategory(expandedCategory === cat.name ? null : cat.name)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-700/20 transition"
+                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-white/20 transition"
               >
                 <span className="text-lg font-semibold text-yellow-300">{cat.name}</span>
                 {expandedCategory === cat.name
@@ -82,7 +82,7 @@ export default function CriticalCare() {
           ))}
         </div>
 
-        <div className="mt-10 p-6 bg-gradient-to-r from-yellow-500/10 to-orange-600/10 rounded-xl border border-yellow-500/20">
+        <div className="mt-10 p-6 bg-white">
           <p className="text-sm text-slate-300">
             <strong className="text-yellow-300">Coming soon:</strong> AI simulation scenarios and titration protocols.
           </p>

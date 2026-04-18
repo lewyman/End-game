@@ -176,7 +176,7 @@ export default function DrugDetail() {
 
   if (blocks.length === 0) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-white flex items-center justify-center">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -197,34 +197,34 @@ export default function DrugDetail() {
   if (showSummary) {
     const totalQuestions = blocks.filter(b => b.type !== "content").length;
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 py-8 px-4">
+      <div className="min-h-screen bg-white">
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
               <Heart className="w-10 h-10 text-green-600" />
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Module Complete!</h1>
             {isCompleted && (
-              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full">
+              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-white text-green-800 rounded-full">
                 <Check className="w-5 h-5" />
                 <span className="font-semibold">Marked as Complete</span>
               </div>
             )}
             <p className="text-gray-600 mb-6">You've completed the Digoxin pharmacology module.</p>
-            <div className="bg-gray-100 rounded-xl p-6 mb-6">
+            <div className="bg-white rounded-xl p-6 mb-6">
               <p className="text-4xl font-bold text-blue-600 mb-2">{score}/{totalQuestions}</p>
               <p className="text-gray-500">Correct Answers</p>
             </div>
             <div className="flex gap-3 justify-center">
               <button
                 onClick={restart}
-                className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+                className="px-6 py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
               >
                 Restart Module
               </button>
               <Link
                 to="/drugs"
-                className="px-6 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold hover:bg-gray-300 transition-colors"
+                className="px-6 py-3 bg-white text-gray-700 rounded-xl font-semibold hover:bg-white transition-colors"
               >
                 Back to Drugs
               </Link>
@@ -245,7 +245,7 @@ export default function DrugDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 py-8 px-4">
+    <div className="min-h-screen bg-white">
       <div className="max-w-3xl mx-auto">
         <div className="mb-6 flex items-center justify-between">
           <Link to="/drugs" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
@@ -262,7 +262,7 @@ export default function DrugDetail() {
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
+          <div className="bg-white">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 {currentBlock?.type === "content" ? (
@@ -275,9 +275,9 @@ export default function DrugDetail() {
                 <h1 className="text-xl font-bold text-white">{currentBlock?.title}</h1>
               </div>
               <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                currentBlock?.type === "content" ? "bg-blue-500 text-white" :
-                currentBlock?.type === "mc" ? "bg-purple-500 text-white" :
-                "bg-orange-500 text-white"
+                currentBlock?.type === "content" ? "bg-white text-white" :
+                currentBlock?.type === "mc" ? "bg-white text-white" :
+                "bg-white text-white"
               }`}>
                 {currentBlock?.type === "content" ? "LEARN" : currentBlock?.type === "mc" ? "MC" : "SATA"}
               </span>
@@ -290,12 +290,12 @@ export default function DrugDetail() {
                 {currentBlock.image && (
                   <ImageViewer src={currentBlock.image} alt="" className="w-full h-48 object-cover rounded-lg" />
                 )}
-                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                <div className="bg-white border-l-4 border-blue-500 p-4 rounded-r-lg">
                   <p className="text-gray-800 leading-relaxed">{currentBlock.content}</p>
                 </div>
                 
                 {currentBlock.keyPoints && (
-                  <div className="bg-gray-50 rounded-xl p-4">
+                  <div className="bg-white rounded-xl p-4">
                     <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                       <Heart className="w-4 h-4 text-red-500" />
                       Key Points
@@ -303,7 +303,7 @@ export default function DrugDetail() {
                     <ul className="space-y-2">
                       {currentBlock.keyPoints.split("|").map((point, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
                           <span className="text-gray-700">{point.trim()}</span>
                         </li>
                       ))}
@@ -314,7 +314,7 @@ export default function DrugDetail() {
                 <div className="flex justify-end pt-4">
                   <button
                     onClick={nextBlock}
-                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+                    className="flex items-center gap-2 px-6 py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
                   >
                     Continue
                     <ChevronRight className="w-5 h-5" />
@@ -340,13 +340,13 @@ export default function DrugDetail() {
                         onClick={() => handleAnswer(idx)}
                         className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
                           isSelected
-                            ? "border-blue-500 bg-blue-50"
-                            : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
+                            ? "border-blue-500 bg-white"
+                            : "border-gray-200 hover:border-blue-300 hover:bg-white"
                         } ${showResult ? "cursor-default" : "cursor-pointer"}`}
                       >
                         <div className="flex items-start gap-3">
                           <span className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 ${
-                            isSelected ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"
+                            isSelected ? "bg-white text-white" : "bg-white text-gray-700"
                           }`}>
                             {String.fromCharCode(65 + idx)}
                           </span>
@@ -361,7 +361,7 @@ export default function DrugDetail() {
                   <button
                     onClick={checkAnswer}
                     disabled={selectedAnswer === null && selectedAnswers.length === 0}
-                    className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    className="w-full py-3 bg-white text-white rounded-xl font-semibold hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                   >
                     Check Answer
                   </button>
@@ -372,8 +372,8 @@ export default function DrugDetail() {
                       (currentBlock?.type === "sata" && 
                        selectedAnswers.length === (currentBlock?.correct as number[])?.length &&
                        selectedAnswers.every(a => (currentBlock?.correct as number[]).includes(a)))
-                        ? "bg-green-100 border border-green-300"
-                        : "bg-red-100 border border-red-300"
+                        ? "bg-white border border-green-300"
+                        : "bg-white border border-red-300"
                     }`}>
                       <div className="flex items-center gap-2 mb-2">
                         {(currentBlock?.type === "mc" && selectedAnswer === currentBlock?.correct) ||
@@ -403,7 +403,7 @@ export default function DrugDetail() {
                       <p className="text-gray-700">{currentBlock?.explanation}</p>
                     </div>
 
-                    <div className="bg-blue-50 p-4 rounded-xl">
+                    <div className="bg-white p-4 rounded-xl">
                       <p className="text-sm text-blue-800">
                         <strong>Nursing Rationale:</strong> {currentBlock?.rationale}
                       </p>
@@ -413,7 +413,7 @@ export default function DrugDetail() {
                       {currentIndex > 0 && (
                         <button
                           onClick={prevBlock}
-                          className="flex items-center gap-2 px-4 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold hover:bg-gray-300 transition-colors"
+                          className="flex items-center gap-2 px-4 py-3 bg-white text-gray-700 rounded-xl font-semibold hover:bg-white transition-colors"
                         >
                           <ChevronLeft className="w-5 h-5" />
                           Previous
@@ -421,7 +421,7 @@ export default function DrugDetail() {
                       )}
                       <button
                         onClick={nextBlock}
-                        className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+                        className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
                       >
                         {currentIndex === blocks.length - 1 ? "Finish" : "Continue"}
                         <ChevronRight className="w-5 h-5" />
@@ -433,16 +433,16 @@ export default function DrugDetail() {
             )}
           </div>
 
-          <div className="bg-gray-100 px-6 py-3 flex items-center justify-between">
+          <div className="bg-white px-6 py-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="flex gap-1">
                 {blocks.map((_, idx) => (
                   <div
                     key={idx}
                     className={`w-2 h-2 rounded-full ${
-                      idx === currentIndex ? "bg-blue-500" :
-                      idx < currentIndex ? "bg-green-500" :
-                      "bg-gray-300"
+                      idx === currentIndex ? "bg-white" :
+                      idx < currentIndex ? "bg-white" :
+                      "bg-white"
                     }`}
                   />
                 ))}

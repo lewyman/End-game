@@ -140,12 +140,12 @@ export default function Drugs() {
           <div className="flex items-center gap-4">
             <div className="text-sm text-gray-600">
               Progress: <span className="font-semibold text-blue-600">{completedDrugs.length}/{drugs.length}</span> 
-              <span className="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">
+              <span className="ml-2 text-xs bg-white text-blue-700 px-2 py-1 rounded">
                 {completionRate}%
               </span>
             </div>
             {/* View Mode Toggle */}
-            <div className="flex bg-gray-100 rounded-lg p-1">
+            <div className="flex bg-white rounded-lg p-1">
               <button
                 onClick={() => setViewMode("grid")}
                 className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
@@ -217,7 +217,7 @@ export default function Drugs() {
                     accessible 
                       ? "hover:border-blue-500 hover:shadow-lg" 
                       : "opacity-75 border-gray-200"
-                  } ${completed ? "border-green-200 bg-green-50/30" : ""}`}
+                  } ${completed ? "border-green-200 bg-white/30" : ""}`}
                 >
                   <Link
                     to={accessible ? `/drugs/${drug.slug}` : "#"}
@@ -226,7 +226,7 @@ export default function Drugs() {
                   >
                     <div className="flex items-start justify-between mb-3">
                       <div className="flex items-center gap-3">
-                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${completed ? "bg-green-100" : "bg-blue-100"}`}>
+                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${completed ? "bg-white" : "bg-white"}`}>
                           {completed ? (
                             <CheckCircle className="w-6 h-6 text-green-600" />
                           ) : drug.image ? (
@@ -253,7 +253,7 @@ export default function Drugs() {
                           </span>
                         )}
                         {completed && (
-                          <span className="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">
+                          <span className="px-2 py-1 bg-white text-green-800 text-xs font-semibold rounded">
                             ✓ Completed
                           </span>
                         )}
@@ -265,7 +265,7 @@ export default function Drugs() {
                   {!accessible && (
                     <Link
                       to="/pricing"
-                      className="mt-4 block w-full py-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-center rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all shadow-sm"
+                      className="mt-4 block w-full py-2 bg-white"
                     >
                       🔓 Unlock Premium
                     </Link>
@@ -291,7 +291,7 @@ export default function Drugs() {
                   {/* Class Header */}
                   <button
                     onClick={() => toggleClass(cls)}
-                    className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors"
+                    className="w-full flex items-center justify-between p-4 bg-white hover:bg-white transition-colors"
                   >
                     <div className="flex items-center gap-3">
                       {isExpanded ? (
@@ -323,7 +323,7 @@ export default function Drugs() {
                               accessible 
                                 ? "hover:border-blue-400 hover:shadow" 
                                 : "opacity-60"
-                            } ${completed ? "border-green-200 bg-green-50/30" : "border-gray-200"}`}
+                            } ${completed ? "border-green-200 bg-white/30" : "border-gray-200"}`}
                           >
                             <Link
                               to={accessible ? `/drugs/${drug.slug}` : "#"}
@@ -332,7 +332,7 @@ export default function Drugs() {
                             >
                               <div className="flex items-center justify-between mb-2">
                                 <div className="flex items-center gap-2">
-                                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${completed ? "bg-green-100" : "bg-blue-100"}`}>
+                                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${completed ? "bg-white" : "bg-white"}`}>
                                     {completed ? (
                                       <CheckCircle className="w-5 h-5 text-green-600" />
                                     ) : drug.image ? (
@@ -367,7 +367,7 @@ export default function Drugs() {
                             {!accessible && (
                               <Link
                                 to="/pricing"
-                                className="mt-2 block w-full py-1.5 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-center rounded text-sm font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all"
+                                className="mt-2 block w-full py-1.5 bg-white"
                               >
                                 🔓 Unlock
                               </Link>

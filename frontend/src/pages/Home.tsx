@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 pt-24 relative">
+    <div className="min-h-screen bg-white">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -61,7 +61,7 @@ export default function Home() {
           {hasMaiaAccess ? (
             <EducatorChat userId={userId} />
           ) : showCodeInput ? (
-            <div className="bg-gray-100 rounded-lg p-8">
+            <div className="bg-white rounded-lg p-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Enter Test Code</h3>
               <form onSubmit={handleCodeSubmit} className="space-y-4">
                 <input
@@ -81,14 +81,14 @@ export default function Home() {
                 <div className="flex gap-2">
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                    className="px-4 py-2 bg-white text-white rounded-lg hover:bg-white"
                   >
                     Submit Code
                   </button>
                   <button
                     type="button"
                     onClick={() => setShowCodeInput(false)}
-                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
+                    className="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-white"
                   >
                     Cancel
                   </button>
@@ -96,7 +96,7 @@ export default function Home() {
               </form>
             </div>
           ) : (
-            <div className="bg-gray-100 rounded-lg p-8 text-center">
+            <div className="bg-white rounded-lg p-8 text-center">
               <p className="text-gray-600 mb-4">
                 MAIA is available with Pro Monthly or Pro Yearly subscription.
               </p>

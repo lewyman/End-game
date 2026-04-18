@@ -3,7 +3,7 @@ import { ArrowLeft, Download, Clock } from "lucide-react";
 
 export default function Downloads() {
   return (
-    <div className="min-h-screen pt-24 bg-gray-50 py-16 px-4">
+    <div className="min-h-screen pt-24 bg-white py-16 px-4">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -19,7 +19,7 @@ export default function Downloads() {
           Back to Home
         </Link>
         
-        <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
           <Clock className="w-10 h-10 text-blue-600" />
         </div>
         
@@ -31,7 +31,7 @@ export default function Downloads() {
         
         <Link 
           to="/drugs" 
-          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
         >
           <Download className="w-5 h-5" />
           Explore Drug Cards

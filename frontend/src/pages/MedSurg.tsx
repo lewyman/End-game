@@ -20,7 +20,7 @@ export default function MedSurg() {
     .filter(cat => cat.items.length > 0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+    <div className="min-h-screen bg-white">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -36,7 +36,7 @@ export default function MedSurg() {
         </Link>
 
         <div className="flex items-center gap-4 mb-10">
-          <div className="p-4 rounded-2xl bg-gradient-to-br from-orange-500/20 to-amber-600/20 border border-orange-500/30">
+          <div className="p-4 rounded-2xl bg-white">
             <HeartPulse className="w-10 h-10 text-orange-400" />
           </div>
           <div>
@@ -52,16 +52,16 @@ export default function MedSurg() {
             placeholder="Search topics..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
-            className="w-full bg-slate-800/50 border border-slate-700 rounded-xl pl-12 pr-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-orange-500/50"
+            className="w-full bg-white/50 border border-slate-700 rounded-xl pl-12 pr-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-orange-500/50"
           />
         </div>
 
         <div className="grid gap-4">
           {filtered.map(cat => (
-            <div key={cat.name} className="bg-slate-800/40 rounded-xl border border-slate-700/50 overflow-hidden">
+            <div key={cat.name} className="bg-white/40 rounded-xl border border-slate-700/50 overflow-hidden">
               <button
                 onClick={() => setExpandedCategory(expandedCategory === cat.name ? null : cat.name)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-700/20 transition"
+                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-white/20 transition"
               >
                 <span className="text-lg font-semibold text-orange-300">{cat.name}</span>
                 {expandedCategory === cat.name
@@ -72,7 +72,7 @@ export default function MedSurg() {
                 <div className="px-6 pb-4 grid gap-2">
                   {cat.items.map((item, i) => (
                     <div key={i} className="flex items-start gap-3 text-slate-300 text-sm py-2 border-t border-slate-700/30">
-                      <span className="w-2 h-2 rounded-full bg-orange-500 mt-1.5 flex-shrink-0" />
+                      <span className="w-2 h-2 rounded-full bg-white mt-1.5 flex-shrink-0" />
                       {item}
                     </div>
                   ))}
@@ -82,7 +82,7 @@ export default function MedSurg() {
           ))}
         </div>
 
-        <div className="mt-10 p-6 bg-gradient-to-r from-orange-500/10 to-amber-600/10 rounded-xl border border-orange-500/20">
+        <div className="mt-10 p-6 bg-white">
           <p className="text-sm text-slate-300">
             <strong className="text-orange-300">Coming soon:</strong> AI case studies and NCLEX-style questions for each condition.
           </p>

@@ -59,7 +59,7 @@ export default function MyBookmarks() {
         <p className="text-gray-600 mb-8">Your saved content for quick review</p>
 
         {bookmarks.length === 0 ? (
-          <div className="text-center py-16 bg-gray-50 rounded-xl">
+          <div className="text-center py-16 bg-white rounded-xl">
             <Bookmark className="w-16 h-16 text-gray-300 mx-auto mb-4" />
             <p className="text-gray-500 mb-4">No bookmarks yet</p>
             <Link to="/drugs" className="text-blue-600 hover:text-blue-800 font-medium">
@@ -82,13 +82,13 @@ export default function MyBookmarks() {
                   <div className="flex items-center gap-2">
                     <Link
                       to={`/drugs/${bookmark.drugSlug}?block=${bookmark.blockId}`}
-                      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium"
+                      className="px-4 py-2 bg-white text-white rounded-lg hover:bg-white text-sm font-medium"
                     >
                       View
                     </Link>
                     <button
                       onClick={() => removeBookmark(bookmark.drugSlug, bookmark.blockId)}
-                      className="p-2 text-red-600 hover:bg-red-50 rounded-lg"
+                      className="p-2 text-red-600 hover:bg-white rounded-lg"
                       title="Remove bookmark"
                     >
                       <Trash2 className="w-5 h-5" />

@@ -200,7 +200,7 @@ export default function Login() {
 
   if (isResetPassword) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-white">
       {/* Logo - Upper Left (3 inches = 288px) */}
       <div className="absolute top-4 left-4 z-10">
         <img 
@@ -212,7 +212,7 @@ export default function Login() {
 
         <div className="bg-white rounded-2xl shadow-lg max-w-md w-full p-8">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
               <Pill className="w-8 h-8 text-blue-600" />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Reset Password</h1>
@@ -220,13 +220,13 @@ export default function Login() {
           </div>
 
           {error && (
-            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+            <div className="mb-4 p-3 bg-white border border-red-200 rounded-lg text-red-700 text-sm">
               {error}
             </div>
           )}
 
           {success && (
-            <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg text-green-700 text-sm">
+            <div className="mb-4 p-3 bg-white border border-green-200 rounded-lg text-green-700 text-sm">
               {success}
             </div>
           )}
@@ -268,7 +268,7 @@ export default function Login() {
 
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+              className="w-full py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
             >
               Reset Password
             </button>
@@ -289,10 +289,10 @@ export default function Login() {
 
   if (isForgotPassword) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-white">
         <div className="bg-white rounded-2xl shadow-lg max-w-md w-full p-8">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
               <Pill className="w-8 h-8 text-blue-600" />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Forgot Password</h1>
@@ -300,13 +300,13 @@ export default function Login() {
           </div>
 
           {error && (
-            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+            <div className="mb-4 p-3 bg-white border border-red-200 rounded-lg text-red-700 text-sm">
               {error}
             </div>
           )}
 
           {success && (
-            <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg text-green-700 text-sm whitespace-pre-wrap">
+            <div className="mb-4 p-3 bg-white border border-green-200 rounded-lg text-green-700 text-sm whitespace-pre-wrap">
               {success}
             </div>
           )}
@@ -326,7 +326,7 @@ export default function Login() {
 
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+              className="w-full py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
             >
               Send Reset Link
             </button>
@@ -347,10 +347,10 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-white">
       <div className="bg-white rounded-2xl shadow-lg max-w-md w-full p-8">
         <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
             <Pill className="w-8 h-8 text-blue-600" />
           </div>
           <h1 className="text-2xl font-bold text-gray-900">
@@ -362,13 +362,13 @@ export default function Login() {
         </div>
 
         {error && (
-          <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+          <div className="mb-4 p-3 bg-white border border-red-200 rounded-lg text-red-700 text-sm">
             {error}
           </div>
         )}
 
         {success && (
-          <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg text-green-700 text-sm">
+          <div className="mb-4 p-3 bg-white border border-green-200 rounded-lg text-green-700 text-sm">
             {success}
           </div>
         )}
@@ -429,7 +429,7 @@ export default function Login() {
 
           <button
             type="submit"
-            className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+            className="w-full py-3 bg-white text-white rounded-xl font-semibold hover:bg-white transition-colors"
           >
             {isLogin ? "Login" : "Create Account"}
           </button>
@@ -483,7 +483,7 @@ export default function Login() {
           </Link>
         </div>
 
-        <div className="mt-4 bg-blue-50 rounded-lg p-3">
+        <div className="mt-4 bg-white rounded-lg p-3">
           <p className="text-xs text-blue-800 text-center">
             <strong>Free users:</strong> Access free drugs only<br/>
             <strong>Premium users:</strong> Access all drugs and content

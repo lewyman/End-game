@@ -104,7 +104,7 @@ export default function Pricing() {
   };
 
   return (
-    <div className="min-h-screen pt-24 bg-gradient-to-br from-blue-50 to-indigo-50 py-12 px-4">
+    <div className="min-h-screen pt-24 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
@@ -118,7 +118,7 @@ export default function Pricing() {
         </div>
 
         {error && (
-          <div className="max-w-md mx-auto mb-8 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm text-center">
+          <div className="max-w-md mx-auto mb-8 p-4 bg-white border border-red-200 rounded-lg text-red-700 text-sm text-center">
             {error}
           </div>
         )}
@@ -134,7 +134,7 @@ export default function Pricing() {
             >
               {tier.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-white text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Most Popular
                   </span>
                 </div>
@@ -170,10 +170,10 @@ export default function Pricing() {
                 disabled={loading === tier.priceId}
                 className={`w-full py-3 rounded-xl font-semibold transition-colors ${
                   tier.popular
-                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                    ? "bg-white text-white hover:bg-white"
                     : tier.name === "Free"
-                    ? "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    : "bg-indigo-600 text-white hover:bg-indigo-700"
+                    ? "bg-white text-gray-700 hover:bg-white"
+                    : "bg-white text-white hover:bg-white"
                 } ${loading === tier.priceId ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 {loading === tier.priceId ? (
