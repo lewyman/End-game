@@ -34,9 +34,11 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-600 flex items-center justify-center">
-              <GraduationCap className="w-5 h-5 text-white" />
-            </div>
+            <img 
+              src="/images/Bio_Logo_white-87f86ab6b807.png" 
+              alt="Bio-Sync Academy Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <Link to="/" className="text-lg font-bold text-white tracking-tight">Bio-Sync Academy</Link>
           </div>
 
