@@ -19,6 +19,10 @@ export default function Nursing() {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const nursingSections = [
     {
       title: "Pharmacology",
