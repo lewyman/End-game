@@ -326,25 +326,25 @@ export default function Songs() {
           <div className="flex flex-wrap gap-3 mt-2 text-sm font-medium">
             <button
               onClick={() => setShowFavorites((prev) => !prev)}
-              className={`px-4 py-2 rounded-full border ${showFavorites ? "border-white bg-white/10" : "border-white/40"}`}
+              className={`px-4 py-2 rounded-full border ${showFavorites ? "border-white bg-white/10" : "border-gray-400"}`}
             >
               {showFavorites ? "Showing Favorites" : "Favorites"}
             </button>
             <button
               onClick={() => setShowRecent((prev) => !prev)}
-              className="px-4 py-2 rounded-full border border-white/70"
+              className="px-4 py-2 rounded-full border border-gray-400"
             >
               Recently Played
             </button>
             <button
               onClick={() => setShowPlaylist((prev) => !prev)}
-              className="px-4 py-2 rounded-full border border-white/70"
+              className="px-4 py-2 rounded-full border border-gray-400"
             >
               Queue
             </button>
             <button
               onClick={() => setShowAddToPlaylist(null)}
-              className="px-4 py-2 rounded-full border border-white/70"
+              className="px-4 py-2 rounded-full border border-gray-400"
             >
               Playlists
             </button>
