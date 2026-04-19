@@ -13,7 +13,7 @@ import Pricing from "./pages/Pricing";
 import Downloads from "./pages/Downloads";
 import MyBookmarks from "./pages/MyBookmarks";
 import Songs from "./pages/Songs";
-import { Pill, Menu, X, Moon, Sun, GraduationCap, Music } from "lucide-react";
+import { Pill, Menu, X, Moon, Sun, GraduationCap } from "lucide-react";
 import { useState, useEffect } from "react";
 
 function NavBar() {
@@ -53,9 +53,6 @@ function NavBar() {
               <Pill className="w-4 h-4 inline mr-1.5" />Pharmacology
             </Link>
             <Link to="/interactions" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/interactions") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Interactions</Link>
-            <Link to="/songs" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-1.5 ${isActive("/songs") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>
-              <Music className="w-4 h-4" />Songs
-            </Link>
             <Link to="/pricing" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/pricing") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Pricing</Link>
           </div>
 
@@ -72,9 +69,6 @@ function NavBar() {
             <Link to="/nursing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Nursing</Link>
             <Link to="/nursing/pharmacology" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pharmacology</Link>
             <Link to="/interactions" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Interactions</Link>
-            <Link to="/songs" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg flex items-center gap-2">
-              <Music className="w-4 h-4" />Songs
-            </Link>
             <Link to="/pricing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pricing</Link>
           </div>
         </div>
