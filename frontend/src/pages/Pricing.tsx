@@ -28,36 +28,66 @@ const pricingTiers: PricingTier[] = [
     priceId: "free"
   },
   {
-    name: "Pro Monthly",
-    price: "$4.99",
+    name: "Tier 2 Monthly",
+    price: "$9.99",
     period: "/month",
-    description: "Full access for serious nursing students",
+    description: "Enhanced access for nursing students",
     features: [
-      "All 500+ drug cards",
+      "All drug cards",
       "Interactive quizzes & SATA",
-      "Printable study guides",
       "Progress tracking",
       "MAIA AI Chat Assistant",
       "Cancel anytime"
     ],
-    priceId: "price_monthly",
+    priceId: "tier2_monthly",
     popular: true
   },
   {
-    name: "Pro Yearly",
-    price: "$29.99",
+    name: "Tier 2 Yearly",
+    price: "$100",
     period: "/year",
-    description: "Best value - Save 50%",
+    description: "Best value - Save 17%",
     features: [
-      "All 500+ drug cards",
+      "All drug cards",
+      "Interactive quizzes & SATA",
+      "Progress tracking",
+      "MAIA AI Chat Assistant",
+      "Priority support"
+    ],
+    priceId: "tier2_yearly"
+  },
+  {
+    name: "Tier 3 Monthly",
+    price: "$50",
+    period: "/month",
+    description: "Full access for serious nursing students",
+    features: [
+      "All drug cards",
       "Interactive quizzes & SATA",
       "Printable study guides",
       "Progress tracking",
-      "Priority support",
       "MAIA AI Chat Assistant",
+      "Priority support",
       "New drugs added monthly"
     ],
-    priceId: "price_yearly"
+    priceId: "tier3_monthly"
+  },
+  {
+    name: "Tier 3 Yearly",
+    price: "$550",
+    period: "/year",
+    description: "Maximum savings - Save 8%",
+    features: [
+      "All drug cards",
+      "Interactive quizzes & SATA",
+      "Printable study guides",
+      "Progress tracking",
+      "MAIA AI Chat Assistant",
+      "Priority support",
+      "New drugs added monthly",
+      "1-on-1 tutoring sessions"
+    ],
+    priceId: "tier3_yearly"
   }
 ];
 
@@ -124,7 +154,7 @@ export default function Pricing() {
         )}
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
