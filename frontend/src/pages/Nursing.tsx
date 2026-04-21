@@ -9,6 +9,7 @@ export default function Nursing() {
   const [showChat, setShowChat] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const user = localStorage.getItem("pharma_current_user");
     if (user) {
       try {
@@ -22,7 +23,8 @@ export default function Nursing() {
   }, []);
 
   // Gate: Only allow access to logged-in users with a valid tier
-  if (!userId || !tier) {
+  const validTiers = ["tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
+  if (!userId || !tier || !validTiers.includes(tier)) {
     return (
       <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
         <div className="max-w-md w-full p-8 bg-white border-2 border-gray-200 rounded-xl text-center">
@@ -48,12 +50,6 @@ export default function Nursing() {
       </div>
     );
   }
-
-  return (
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const nursingSections = [
     {
