@@ -19,7 +19,7 @@ export default function Home() {
         setUserId(parsed.email || "guest");
         // Check subscription tier for MAIA access
         const tier = parsed.subscription_tier || parsed.tier;
-        setHasMaiaAccess(tier === "price_monthly" || tier === "price_yearly");
+        setHasMaiaAccess(tier === "tier2_monthly" || tier === "tier2_yearly");
       } catch {
         setUserId("guest");
       }

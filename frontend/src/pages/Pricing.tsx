@@ -66,7 +66,6 @@ const pricingTiers: PricingTier[] = [
       "Interactive quizzes & SATA",
       "Printable study guides",
       "Progress tracking",
-      "MAIA AI Chat Assistant",
       "Priority support",
       "New drugs added monthly"
     ],
