@@ -79,8 +79,46 @@ export default function Login() {
   };
 
   const handleOAuthLogin = async (provider: string) => {
-    // OAuth login - redirect to backend OAuth endpoint
-    window.location.href = `/api/oauth/${provider}`;
+    // For demo: simulate OAuth login by creating/finding user by email
+    const demoEmails: Record<string, string> = {
+      google: 'user@gmail.com',
+      facebook: 'user@facebook.com',
+      microsoft: 'user@microsoft.com'
+    };
+    
+    const email = prompt(`Enter your ${provider} email to simulate OAuth login:`);
+    if (!email) return;
+    
+    setError("");
+    
+    try {
+      // Simulate OAuth: check if user exists or create new one
+      const response = await fetch(`${API_URL}/oauth-login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, provider })
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        setError(data.error || "OAuth login failed");
+        return;
+      }
+      
+      // Store user in localStorage
+      const user: User = {
+        email: data.user.email,
+        tier: data.user.tier || "free",
+        isAdmin: data.user.isAdmin
+      };
+      
+      localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(user));
+      setSuccess("Login successful! Redirecting...");
+      setTimeout(() => navigate("/drugs"), 1000);
+    } catch (err) {
+      setError("OAuth login failed. Please try again.");
+    }
   };
 
   const handleSignup = async (e: React.FormEvent) => {

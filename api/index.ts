@@ -77,6 +77,49 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
+  // POST /api?path=/oauth-login (Google, Facebook, Microsoft)
+  if (path === "/oauth-login" && method === "POST") {
+    const { email, provider } = req.body;
+    if (!email || !provider) { res.status(400).json({ error: "Email and provider required" }); return; }
+    
+    // Check if user exists by email
+    const { data: existingUser } = await supabase.from("users").select("*").eq("email", email.trim().toLowerCase()).maybeSingle();
+    
+    if (existingUser) {
+      // User exists - return user with current tier
+      res.json({ 
+        success: true, 
+        user: { 
+          email: existingUser.email, 
+          tier: existingUser.tier || "free", 
+          isAdmin: existingUser.is_admin 
+        } 
+      });
+      return;
+    }
+    
+    // Create new OAuth user with free tier
+    const { error: insertError } = await supabase.from("users").insert([{ 
+      email: email.trim().toLowerCase(), 
+      password: "", // OAuth users don't need password
+      tier: "free", 
+      is_admin: false,
+      oauth_provider: provider 
+    }]);
+    
+    if (insertError) { res.status(400).json({ error: insertError.message }); return; }
+    
+    res.json({ 
+      success: true, 
+      user: { 
+        email: email.trim().toLowerCase(), 
+        tier: "free", 
+        isAdmin: false 
+      } 
+    });
+    return;
+  }
+
   // POST /api?path=/signup
   if (path === "/signup" && method === "POST") {
     const { email, password } = req.body;
