@@ -21,12 +21,24 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [hasValidTier, setHasValidTier] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     const user = localStorage.getItem("pharma_current_user");
-    setIsLoggedIn(!!user);
+    if (user) {
+      try {
+        const parsed = JSON.parse(user);
+        const tier = parsed.subscription_tier || parsed.tier;
+        // Valid tiers: tier1_monthly, tier1_yearly, tier2_monthly, tier2_yearly, tier3_monthly, tier3_yearly
+        const validTiers = ["tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
+        setHasValidTier(validTiers.includes(tier));
+      } catch {
+        setHasValidTier(false);
+      }
+    } else {
+      setHasValidTier(false);
+    }
   }, [location]);
 
   useEffect(() => {
@@ -54,7 +66,7 @@ function NavBar() {
 
           <div className="hidden md:flex items-center gap-1">
             <Link to="/" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Home</Link>
-            {isLoggedIn && (
+            {hasValidTier && (
               <>
                 <Link to="/nursing" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/nursing") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Nursing</Link>
                 <Link to="/pricing" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/pricing") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Pricing</Link>
@@ -74,7 +86,7 @@ function NavBar() {
         <div className="md:hidden bg-slate-900 border-t border-slate-800">
           <div className="px-4 py-3 space-y-1">
             <Link to="/" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Home</Link>
-            {isLoggedIn && (
+            {hasValidTier && (
               <>
                 <Link to="/nursing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Nursing</Link>
                 <Link to="/pricing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pricing</Link>
