@@ -24,7 +24,11 @@ export default function Drugs() {
   const [userTier, setUserTier] = useState<"free" | "premium">("free");
   const [completedDrugs, setCompletedDrugs] = useState<string[]>([]);
 
+  // Gate: Only allow access to logged-in users with a valid tier
+  const validTiers = ["tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
+  
   useEffect(() => {
+    window.scrollTo(0, 0);
     const currentUser = localStorage.getItem("pharma_current_user");
     if (currentUser) {
       const user = JSON.parse(currentUser);
@@ -47,6 +51,18 @@ export default function Drugs() {
         console.error("Failed to load drugs:", err);
         setLoading(false);
       });
+  }, []);
+
+  // Check tier on mount - for gated access
+  useEffect(() => {
+    const user = localStorage.getItem("pharma_current_user");
+    if (user) {
+      try {
+        const parsed = JSON.parse(user);
+        const tier = parsed.subscription_tier || parsed.tier || "";
+        setUserTier(tier.includes("tier") ? "premium" : "free");
+      } catch {}
+    }
   }, []);
 
   // Filter drugs based on search
@@ -106,6 +122,42 @@ export default function Drugs() {
     return (
       <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
         <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
+      </div>
+    );
+  }
+
+  // Tier gate - check if user has valid tier subscription
+  const currentUser = typeof window !== "undefined" ? localStorage.getItem("pharma_current_user") : null;
+  const userTierCheck = currentUser ? (() => {
+    try {
+      const parsed = JSON.parse(currentUser);
+      return parsed.subscription_tier || parsed.tier || "";
+    } catch { return ""; }
+  })() : "";
+  
+  if (!currentUser || !validTiers.some(t => userTierCheck.includes(t.replace("tier", "").split("_")[0])) {
+    return (
+      <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
+        <div className="max-w-md w-full p-8 bg-white border-2 border-gray-200 rounded-xl text-center">
+          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-3xl">🔒</span>
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Subscription Required</h2>
+          <p className="text-gray-600 mb-6">
+            Please login or subscribe to access the Drug Library and all pharmacology content.
+          </p>
+          <div className="space-y-3">
+            <Link to="/login" className="block w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold">
+              Login
+            </Link>
+            <Link to="/pricing" className="block w-full px-4 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-semibold">
+              View Subscription Plans
+            </Link>
+            <Link to="/" className="block w-full px-4 py-3 text-gray-500 hover:text-gray-700">
+              Go Back Home
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
