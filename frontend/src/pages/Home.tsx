@@ -40,77 +40,89 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Logo - Upper Left (3 inches = 288px) */}
+    <div className="min-h-screen pt-24 bg-white flex flex-col relative">
+      {/* Logo - Upper Left */}
       <div className="absolute top-4 left-4 z-10">
-        <img 
-          src="/images/Bio_Logo_white-87f86ab6b807.png" 
-          alt="Bio-Sync Academy Logo" 
-          className="w-[288px] h-[288px] object-contain"
-        />
+        <Link to="/">
+          <img 
+            src="/images/Bio_Logo_white-87f86ab6b807.png" 
+            alt="Bio-Sync Academy Logo" 
+            className="w-[288px] h-[288px] object-contain"
+          />
+        </Link>
       </div>
-      {/* NavBar is already showing Bio-Sync Academy branding - no additional logo needed */}
       
-      {/* Chat in Center - Only show for paid tiers */}
+      {/* Main Content - Tier Selection */}
       <div className="flex-1 flex items-center justify-center p-8">
-        <div className="w-full max-w-2xl">
-          <div className="text-center mb-4">
-            <h2 className="text-2xl font-bold text-gray-900">MAIA</h2>
-            <p className="text-gray-600">Your Medical AI Assistant - Ask me anything!</p>
+        <div className="w-full max-w-4xl">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to Bio-Sync Academy</h1>
+            <p className="text-xl text-gray-600">Choose your learning path</p>
           </div>
-          {hasMaiaAccess ? (
-            <EducatorChat userId={userId} />
-          ) : showCodeInput ? (
-            <div className="bg-white rounded-lg p-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Enter Test Code</h3>
-              <form onSubmit={handleCodeSubmit} className="space-y-4">
-                <input
-                  type="text"
-                  value={codeInput}
-                  onChange={(e) => {
-                    setCodeInput(e.target.value);
-                    setCodeError(false);
-                  }}
-                  placeholder="Enter master code..."
-                  className="w-full p-3 border border-gray-300 rounded-lg text-black bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  autoFocus
-                />
-                {codeError && (
-                  <p className="text-red-600 text-sm">Invalid code. Please try again.</p>
-                )}
-                <div className="flex gap-2">
-                  <button
-                    type="submit"
-                    className="px-4 py-2 bg-white text-white rounded-lg hover:bg-white"
-                  >
-                    Submit Code
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setShowCodeInput(false)}
-                    className="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-white"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </form>
-            </div>
-          ) : (
-            <div className="bg-white rounded-lg p-8 text-center">
-              <p className="text-gray-600 mb-4">
-                MAIA is available with Pro Monthly or Pro Yearly subscription.
-              </p>
-              <Link to="/pricing" className="block text-blue-600 hover:text-blue-800 font-semibold mb-4">
-                Upgrade to Access MAIA →
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {/* Tier 0 */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-blue-400 transition-colors">
+              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-gray-600">T0</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Tier 0</h3>
+              <p className="text-2xl font-bold text-gray-900 mb-2">$0</p>
+              <p className="text-gray-600 text-sm mb-4">Free Forever</p>
+              <Link to="/tier0" className="inline-block px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700">
+                Get Started
               </Link>
-              <button
-                onClick={() => setShowCodeInput(true)}
-                className="text-gray-500 hover:text-gray-700 text-sm underline"
-              >
-                Have a test code?
-              </button>
             </div>
-          )}
+            
+            {/* Tier 1 */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-blue-400 transition-colors">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">T1</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Tier 1</h3>
+              <p className="text-2xl font-bold text-gray-900 mb-2">$9.99<span className="text-sm font-normal">/mo</span></p>
+              <p className="text-gray-600 text-sm mb-4">or $100/year</p>
+              <Link to="/pricing" className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                Subscribe
+              </Link>
+            </div>
+            
+            {/* Tier 2 */}
+            <div className="bg-white border-2 border-blue-500 rounded-xl p-6 text-center ring-2 ring-blue-200">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                Popular
+              </div>
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">T2</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Tier 2</h3>
+              <p className="text-2xl font-bold text-gray-900 mb-2">$50<span className="text-sm font-normal">/mo</span></p>
+              <p className="text-gray-600 text-sm mb-4">or $550/year</p>
+              <Link to="/pricing" className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                Subscribe
+              </Link>
+            </div>
+            
+            {/* Tier 3 */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-blue-400 transition-colors">
+              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-yellow-600">T3</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Tier 3</h3>
+              <p className="text-2xl font-bold text-gray-900 mb-2">$200<span className="text-sm font-normal">/mo</span></p>
+              <p className="text-gray-600 text-sm mb-4">+ 2hr Tutoring</p>
+              <Link to="/pricing" className="inline-block px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700">
+                Subscribe
+              </Link>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-gray-600">
+              Already have an account?{" "}
+              <Link to="/login" className="text-blue-600 hover:underline">Login here</Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -39,24 +39,22 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <img 
-              src="/images/Bio_Logo_white-87f86ab6b807.png" 
-              alt="Bio-Sync Academy Logo" 
-              className="w-10 h-10 object-contain"
-            />
+            <Link to="/">
+              <img 
+                src="/images/Bio_Logo_white-87f86ab6b807.png" 
+                alt="Bio-Sync Academy Logo" 
+                className="w-10 h-10 object-contain"
+              />
+            </Link>
             <Link to="/" className="text-lg font-bold text-white tracking-tight">Bio-Sync Academy</Link>
           </div>
 
           <div className="hidden md:flex items-center gap-1">
             <Link to="/" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Home</Link>
+            <Link to="/tier0" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/tier0") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Tier 0</Link>
             <Link to="/nursing" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/nursing") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Nursing</Link>
-            <Link to="/nursing/pharmacology" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/nursing/pharmacology") || isActive("/drugs") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>
-              <Pill className="w-4 h-4 inline mr-1.5" />Pharmacology
-            </Link>
-            <Link to="/interactions" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/interactions") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Interactions</Link>
             <Link to="/pricing" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/pricing") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Pricing</Link>
             <Link to="/login" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/login") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Login</Link>
-            <Link to="/tier0" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/tier0") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Free Tier</Link>
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-slate-400 hover:text-white">
@@ -69,12 +67,10 @@ function NavBar() {
         <div className="md:hidden bg-slate-900 border-t border-slate-800">
           <div className="px-4 py-3 space-y-1">
             <Link to="/" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Home</Link>
+            <Link to="/tier0" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Tier 0</Link>
             <Link to="/nursing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Nursing</Link>
-            <Link to="/nursing/pharmacology" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pharmacology</Link>
-            <Link to="/interactions" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Interactions</Link>
             <Link to="/pricing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pricing</Link>
             <Link to="/login" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Login</Link>
-            <Link to="/tier0" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Free Tier</Link>
           </div>
         </div>
       )}
