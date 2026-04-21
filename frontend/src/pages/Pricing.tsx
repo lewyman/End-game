@@ -165,11 +165,11 @@ export default function Pricing() {
         )}
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
-              className={`bg-white rounded-2xl shadow-lg p-8 relative ${
+              className={`bg-white rounded-2xl shadow-lg p-6 w-64 relative flex flex-col ${
                 tier.popular ? "ring-2 ring-blue-500 shadow-xl" : ""
               }`}
             >
