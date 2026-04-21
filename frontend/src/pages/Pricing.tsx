@@ -54,37 +54,36 @@ const pricingTiers: PricingTier[] = [
     priceId: "tier1_yearly"
   },
   {
-    name: "Tier 2 Monthly",
+    name: "Tier 2",
     price: "$50",
     period: "/month",
-    description: "Full access for serious nursing students",
+    description: "Complete access with MAIA AI Tutor",
     features: [
-      "All drug cards",
+      "All 500+ drug cards",
       "Interactive quizzes & SATA",
       "Printable study guides",
       "Progress tracking",
       "MAIA AI Chat Assistant",
-      "Cancel anytime"
+      "New drugs added monthly"
     ],
-    priceId: "tier2_monthly",
+    priceId: "price_tier2_monthly",
     popular: true
   },
   {
-    name: "Tier 2 Yearly",
-    price: "$550",
-    period: "/year",
-    description: "Maximum savings - Save 8%",
+    name: "Tier 3",
+    price: "$200",
+    period: "/month",
+    description: "Premium tutoring-focused plan",
     features: [
-      "All drug cards",
+      "All 500+ drug cards",
       "Interactive quizzes & SATA",
       "Printable study guides",
       "Progress tracking",
       "MAIA AI Chat Assistant",
-      "Priority support",
-      "New drugs added monthly",
-      "1-on-1 tutoring sessions"
+      "2-hour 1-on-1 Tutoring Sessions",
+      "New drugs added monthly"
     ],
-    priceId: "tier2_yearly"
+    priceId: "price_tier3_monthly"
   }
 ];
 
