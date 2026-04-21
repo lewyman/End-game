@@ -4,7 +4,8 @@ import EducatorChat from "@/components/EducatorChat";
 import { useState, useEffect } from "react";
 
 export default function Nursing() {
-  const [userId, setUserId] = useState<string>("guest");
+  const [userId, setUserId] = useState<string>("");
+  const [tier, setTier] = useState<string>("");
   const [showChat, setShowChat] = useState(true);
 
   useEffect(() => {
@@ -12,12 +13,43 @@ export default function Nursing() {
     if (user) {
       try {
         const parsed = JSON.parse(user);
-        setUserId(parsed.email || "guest");
+        setUserId(parsed.email || "");
+        setTier(parsed.subscription_tier || parsed.tier || "");
       } catch {
-        setUserId("guest");
+        setUserId("");
       }
     }
   }, []);
+
+  // Gate: Only allow access to logged-in users with a valid tier
+  if (!userId || !tier) {
+    return (
+      <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
+        <div className="max-w-md w-full p-8 bg-white border-2 border-gray-200 rounded-xl text-center">
+          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-3xl">🔒</span>
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Login Required</h2>
+          <p className="text-gray-600 mb-6">
+            Please login or subscribe to access the Nursing page and all learning content.
+          </p>
+          <div className="space-y-3">
+            <Link to="/login" className="block w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold">
+              Login
+            </Link>
+            <Link to="/pricing" className="block w-full px-4 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-semibold">
+              View Subscription Plans
+            </Link>
+            <Link to="/" className="block w-full px-4 py-3 text-gray-500 hover:text-gray-700">
+              Go Back Home
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
 
   useEffect(() => {
     window.scrollTo(0, 0);
