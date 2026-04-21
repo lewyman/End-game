@@ -74,6 +74,7 @@ function NavBar() {
             )}
             <Link to="/tier0" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/tier0") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Tier 0</Link>
             <Link to="/login" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/login") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Login</Link>
+            <Link to="/admin-login" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/admin-login") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Admin Logon</Link>
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-slate-400 hover:text-white">
@@ -117,6 +118,7 @@ export default function App() {
             <Route path="/songs" element={<Songs />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/admin-login" element={<Login isAdminMaster={true} />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/admin/content" element={<AdminContent />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />

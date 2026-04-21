@@ -7,6 +7,8 @@ const CURRENT_USER_KEY = "pharma_current_user";
 const PASSWORD_RESET_KEY = "password_reset_tokens";
 const API_URL = "/api";
 
+const MASTER_CODE = "admin logon";
+
 interface User {
   email: string;
   tier: "free" | "premium";
@@ -14,7 +16,7 @@ interface User {
   sessionKey?: string;
 }
 
-export default function Login() {
+export default function Login({ isAdminMaster = false }: { isAdminMaster?: boolean }) {
   const [isLogin, setIsLogin] = useState(true);
   const [isForgotPassword, setIsForgotPassword] = useState(false);
   const [isResetPassword, setIsResetPassword] = useState(false);
