@@ -94,18 +94,18 @@ export default function Tier0() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="bg-white rounded-xl p-4">
-              <p className="text-2xl font-bold text-gray-900">$4.99</p>
-              <p className="text-gray-500 text-sm">/month</p>
+              <p className="text-2xl font-bold text-gray-900">$9.99</p>
+              <p className="text-gray-500 text-sm">Tier 1/month</p>
             </div>
             <div className="bg-white rounded-xl p-4">
-              <p className="text-2xl font-bold text-gray-900">$29.99</p>
-              <p className="text-gray-500 text-sm">/year (Save 50%)</p>
+              <p className="text-2xl font-bold text-gray-900">$50</p>
+              <p className="text-gray-500 text-sm">Tier 2/month</p>
             </div>
             <Link 
               to="/pricing" 
               className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
             >
-              Upgrade Now
+              View All Tiers
             </Link>
           </div>
         </div>

@@ -16,7 +16,7 @@ interface PricingTier {
 
 const pricingTiers: PricingTier[] = [
   {
-    name: "Free",
+    name: "Tier 0",
     price: "$0",
     period: "forever",
     description: "Basic access for nursing students",
@@ -25,16 +25,43 @@ const pricingTiers: PricingTier[] = [
       "Basic quizzes",
       "Community support"
     ],
-    priceId: "free"
+    priceId: "tier0"
   },
   {
-    name: "Tier 2 Monthly",
+    name: "Tier 1 Monthly",
     price: "$9.99",
     period: "/month",
     description: "Enhanced access for nursing students",
     features: [
       "All drug cards",
       "Interactive quizzes & SATA",
+      "Progress tracking",
+      "Cancel anytime"
+    ],
+    priceId: "tier1_monthly"
+  },
+  {
+    name: "Tier 1 Yearly",
+    price: "$100",
+    period: "/year",
+    description: "Best value - Save 17%",
+    features: [
+      "All drug cards",
+      "Interactive quizzes & SATA",
+      "Progress tracking",
+      "Priority support"
+    ],
+    priceId: "tier1_yearly"
+  },
+  {
+    name: "Tier 2 Monthly",
+    price: "$50",
+    period: "/month",
+    description: "Full access for serious nursing students",
+    features: [
+      "All drug cards",
+      "Interactive quizzes & SATA",
+      "Printable study guides",
       "Progress tracking",
       "MAIA AI Chat Assistant",
       "Cancel anytime"
@@ -44,35 +71,6 @@ const pricingTiers: PricingTier[] = [
   },
   {
     name: "Tier 2 Yearly",
-    price: "$100",
-    period: "/year",
-    description: "Best value - Save 17%",
-    features: [
-      "All drug cards",
-      "Interactive quizzes & SATA",
-      "Progress tracking",
-      "MAIA AI Chat Assistant",
-      "Priority support"
-    ],
-    priceId: "tier2_yearly"
-  },
-  {
-    name: "Tier 3 Monthly",
-    price: "$50",
-    period: "/month",
-    description: "Full access for serious nursing students",
-    features: [
-      "All drug cards",
-      "Interactive quizzes & SATA",
-      "Printable study guides",
-      "Progress tracking",
-      "Priority support",
-      "New drugs added monthly"
-    ],
-    priceId: "tier3_monthly"
-  },
-  {
-    name: "Tier 3 Yearly",
     price: "$550",
     period: "/year",
     description: "Maximum savings - Save 8%",
@@ -86,7 +84,7 @@ const pricingTiers: PricingTier[] = [
       "New drugs added monthly",
       "1-on-1 tutoring sessions"
     ],
-    priceId: "tier3_yearly"
+    priceId: "tier2_yearly"
   }
 ];
 
@@ -96,7 +94,7 @@ export default function Pricing() {
   const navigate = useNavigate();
 
   const handleSubscribe = async (priceId: string) => {
-    if (priceId === "free") {
+    if (priceId === "tier0") {
       navigate("/drugs");
       return;
     }
@@ -171,7 +169,7 @@ export default function Pricing() {
 
               <div className="text-center mb-6">
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  {tier.name === "Free" ? (
+                  {tier.name === "Tier 0" ? (
                     <GraduationCap className="w-6 h-6 text-gray-600" />
                   ) : (
                     <Crown className="w-6 h-6 text-yellow-500" />
@@ -188,7 +186,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-8">
                 {tier.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <Check className={`w-5 h-5 flex-shrink-0 ${tier.name === "Free" ? "text-gray-400" : "text-green-500"}`} />
+                    <Check className={`w-5 h-5 flex-shrink-0 ${tier.name === "Tier 0" ? "text-gray-400" : "text-green-500"}`} />
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
