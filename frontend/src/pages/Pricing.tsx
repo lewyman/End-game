@@ -70,6 +70,21 @@ const pricingTiers: PricingTier[] = [
     popular: true
   },
   {
+    name: "Tier 2 Yearly",
+    price: "$550",
+    period: "/year",
+    description: "Complete access with MAIA AI Tutor - Best Value",
+    features: [
+      "All 500+ drug cards",
+      "Interactive quizzes & SATA",
+      "Printable study guides",
+      "Progress tracking",
+      "MAIA AI Chat Assistant",
+      "New drugs added monthly"
+    ],
+    priceId: "price_tier2_yearly"
+  },
+  {
     name: "Tier 3",
     price: "$200",
     period: "/month",
