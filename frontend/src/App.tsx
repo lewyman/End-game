@@ -54,6 +54,7 @@ function NavBar() {
             </Link>
             <Link to="/interactions" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/interactions") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Interactions</Link>
             <Link to="/pricing" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/pricing") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Pricing</Link>
+            <Link to="/login" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/login") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Login</Link>
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-slate-400 hover:text-white">
@@ -70,6 +71,7 @@ function NavBar() {
             <Link to="/nursing/pharmacology" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pharmacology</Link>
             <Link to="/interactions" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Interactions</Link>
             <Link to="/pricing" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Pricing</Link>
+            <Link to="/login" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Login</Link>
           </div>
         </div>
       )}
