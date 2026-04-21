@@ -13,6 +13,7 @@ import Pricing from "./pages/Pricing";
 import Downloads from "./pages/Downloads";
 import MyBookmarks from "./pages/MyBookmarks";
 import Songs from "./pages/Songs";
+import Tier0 from "./pages/Tier0";
 import { Pill, Menu, X, Moon, Sun, GraduationCap } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -100,6 +101,7 @@ export default function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/bookmarks" element={<MyBookmarks />} />
+            <Route path="/tier0" element={<Tier0 />} />
           </Routes>
         </div>
       </BrowserRouter>
