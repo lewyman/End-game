@@ -135,7 +135,7 @@ export default function Drugs() {
     } catch { return ""; }
   })() : "";
   
-  if (!currentUser || !validTiers.some(t => userTierCheck.includes(t.replace("tier", "").split("_")[0])) {
+  if (!currentUser || !validTiers.some(t => userTierCheck.includes(t.replace("tier", "").split("_")[0]))) {
     return (
       <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
         <div className="max-w-md w-full p-8 bg-white border-2 border-gray-200 rounded-xl text-center">

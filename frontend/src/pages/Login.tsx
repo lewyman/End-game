@@ -17,7 +17,9 @@ interface User {
 }
 
 export default function Login({ isAdminMaster = false }: { isAdminMaster?: boolean }) {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(!isAdminMaster);
+  const [isMasterCode, setIsMasterCode] = useState(isAdminMaster);
+  const [masterCodeInput, setMasterCodeInput] = useState("");
   const [isForgotPassword, setIsForgotPassword] = useState(false);
   const [isResetPassword, setIsResetPassword] = useState(false);
   const [resetToken, setResetToken] = useState("");
