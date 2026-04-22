@@ -14,6 +14,7 @@ import Downloads from "./pages/Downloads";
 import MyBookmarks from "./pages/MyBookmarks";
 import Songs from "./pages/Songs";
 import Tier0 from "./pages/Tier0";
+import AdminLogin from "./pages/AdminLogin";
 import { Pill, Menu, X, Moon, Sun, GraduationCap } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -118,7 +119,7 @@ export default function App() {
             <Route path="/songs" element={<Songs />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/admin-login" element={<Login isAdminMaster={true} />} />
+            <Route path="/admin-login" element={<AdminLogin />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/admin/content" element={<AdminContent />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
