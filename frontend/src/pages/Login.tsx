@@ -119,6 +119,16 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
     google.accounts.id.prompt();
   };
 
+  const handleOAuthLogin = (provider: string) => {
+    const emails = {
+      facebook: window.prompt('Enter your Facebook email:'),
+      microsoft: window.prompt('Enter your Microsoft email:')
+    };
+    const email = emails[provider as keyof typeof emails];
+    if (!email) return;
+    oauthLogin(email, provider);
+  };
+
   const oauthLogin = async (email: string, provider: string) => {
     setLoading(true);
     setError('');
@@ -167,6 +177,7 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
     await oauthLogin(email, 'microsoft');
   };
 
+  const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     
