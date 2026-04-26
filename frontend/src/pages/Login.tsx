@@ -195,9 +195,18 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
 
   const handleGoogleResponse = async (response: any) => {
     if (response.credential) {
-      // Decode the JWT token to get user info
-      const payload = JSON.parse(atob(response.credential.split('.')[1]));
-      const email = payload.email;
+      try {
+        // Decode the JWT token to get user info
+        const parts = response.credential.split('.');
+        if (parts.length !== 3) throw new Error('Invalid JWT format');
+        const payload = JSON.parse(atob(parts[1].replace(/-/g, '+').replace(/_/g, '/')));
+        const email = payload.email;
+        
+        if (!email) {
+          setError('No email found in Google response');
+          setLoading('');
+          return;
+        }
       
       setLoading('google');
       setError('');
