@@ -91,6 +91,18 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
       return;
     }
 
+    if (provider !== 'google') {
+      const emails: Record<string, string | null> = {
+        facebook: window.prompt('Enter your Facebook email:'),
+        microsoft: window.prompt('Enter your Microsoft email:')
+      };
+      const email = emails[provider];
+      if (!email) return;
+      await oauthLogin(email, provider);
+      return;
+    }
+    
+    // Google OAuth
     const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
     if (!clientId) {
       setError('Google OAuth not configured. Using email login.');
@@ -99,7 +111,7 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
       await oauthLogin(email, 'google');
       return;
     }
-
+    
     google.accounts.id.initialize({
       client_id: clientId,
       callback: async (response: any) => {
@@ -117,16 +129,6 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
     });
     
     google.accounts.id.prompt();
-  };
-
-  const handleOAuthLogin = (provider: string) => {
-    const emails = {
-      facebook: window.prompt('Enter your Facebook email:'),
-      microsoft: window.prompt('Enter your Microsoft email:')
-    };
-    const email = emails[provider as keyof typeof emails];
-    if (!email) return;
-    oauthLogin(email, provider);
   };
 
   const oauthLogin = async (email: string, provider: string) => {
