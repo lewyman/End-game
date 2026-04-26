@@ -82,50 +82,91 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
     }
   };
 
-  const handleOAuthLogin = async (provider: string) => {
-    // For demo: simulate OAuth login by creating/finding user by email
-    const demoEmails: Record<string, string> = {
-      google: 'user@gmail.com',
-      facebook: 'user@facebook.com',
-      microsoft: 'user@microsoft.com'
-    };
+  const handleGoogleLogin = async () => {
+    // Use Google Identity Services for real OAuth
+    if (typeof google === 'undefined' || !google.accounts) {
+      const email = window.prompt('Enter your Google email:');
+      if (!email) return;
+      await oauthLogin(email, 'google');
+      return;
+    }
+
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+    if (!clientId) {
+      setError('Google OAuth not configured. Using email login.');
+      const email = window.prompt('Enter your Google email:');
+      if (!email) return;
+      await oauthLogin(email, 'google');
+      return;
+    }
+
+    google.accounts.id.initialize({
+      client_id: clientId,
+      callback: async (response: any) => {
+        if (!response.credential) {
+          setError('Google login cancelled or failed.');
+          return;
+        }
+        try {
+          const payload = JSON.parse(atob(response.credential.split('.')[1]));
+          await oauthLogin(payload.email, 'google');
+        } catch {
+          setError('Failed to parse Google response.');
+        }
+      }
+    });
     
-    const email = prompt(`Enter your ${provider} email to simulate OAuth login:`);
-    if (!email) return;
-    
-    setError("");
+    google.accounts.id.prompt();
+  };
+
+  const oauthLogin = async (email: string, provider: string) => {
+    setLoading(true);
+    setError('');
     
     try {
-      // Simulate OAuth: check if user exists or create new one
       const response = await fetch(`${API_URL}/oauth-login`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, provider })
       });
       
       const data = await response.json();
       
       if (!response.ok) {
-        setError(data.error || "OAuth login failed");
+        setError(data.error || 'OAuth login failed');
+        setLoading(false);
         return;
       }
       
-      // Store user in localStorage
       const user: User = {
         email: data.user.email,
-        tier: data.user.tier || "free",
-        isAdmin: data.user.isAdmin
+        tier: data.user.tier || 'free',
+        isAdmin: data.user.isAdmin,
+        subscription_tier: data.user.subscription_tier
       };
       
       localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(user));
-      setSuccess("Login successful! Redirecting...");
-      setTimeout(() => navigate("/drugs"), 1000);
+      setSuccess('Login successful! Redirecting...');
+      setTimeout(() => navigate('/drugs'), 1000);
     } catch (err) {
-      setError("OAuth login failed. Please try again.");
+      setError('OAuth login failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
-  const handleSignup = async (e: React.FormEvent) => {
+  const handleFacebookLogin = async () => {
+    const email = window.prompt('Enter your Facebook email:');
+    if (!email) return;
+    await oauthLogin(email, 'facebook');
+  };
+
+  const handleMicrosoftLogin = async () => {
+    const email = window.prompt('Enter your Microsoft email (e.g., user@outlook.com):');
+    if (!email) return;
+    await oauthLogin(email, 'microsoft');
+  };
+
     e.preventDefault();
     setError("");
     
@@ -529,7 +570,7 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
           <p className="text-gray-500 text-sm text-center mb-4">Or continue with</p>
           <div className="grid grid-cols-3 gap-3">
             <button
-              onClick={() => handleOAuthLogin("google")}
+              onClick={handleGoogleLogin}
               className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-gray-200 rounded-xl hover:border-gray-400 transition-colors bg-white"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24">
