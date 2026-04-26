@@ -82,13 +82,15 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
     }
   };
 
-  const handleGoogleLogin = async () => {
-    // Use Google Identity Services for real OAuth
-    if (typeof google === 'undefined' || !google.accounts) {
-      const email = window.prompt('Enter your Google email:');
-      if (!email) return;
-      await oauthLogin(email, 'google');
+  const handleGoogleLogin = () => {
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
+    if (!clientId) {
+      alert('Google OAuth not configured');
       return;
+    }
+    const redirectUri = `${window.location.origin}/oauth/callback`;
+    const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent('email profile')}`;
+    window.location.href = authUrl;
     }
 
     if (provider !== 'google') {
