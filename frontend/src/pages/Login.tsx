@@ -182,16 +182,30 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
   
   // Initialize Google OAuth button
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.google) {
-      google.accounts.id.initialize({
-        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || '',
-        callback: handleGoogleResponse,
-        auto_select: false,
-      });
-      google.accounts.id.renderButton(
-        document.getElementById('google-signin-button'),
-        { theme: 'outline', size: 'large', width: '100%' }
-      );
+    const initGoogle = () => {
+      if (window.google && document.getElementById('google-signin-button')) {
+        google.accounts.id.initialize({
+          client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || '',
+          callback: handleGoogleResponse,
+          auto_select: false,
+        });
+        google.accounts.id.renderButton(
+          document.getElementById('google-signin-button'),
+          { theme: 'outline', size: 'large', width: '100%' }
+        );
+      }
+    };
+    
+    // Load Google SDK if not already loaded
+    if (typeof window !== 'undefined' && !window.google) {
+      const script = document.createElement('script');
+      script.src = 'https://accounts.google.com/gsi/client';
+      script.async = true;
+      script.defer = true;
+      script.onload = () => setTimeout(initGoogle, 500);
+      document.head.appendChild(script);
+    } else {
+      setTimeout(initGoogle, 500);
     }
   }, []);
 
