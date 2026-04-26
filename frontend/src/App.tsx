@@ -147,6 +147,7 @@ export default function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/tier0" element={<Tier0 />} />
+            <Route path="/oauth/callback" element={<OAuthCallback />} />
           </Routes>
           </Suspense>
         </div>
