@@ -1,28 +1,28 @@
 import { BrowserRouter, Route, Routes, Link, useLocation } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider";
+import { lazy, Suspense, useState, useEffect } from "react";
 import Home from "./pages/Home";
-import Nursing from "./pages/Nursing";
-import Drugs from "./pages/Drugs";
-import DrugDetail from "./pages/DrugDetail";
-import Interactions from "./pages/interactions";
-import Login from "./pages/Login";
-import Admin from "./pages/Admin";
-import AdminContent from "./pages/AdminContent";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Pricing from "./pages/Pricing";
-import Downloads from "./pages/Downloads";
-import MyBookmarks from "./pages/MyBookmarks";
-import Songs from "./pages/Songs";
-import Tier0 from "./pages/Tier0";
-import AdminLogin from "./pages/AdminLogin";
-import { Pill, Menu, X, Moon, Sun, GraduationCap } from "lucide-react";
-import { useState, useEffect } from "react";
+
+const Nursing = lazy(() => import("./pages/Nursing"));
+const Drugs = lazy(() => import("./pages/Drugs"));
+const DrugDetail = lazy(() => import("./pages/DrugDetail"));
+const Interactions = lazy(() => import("./pages/interactions"));
+const Login = lazy(() => import("./pages/Login"));
+const Admin = lazy(() => import("./pages/Admin"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Downloads = lazy(() => import("./pages/Downloads"));
+const Songs = lazy(() => import("./pages/Songs"));
+const Tier0 = lazy(() => import("./pages/Tier0"));
+
+import { Pill, Menu, X, GraduationCap } from "lucide-react";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [hasValidTier, setHasValidTier] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,14 +31,16 @@ function NavBar() {
       try {
         const parsed = JSON.parse(user);
         const tier = parsed.subscription_tier || parsed.tier;
-        // Valid tiers: tier1_monthly, tier1_yearly, tier2_monthly, tier2_yearly, tier3_monthly, tier3_yearly
         const validTiers = ["tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
         setHasValidTier(validTiers.includes(tier));
+        setIsLoggedIn(true);
       } catch {
         setHasValidTier(false);
+        setIsLoggedIn(false);
       }
     } else {
       setHasValidTier(false);
+      setIsLoggedIn(false);
     }
   }, [location]);
 
@@ -47,6 +49,13 @@ function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("pharma_current_user");
+    setIsLoggedIn(false);
+    setHasValidTier(false);
+    window.location.href = "/";
+  };
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -75,7 +84,15 @@ function NavBar() {
             )}
             <Link to="/tier0" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/tier0") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Tier 0</Link>
             <Link to="/login" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/login") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Login</Link>
-            <Link to="/admin-login" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/admin-login") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Admin Logon</Link>
+            {isLoggedIn && (
+              <button
+                onClick={handleLogout}
+                className="px-4 py-2 rounded-lg text-sm font-medium transition-all text-red-400 hover:text-red-300 hover:bg-red-900/20"
+              >Logout</button>
+            )}
+            {isLoggedIn && (
+              <Link to="/admin" className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${isActive("/admin") ? "text-white bg-white/10" : "text-slate-400 hover:text-white hover:bg-white/5"}`}>Admin</Link>
+            )}
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-slate-400 hover:text-white">
@@ -96,6 +113,12 @@ function NavBar() {
             )}
             <Link to="/tier0" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Tier 0</Link>
             <Link to="/login" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Login</Link>
+            {isLoggedIn && (
+              <button onClick={handleLogout} className="block w-full text-left px-4 py-3 text-sm text-red-400 hover:text-red-300 hover:bg-red-900/20 rounded-lg">Logout</button>
+            )}
+            {isLoggedIn && (
+              <Link to="/admin" className="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg">Admin</Link>
+            )}
           </div>
         </div>
       )}
@@ -109,6 +132,7 @@ export default function App() {
       <BrowserRouter>
         <div className="min-h-screen bg-white text-gray-900">
           <NavBar />
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/nursing" element={<Nursing />} />
@@ -119,14 +143,12 @@ export default function App() {
             <Route path="/songs" element={<Songs />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/admin-login" element={<AdminLogin />} />
             <Route path="/admin" element={<Admin />} />
-            <Route path="/admin/content" element={<AdminContent />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/downloads" element={<Downloads />} />
-            <Route path="/bookmarks" element={<MyBookmarks />} />
             <Route path="/tier0" element={<Tier0 />} />
           </Routes>
+          </Suspense>
         </div>
       </BrowserRouter>
     </ThemeProvider>

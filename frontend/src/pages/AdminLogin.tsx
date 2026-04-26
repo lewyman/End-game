@@ -20,6 +20,8 @@ export default function AdminLogin() {
         subscription_tier: "tier3_monthly"
       }));
       navigate("/admin");
+      // Set master admin session so Admin page doesn't ask for API key
+      localStorage.setItem("pharma_master_admin", "true");
     } else {
       setError(true);
     }

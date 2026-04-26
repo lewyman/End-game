@@ -28,6 +28,12 @@ export default function Admin() {
   const [subscriberOrders, setSubscriberOrders] = useState<any[]>([]);
 
   useEffect(() => {
+    // Auto-login if coming from AdminLogin
+    const masterSession = localStorage.getItem("pharma_master_admin");
+    if (masterSession) {
+      setApiKey("master-" + masterSession);
+      setLoggedIn(true);
+    }
     const saved = sessionStorage.getItem("admin_api_key");
     if (saved) {
       setApiKey(saved);
@@ -36,6 +42,12 @@ export default function Admin() {
   }, []);
 
   useEffect(() => {
+    // Auto-login if coming from AdminLogin
+    const masterSession = localStorage.getItem("pharma_master_admin");
+    if (masterSession) {
+      setApiKey("master-" + masterSession);
+      setLoggedIn(true);
+    }
     if (!loggedIn) return;
     fetchData();
   }, [loggedIn]);

