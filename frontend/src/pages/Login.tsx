@@ -177,6 +177,64 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
     await oauthLogin(email, 'microsoft');
   };
 
+  
+  // Initialize Google OAuth button
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.google) {
+      google.accounts.id.initialize({
+        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || '',
+        callback: handleGoogleResponse,
+        auto_select: false,
+      });
+      google.accounts.id.renderButton(
+        document.getElementById('google-signin-button'),
+        { theme: 'outline', size: 'large', width: '100%' }
+      );
+    }
+  }, []);
+
+  const handleGoogleResponse = async (response: any) => {
+    if (response.credential) {
+      // Decode the JWT token to get user info
+      const payload = JSON.parse(atob(response.credential.split('.')[1]));
+      const email = payload.email;
+      
+      setLoading('google');
+      setError('');
+      
+      try {
+        const res = await fetch(`${API_URL}/oauth-login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, provider: 'google' })
+        });
+        
+        const data = await res.json();
+        
+        if (!res.ok) {
+          setError(data.error || 'Google login failed');
+          setLoading('');
+          return;
+        }
+        
+        const user: User = {
+          email: data.user.email,
+          tier: data.user.tier || 'free',
+          isAdmin: data.user.isAdmin,
+          subscription_tier: data.user.subscription_tier
+        };
+        
+        localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(user));
+        setSuccess('Login successful! Redirecting...');
+        setTimeout(() => navigate('/drugs'), 1000);
+      } catch (err) {
+        setError('Google login failed. Please try again.');
+      } finally {
+        setLoading('');
+      }
+    }
+  };
+
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
