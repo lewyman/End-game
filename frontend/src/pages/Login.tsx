@@ -91,7 +91,7 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
       return;
     }
 
-    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+    const clientId = import.meta.env.GOOGLE_CLIENT_ID;
     if (!clientId) {
       setError('Google OAuth not configured. Using email login.');
       const email = window.prompt('Enter your Google email:');
@@ -182,7 +182,7 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
   useEffect(() => {
     if (typeof window !== 'undefined' && window.google) {
       google.accounts.id.initialize({
-        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID || '',
+        client_id: import.meta.env.GOOGLE_CLIENT_ID || '',
         callback: handleGoogleResponse,
         auto_select: false,
       });
