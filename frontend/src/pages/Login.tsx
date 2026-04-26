@@ -196,7 +196,6 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
   const handleGoogleResponse = async (response: any) => {
     if (response.credential) {
       try {
-        // Decode the JWT token to get user info
         const parts = response.credential.split('.');
         if (parts.length !== 3) throw new Error('Invalid JWT format');
         const payload = JSON.parse(atob(parts[1].replace(/-/g, '+').replace(/_/g, '/')));
@@ -204,14 +203,12 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
         
         if (!email) {
           setError('No email found in Google response');
-          setLoading('');
           return;
         }
-      
-      setLoading('google');
-      setError('');
-      
-      try {
+        
+        setLoading('google');
+        setError('');
+        
         const res = await fetch(`${API_URL}/oauth-login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -222,7 +219,6 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
         
         if (!res.ok) {
           setError(data.error || 'Google login failed');
-          setLoading('');
           return;
         }
         
@@ -237,10 +233,13 @@ export default function Login({ isAdminMaster = false }: { isAdminMaster?: boole
         setSuccess('Login successful! Redirecting...');
         setTimeout(() => navigate('/drugs'), 1000);
       } catch (err) {
-        setError('Google login failed. Please try again.');
+        console.error('Google login error:', err);
+        setError('Failed to process Google login. Please try again.');
       } finally {
         setLoading('');
       }
+    } else {
+      setError('No credential received from Google');
     }
   };
 
