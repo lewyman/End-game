@@ -130,7 +130,7 @@ function NavBar() {
 
 export default function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="maia-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="maia-ui-theme">
       <BrowserRouter>
         <div className="min-h-screen bg-white text-gray-900">
           <NavBar />
