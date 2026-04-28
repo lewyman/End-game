@@ -11,6 +11,7 @@
     { "source": "/api/admin/drugs/:path*", "destination": "/api?path=/admin/drugs/:path*" },
     { "source": "/api/login", "destination": "/api?path=/login" },
     { "source": "/api/signup", "destination": "/api?path=/signup" },
+    { "source": "/api/oauth-login", "destination": "/api?path=/oauth-login" },
     { "source": "/api/health", "destination": "/api?path=/health" },
     { "source": "/api/songs", "destination": "/api?path=/songs" },
     { "source": "/api/songs/:slug", "destination": "/api?path=/songs/:slug" },

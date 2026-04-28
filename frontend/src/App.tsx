@@ -14,6 +14,8 @@ const Pricing = lazy(() => import("./pages/Pricing"));
 const Downloads = lazy(() => import("./pages/Downloads"));
 const Songs = lazy(() => import("./pages/Songs"));
 const Tier0 = lazy(() => import("./pages/Tier0"));
+const OAuthCallback = lazy(() => import("./pages/AuthCallback"));
+const AuthCallback = lazy(() => import("./pages/AuthCallback"));
 
 import { Pill, Menu, X, GraduationCap } from "lucide-react";
 
@@ -147,7 +149,7 @@ export default function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/tier0" element={<Tier0 />} />
-            <Route path="/oauth/callback" element={<OAuthCallback />} />
+            <Route path="/auth/callback" element={<AuthCallback />} />
           </Routes>
           </Suspense>
         </div>
