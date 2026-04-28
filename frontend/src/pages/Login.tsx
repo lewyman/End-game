@@ -23,6 +23,7 @@ export default function Login() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
+  const [checkingAuth, setCheckingAuth] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,12 +33,22 @@ export default function Login() {
         const parsed = JSON.parse(storedUser);
         if (parsed.email) {
           navigate("/drugs", { replace: true });
+          return;
         }
       } catch {
         // ignore malformed stored data
       }
     }
+    setCheckingAuth(false);
   }, [navigate]);
+
+  if (checkingAuth) {
+    return (
+      <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
