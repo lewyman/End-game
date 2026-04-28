@@ -26,9 +26,16 @@ export default function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const user = localStorage.getItem(CURRENT_USER_KEY);
-    if (user) {
-      navigate("/drugs");
+    const storedUser = localStorage.getItem(CURRENT_USER_KEY);
+    if (storedUser) {
+      try {
+        const parsed = JSON.parse(storedUser);
+        if (parsed.email) {
+          navigate("/drugs", { replace: true });
+        }
+      } catch {
+        // ignore malformed stored data
+      }
     }
   }, [navigate]);
 
