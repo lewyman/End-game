@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useLayoutEffect } from "react";
 
 type Theme = "dark" | "light" | "system";
 
@@ -20,6 +20,13 @@ const initialState: ThemeProviderState = {
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
+function getThemeClass(theme: Theme): string {
+  if (theme === "system") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  return theme;
+}
+
 export function ThemeProvider({
   children,
   defaultTheme = "system",
@@ -29,6 +36,12 @@ export function ThemeProvider({
   const [theme, setTheme] = useState<Theme>(
     () => (localStorage.getItem(storageKey) as Theme) || defaultTheme,
   );
+
+  useLayoutEffect(() => {
+    const root = window.document.documentElement;
+    root.classList.remove("light", "dark");
+    root.classList.add(getThemeClass(theme));
+  }, [theme]);
 
   useEffect(() => {
     const root = window.document.documentElement;
