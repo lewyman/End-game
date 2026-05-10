@@ -3,7 +3,7 @@ import EducatorChat from "@/components/EducatorChat";
 import { useState, useEffect } from "react";
 import { GraduationCap, Crown } from "lucide-react";
 
-const MASTER_CODE = "MAIA-TEST-2024";
+const MASTER_CODE = "MAIA-ACCESS-2026";
 
 export default function Home() {
   const [userId, setUserId] = useState<string>("guest");
