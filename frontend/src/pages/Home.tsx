@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen pt-24 bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col relative">
+    <div className="min-h-screen pt-24 bg-gradient-to-br from-green-500 via-emerald-500 to-blue-600 flex flex-col relative">
       {/* Logo - Upper Left */}
       <div className="absolute top-4 left-4 z-10">
         <Link to="/">
