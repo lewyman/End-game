@@ -23,7 +23,7 @@ export default function Nursing() {
   }, []);
 
   // Gate: Only allow access to logged-in users with a valid tier
-  const validTiers = ["tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
+  const validTiers = ["price_monthly", "price_yearly", "tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
   if (!userId || !tier || !validTiers.includes(tier)) {
     return (
       <div className="min-h-screen pt-24 bg-white flex items-center justify-center">
