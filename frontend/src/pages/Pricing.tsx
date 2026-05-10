@@ -16,7 +16,7 @@ interface PricingTier {
 
 const pricingTiers: PricingTier[] = [
   {
-    name: "Tier 0",
+    name: "Free",
     price: "$0",
     period: "forever",
     description: "Basic access for nursing students",
@@ -25,80 +25,37 @@ const pricingTiers: PricingTier[] = [
       "Basic quizzes",
       "Community support"
     ],
-    priceId: "tier0"
+    priceId: "free"
   },
   {
-    name: "Tier 1 Monthly",
-    price: "$9.99",
+    name: "Pro Monthly",
+    price: "$4.99",
     period: "/month",
-    description: "Enhanced access for nursing students",
+    description: "Full access for serious nursing students",
     features: [
-      "All drug cards",
+      "All 500+ drug cards",
       "Interactive quizzes & SATA",
+      "Printable study guides",
       "Progress tracking",
       "Cancel anytime"
     ],
-    priceId: "tier1_monthly"
-  },
-  {
-    name: "Tier 1 Yearly",
-    price: "$100",
-    period: "/year",
-    description: "Best value - Save 17%",
-    features: [
-      "All drug cards",
-      "Interactive quizzes & SATA",
-      "Progress tracking",
-      "Priority support"
-    ],
-    priceId: "tier1_yearly"
-  },
-  {
-    name: "Tier 2",
-    price: "$50",
-    period: "/month",
-    description: "Complete access with MAIA AI Tutor",
-    features: [
-      "All 500+ drug cards",
-      "Interactive quizzes & SATA",
-      "Printable study guides",
-      "Progress tracking",
-      "MAIA AI Chat Assistant",
-      "New drugs added monthly"
-    ],
-    priceId: "price_tier2_monthly",
+    priceId: "price_monthly",
     popular: true
   },
   {
-    name: "Tier 2 Yearly",
-    price: "$550",
+    name: "Pro Yearly",
+    price: "$29.99",
     period: "/year",
-    description: "Complete access with MAIA AI Tutor - Best Value",
+    description: "Best value - Save 50%",
     features: [
       "All 500+ drug cards",
       "Interactive quizzes & SATA",
       "Printable study guides",
       "Progress tracking",
-      "MAIA AI Chat Assistant",
+      "Priority support",
       "New drugs added monthly"
     ],
-    priceId: "price_tier2_yearly"
-  },
-  {
-    name: "Tier 3",
-    price: "$200",
-    period: "/month",
-    description: "Premium tutoring-focused plan",
-    features: [
-      "All 500+ drug cards",
-      "Interactive quizzes & SATA",
-      "Printable study guides",
-      "Progress tracking",
-      "MAIA AI Chat Assistant",
-      "2-hour 1-on-1 Tutoring Sessions",
-      "New drugs added monthly"
-    ],
-    priceId: "price_tier3_monthly"
+    priceId: "price_yearly"
   }
 ];
 
@@ -108,7 +65,7 @@ export default function Pricing() {
   const navigate = useNavigate();
 
   const handleSubscribe = async (priceId: string) => {
-    if (priceId === "tier0") {
+    if (priceId === "free") {
       navigate("/drugs");
       return;
     }
@@ -183,7 +140,7 @@ export default function Pricing() {
 
               <div className="text-center mb-6">
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  {tier.name === "Tier 0" ? (
+                  {tier.name === "Free" ? (
                     <GraduationCap className="w-6 h-6 text-gray-600" />
                   ) : (
                     <Crown className="w-6 h-6 text-yellow-500" />
@@ -200,7 +157,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-8">
                 {tier.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <Check className={`w-5 h-5 flex-shrink-0 ${tier.name === "Tier 0" ? "text-gray-400" : "text-green-500"}`} />
+                    <Check className={`w-5 h-5 flex-shrink-0 ${tier.name === "Free" ? "text-gray-400" : "text-green-500"}`} />
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
@@ -211,10 +168,10 @@ export default function Pricing() {
                 disabled={loading === tier.priceId}
                 className={`w-full py-3 rounded-xl font-semibold transition-colors ${
                   tier.popular
-                    ? "bg-white text-white hover:bg-white"
+                    ? "bg-blue-600 text-white hover:bg-blue-700"
                     : tier.name === "Free"
-                    ? "bg-white text-gray-700 hover:bg-white"
-                    : "bg-white text-white hover:bg-white"
+                    ? "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                    : "bg-indigo-600 text-white hover:bg-indigo-700"
                 } ${loading === tier.priceId ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 {loading === tier.priceId ? (
