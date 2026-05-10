@@ -86,15 +86,15 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
   return (
     <div className="flex flex-col h-[600px] max-w-2xl mx-auto border rounded-lg bg-white shadow-lg">
       {/* Header with Avatar */}
-      <div className="p-4 border-b bg-blue-600 text-white rounded-t-lg flex items-center gap-4">
+      <div className="p-4 border-b bg-gradient-to-r from-green-700 via-blue-700 to-green-700 text-white rounded-t-lg flex items-center gap-4">
         <AnimatedAvatar isSpeaking={isSpeaking} />
         <div>
-          <h3 className="font-semibold text-lg">MAIA</h3>
-          <p className="text-sm text-blue-100">Your Medical Anatomy & Intelligence Assistant</p>
+          <h3 className="font-bold text-lg">MAIA</h3>
+          <p className="text-sm text-green-100">Your Medical Anatomy & Intelligence Assistant</p>
         </div>
         <button
           onClick={() => setIsMuted(!isMuted)}
-          className="ml-auto p-2 hover:bg-blue-700 rounded-lg transition-colors"
+          className="ml-auto p-2 hover:bg-white/20 rounded-lg transition-colors text-white"
           title={isMuted ? "Unmute" : "Mute"}
         >
           {isMuted ? "🔇" : "🔊"}
@@ -117,7 +117,7 @@ export default function EducatorChat({ userId }: EducatorChatProps) {
           <div key={idx} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
             <div className={`max-w-[80%] p-4 rounded-lg ${
               msg.role === "user" 
-                ? "bg-blue-600 text-white" 
+                ? "bg-green-600 text-white" 
                 : "bg-gray-100 text-gray-800"
             }`}>
               <p className="whitespace-pre-wrap">{msg.content}</p>
