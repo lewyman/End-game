@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen pt-24 bg-gradient-to-br from-green-500 via-emerald-500 to-blue-600 flex flex-col relative">
+    <div className="min-h-screen pt-24 bg-gradient-to-br from-[#0a1628] via-[#0d2847] to-[#0a1628] flex flex-col relative">
       {/* Logo - Upper Left */}
       <div className="absolute top-4 left-4 z-10">
         <Link to="/">
@@ -57,8 +57,8 @@ export default function Home() {
       <div className="flex-1 flex items-center justify-center p-8">
         <div className="w-full max-w-4xl">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to Bio-Sync Academy</h1>
-            <p className="text-xl text-gray-600">Choose your learning path</p>
+            <h1 className="text-4xl font-bold text-white mb-4">Welcome to Bio-Sync Academy</h1>
+            <p className="text-xl text-blue-200">Choose your learning path</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,9 +109,9 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-8">
-            <p className="text-gray-600">
+            <p className="text-blue-200">
               Already have an account?{" "}
-              <Link to="/login" className="text-blue-600 hover:underline">Login here</Link>
+              <Link to="/login" className="text-blue-400 hover:underline">Login here</Link>
             </p>
           </div>
         </div>
