@@ -32,7 +32,7 @@ export default function Login() {
       try {
         const parsed = JSON.parse(storedUser);
         if (parsed.email) {
-          navigate("/drugs", { replace: true });
+          navigate("/", { replace: true });
           return;
         }
       } catch {
@@ -91,7 +91,7 @@ export default function Login() {
       }));
 
       setSuccess("Login successful!");
-      setTimeout(() => navigate("/drugs"), 500);
+      setTimeout(() => navigate("/"), 500);
     } catch (err) {
       setError("Login failed. Please try again.");
     } finally {
@@ -138,7 +138,7 @@ export default function Login() {
       }));
 
       setSuccess("Account created!");
-      setTimeout(() => navigate("/drugs"), 500);
+      setTimeout(() => navigate("/"), 500);
     } catch (err) {
       setError("Signup failed. Please try again.");
     } finally {
@@ -173,7 +173,7 @@ export default function Login() {
       }));
 
       setSuccess("Login successful!");
-      setTimeout(() => navigate("/drugs"), 500);
+      setTimeout(() => navigate("/"), 500);
     } catch (err) {
       setError("OAuth login failed. Please try again.");
     } finally {
@@ -366,7 +366,7 @@ export default function Login() {
           </div>
 
           <div className="mt-6 text-center">
-            <Link to="/drugs" className="text-gray-500 hover:text-gray-700 text-sm">
+            <Link to="/" className="text-gray-500 hover:text-gray-700 text-sm">
               Continue without login (limited access)
             </Link>
           </div>

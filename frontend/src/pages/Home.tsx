@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { GraduationCap, Crown } from "lucide-react";
 
 const MASTER_CODE = "MAIA-ACCESS-2026";
+const PAID_TIERS = ["price_monthly", "price_yearly", "tier1_monthly", "tier1_yearly", "tier2_monthly", "tier2_yearly", "tier3_monthly", "tier3_yearly"];
 
 export default function Home() {
   const [userId, setUserId] = useState<string>("guest");
@@ -13,14 +14,23 @@ export default function Home() {
   const [codeError, setCodeError] = useState(false);
 
   useEffect(() => {
+    // Check if master code was previously entered
+    const storedCode = localStorage.getItem("maia_test_code");
+    if (storedCode === MASTER_CODE) {
+      setHasMaiaAccess(true);
+      return;
+    }
+
     const user = localStorage.getItem("pharma_current_user");
     if (user) {
       try {
         const parsed = JSON.parse(user);
         setUserId(parsed.email || "guest");
-        // Check subscription tier for MAIA access
+        // Check subscription tier for MAIA access - paid plans only
         const tier = parsed.subscription_tier || parsed.tier;
-        setHasMaiaAccess(tier === "tier2_monthly" || tier === "tier2_yearly" || tier === "price_monthly" || tier === "price_yearly");
+        if (PAID_TIERS.includes(tier)) {
+          setHasMaiaAccess(true);
+        }
       } catch {
         setUserId("guest");
       }
@@ -33,7 +43,6 @@ export default function Home() {
       setHasMaiaAccess(true);
       setShowCodeInput(false);
       setCodeError(false);
-      // Store the code in localStorage so it persists
       localStorage.setItem("maia_test_code", MASTER_CODE);
     } else {
       setCodeError(true);
@@ -123,7 +132,7 @@ export default function Home() {
           {!hasMaiaAccess && !showCodeInput ? (
             <div className="text-center py-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Meet MAIA</h2>
-              <p className="text-gray-600 mb-6">Your AI Medical Tutor — Enter the access code or subscribe to chat with MAIA</p>
+              <p className="text-gray-600 mb-6">Your AI Medical Tutor — Subscribe or enter access code to chat</p>
               <button
                 onClick={() => setShowCodeInput(true)}
                 className="px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"

@@ -28,7 +28,7 @@ export default function AuthCallback() {
               isAdmin: user.isAdmin,
               subscription_tier: user.subscription_tier,
             }));
-            navigate("/drugs");
+            navigate("/");
           } else {
             navigate("/login?error=user_not_found");
           }
