@@ -211,10 +211,10 @@ export default function Pricing() {
                 disabled={loading === tier.priceId}
                 className={`w-full py-3 rounded-xl font-semibold transition-colors ${
                   tier.popular
-                    ? "bg-blue-600 text-white hover:bg-blue-700"
-                    : tier.name === "Tier 0"
-                    ? "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    : "bg-indigo-600 text-white hover:bg-indigo-700"
+                    ? "bg-white text-white hover:bg-white"
+                    : tier.name === "Free"
+                    ? "bg-white text-gray-700 hover:bg-white"
+                    : "bg-white text-white hover:bg-white"
                 } ${loading === tier.priceId ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 {loading === tier.priceId ? (
@@ -222,7 +222,7 @@ export default function Pricing() {
                     <Loader2 className="w-5 h-5 animate-spin" />
                     Loading...
                   </span>
-                ) : tier.name === "Tier 0" ? (
+                ) : tier.name === "Free" ? (
                   "Get Started Free"
                 ) : (
                   "Subscribe Now"
