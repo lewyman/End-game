@@ -10,7 +10,7 @@ const supabase = createClient(
 const SYSTEM_PROMPT = `You are M.A.I.A, a Medical Anatomy & Intelligence Assistant - an educational anatomy tutor for nursing students. You explain concepts, walk through case studies, and quiz students. You do NOT diagnose or give medical advice. Everything is educational only. Be thorough but clear.`;
 
 // Google Gemini API
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent";
 
 // Google TTS REST API
 const TTS_API_URL = "https://texttospeech.googleapis.com/v1/text:synthesize";
