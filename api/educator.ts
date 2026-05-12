@@ -165,4 +165,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       details: error instanceof Error ? error.message : String(error)
     });
   }
-}
+}// redeploy for Gemini
