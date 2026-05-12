@@ -9,8 +9,8 @@ const supabase = createClient(
 
 const SYSTEM_PROMPT = `You are M.A.I.A, a Medical Anatomy & Intelligence Assistant - an educational anatomy tutor for nursing students. You explain concepts, walk through case studies, and quiz students. You do NOT diagnose or give medical advice. Everything is educational only. Be thorough but clear.`;
 
-// Groq API
-const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
+// Google Gemini API
+const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
 // Google TTS REST API
 const TTS_API_URL = "https://texttospeech.googleapis.com/v1/text:synthesize";
@@ -50,36 +50,35 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       console.error("Error saving user message:", userError);
     }
 
-    // Call Groq API
-    const apiKey = process.env.GROK_KEY;
+    // Call Gemini API
+    const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
-      throw new Error("GROK_KEY not configured");
+      throw new Error("GEMINI_API_KEY not configured");
     }
 
-    const groqResponse = await fetch(GROQ_API_URL, {
+    const geminiResponse = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [
-          { role: "system", content: SYSTEM_PROMPT },
-          { role: "user", content: message }
+        contents: [
+          { role: "user", parts: [{ text: message }] }
         ],
-        temperature: 0.7,
-        max_tokens: 2048,
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 2048,
+        }
       })
     });
 
-    if (!groqResponse.ok) {
-      const errorText = await groqResponse.text();
-      throw new Error(`Groq API error: ${groqResponse.status} - ${errorText}`);
+    if (!geminiResponse.ok) {
+      const errorText = await geminiResponse.text();
+      throw new Error(`Gemini API error: ${geminiResponse.status} - ${errorText}`);
     }
 
-    const groqData = await groqResponse.json();
-    const aiResponse = groqData.choices?.[0]?.message?.content || "";
+    const geminiData = await geminiResponse.json();
+    const aiResponse = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
     // Save AI response to Supabase
     const { error: aiError } = await supabase.from("messages").insert([
@@ -96,15 +95,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Generate speech with Google TTS using service account
     let audioUrl = null;
     let ttsError = null;
-    
+
     try {
       const credJson = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || "{}";
       console.log("Credentials available:", credJson.length > 0 ? "YES" : "NO");
       console.log("Credentials preview:", credJson.substring(0, 100));
-      
+
       const credentials = JSON.parse(credJson);
       console.log("Parsed project_id:", credentials.project_id);
-      
+
       const auth = new GoogleAuth({
         credentials,
         scopes: ["https://www.googleapis.com/auth/cloud-platform"],
@@ -113,7 +112,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const client = await auth.getClient();
       const tokenResponse = await client.getAccessToken();
       const token = tokenResponse?.token;
-      
+
       console.log("Token obtained:", token ? "YES" : "NO");
       console.log("Token preview:", token ? token.substring(0, 50) + "..." : "null");
 
@@ -123,7 +122,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           voice: { languageCode: "en-US", name: "en-US-Neural2-E", ssmlGender: "FEMALE" },
           audioConfig: { audioEncoding: "MP3", speakingRate: 0.95, pitch: 0 },
         };
-        
+
         const ttsResponse = await fetch(TTS_API_URL, {
           method: "POST",
           headers: {
@@ -134,7 +133,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         });
 
         console.log("TTS response status:", ttsResponse.status);
-        
+
         if (ttsResponse.ok) {
           const ttsData = await ttsResponse.json();
           console.log("TTS audioContent available:", ttsData.audioContent ? "YES" : "NO");
@@ -154,17 +153,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       ttsError = String(ttsErr);
     }
 
-    res.json({ 
-      response: aiResponse, 
+    res.json({
+      response: aiResponse,
       audioUrl,
-      ttsError: ttsError // Include error info for debugging
+      ttsError: ttsError
     });
   } catch (error) {
     console.error("Educator API error:", error);
-    res.status(500).json({ 
-      error: "Internal server error", 
-      details: error instanceof Error ? error.message : String(error) 
+    res.status(500).json({
+      error: "Internal server error",
+      details: error instanceof Error ? error.message : String(error)
     });
   }
 }
-// trigger redeploy for GROK_KEY
