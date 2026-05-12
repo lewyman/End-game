@@ -49,13 +49,13 @@ export default function AnimatedAvatar({ isSpeaking }: AnimatedAvatarProps) {
       {/* Gradient ring border */}
       <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-400 via-blue-500 to-blue-600" />
 
-      {/* Inner circle with Bio-Sync dark background */}
+      {/* Inner circle with MAIA avatar */}
       <div className="absolute inset-[3px] rounded-full bg-[#0a1628] flex items-center justify-center overflow-hidden">
-        {/* Bio-Sync logo image */}
+        {/* MAIA avatar image */}
         <img
-          src="/images/Bio_Logo_white-87f86ab6b807.png"
+          src="/images/maia-avatar.jpg"
           alt="MAIA Avatar"
-          className="w-full h-full object-contain rounded-full p-1"
+          className="w-full h-full object-cover rounded-full"
         />
 
         {/* Mouth overlay */}
