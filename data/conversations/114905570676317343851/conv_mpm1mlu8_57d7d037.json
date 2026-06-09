@@ -1,0 +1,16 @@
+{
+  "id": "conv_mpm1mlu8_57d7d037",
+  "title": "What are signs of digoxin toxicity?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What are signs of digoxin toxicity?"
+    },
+    {
+      "role": "assistant",
+      "content": "Digoxin toxicity is a high-yield topic for nursing exams, Christian! Because digoxin has a very **narrow therapeutic index** (normal therapeutic range is **0.5 to 2.0 ng/mL**), toxicity can happen easily and quickly. \n\nHere are the specific signs and symptoms you need to watch for, broken down by system:\n\n### **1. Early Gastrointestinal (GI) Signs**\n*These are often the very first indicators of toxicity.*\n*   **Anorexia** (loss of appetite is frequently the earliest warning sign)\n*   **Nausea and vomiting**\n*   **Abdominal pain**\n\n### **2. Neurological & Visual Changes**\n*These are classic NCLEX buzzwords!*\n*   **Vision changes:** Seeing **yellow-green halos** around lights, blurred vision, or changes in color perception.\n*   **Neurological:** Fatigue, profound weakness, lethargy, or confusion.\n\n### **3. Cardiac Manifestations (Most Dangerous)**\n*Since digoxin slows the heart rate and increases contractility, toxicity can severely disrupt cardiac rhythm.*\n*   **Bradycardia** (heart rate < 60 bpm)\n*   **Dysrhythmias** (premature ventricular contractions [PVCs], heart blocks, or virtually any other type of arrhythmia)\n\n### **💡 M.A.I.A's Nursing Considerations (The \"Need to Know\"):**\n*   **The Hypokalemia Connection:** Low potassium (**< 3.5 mEq/L**) significantly increases the risk of digoxin toxicity. Always monitor potassium levels closely, especially if the patient is also taking a potassium-wasting diuretic like furosemide (Lasix). \n*   **Assessment:** Always take the **apical pulse for 1 full minute** before administering. Withhold the dose and notify the provider if the heart rate is less than 60 bpm in adults (or < 70 in older children, < 90 in infants).\n*   **The Antidote:** If levels reach critical toxicity, the reversal agent is **digoxin immune Fab (Digibind)**.\n\nLet me know if you want to dive deeper into other cardiac medications or if you'd like me to quiz you on this!"
+    }
+  ],
+  "created_at": "2026-05-26T02:55:58.736Z",
+  "updated_at": "2026-05-26T02:55:58.736Z"
+}

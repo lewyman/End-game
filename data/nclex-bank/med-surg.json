@@ -1,0 +1,4 @@
+  File "/tmp/gen_pharm.py", line 3
+    CATEGORY = sys.argv[1] if len(sys.argv) > 1 else "
+                                                     ^
+SyntaxError: unterminated string literal (detected at line 3)

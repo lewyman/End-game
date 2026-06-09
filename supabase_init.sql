@@ -1,0 +1,2 @@
+-- Bio-Sync Academy Supabase Migration
+-- Paste this into your Supabase SQL editor to run the migration.

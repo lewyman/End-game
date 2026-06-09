@@ -1,0 +1,23 @@
+{
+  "pro": {
+    "productId": "prod_UZv2bddZbEQLHM",
+    "priceId": "price_1TalCIHue6jkR6OddID87NkU",
+    "amount": 21499,
+    "interval": "year",
+    "createdAt": "2026-05-24T00:00:00.000Z"
+  },
+  "pro_plus": {
+    "productId": "prod_UaEIZ4qEDcMSGW",
+    "priceId": "price_1Tb3poHue6jkR6OdJbYi75zl",
+    "amount": 59999,
+    "interval": "year",
+    "createdAt": "2026-05-25T00:00:00.000Z"
+  },
+  "max": {
+    "productId": "prod_UaEIT9O1RTc6fB",
+    "priceId": "price_1Tb3poHue6jkR6Od53q1YJ8l",
+    "amount": 99999,
+    "interval": "year",
+    "createdAt": "2026-05-25T00:00:00.000Z"
+  }
+}

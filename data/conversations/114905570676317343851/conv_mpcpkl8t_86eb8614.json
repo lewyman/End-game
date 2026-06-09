@@ -1,0 +1,16 @@
+{
+  "id": "conv_mpcpkl8t_86eb8614",
+  "title": "What are signs of digoxin toxicity?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What are signs of digoxin toxicity?"
+    },
+    {
+      "role": "assistant",
+      "content": "### Signs of Digoxin Toxicity\n\nDigoxin has a very **narrow therapeutic index** (the normal therapeutic range is **0.5–2.0 ng/mL**). Because the window between a helpful dose and a toxic dose is so small, digoxin toxicity is a highly testable topic in nursing school and on the NCLEX! \n\nHere are the classic signs of digoxin toxicity, broken down by body system:\n\n**1. Gastrointestinal (Often the EARLIEST signs)**\n*   **Anorexia** (loss of appetite)\n*   **Nausea and vomiting**\n*   **Abdominal pain**\n*(Note: If your heart failure patient suddenly stops eating and complains of an upset stomach, suspect digoxin toxicity first!)*\n\n**2. Neurologic and Visual (The \"Classic\" signs)**\n*   **Visual changes:** Seeing **yellow-green halos** around lights, blurred vision, or double vision (diplopia).\n*   **Confusion** or delirium\n*   **Fatigue**, lethargy, and generalized weakness\n\n**3. Cardiac (The most DANGEROUS signs)**\n*   **Bradycardia** (This is why you *always* check the apical pulse for a full minute before administering, and hold the dose if the heart rate is < 60 bpm in adults).\n*   **Dysrhythmias:** Digoxin toxicity can cause almost any kind of arrhythmia, including premature ventricular contractions (PVCs) and heart blocks.\n\n---\n\n### 💡 M.A.I.A.'s Pro-Tip for the NCLEX:\n**Low Potassium = High Risk!** \n**Hypokalemia** (low potassium) is the most common precipitating factor for digoxin toxicity. The drug binds to the same sites on the heart as potassium. If potassium is low, there is more room for digoxin to bind, leading to toxicity even if the actual dose was normal. \n\nAlways check your patient's potassium levels (normal: **3.5–5.0 mEq/L**) before giving digoxin, especially if they are also taking a potassium-wasting diuretic like furosemide (Lasix).\n\nYou are doing great! Let me know if you want to review the antidote (Digoxin immune Fab) or if you'd like me to quiz you on this concept!"
+    }
+  ],
+  "created_at": "2026-05-19T14:08:33.677Z",
+  "updated_at": "2026-05-19T14:08:33.677Z"
+}

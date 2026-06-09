@@ -1,0 +1,67 @@
+{
+  "id": "iv-drip-rate-calculator",
+  "name": "IV Drip Rate Calculator",
+  "description": "Calculates IV fluid flow rates in mL/hr and drops per minute (gtt/min).",
+  "category": "Dosage",
+  "kind": "calculator",
+  "fields": [
+    {
+      "id": "volume_ml",
+      "label": "Total Volume",
+      "type": "number",
+      "unit": "mL",
+      "placeholder": "e.g., 1000"
+    },
+    {
+      "id": "time_hr",
+      "label": "Total Time",
+      "type": "number",
+      "unit": "hours",
+      "placeholder": "e.g., 8"
+    },
+    {
+      "id": "drop_factor",
+      "label": "Drop Factor",
+      "type": "number",
+      "unit": "gtt/mL",
+      "placeholder": "e.g., 15"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "ml_per_hr",
+      "label": "Flow Rate",
+      "expression": "volume_ml / time_hr",
+      "unit": "mL/hr",
+      "precision": 1,
+      "explanation": "Total volume divided by total time in hours."
+    },
+    {
+      "id": "gtt_per_min",
+      "label": "Drop Rate",
+      "expression": "(volume_ml * drop_factor) / (time_hr * 60)",
+      "unit": "gtt/min",
+      "precision": 0,
+      "explanation": "Calculates drops per minute based on total volume, drop factor, and total time converted to minutes."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Nursing Safety Considerations",
+      "content": "IV administration requires continuous monitoring to ensure patient safety and therapeutic efficacy.",
+      "bullets": [
+        "Verify the correct fluid, volume, and rate against the provider's order.",
+        "Verify the drop factor on the IV tubing package before calculating gtt/min.",
+        "Inspect the IV insertion site for signs of infiltration, phlebitis, or infection before and during infusion.",
+        "Monitor the patient for indications of fluid volume overload, particularly in pediatric, geriatric, and cardiac/renal patients.",
+        "Use an electronic infusion pump instead of a manual gravity drip for all high-alert medications and precise titrations.",
+        "Verify calculations independently or with a second nurse when required by facility policy."
+      ]
+    }
+  ],
+  "disclaimer": "This tool is for educational and simulation purposes only. Do not use for clinical decision-making without independent verification and adherence to institutional policies.",
+  "createdAt": "2026-05-13T04:22:02.445Z",
+  "sourceTier": "pro",
+  "model": "google/gemini-3.1-pro-preview",
+  "updatedAt": "2026-05-13T04:46:33.959Z"
+}

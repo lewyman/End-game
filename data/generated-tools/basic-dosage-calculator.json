@@ -1,0 +1,55 @@
+{
+  "id": "basic-dosage-calculator",
+  "name": "Basic Dosage Calculator",
+  "description": "Calculates the basic amount of medication to administer using the standard formula: (Desired / Have) x Quantity.",
+  "category": "Dosage",
+  "kind": "calculator",
+  "fields": [
+    {
+      "id": "desired_dose",
+      "label": "Desired Dose (Ordered)",
+      "type": "number",
+      "placeholder": "e.g. 500"
+    },
+    {
+      "id": "dose_on_hand",
+      "label": "Dose on Hand (Supplied)",
+      "type": "number",
+      "placeholder": "e.g. 250"
+    },
+    {
+      "id": "vehicle_quantity",
+      "label": "Quantity (Volume/Tablets)",
+      "type": "number",
+      "placeholder": "e.g. 1"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "amount_to_administer",
+      "label": "Amount to Administer",
+      "expression": "(desired_dose / dose_on_hand) * vehicle_quantity",
+      "precision": 2,
+      "explanation": "Calculates the required volume or number of tablets to give to the patient."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Clinical Safety Reminders",
+      "content": "Accurate medication calculation is critical for patient safety. The 'Desired over Have' formula is a standard method for basic dose determination.",
+      "bullets": [
+        "Ensure units of measurement for both Desired Dose and Dose on Hand are identical before calculating (e.g., convert grams to milligrams if necessary).",
+        "Verify the calculation with a second licensed nurse, especially for high-alert medications like insulin, heparin, or pediatric doses.",
+        "Always check the provider's order, medication label, and patient allergies before administration."
+      ]
+    }
+  ],
+  "disclaimer": "This calculator is intended for nursing education and training purposes only. It should not replace clinical judgment, institutional protocols, or independent verification by a licensed healthcare professional.",
+  "createdAt": "2026-05-16T16:05:08.328Z",
+  "sourceTier": "free",
+  "model": "google/gemini-3.1-pro-preview",
+  "ownerId": "114905570676317343851",
+  "ownerEmail": "crusius00@gmail.com",
+  "status": "pending",
+  "reviewedAt": null
+}

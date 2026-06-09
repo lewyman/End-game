@@ -1,0 +1,28 @@
+{
+  "id": "conv_mq2no806_bec2eea9",
+  "title": "I would like 20 nclex style questions similar to the mat",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "👋 I'm MAIA, your nursing study partner! I can quiz you on pharmacology, walk through clinical scenarios, generate NCLEX questions, and explain nursing concepts. What are you studying for today?"
+    },
+    {
+      "role": "user",
+      "content": "I would like 20 nclex style questions similar to the material that I will be seeing on the nclex pn test"
+    },
+    {
+      "role": "assistant",
+      "content": "The student wants 20 NCLEX-style questions similar to what they'd see on the NCLEX-PN exam. As M.A.I.A, I need to provide 20 NCLEX-PN style questions covering various topics that are commonly tested. NCLEX-PN focuses on practical/vocational nursing, so questions should be appropriate for that level.\n\nLet me create 20 questions covering key areas: pharmacology, fundamentals, medical-surgical, maternal/newborn, pediatrics, mental health, nutrition, safety/infection control, etc.\n\nI'll present them one at a time or in small batches. Since the student asked for 20, I'll give them the first question and work through them sequentially.\n\nLet me start with Question 1.Let's do this! I'll run through 20 NCLEX-PN style questions with you, one at a time. Answer each one and I'll grade it, give you the rationale, then move to the next.\n\n---\n\n**Question 1 of 20 — Pharmacology**\n\nThe LPN/LVN is preparing to administer digoxin (Lanoxin) to a client with heart failure. Which assessment finding would cause the nurse to **hold** the medication and notify the RN or provider?\n\nA) Blood pressure 128/76 mm Hg  \nB) Apical pulse 54 beats per minute  \nC) Respiratory rate 18 per minute  \nD) Temperature 99.1°F (37.3°C)\n\nWhat's your answer?"
+    },
+    {
+      "role": "user",
+      "content": "b"
+    },
+    {
+      "role": "assistant",
+      "content": "The student answered \"b\" to Question 1 about digoxin. Let me evaluate that answer.\n\nThe question was: The LPN/LVN is preparing to administer digoxin (Lanoxin) to a client with heart failure. Which assessment finding would cause the nurse to hold the medication and notify the RN or provider?\n\nA) Blood pressure 128/76 mm Hg\nB) Apical pulse 54 beats per minute\nC) Respiratory rate 18 per minute\nD) Temperature 99.1°F (37.3°C)\n\nThe student answered B. The correct answer is B - apical pulse 54 beats per minute. Digoxin should be held if the apical pulse is below 60 bpm in adults because digoxin can further slow the heart rate and cause bradycardia. This is a classic NCLEX question.\n\nNow I need to grade it, provide rationale, and move to Question 2.✅ **Correct!**\n\n**B) Apical pulse 54 beats per minute** is the right answer.\n\n**Rationale:** Digoxin slows the heart rate while increasing the force of contraction (positive inotrope, negative chronotrope). The standing order is: **hold digoxin if the apical pulse is below 60 bpm** in adults. A pulse of 54 is below that threshold — administering the drug could push the client into dangerous bradycardia. The other vital signs are all within normal limits and wouldn't require holding the medication.\n\n🔑 **Memory trick:** \"Digoxin — check the *dig*ital pulse first. Below 60? Don't give it.\"\n\n---\n\n**Question 2 of 20 — Fundamentals/Safety**\n\nThe LPN/LVN is caring for a client on **contact precautions** for a wound infected with MRSA. Which action by the nurse indicates a need for further teaching?\n\nA) Putting on clean gloves before entering the room  \nB) Wearing a gown when direct contact with the client is anticipated  \nC) Using a dedicated stethoscope that stays in the client's room  \nD) Performing hand hygiene with soap and water after removing gloves\n\nYour answer?"
+    }
+  ],
+  "created_at": "2026-06-06T17:57:24.486Z",
+  "updated_at": "2026-06-06T18:00:04.405Z"
+}

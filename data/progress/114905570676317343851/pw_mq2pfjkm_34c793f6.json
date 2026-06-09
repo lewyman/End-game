@@ -1,0 +1,53 @@
+{
+  "lessons": {
+    "m1l1": {
+      "completed": true,
+      "xpEarned": 20,
+      "steps": {
+        "m1l1s1": {
+          "completed": true,
+          "attempts": 1,
+          "completedAt": "2026-06-06T18:54:09.196Z"
+        },
+        "m1l1s2": {
+          "completed": true,
+          "correct": true,
+          "attempts": 1,
+          "completedAt": "2026-06-06T18:54:18.606Z"
+        },
+        "m1l1s3": {
+          "completed": true,
+          "attempts": 1,
+          "completedAt": "2026-06-06T18:54:27.356Z"
+        },
+        "m1l1s4": {
+          "completed": true,
+          "correct": true,
+          "attempts": 2,
+          "completedAt": "2026-06-06T18:54:47.196Z"
+        },
+        "m1l1s5": {
+          "completed": true,
+          "attempts": 1,
+          "completedAt": "2026-06-06T18:54:58.419Z"
+        },
+        "m1l1s6": {
+          "completed": true,
+          "correct": true,
+          "attempts": 1,
+          "completedAt": "2026-06-06T18:55:38.872Z"
+        }
+      },
+      "startedAt": "2026-06-06T18:54:09.196Z",
+      "completedAt": "2026-06-06T18:55:40.875Z",
+      "sm2": {
+        "ease": 2.5,
+        "interval": 1,
+        "repetitions": 1,
+        "nextReview": "2026-06-07T18:55:41.331Z"
+      }
+    }
+  },
+  "totalXp": 20,
+  "updatedAt": "2026-06-06T18:55:41.331Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "103146928346936664045",
+  "email": "lewygirl97@gmail.com",
+  "name": "C Lewis",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocIjaLOTEIyVrAeg3p34dWIcrPf66JRLDm0Z5Uq5hGE304gS5A=s96-c",
+  "plan": "pro",
+  "createdAt": "2026-05-21T01:58:55.327Z",
+  "updatedAt": "2026-06-06T18:45:10.892Z",
+  "subscriptionStatus": "active",
+  "stripeCustomerId": "cus_UYSq7MUHPbdRKq",
+  "subscriptionId": "sub_1TZLuOHue6jkR6Odw18W5HwB",
+  "currentPeriodEnd": null,
+  "trialStart": 1780768559691,
+  "trialEnd": 1781373359691
+}

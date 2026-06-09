@@ -1,0 +1,702 @@
+{
+  "title": "Cardiovascular Pharmacology for Nurses",
+  "description": "Master the most-tested cardiovascular drug classes on the NCLEX — beta blockers, antiarrhythmics, ACE inhibitors, diuretics, and anticoagulants. Each lesson weaves mechanism, clinical pearls, and NCLEX traps into bite-sized steps with immediate quiz reinforcement.",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Heart Rate & Rhythm Control",
+      "lessons": [
+        {
+          "id": "m1l1",
+          "title": "Beta Blockers — The Safe First Choice",
+          "xpReward": 20,
+          "estimatedMinutes": 5,
+          "steps": [
+            {
+              "id": "m1l1s1",
+              "type": "read",
+              "title": "How Beta Blockers Work",
+              "content": "## How Beta Blockers Work\n\nBeta blockers are antiarrhythmics that slow down the entire heart. They block adrenaline (epinephrine) from binding to **beta-adrenergic receptors** on the SA and AV nodes — your heart's natural pacemakers. The result: heart rate drops, conduction slows, and the heart uses less oxygen.\n\nThere are two types of beta receptors that matter for nursing:\n\n- **Beta-1 receptors** live on the heart. Blocking them slows HR and reduces contractility. Drugs that only block Beta-1 are called **cardioselective**.\n- **Beta-2 receptors** live in the lungs and blood vessels. Blocking them causes bronchoconstriction and vasoconstriction. Drugs that block both Beta-1 and Beta-2 are **non-selective**.\n\n**The clinical pearl:** This is why you NEVER give a non-selective beta blocker like propranolol to a patient with asthma or COPD. You'd be blocking their Beta-2 receptors in the lungs, triggering bronchospasm. Cardioselective drugs like metoprolol are safer — but at high doses they lose selectivity, so you still watch for respiratory symptoms.\n\n**Memory aid:** Think \"B1 = 1 heart, B2 = 2 lungs.\" One heart, two lungs. Beta-1 drugs affect the one heart. Beta-2 drugs affect the two lungs.",
+              "duration": 90
+            },
+            {
+              "id": "m1l1s2",
+              "type": "mcq",
+              "question": "A patient with a history of asthma requires a beta blocker for rate control in atrial fibrillation. Which drug would be the safest choice?",
+              "options": ["Metoprolol", "Propranolol", "Nadolol", "Timolol"],
+              "correctOption": "Metoprolol",
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a cardioselective beta blocker (blocks Beta-1 only), making it safer for patients with reactive airway disease. Propranolol, nadolol, and timolol are all non-selective — they block Beta-2 receptors in the lungs and can trigger bronchospasm in asthma patients."
+            },
+            {
+              "id": "m1l1s3",
+              "type": "read",
+              "title": "The Three Beta Blockers You Must Know",
+              "content": "## The Three Beta Blockers You Must Know\n\n**Metoprolol (Lopressor) — Cardioselective (Beta-1)**\n\nUsed for hypertension, angina, heart failure, and post-MI. The most important nursing assessment: **check HR and BP before every dose.** Hold if HR < 60 or systolic BP < 90. \n\n**Critical NCLEX pearl:** Metoprolol can **mask hypoglycemia symptoms in diabetics.** Tachycardia is normally a warning sign of low blood sugar — beta blockers erase that signal. Teach diabetic patients to check blood glucose directly, not to rely on how they feel. Also teach: never stop abruptly. Abrupt withdrawal causes **rebound hypertension and tachycardia** that can trigger an MI.\n\n**Atenolol (Tenormin) — Cardioselective (Beta-1)**\n\nSimilar to metoprolol but less lipid-soluble, meaning less penetration into the brain and fewer CNS side effects (less fatigue, less vivid dreams). Renal clearance is the key difference: **atenolol is excreted by the kidneys**, so you must monitor renal function and adjust dosing in CKD.\n\n**Propranolol (Inderal) — Non-Selective (Beta-1 + Beta-2)**\n\nThis is the versatile one — used for hypertension, migraines, essential tremor, performance anxiety, and thyrotoxicosis. But it's **contraindicated in asthma and COPD** because Beta-2 blockade causes bronchoconstriction. It also crosses the blood-brain barrier easily, causing more CNS effects: fatigue, depression, vivid dreams, insomnia. It can cause peripheral vasoconstriction (cold hands and feet) from unopposed alpha activity.\n\n**Mnemonic: M-A-P the Beta Blockers** — **M**etoprolol (**M**asks hypoglycemia), **A**tenolol (**A**ssess kidney function), **P**ropranolol (**P**rohibited in asthma).",
+              "duration": 90
+            },
+            {
+              "id": "m1l1s4",
+              "type": "mcq",
+              "question": "A patient on metoprolol 50 mg daily has a heart rate of 56 bpm and blood pressure of 108/72. The patient reports feeling fine. What should the nurse do?",
+              "options": ["Administer the medication and document the vital signs", "Hold the dose and notify the provider", "Give half the dose and reassess in 1 hour", "Administer the medication and place the patient on a cardiac monitor"],
+              "correctOption": "Hold the dose and notify the provider",
+              "answer": "Hold the dose and notify the provider",
+              "explanation": "HR < 60 is the standard hold parameter for beta blockers regardless of how the patient feels. The bradycardia threshold exists because going lower risks symptomatic bradycardia, heart block, and reduced cardiac output. Always hold and notify — never give half doses or modify the order independently."
+            },
+            {
+              "id": "m1l1s5",
+              "type": "read",
+              "title": "Drug Interactions & Nursing Priorities",
+              "content": "## Drug Interactions & Nursing Priorities\n\n**Dangerous combinations — never miss these:**\n\n- **Beta blocker + calcium channel blocker (verapamil or diltiazem):** Both suppress the SA and AV nodes. Together they can cause **complete heart block.** This is the most tested beta blocker interaction.\n- **Beta blocker + insulin/oral hypoglycemics:** Beta blockers mask the tachycardia that warns of hypoglycemia. Diabetic patients must rely on glucose checks, not symptoms.\n- **Beta blocker + NSAIDs:** NSAIDs blunt the antihypertensive effect by causing sodium and water retention.\n\n**Nursing interventions before every dose:**\n1. Check HR and BP — **hold if HR < 60 or systolic < 90** unless you have a written order stating otherwise\n2. Count apical pulse for a full minute if the radial pulse is irregular or < 60\n3. Monitor for signs of worsening heart failure: crackles, edema, weight gain > 2 lbs/day\n4. Assess for orthostatic hypotension — teach patients to change positions slowly\n\n**Patient teaching essentials:**\n- Take your pulse daily before each dose. Report HR < 60 to the provider.\n- **Never stop abruptly** — must be tapered over 1-2 weeks under provider supervision\n- Report: severe dizziness, fainting, shortness of breath, rapid weight gain\n- Avoid OTC cold medications — many contain vasoconstrictors that oppose beta blocker effects",
+              "duration": 80
+            },
+            {
+              "id": "m1l1s6",
+              "type": "mcq",
+              "question": "A patient taking propranolol for migraine prophylaxis reports that their hands and feet are constantly cold, even in warm weather. What is the most likely explanation?",
+              "options": ["The patient has developed peripheral neuropathy unrelated to the medication", "Beta-2 blockade causes unopposed alpha-mediated vasoconstriction in the extremities", "The patient is experiencing an allergic reaction to propranolol", "Cold extremities indicate the dose is too low and should be increased"],
+              "correctOption": "Beta-2 blockade causes unopposed alpha-mediated vasoconstriction in the extremities",
+              "answer": "Beta-2 blockade causes unopposed alpha-mediated vasoconstriction in the extremities",
+              "explanation": "Propranolol blocks both Beta-1 and Beta-2 receptors. Beta-2 receptors normally mediate vasodilation in peripheral vessels. When blocked, alpha receptors (which cause vasoconstriction) are unopposed, leading to cold hands and feet. This is an expected side effect, not an allergy or neuropathy."
+            }
+          ]
+        },
+        {
+          "id": "m1l2",
+          "title": "Antiarrhythmics Part 1 — Vaughan Williams Classes I & II",
+          "xpReward": 25,
+          "estimatedMinutes": 6,
+          "steps": [
+            {
+              "id": "m1l2s1",
+              "type": "read",
+              "title": "The Vaughan Williams System",
+              "content": "## The Vaughan Williams System\n\nAntiarrhythmics are sorted into four groups based on which ion channel they block in heart cells. Your heart cells have tiny gates that let charged particles (ions) flow in and out — this electrical dance is what makes your heart beat. Antiarrhythmics either block or slow down specific gates.\n\nThe mnemonic that saves you on exams: **\"Some Block Potassium Channels\"**\n\n- **S**odium channel blockers = Class I\n- **B**eta blockers = Class II\n- **P**otassium channel blockers = Class III\n- **C**alcium channel blockers = Class IV\n\n**Class I drugs — Sodium Channel Blockers** prevent sodium from rushing into heart cells. Less sodium means the electrical signal moves slower through the myocardium. But Class I splits into three subclasses, and confusing them is the most common antiarrhythmic mistake on the NCLEX.\n\n**Memory aid for subclasses:** Think of a burger — **\"Double Quarter Pounder\"**\n- **IA** = **D**isopyramide, **Q**uinidine, **P**rocainamide → DQP = Double Quarter Pounder\n- **IB** = Lidocaine, Mexiletine → \"**I B**eat\" ventricular arrhythmias post-MI\n- **IC** = Flecainide, Propafenone → \"**I C**an't\" use these in heart failure",
+              "duration": 80
+            },
+            {
+              "id": "m1l2s2",
+              "type": "mcq",
+              "question": "A nursing student is trying to remember the Vaughan Williams classification. Which mnemonic correctly matches each class to its mechanism?",
+              "options": ["Some Block Potassium Channels — Sodium (I), Beta (II), Potassium (III), Calcium (IV)", "Stop Big Potassium Currents — Sodium (I), Beta (II), Potassium (III), Calcium (IV)", "Slow Beats Prevent Crisis — Sodium (I), Beta (II), Potassium (III), Calcium (IV)", "Sodium Blocks Potassium Channels — Sodium (I), Beta (II), Potassium (III), Calcium (IV)"],
+              "correctOption": "Some Block Potassium Channels — Sodium (I), Beta (II), Potassium (III), Calcium (IV)",
+              "answer": "Some Block Potassium Channels — Sodium (I), Beta (II), Potassium (III), Calcium (IV)",
+              "explanation": "\"Some Block Potassium Channels\" maps perfectly: Some (Sodium, Class I), Block (Beta, Class II), Potassium (Potassium, Class III), Channels (Calcium, Class IV). This is the standard NCLEX memory hook for the Vaughan Williams system."
+            },
+            {
+              "id": "m1l2s3",
+              "type": "read",
+              "title": "Class IA — The QT Prolongers",
+              "content": "## Class IA — The QT Prolongers\n\n**Drugs:** Quinidine, procainamide, disopyramide\n\nClass IA drugs block sodium channels with **moderate** strength. They slow conduction AND stretch out repolarization (the recovery phase). On the ECG, this shows up as a **prolonged QT interval.**\n\nThat longer QT is dangerous — it creates a window where the heart is vulnerable to a deadly spiral rhythm called **torsades de pointes.** A QTc over 500 ms (or an increase of more than 60 ms from baseline) is the threshold where torsades risk becomes serious.\n\n**The big NCLEX point:** Class IA drugs are the WORST offenders for torsades. When the NCLEX pairs a QT-prolonging scenario with an antiarrhythmic, Class IA is the most dangerous answer. Quinidine is particularly notorious — it also has GI side effects (diarrhea is common) and can cause a syndrome called cinchonism (tinnitus, headache, visual disturbances) at toxic levels.\n\n**Procainamide** has a unique side effect profile: long-term use can cause a **drug-induced lupus syndrome** (arthralgia, fever, rash, pleuritic chest pain). It's reversible when the drug stops, but it's a classic NCLEX association: procainamide + joint pain + fever = drug-induced lupus.\n\n**Nursing priorities for Class IA:**\n- Monitor QTc before and during therapy\n- Stop the drug if QTc > 500 ms or increases > 60 ms from baseline\n- Monitor for signs of torsades: syncope, palpitations, seizure-like activity\n- Check CBC for procainamide (risk of agranulocytosis)",
+              "duration": 90
+            },
+            {
+              "id": "m1l2s4",
+              "type": "mcq",
+              "question": "A patient on procainamide develops joint pain, fever, and a butterfly rash across the cheeks. The nurse suspects which complication?",
+              "options": ["Anaphylactic reaction to procainamide", "Drug-induced lupus syndrome", "Torsades de pointes", "Stevens-Johnson syndrome"],
+              "correctOption": "Drug-induced lupus syndrome",
+              "answer": "Drug-induced lupus syndrome",
+              "explanation": "Procainamide is the classic drug associated with drug-induced lupus syndrome — presenting with arthralgia, fever, rash, and pleuritic chest pain. It's reversible upon discontinuation and does not typically involve renal or CNS involvement that characterizes systemic lupus. This is a hallmark NCLEX association."
+            },
+            {
+              "id": "m1l2s5",
+              "type": "read",
+              "title": "Class IB & IC — The Split Decision",
+              "content": "## Class IB — The Post-MI Specialist\n\n**Drugs:** Lidocaine, mexiletine\n\nClass IB drugs produce a **weak** sodium channel block. Here's the clever part: they selectively target sick, ischemic heart tissue while barely touching healthy cells. This makes them ideal after a heart attack — they calm down the irritable ventricular tissue that's throwing PVCs and VT.\n\n**Clinical facts that get tested:**\n- Class IB works on **ventricular** arrhythmias only. Useless for atrial problems. If the NCLEX asks whether lidocaine treats atrial fibrillation, the answer is no.\n- Lidocaine is given IV only. It has extensive first-pass metabolism, so you can't give it PO.\n- CNS toxicity is the big side effect: confusion, seizures, perioral numbness, metallic taste. These are early warning signs — lidocaine crosses the blood-brain barrier easily.\n- Class IB **shortens** the QT interval (unlike IA which lengthens it).\n\n## Class IC — The CAST Trial Warning\n\n**Drugs:** Flecainide, propafenone\n\nClass IC produces a **strong** sodium channel block. The electrical signal slows way down. This class is effective but deadly in the wrong patient.\n\n**The CAST trial (Cardiac Arrhythmia Suppression Trial) is the single most important fact about Class IC:** These drugs were tested in post-MI patients to suppress PVCs. They suppressed PVCs beautifully — and killed more patients than placebo. They increase mortality in anyone with structural heart disease.\n\n**Absolute contraindications:** Heart failure, prior MI, low ejection fraction, cardiomyopathy, structural heart disease of any kind. The NCLEX will bury one of these in a long list of patient history and ask whether flecainide is safe. Find the structural heart disease and you've found your answer.\n\n**Memory aid:** \"I **C**an't use IC in heart failure.\"",
+              "duration": 90
+            },
+            {
+              "id": "m1l2s6",
+              "type": "mcq",
+              "question": "Which patient should NOT receive flecainide for atrial fibrillation?",
+              "options": ["A 45-year-old with lone atrial fibrillation and no other medical history", "A 62-year-old with hypertension controlled on lisinopril", "A 58-year-old with an ejection fraction of 30% and history of MI two years ago", "A 50-year-old with diabetes mellitus type 2 and normal cardiac workup"],
+              "correctOption": "A 58-year-old with an ejection fraction of 30% and history of MI two years ago",
+              "answer": "A 58-year-old with an ejection fraction of 30% and history of MI two years ago",
+              "explanation": "Flecainide (Class IC) is contraindicated in structural heart disease — the CAST trial showed increased mortality in post-MI patients. An EF of 30% plus prior MI means this patient has significant structural heart disease. The other patients have no evidence of structural cardiac abnormalities."
+            }
+          ]
+        },
+        {
+          "id": "m1l3",
+          "title": "Antiarrhythmics Part 2 — Classes III, IV & Unclassified",
+          "xpReward": 25,
+          "estimatedMinutes": 7,
+          "steps": [
+            {
+              "id": "m1l3s1",
+              "type": "read",
+              "title": "Class III — Potassium Channel Blockers & Amiodarone",
+              "content": "## Class III — Potassium Channel Blockers\n\n**Drugs:** Amiodarone, sotalol, dofetilide, ibutilide\n\nClass III drugs block potassium from leaving heart cells during repolarization (the \"reset\" phase). When potassium can't exit, the reset takes longer, and the **QT interval stretches out.** The therapeutic benefit is that the heart becomes less likely to develop re-entrant circuits. The risk is torsades de pointes from excessive QT prolongation.\n\n## Amiodarone — The Multi-Class Powerhouse\n\n**Amiodarone is the most tested antiarrhythmic on the NCLEX.** It's unique because it acts like ALL four Vaughan Williams classes — it blocks sodium, beta receptors, potassium, AND calcium channels. This makes it powerful and versatile (works for both atrial and ventricular arrhythmias), but also profoundly toxic.\n\n**The half-life is about 58 days.** It builds up in fat, liver, lungs, and skin — which means side effects can appear months after starting and persist months after stopping.\n\n**Head-to-toe toxicity — picture a patient who looks terrible:**\n\n- **Head:** Corneal microdeposits (most patients get them, usually harmless but requires eye exams)\n- **Neck:** Thyroid dysfunction — can cause hypo OR hyperthyroidism. Amiodarone is loaded with iodine. Check TSH at baseline and every 6 months.\n- **Lungs:** **Pulmonary fibrosis** — the most feared side effect. Any cough, dyspnea, or crackles in an amiodarone patient? Stop drug, get chest X-ray, report immediately. Baseline PFTs are mandatory.\n- **Liver:** Hepatotoxicity — can be fatal. Monitor LFTs.\n- **Skin:** Blue-gray discoloration (permanent with long-term use) and severe photosensitivity.\n\n**Drug interactions that show up on every NCLEX:**\n- Amiodarone + warfarin = **sky-high INR** — amiodarone inhibits warfarin metabolism\n- Amiodarone + digoxin = **digoxin toxicity** — amiodarone reduces digoxin clearance\n- Amiodarone + simvastatin > 20 mg = **rhabdomyolysis risk**",
+              "duration": 110
+            },
+            {
+              "id": "m1l3s2",
+              "type": "mcq",
+              "question": "A patient on amiodarone develops a persistent dry cough and progressive shortness of breath over several weeks. Crackles are auscultated at the lung bases. What is the priority nursing action?",
+              "options": ["Administer supplemental oxygen and reassure the patient", "Hold amiodarone and notify the provider immediately for chest X-ray and pulmonary evaluation", "Give the patient a PRN dose of albuterol and document the finding", "Continue amiodarone but order pulmonary function tests for the next outpatient visit"],
+              "correctOption": "Hold amiodarone and notify the provider immediately for chest X-ray and pulmonary evaluation",
+              "answer": "Hold amiodarone and notify the provider immediately for chest X-ray and pulmonary evaluation",
+              "explanation": "Amiodarone + respiratory symptoms = possible pulmonary toxicity, which can be fatal. This is a medical emergency — stop the drug and get immediate evaluation. Do not delay with outpatient follow-up or comfort measures. Pulmonary fibrosis from amiodarone carries significant mortality."
+            },
+            {
+              "id": "m1l3s3",
+              "type": "read",
+              "title": "Class IV — Calcium Channel Blockers & Unclassified Drugs",
+              "content": "## Class IV — Calcium Channel Blockers (Non-DHP)\n\n**Drugs:** Verapamil, diltiazem\n\nThese block calcium channels specifically at the **SA and AV nodes.** Heart rate slows. Conduction slows. They're used for rate control in atrial fibrillation and for terminating SVT.\n\n**Critical distinction:** Do NOT confuse these with dihydropyridine calcium channel blockers (amlodipine, nifedipine). Those mostly affect blood vessels, not the heart's conduction system. Verapamil and diltiazem are the ones tested as antiarrhythmics.\n\n**The danger combo: Verapamil + beta blocker = complete heart block.** Both drugs suppress the SA and AV nodes. Together they can stop conduction entirely. This interaction is tested constantly.\n\n## Adenosine — The Heart Stopper\n\nAdenosine literally stops the heart for a few seconds to break SVT. It resets the SA and AV nodes.\n\n**Administration rules — every one is tested:**\n- Give as a **rapid IV push** (the faster, the better — it has a half-life of < 10 seconds)\n- Follow immediately with a **rapid saline flush**\n- **Warn the patient:** they will feel a moment of \"impending doom\" — chest pressure, flushing, dyspnea. It passes in seconds but it's terrifying if unexpected.\n- Keep the patient supine, have resuscitation equipment nearby (brief asystole is expected)\n\n## Digoxin — The Inotrope\n\nNot in Vaughan Williams. Increases contractility (positive inotrope) while slowing AV conduction. Used for AFib rate control and heart failure.\n\n**Narrow therapeutic window:** 0.5-2.0 ng/mL. Toxicity shows up as:\n- **Yellow-green halos** around lights (xanthopsia) — pathognomonic\n- Nausea, vomiting, anorexia\n- Bradycardia, arrhythmias\n- **Hypokalemia makes digoxin toxicity worse** — classic NCLEX combo. Low K = digoxin binds more tightly to its receptor.\n\n**Always check apical pulse for 1 full minute before giving.** Hold if < 60.",
+              "duration": 110
+            },
+            {
+              "id": "m1l3s4",
+              "type": "mcq",
+              "question": "A nurse is preparing to administer adenosine to a patient in SVT. What is the correct administration technique?",
+              "options": ["Slow IV push over 2-3 minutes followed by a saline lock flush", "Rapid IV push followed immediately by a rapid saline flush", "Continuous IV infusion titrated to heart rate response", "Intramuscular injection into a large muscle mass"],
+              "correctOption": "Rapid IV push followed immediately by a rapid saline flush",
+              "answer": "Rapid IV push followed immediately by a rapid saline flush",
+              "explanation": "Adenosine has a half-life of less than 10 seconds. It must be given as a rapid IV bolus (the faster the better) followed immediately by a rapid saline flush to push the drug into central circulation before it's metabolized. Slow administration or IM injection would result in the drug being completely metabolized before reaching the heart."
+            },
+            {
+              "id": "m1l3s5",
+              "type": "read",
+              "title": "NCLEX Traps — Putting It All Together",
+              "content": "## NCLEX Traps That Catch Everyone\n\n**Trap 1: The drug that does too many things.** The question describes a patient on amiodarone who develops cough and shortness of breath. Your instinct says calm the patient, give oxygen. WRONG. Amiodarone + respiratory symptoms = possible pulmonary toxicity. Stop the drug and get a chest X-ray. The NCLEX distracts you with comfort measures. Don't fall for it — pulmonary fibrosis can be fatal.\n\n**Trap 2: The QTc bait-and-switch.** The question describes a patient on sotalol with a QTc of 520 ms and asks what to do. The answer is almost always: hold the drug and notify the provider. QTc > 500 ms (or increase > 60 ms from baseline) = torsades risk threshold. The NCLEX will try to make you think about potassium levels or magnesium — but the FIRST action is stopping the offending drug.\n\n**Trap 3: The contraindication hiding in plain sight.** \"Which patient should NOT receive flecainide?\" One answer casually mentions \"history of MI two years ago.\" THAT'S the answer. Class IC + structural heart disease = wrong. Find the heart failure, past MI, low EF, or cardiomyopathy — any of those plus a Class IC drug is the wrong answer.\n\n**The big-picture framework:** When you see an antiarrhythmic question, don't panic about the drug name. Ask: which door does this drug block? Block sodium too hard → slow conduction → heart block. Block potassium → prolonged QT → torsades. Block beta → low HR, low BP. Block calcium at the nodes → slow HR, slow conduction. Connect the mechanism to the side effect and the question answers itself.",
+              "duration": 100
+            },
+            {
+              "id": "m1l3s6",
+              "type": "mcq",
+              "question": "A patient on amiodarone is also taking warfarin for atrial fibrillation. The INR, previously stable at 2.5, is now 5.8. What explains this finding?",
+              "options": ["The patient likely doubled their warfarin dose by mistake", "Amiodarone inhibits warfarin metabolism, increasing its anticoagulant effect", "Warfarin enhances amiodarone clearance, requiring dose adjustment", "This is an expected lab fluctuation that requires no intervention"],
+              "correctOption": "Amiodarone inhibits warfarin metabolism, increasing its anticoagulant effect",
+              "answer": "Amiodarone inhibits warfarin metabolism, increasing its anticoagulant effect",
+              "explanation": "Amiodarone is a potent CYP450 inhibitor that reduces warfarin clearance, causing INR to climb dangerously. This interaction is so reliable that when amiodarone is started, the warfarin dose is typically reduced preemptively by 30-50%. An INR of 5.8 carries significant bleeding risk and requires immediate intervention."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Blood Pressure Control",
+      "lessons": [
+        {
+          "id": "m2l1",
+          "title": "ACE Inhibitors — The \"-pril\" Drugs",
+          "xpReward": 25,
+          "estimatedMinutes": 6,
+          "steps": [
+            {
+              "id": "m2l1s1",
+              "type": "read",
+              "title": "The RAAS Pathway & How ACE Inhibitors Work",
+              "content": "## The RAAS Pathway & How ACE Inhibitors Work\n\nACE inhibitors are blood pressure medications that end in **\"-pril\"** — lisinopril, enalapril, ramipril, captopril, benazepril, quinapril. They're usually the first drug a provider reaches for in hypertension, heart failure, and kidney protection (especially in diabetes).\n\nThe name stands for **A**ngiotensin-**C**onverting **E**nzyme inhibitors. They block the enzyme that converts angiotensin I into angiotensin II.\n\nHere's the chain reaction they interrupt:\n\n**Liver** → makes angiotensinogen (inactive) → **Renin** (from kidneys) converts it to angiotensin I (still inactive) → **ACE enzyme** converts it to angiotensin II (the active troublemaker)\n\nAngiotensin II does three things, and ACE inhibitors stop all three:\n1. Squeezes blood vessels tight (vasoconstriction) → raises BP → **BLOCKED**\n2. Tells adrenals to release **aldosterone**, making kidneys hold sodium and water → raises BP more → **BLOCKED**\n3. Tells kidneys to dump potassium → **BLOCKED** (potassium stays in the blood)\n\n**The result:** Vessels relax, kidneys release water and sodium, BP drops — but potassium climbs.\n\n**The cough:** ACE also breaks down **bradykinin** (an inflammatory mediator). When you inhibit ACE, bradykinin piles up, irritating the lungs and throat, causing a dry hacking cough in 10-20% of patients. It's not dangerous but annoying enough that providers switch to an ARB (losartan, valsartan) instead.\n\n**Memory aid — think A.C.E.:** **A**ngioedema = emergency. **C**ough = annoying, tell provider. **E**levated potassium = check labs.",
+              "duration": 100
+            },
+            {
+              "id": "m2l1s2",
+              "type": "mcq",
+              "question": "A patient on lisinopril for hypertension develops a persistent dry cough that interferes with sleep. What is the underlying mechanism?",
+              "options": ["ACE inhibition causes sodium retention in the respiratory mucosa", "Accumulation of bradykinin irritates the cough receptors in the lungs and throat", "The drug causes direct irritation of the phrenic nerve", "Lisinopril triggers histamine release from pulmonary mast cells"],
+              "correctOption": "Accumulation of bradykinin irritates the cough receptors in the lungs and throat",
+              "answer": "Accumulation of bradykinin irritates the cough receptors in the lungs and throat",
+              "explanation": "ACE normally breaks down bradykinin. When ACE is inhibited, bradykinin accumulates and stimulates cough receptors in the respiratory tract. This dry, non-productive cough affects 10-20% of patients. It's not dangerous but is a common reason for switching to an ARB, which doesn't affect bradykinin."
+            },
+            {
+              "id": "m2l1s3",
+              "type": "read",
+              "title": "Clinical Uses, Labs & The Angioedema Emergency",
+              "content": "## Clinical Uses, Labs & The Angioedema Emergency\n\n**When ACE inhibitors are prescribed:**\n- **Hypertension** — first-line for most patients, especially under 60\n- **Heart failure with reduced ejection fraction** — reduces afterload so the heart pumps against less resistance\n- **Post-MI** — started within 24 hours to protect heart muscle and prevent adverse remodeling\n- **Diabetic nephropathy** — slows kidney damage by reducing pressure inside the glomeruli\n- **CKD with proteinuria** — reduces protein loss regardless of diabetes status\n\n**Lab monitoring — nursing alert:** Check potassium and creatinine before the first dose and within 1-2 weeks of starting or increasing. An ACE inhibitor can double potassium if the patient has kidney issues or is on other potassium-raising drugs. A small bump in creatinine (up to 30% after starting) is expected and usually fine — a big jump means trouble.\n\n**Angioedema — a true emergency:** If the patient's face, lips, tongue, or throat swells, this is angioedema. **Stop the drug. Secure the airway. Call the provider immediately.** This is not a \"monitor and see\" situation. Angioedema from ACE inhibitors is more common in Black patients but can happen to anyone. The airway can close in minutes.\n\n**Pregnancy — absolute contraindication:** ACE inhibitors have a **black box warning** for fetal toxicity. They can cause fetal renal failure, skull defects (oligohydramnios from fetal anuria), and death — especially in the second and third trimesters. If your patient is pregnant, this drug stops immediately. Safe alternatives in pregnancy include methyldopa, labetalol, or nifedipine.",
+              "duration": 100
+            },
+            {
+              "id": "m2l1s4",
+              "type": "mcq",
+              "question": "A 26-year-old woman on lisinopril for hypertension discovers she is 8 weeks pregnant. Her blood pressure has been well-controlled. What should the nurse advise?",
+              "options": ["Continue lisinopril since it's controlling her blood pressure effectively", "Stop lisinopril immediately and switch to a pregnancy-safe antihypertensive", "Reduce the lisinopril dose by half and monitor closely", "Continue lisinopril through the first trimester, then switch in the second trimester"],
+              "correctOption": "Stop lisinopril immediately and switch to a pregnancy-safe antihypertensive",
+              "answer": "Stop lisinopril immediately and switch to a pregnancy-safe antihypertensive",
+              "explanation": "ACE inhibitors carry a black box warning for fetal toxicity — renal failure, skull defects, and death. This is an absolute contraindication at any trimester. Safe alternatives for pregnancy include methyldopa, labetalol, or nifedipine. There is no safe trimester for ACE inhibitors."
+            },
+            {
+              "id": "m2l1s5",
+              "type": "read",
+              "title": "NCLEX Traps — Hyperkalemia, Pregnancy & The Cough",
+              "content": "## NCLEX Traps — Hyperkalemia, Pregnancy & The Cough\n\n**Trap 1: The hyperkalemia distraction.** The patient is on lisinopril AND spironolactone. Potassium is 5.9. ECG shows peaked T waves. Options: call provider, hold both drugs, give kayexalate, check another lab. The NCLEX tests whether you connect the mechanism (ACE inhibitors raise potassium + spironolactone holds potassium = dangerous combo) to the clinical scenario. **Peaked T waves mean it's already affecting the heart.** Hold both drugs and notify. The combination of an ACE inhibitor and a potassium-sparing diuretic is a recipe for hyperkalemia.\n\n**Trap 2: The pregnancy question.** Same scenario as above. The NCLEX tests whether you know this is a black box warning versus just knowing it's \"not recommended.\" ACE inhibitors are not \"use with caution\" — they're \"do not use.\"\n\n**Trap 3: The cough vs. heart failure symptom.** Patient on enalapril for heart failure has a new dry cough, crackles at the bases, O2 sat 91%. Options: notify provider to switch to ARB, or assess for worsening heart failure. The right answer: **assess further.** Yes, ACE inhibitors cause cough. But this patient has heart failure — cough + crackles + dropping O2 sat could mean fluid backing up into the lungs. Rule out the life-threatening thing first. The NCLEX tests your ability to prioritize: side effect or disease complication?\n\n**Drug interactions you must know:**\n- NSAIDs blunt the BP-lowering effect and increase kidney risk\n- Potassium-sparing diuretics (spironolactone) → hyperkalemia risk skyrockets\n- Lithium → ACE inhibitors reduce lithium clearance, pushing levels toward toxicity\n- Don't double up ACE inhibitor + ARB — no benefit, more side effects",
+              "duration": 110
+            },
+            {
+              "id": "m2l1s6",
+              "type": "mcq",
+              "question": "A patient on enalapril for heart failure reports a new dry cough that keeps them awake at night. The nurse notes fine crackles in the lung bases and O2 sat of 91%. What should the nurse do first?",
+              "options": ["Notify the provider to switch from enalapril to an ARB", "Assess the patient further for signs of worsening heart failure", "Administer a PRN dose of dextromethorphan for the cough", "Document the finding as an expected ACE inhibitor side effect"],
+              "correctOption": "Assess the patient further for signs of worsening heart failure",
+              "answer": "Assess the patient further for signs of worsening heart failure",
+              "explanation": "While ACE inhibitors commonly cause cough, this patient has heart failure. Cough + crackles + dropping O2 sat could indicate pulmonary edema from worsening HF. The priority is to rule out the life-threatening complication before attributing symptoms to a medication side effect. Assess first, then decide."
+            }
+          ]
+        },
+        {
+          "id": "m2l2",
+          "title": "Diuretics Part 1 — Loop & Thiazide",
+          "xpReward": 20,
+          "estimatedMinutes": 6,
+          "steps": [
+            {
+              "id": "m2l2s1",
+              "type": "read",
+              "title": "The Electrolyte Game — Three Classes at a Glance",
+              "content": "## The Electrolyte Game — Three Classes at a Glance\n\nDiuretics are about one thing: moving electrolytes. Every nursing exam question about diuretics comes down to knowing which electrolyte went where. Here's the entire game in one sentence: **thiazides and loops both waste potassium — potassium-sparing drugs hold onto it.**\n\n| Class | Site of Action | Electrolyte Effect | Key Drugs |\n|-------|---------------|-------------------|-----------|\n| Thiazide | Distal convoluted tubule | ↓ K, ↓ Na, ↓ Mg, ↑ Ca | HCTZ, chlorthalidone |\n| Loop | Ascending loop of Henle | ↓ K, ↓ Na, ↓ Mg, ↓ Ca | Furosemide, bumetanide, torsemide |\n| Potassium-sparing | Collecting duct | ↑ K (hyperkalemia risk) | Spironolactone, eplerenone |\n\n**The calcium difference — a major NCLEX distinction:** Loop diuretics waste calcium. Thiazides hold onto calcium. This means:\n- Loop diuretics can worsen osteoporosis long-term\n- Thiazides can cause **hypercalcemia** in susceptible patients\n- Thiazides are useful for patients with kidney stones (they reduce urinary calcium)\n\n**Memory aid for thiazide side effects — \"HYPER\":** \n- **H**yper**C**alcemia\n- H**Y**perglycemia\n- H**Y**peruricemia (can trigger gout)\n- H**Y**perlipidemia\n\nAll four are tested, but the first three appear on nearly every NCLEX.",
+              "duration": 90
+            },
+            {
+              "id": "m2l2s2",
+              "type": "mcq",
+              "question": "A patient on hydrochlorothiazide for hypertension has a calcium level of 11.2 mg/dL (normal 8.5-10.5). What explains this finding?",
+              "options": ["The patient is likely taking calcium supplements excessively", "Thiazide diuretics increase calcium reabsorption in the distal tubule", "HCTZ causes calcium to shift from bones into the bloodstream", "This is an unrelated finding — thiazides have no effect on calcium"],
+              "correctOption": "Thiazide diuretics increase calcium reabsorption in the distal tubule",
+              "answer": "Thiazide diuretics increase calcium reabsorption in the distal tubule",
+              "explanation": "Unlike loop diuretics which waste calcium, thiazides increase calcium reabsorption in the distal convoluted tubule. This can lead to mild hypercalcemia. This is actually exploited therapeutically in patients with calcium kidney stones. Loop diuretics have the opposite effect."
+            },
+            {
+              "id": "m2l2s3",
+              "type": "read",
+              "title": "Loop Diuretics — The Heavy Hitters",
+              "content": "## Loop Diuretics — The Heavy Hitters\n\n**Furosemide (Lasix) is the most tested diuretic in nursing school.** It's powerful, fast-acting, and easy to mess up if you're not watching labs.\n\n**How it works:** Blocks the sodium-potassium-chloride cotransporter in the thick ascending loop of Henle. This dumps massive amounts of sodium, potassium, chloride, calcium, magnesium, and water into the urine. It's the most potent class of diuretics.\n\n**What gets wasted:** Everything — K, Na, Mg, AND Ca. That calcium loss is unique to loops and matters for osteoporosis risk.\n\n**The four NCLEX traps for furosemide:**\n\n1. **Potassium trap:** Furosemide + digoxin = dangerous combo. Low K makes digoxin toxic at normal doses. Both drugs on a med list? Check that potassium — below 3.5 = hold both and call.\n\n2. **BP trap:** IV furosemide drops BP fast. Always check BP before giving. Systolic under 90-100? Hold and notify. This drug tanks pressure in minutes.\n\n3. **Hearing trap:** High-dose IV furosemide is **ototoxic**, especially when pushed too fast. Give IV at **20 mg/min or slower.** Tinnitus? Stop and report.\n\n4. **Sulfa trap:** Furosemide is a sulfonamide. Sulfa allergy? Check the order. Cross-reactivity is debated but real — know facility policy.\n\n**Nursing essentials:** Daily weights (same scale, time, clothes), strict I&O, monitor K/Na/Mg/Ca, give in the morning (so they're not up all night), assess for dehydration.",
+              "duration": 110
+            },
+            {
+              "id": "m2l2s4",
+              "type": "mcq",
+              "question": "A patient on furosemide 40 mg IV daily and digoxin 0.125 mg daily has a potassium level of 3.1 mEq/L. The patient reports nausea and seeing yellow-green halos. What should the nurse do first?",
+              "options": ["Administer both medications as ordered and document the symptoms", "Hold furosemide and digoxin, notify the provider, and anticipate potassium replacement", "Hold furosemide only and administer digoxin as scheduled", "Increase dietary potassium and continue both medications"],
+              "correctOption": "Hold furosemide and digoxin, notify the provider, and anticipate potassium replacement",
+              "answer": "Hold furosemide and digoxin, notify the provider, and anticipate potassium replacement",
+              "explanation": "Hypokalemia (K 3.1) + digoxin + visual disturbances (yellow-green halos = xanthopsia, a classic sign of digoxin toxicity) is an emergency. Low potassium potentiates digoxin toxicity at therapeutic digoxin levels. Both drugs should be held. The patient needs potassium replacement and digoxin level checked. This is the classic NCLEX furosemide-digoxin trap."
+            },
+            {
+              "id": "m2l2s5",
+              "type": "read",
+              "title": "Thiazide Diuretics — First-Line for Hypertension",
+              "content": "## Thiazide Diuretics — First-Line for Hypertension\n\n**Drugs:** Hydrochlorothiazide (HCTZ), chlorthalidone\n\nThiazides are milder than loops but still deplete potassium. They block the sodium-chloride cotransporter in the distal convoluted tubule.\n\n**Three NCLEX-specific traps for thiazides:**\n\n1. **The lithium interaction:** Thiazides reduce lithium clearance. A patient stable on lithium who starts HCTZ can become lithium toxic (tremor, confusion, nausea, ataxia). Lithium levels must be monitored closely anytime thiazides are started or stopped. This is classic NCLEX.\n\n2. **The gout trap:** Thiazides increase uric acid levels and can trigger acute gout flares in susceptible patients. A patient with gout on the problem list? Thiazides are relatively contraindicated.\n\n3. **The glucose trap:** Thiazides can raise blood glucose. Diabetic patients need closer glycemic monitoring when starting thiazides.\n\n**Nursing priorities:**\n- Monitor potassium — hypokalemia is the most common side effect\n- Daily weights and I&O\n- Give in the morning\n- Monitor blood glucose in diabetics\n- Assess for gout symptoms in at-risk patients\n- Teach patients to change positions slowly (orthostatic hypotension)",
+              "duration": 90
+            },
+            {
+              "id": "m2l2s6",
+              "type": "mcq",
+              "question": "A patient with bipolar disorder has been stable on lithium for 2 years. They are now started on hydrochlorothiazide for newly diagnosed hypertension. What complication should the nurse monitor for most closely?",
+              "options": ["Hypokalemia causing cardiac arrhythmias", "Lithium toxicity from reduced renal clearance", "Serotonin syndrome from drug interaction", "Orthostatic hypotension from combined CNS depression"],
+              "correctOption": "Lithium toxicity from reduced renal clearance",
+              "answer": "Lithium toxicity from reduced renal clearance",
+              "explanation": "Thiazide diuretics reduce lithium clearance by the kidneys, causing lithium levels to rise dangerously. A previously stable lithium patient can develop toxicity (tremor, confusion, nausea, seizures) within days of starting HCTZ. Lithium levels must be checked frequently and the dose typically reduced when thiazides are added."
+            }
+          ]
+        },
+        {
+          "id": "m2l3",
+          "title": "Diuretics Part 2 — Potassium-Sparing & Clinical Decisions",
+          "xpReward": 20,
+          "estimatedMinutes": 6,
+          "steps": [
+            {
+              "id": "m2l3s1",
+              "type": "read",
+              "title": "Potassium-Sparing Diuretics — The K Protectors",
+              "content": "## Potassium-Sparing Diuretics — The K Protectors\n\n**Drugs:** Spironolactone, eplerenone, amiloride, triamterene\n\nSpironolactone is the star. It's an **aldosterone antagonist** — it blocks aldosterone at the collecting duct, so instead of holding onto sodium and dumping potassium, you dump sodium and hold onto potassium.\n\n**The danger: hyperkalemia.** These drugs preserve potassium. Combine with an ACE inhibitor, ARB, or potassium supplements and potassium climbs fast. The NCLEX loves this combo trap.\n\n**NCLEX traps for spironolactone:**\n\n1. **The combo trap:** Spironolactone + lisinopril + potassium supplement = hyperkalemia waiting to happen. Always scan the med list for duplicate potassium-raising therapies.\n\n2. **The hormone trap:** Spironolactone doesn't just block aldosterone — it also blocks **androgen receptors.** Men develop gynecomastia (breast tenderness, enlargement). Women get menstrual irregularities. If a male patient on spironolactone says his breasts are tender, you know exactly why. This is so famous it's on every exam.\n\n3. **The salt substitute trap:** Teach patients to avoid \"low sodium\" salt substitutes — they're made of **potassium chloride.** A patient on spironolactone using these can become dangerously hyperkalemic without realizing it.\n\n**Monitoring:** Check potassium before starting and regularly after. Never give potassium supplements unless specifically ordered. Teach which foods are high in potassium (bananas, oranges, potatoes, tomatoes, avocados) — patients don't need to eliminate them, but they should be aware and maintain consistency.",
+              "duration": 100
+            },
+            {
+              "id": "m2l3s2",
+              "type": "mcq",
+              "question": "A 55-year-old male patient on spironolactone for heart failure reports new-onset breast tenderness and swelling. What is the most appropriate nursing response?",
+              "options": ["This is an emergency — stop the medication and notify the provider immediately", "This is an expected side effect from spironolactone's anti-androgen effects; document and notify the provider", "This indicates an allergic reaction — administer diphenhydramine and monitor", "This is unrelated to spironolactone — refer the patient for a mammogram"],
+              "correctOption": "This is an expected side effect from spironolactone's anti-androgen effects; document and notify the provider",
+              "answer": "This is an expected side effect from spironolactone's anti-androgen effects; document and notify the provider",
+              "explanation": "Gynecomastia (breast tenderness and enlargement in males) is a well-known side effect of spironolactone due to its blockade of androgen receptors. It's not an emergency or allergic reaction, but it is bothersome and may lead to a medication change (eplerenone is more selective and causes less gynecomastia). Document and notify the provider."
+            },
+            {
+              "id": "m2l3s3",
+              "type": "read",
+              "title": "Clinical Decision Making — Which Diuretic When?",
+              "content": "## Clinical Decision Making — Which Diuretic When?\n\nEvery diuretic question on the NCLEX follows the same logic:\n\n1. **Identify the drug class** → know which electrolytes are at risk\n2. **Check the labs** → is potassium high or low? What about sodium? Calcium?\n3. **Look for dangerous combos** → Furosemide + digoxin? HCTZ + lithium? Spironolactone + ACE inhibitor?\n4. **Prioritize** → Hyperkalemia (cardiac arrest risk) beats hypokalemia. Acute changes beat chronic ones.\n\n**Clinical scenarios that get tested:**\n\n**Heart failure with pulmonary edema:** Loop diuretic (furosemide IV) is your first choice. It's the fastest, most potent, and removes fluid from the lungs. Give in the morning, monitor output, watch potassium.\n\n**Hypertension in a patient with gout:** Avoid thiazides (they raise uric acid). Consider an ACE inhibitor or calcium channel blocker instead.\n\n**Hypertension with osteoporosis:** Thiazides are a good choice — they preserve calcium. Loop diuretics would worsen bone loss.\n\n**Cirrhosis with ascites:** Spironolactone is first-line. These patients already have secondary hyperaldosteronism, so blocking aldosterone directly targets the pathophysiology.\n\n**Hyperkalemia emergency:** The patient with K 6.2, peaked T waves — you need to move potassium into cells (IV calcium gluconate for cardiac protection, insulin + dextrose, sodium bicarbonate, albuterol), then remove it from the body (loop diuretic if kidneys work, dialysis if they don't). This prioritization is classic NCLEX.",
+              "duration": 110
+            },
+            {
+              "id": "m2l3s4",
+              "type": "mcq",
+              "question": "A patient with cirrhosis and ascites requires a diuretic. Which drug class targets the underlying pathophysiology of secondary hyperaldosteronism that occurs in liver disease?",
+              "options": ["Loop diuretics like furosemide", "Thiazide diuretics like hydrochlorothiazide", "Aldosterone antagonists like spironolactone", "Carbonic anhydrase inhibitors like acetazolamide"],
+              "correctOption": "Aldosterone antagonists like spironolactone",
+              "answer": "Aldosterone antagonists like spironolactone",
+              "explanation": "Patients with cirrhosis develop secondary hyperaldosteronism due to reduced hepatic metabolism of aldosterone and splanchnic vasodilation triggering the RAAS. Spironolactone directly blocks aldosterone receptors, targeting the pathophysiology. It's first-line for ascites management in cirrhosis, often combined with furosemide."
+            },
+            {
+              "id": "m2l3s5",
+              "type": "read",
+              "title": "Quick Review — Diuretic Mastery Check",
+              "content": "## Quick Review — Diuretic Mastery Check\n\nLet's lock in the most important patterns before moving to Module 3. Run through these in your head:\n\n- Loop diuretics waste ____, ____, ____, and ____ → **K, Na, Mg, Ca**\n- Thiazides waste K but ____ calcium → **hold onto (reabsorb)**\n- Spironolactone's biggest risk is ____ → **hyperkalemia**\n- Furosemide + ____ = digoxin toxicity risk → **digoxin**\n- HCTZ + ____ = lithium toxicity risk → **lithium**\n- Spironolactone causes ____ in men → **gynecomastia**\n- The thiazide mnemonic HYPER stands for: ____, ____, ____, ____ → **HyperCalcemia, hYperglycemia, hYperuricemia, hYperlipidemia**\n\n**Red flag lab values:**\n- Potassium < 3.0 or > 5.5 — stop potassium-wasting or potassium-sparing drugs respectively\n- Furosemide IV requires BP check: hold if systolic < 90-100\n- Ototoxicity risk with IV furosemide: push at ≤ 20 mg/min\n- Lithium level > 1.5 mEq/L — toxicity risk\n\nThese are the patterns that make diuretic questions predictable. If you know what each class does to potassium and calcium, you can answer 90% of diuretic NCLEX questions without even seeing the full question.",
+              "duration": 80
+            },
+            {
+              "id": "m2l3s6",
+              "type": "mcq",
+              "question": "A nurse is reviewing the medication list of a patient with hypertension, heart failure, and osteoporosis. Which diuretic would be the best choice to avoid worsening the patient's bone density?",
+              "options": ["Furosemide (Lasix)", "Bumetanide (Bumex)", "Hydrochlorothiazide (HCTZ)", "Torsemide (Demadex)"],
+              "correctOption": "Hydrochlorothiazide (HCTZ)",
+              "answer": "Hydrochlorothiazide (HCTZ)",
+              "explanation": "Loop diuretics (furosemide, bumetanide, torsemide) waste calcium in the urine, which can worsen osteoporosis. Thiazide diuretics like HCTZ do the opposite — they increase calcium reabsorption in the distal tubule, which actually helps preserve bone density. This makes thiazides the preferred diuretic class in patients with osteoporosis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Anticoagulation",
+      "lessons": [
+        {
+          "id": "m3l1",
+          "title": "Heparin & LMWH — The Hospital Anticoagulants",
+          "xpReward": 25,
+          "estimatedMinutes": 7,
+          "steps": [
+            {
+              "id": "m3l1s1",
+              "type": "read",
+              "title": "Anticoagulant Categories & How Heparin Works",
+              "content": "## Anticoagulant Categories & How Heparin Works\n\nAnticoagulants are the most high-stakes drug class in nursing because getting it wrong means catastrophic bleeding or clotting. The NCLEX tests them relentlessly because they require connecting lab values, patient assessment, and nursing action in real time.\n\n| Drug | Route | Lab | Reversal | Onset |\n|------|-------|-----|----------|-------|\n| Heparin (UFH) | IV/SQ | aPTT | Protamine sulfate | Immediate (IV) |\n| Enoxaparin (LMWH) | SQ only | Not routine | Protamine (partial) | 3-5 hours |\n| Warfarin | PO | PT/INR | Vitamin K | 3-5 days |\n| DOACs | PO | Not routine | Andexanet/idarucizumab | 2-4 hours |\n\n**How heparin works:** Heparin binds to **antithrombin III**, a natural anticoagulant. This complex then inactivates thrombin (factor IIa) and factor Xa, shutting down the clotting cascade. Unfractionated heparin inactivates both thrombin and factor Xa equally. LMWH preferentially inactivates factor Xa.\n\n**The bridge concept — the most important clinical pattern:** Heparin works fast (immediate IV) but wears off fast (half-life ~1-2 hours). Warfarin takes 3-5 days to reach therapeutic effect but lasts for days. That's why patients starting warfarin are \"bridged\" with heparin — heparin protects them immediately while warfarin slowly builds up. Once INR is therapeutic for 2 consecutive days, heparin stops.\n\n**Lab mnemonics — never mix these up:**\n- **A**PTT for hep**A**rin — both have \"A\"\n- **P**T/INR for warfarin (**P**rotects **P**eople long term — starts with P)",
+              "duration": 110
+            },
+            {
+              "id": "m3l1s2",
+              "type": "mcq",
+              "question": "A patient with a new DVT is started on both IV heparin and oral warfarin simultaneously. After 4 days, the INR is 2.4 for two consecutive days. What is the next step?",
+              "options": ["Continue both heparin and warfarin at current doses", "Stop heparin and continue warfarin alone", "Stop warfarin and continue heparin alone", "Increase the heparin drip rate to maintain the bridge"],
+              "correctOption": "Stop heparin and continue warfarin alone",
+              "answer": "Stop heparin and continue warfarin alone",
+              "explanation": "This describes bridging therapy: heparin provides immediate anticoagulation while warfarin takes 3-5 days to reach therapeutic levels. Once INR is therapeutic (2.0-3.0 for most indications) for 2 consecutive days, heparin can be discontinued. Warfarin is now providing adequate anticoagulation on its own."
+            },
+            {
+              "id": "m3l1s3",
+              "type": "read",
+              "title": "Heparin NCLEX Traps — HIT, Labs & Bleeding",
+              "content": "## Heparin NCLEX Traps — HIT, Labs & Bleeding\n\n**Trap 1: aPTT vs PT/INR.** aPTT is for heparin. PT/INR is for warfarin. Mix these up and you're wrong on any question that asks which lab to monitor. Remember: **A**PTT = hep**A**rin. Normal aPTT: 25-35 seconds. Therapeutic on heparin: 1.5-2.5 × normal, roughly 46-70 seconds.\n\n**Trap 2: HIT — Heparin-Induced Thrombocytopenia.** This is the most distinctive heparin complication and it's tested on every NCLEX. After 5-10 days on heparin, the immune system creates antibodies against the heparin-platelet factor 4 complex. Platelets suddenly plummet — below 100,000 or drop 50% from baseline. \n\n**The paradox:** HIT causes THROMBOSIS (clotting), not bleeding. Despite low platelets, these patients develop new clots — DVT, PE, stroke, limb ischemia. It's an immune-mediated prothrombotic state.\n\n**Management:** Stop ALL heparin immediately (including heparin flushes and heparin-coated catheters). Switch to a **direct thrombin inhibitor** (argatroban or bivalirudin). Do NOT give warfarin initially — it can cause warfarin-induced skin necrosis in acute HIT. Start warfarin only after platelet recovery.\n\n**Trap 3: SQ vs IV.** Enoxaparin (Lovenox) is SQ only — you cannot give it IV. Regular heparin can be given either IV or SQ.\n\n**Trap 4: The epidural catheter.** Patients on enoxaparin should NOT have an epidural catheter removed until at least 12 hours after the last dose. Risk: spinal/epidural hematoma → permanent paralysis. This is a sentinel event.",
+              "duration": 120
+            },
+            {
+              "id": "m3l1s4",
+              "type": "mcq",
+              "question": "A patient has been on IV heparin for 7 days following a hip replacement. The nurse notes that the platelet count has dropped from 250,000 to 90,000. The patient has new swelling and pain in the contralateral leg. What is the priority nursing action?",
+              "options": ["Administer the scheduled heparin dose — the aPTT is still therapeutic", "Stop all heparin immediately, including heparin flushes, and notify the provider", "Transfuse platelets to correct the thrombocytopenia", "Start warfarin immediately to prevent further clot formation"],
+              "correctOption": "Stop all heparin immediately, including heparin flushes, and notify the provider",
+              "answer": "Stop all heparin immediately, including heparin flushes, and notify the provider",
+              "explanation": "This is classic HIT: day 7 of heparin, platelets dropped >50% (from 250K to 90K), AND new thrombosis (swollen painful leg = possible DVT). HIT is a prothrombotic state despite low platelets. Stop ALL heparin (including flushes and coated catheters). Do NOT give platelets (they fuel the thrombosis). Do NOT start warfarin yet (risk of skin necrosis). Switch to a direct thrombin inhibitor."
+            },
+            {
+              "id": "m3l1s5",
+              "type": "read",
+              "title": "Nursing Priorities for Heparin Therapy",
+              "content": "## Nursing Priorities for Heparin Therapy\n\n**Before administration:** Check aPTT (if on IV drip, typically every 6 hours). Confirm therapeutic range. Assess for bleeding — gums, IV sites, injection sites, urine color, stool appearance.\n\n**Ongoing monitoring:**\n- **Platelet count every 2-3 days** — watching for HIT (drop > 50% or < 100,000)\n- **aPTT** — therapeutic is 1.5-2.5 × normal. Above 100 seconds? Hold infusion, notify provider, anticipate protamine.\n- **All stools for occult blood** (guaiac/hemoccult)\n- **No IM injections** — they cause hematomas in anticoagulated patients\n- **No aspirin or NSAIDs** unless specifically ordered — additive bleeding risk\n\n**Reversal:** Protamine sulfate is the antidote for heparin. 1 mg neutralizes approximately 100 units of heparin. Give slowly IV (max 50 mg over 10 minutes) — rapid administration causes hypotension and bradycardia. Protamine only partially reverses enoxaparin (about 60%).\n\n**Patient safety teaching:**\n- Use electric razor, not blade\n- Use soft-bristled toothbrush\n- Report ANY bleeding: nosebleeds, bleeding gums, easy bruising, dark/tarry stools, blood in urine\n- Avoid contact sports and activities with fall risk\n- Medical alert bracelet\n- Tell ALL providers (dentist, surgeon) you're on anticoagulation\n\n**LMWH (enoxaparin) specifics:**\n- Given SQ only — rotate sites (abdomen, love handles)\n- Do NOT expel the air bubble from the prefilled syringe (it seals the medication in the SQ tissue)\n- Do NOT rub the injection site after administration (increases bruising)\n- Routine lab monitoring not required (predictable pharmacokinetics)",
+              "duration": 120
+            },
+            {
+              "id": "m3l1s6",
+              "type": "mcq",
+              "question": "A nurse is preparing to administer enoxaparin 40 mg SQ to a post-operative patient. What is the correct administration technique?",
+              "options": ["Expel the air bubble, inject IM into the deltoid, and massage the site", "Keep the air bubble in the prefilled syringe, administer SQ in the abdomen, and do not rub the site", "Expel the air bubble, administer SQ in the thigh, and apply firm pressure for 5 minutes", "Keep the air bubble, inject IV over 2 minutes, and monitor vital signs"],
+              "correctOption": "Keep the air bubble in the prefilled syringe, administer SQ in the abdomen, and do not rub the site",
+              "answer": "Keep the air bubble in the prefilled syringe, administer SQ in the abdomen, and do not rub the site",
+              "explanation": "Enoxaparin is SQ only (never IV or IM). The air bubble in the prefilled syringe should NOT be expelled — it seals the medication in the subcutaneous tissue, preventing leakage into the needle track. Do NOT rub the site after injection — this increases bruising and hematoma formation in an anticoagulated patient. Rotate sites across the abdomen."
+            }
+          ]
+        },
+        {
+          "id": "m3l2",
+          "title": "Warfarin — The Outpatient Anticoagulant",
+          "xpReward": 25,
+          "estimatedMinutes": 7,
+          "steps": [
+            {
+              "id": "m3l2s1",
+              "type": "read",
+              "title": "How Warfarin Works & Why It Takes Days",
+              "content": "## How Warfarin Works & Why It Takes Days\n\nWarfarin (Coumadin) blocks vitamin K-dependent clotting factors: **II, VII, IX, and X** (plus proteins C and S, the natural anticoagulants). Without vitamin K, the liver can't synthesize these factors.\n\n**Why it takes 3-5 days to work:** Warfarin doesn't destroy existing clotting factors — it only prevents new ones from being made. The factors already circulating in the blood (which have half-lives of 6-60 hours) need to naturally degrade before the full anticoagulant effect is achieved.\n\n**Why there's a brief hypercoagulable period:** Protein C (a natural anticoagulant) has the shortest half-life — about 6-8 hours. Warfarin depletes Protein C first, before the procoagulant factors (II, IX, X) drop. During the first 24-48 hours, a patient can actually be MORE prone to clotting. That's why bridging with heparin is critical when starting warfarin for acute thrombosis.\n\n**Lab monitoring — PT/INR:** Normal INR ~1.0. Therapeutic for most indications: **2.0-3.0.** Mechanical heart valves may need 2.5-3.5. Below 2.0 = risk of clotting. Above 4.0 = risk of bleeding. Above 5.0 = serious bleeding risk requiring intervention.\n\n**Memory aid for vitamin K-dependent factors:** \"**II, VII, IX, X** — the factors that need vitamin K look like a countdown but in Roman numerals: 2, 7, 9, 10.\"",
+              "duration": 110
+            },
+            {
+              "id": "m3l2s2",
+              "type": "mcq",
+              "question": "A patient newly started on warfarin for DVT has not yet reached a therapeutic INR on day 2. Why is concurrent heparin bridging essential during this period?",
+              "options": ["Heparin enhances warfarin absorption from the GI tract", "Warfarin initially depletes Protein C before procoagulant factors, creating a brief hypercoagulable state", "Heparin prevents warfarin from binding to albumin too rapidly", "Warfarin is inactive until day 3 regardless of the dose given"],
+              "correctOption": "Warfarin initially depletes Protein C before procoagulant factors, creating a brief hypercoagulable state",
+              "answer": "Warfarin initially depletes Protein C before procoagulant factors, creating a brief hypercoagulable state",
+              "explanation": "Protein C (a natural anticoagulant) has the shortest half-life (~6-8 hours). Warfarin depletes it first while procoagulant factors (II, IX, X) are still active, creating a transient hypercoagulable state. Heparin bridging protects the patient during this window before warfarin's full effect is achieved."
+            },
+            {
+              "id": "m3l2s3",
+              "type": "read",
+              "title": "Warfarin NCLEX Traps — Diet, Drugs & Reversal",
+              "content": "## Warfarin NCLEX Traps — Diet, Drugs & Reversal\n\n**Trap 1: The vitamin K trap.** Warfarin overdose → give vitamin K. But vitamin K takes **6-24 hours** to work because the liver needs time to synthesize new clotting factors. For life-threatening bleeding (ICH, major GI bleed), you need **fresh frozen plasma (FFP)** or **prothrombin complex concentrate (PCC)** — these provide immediate clotting factors. Vitamin K alone is not enough for an active brain bleed.\n\n**Trap 2: The diet trap.** Vitamin K antagonizes warfarin. Foods high in vitamin K: **kale, spinach, broccoli, Brussels sprouts, collard greens, green tea.** The key teaching: **consistency, not avoidance.** Eat the same amount of greens each week. Don't binge on kale smoothies or suddenly cut all greens — INR will swing dangerously.\n\n**Trap 3: The drug interaction trap.** Warfarin interacts with everything:\n- **Antibiotics** — kill gut bacteria that synthesize vitamin K → INR rises\n- **Amiodarone** — inhibits warfarin metabolism → INR skyrockets (reduce warfarin 30-50% preemptively)\n- **NSAIDs** — additive bleeding risk (platelet inhibition + anticoagulation)\n- **PPIs, statins, antifungals** — various CYP450 interactions\n- **Herbals** — St. John's Wort (decreases INR), ginkgo, garlic, ginseng (increase bleeding risk)\n\nThe rule: any new medication = more frequent INR checks.\n\n**Trap 4: The pregnancy trap.** Warfarin is **Pregnancy Category X** — never in pregnancy. It crosses the placenta and causes **fetal warfarin syndrome** (nasal hypoplasia, stippled epiphyses, CNS abnormalities). Pregnant women who need anticoagulation get heparin or enoxaparin instead (these don't cross the placenta).",
+              "duration": 120
+            },
+            {
+              "id": "m3l2s4",
+              "type": "mcq",
+              "question": "A patient on warfarin with an INR of 8.2 presents with bright red blood per rectum and hypotension. What is the priority intervention?",
+              "options": ["Administer oral vitamin K and hold the next warfarin dose", "Administer IV vitamin K and transfuse fresh frozen plasma or prothrombin complex concentrate", "Increase warfarin dose to prevent further clots given the active bleeding", "Monitor the patient and repeat INR in 6 hours before intervening"],
+              "correctOption": "Administer IV vitamin K and transfuse fresh frozen plasma or prothrombin complex concentrate",
+              "answer": "Administer IV vitamin K and transfuse fresh frozen plasma or prothrombin complex concentrate",
+              "explanation": "INR 8.2 + active major bleeding + hypotension = life-threatening hemorrhage. Vitamin K alone takes 6-24 hours — too slow. The patient needs immediate clotting factors via FFP or PCC to stop the bleeding NOW, PLUS IV vitamin K to start the slower process of restoring endogenous factor production."
+            },
+            {
+              "id": "m3l2s5",
+              "type": "read",
+              "title": "Warfarin Patient Education & Nursing Management",
+              "content": "## Warfarin Patient Education & Nursing Management\n\n**Medication administration:**\n- Same time every day, usually evening (this allows INR checks to guide same-day dosing)\n- If a dose is missed, take as soon as remembered — but if it's the next day, skip the missed dose. **Never double dose.**\n- Keep a written log of doses and INR results\n\n**Diet teaching:**\n- Maintain consistent vitamin K intake — don't suddenly change your greens consumption\n- Avoid alcohol (affects warfarin metabolism AND increases bleeding risk)\n- Cranberry juice in large amounts may potentiate warfarin — moderation is key\n\n**Safety teaching:**\n- Use a soft-bristled toothbrush\n- Use an electric razor — prevents nicks and cuts\n- Avoid contact sports, heavy lifting, activities with high fall risk\n- **Medical alert bracelet is mandatory**\n- Tell EVERY provider (dentist, surgeon, pharmacist) you're on warfarin\n\n**When to call the provider — red flags for patients:**\n- Any unusual bleeding: nosebleeds, bleeding gums, easy bruising\n- Dark/tarry stools (melena — upper GI bleeding)\n- Bright red blood in stool or urine\n- Vomiting blood or coffee-ground emesis\n- Severe headache (possible intracranial hemorrhage)\n- Dizziness, weakness, fainting\n\n**Nursing management:**\n- Check INR before each dose during initiation, then per protocol once stable\n- Assess all body systems for bleeding at every visit\n- Monitor for signs of thrombosis despite therapy (subtherapeutic INR)\n- Check for drug interactions every time a new medication is added or removed",
+              "duration": 110
+            },
+            {
+              "id": "m3l2s6",
+              "type": "mcq",
+              "question": "A patient on long-term warfarin therapy tells the nurse they've started drinking a large kale smoothie every morning as part of a new health regimen. What is the most important teaching point?",
+              "options": ["Stop the kale smoothies immediately — kale is contraindicated with warfarin", "Consistency matters more than avoidance — either keep the same daily intake or skip the smoothies entirely, but don't fluctuate", "Double the warfarin dose on smoothie days to compensate", "Add a vitamin K supplement to balance the kale intake"],
+              "correctOption": "Consistency matters more than avoidance — either keep the same daily intake or skip the smoothies entirely, but don't fluctuate",
+              "answer": "Consistency matters more than avoidance — either keep the same daily intake or skip the smoothies entirely, but don't fluctuate",
+              "explanation": "Kale is very high in vitamin K, which directly antagonizes warfarin. The key is consistency, not elimination. If the patient suddenly introduces a daily kale smoothie, their INR will drop below therapeutic range (clotting risk). If they then stop it suddenly, INR will spike (bleeding risk). The patient needs to pick a consistent level of vitamin K intake and the warfarin dose can be adjusted around it."
+            }
+          ]
+        },
+        {
+          "id": "m3l3",
+          "title": "DOACs & Clinical Integration",
+          "xpReward": 20,
+          "estimatedMinutes": 6,
+          "steps": [
+            {
+              "id": "m3l3s1",
+              "type": "read",
+              "title": "DOACs — The New Generation",
+              "content": "## DOACs — The New Generation\n\nDirect Oral Anticoagulants (DOACs) have largely replaced warfarin for many indications. They're easier — no routine labs, fewer diet restrictions, fewer drug interactions.\n\n**The DOAC lineup:**\n- **Factor Xa inhibitors:** Rivaroxaban (Xarelto), apixaban (Eliquis), edoxaban (Savaysa)\n- **Direct thrombin inhibitor:** Dabigatran (Pradaxa)\n\n**Advantages over warfarin:**\n- No routine INR monitoring — predictable pharmacokinetics\n- Fewer food interactions — no vitamin K diet restrictions\n- Fewer drug interactions — but not zero\n- Faster onset (2-4 hours) and offset\n- Lower risk of intracranial hemorrhage in atrial fibrillation\n\n**NCLEX traps for DOACs:**\n\n1. **The renal trap:** All DOACs are renally cleared. Poor kidney function = drug accumulates = bleeding risk. **Always check CrCl before administration.** Dabigatran is 80% renally cleared — contraindicated if CrCl < 30. Rivaroxaban and apixaban need dose reduction in renal impairment.\n\n2. **The reversal trap:** Reversal agents exist but are expensive: **andexanet alfa (Andexxa)** reverses factor Xa inhibitors. **Idarucizumab (Praxbind)** reverses dabigatran. Verify availability.\n\n3. **The compliance trap:** DOACs have short half-lives (5-17 hours). Missing even ONE dose leaves the patient unprotected — unlike warfarin which lingers for days. Strict daily compliance is critical.\n\n4. **The switch trap:** Converting between warfarin and DOACs requires specific timing protocols. Don't overlap in a way that creates supratherapeutic anticoagulation.",
+              "duration": 120
+            },
+            {
+              "id": "m3l3s2",
+              "type": "mcq",
+              "question": "A patient with non-valvular atrial fibrillation is being switched from warfarin to apixaban. The patient's INR is currently 2.8. When should apixaban be started?",
+              "options": ["Start apixaban immediately while continuing warfarin for 3 more days", "Wait until INR drops below 2.0 before starting apixaban", "Start apixaban immediately and stop warfarin now", "Give a loading dose of apixaban while continuing warfarin for one week"],
+              "correctOption": "Wait until INR drops below 2.0 before starting apixaban",
+              "answer": "Wait until INR drops below 2.0 before starting apixaban",
+              "explanation": "Warfarin-to-DOAC transitions require careful timing. Starting apixaban while the INR is 2.8 means the patient is anticoagulated from both drugs simultaneously — massive bleeding risk. Stop warfarin and monitor INR. Start apixaban when INR falls below 2.0. The opposite transition (DOAC to warfarin) requires bridging because warfarin takes days to work."
+            },
+            {
+              "id": "m3l3s3",
+              "type": "read",
+              "title": "Clinical Integration — Which Anticoagulant When?",
+              "content": "## Clinical Integration — Which Anticoagulant When?\n\nThe NCLEX doesn't just test individual drug facts — it tests whether you can choose the right drug for the right scenario.\n\n**Acute DVT/PE in the hospital:** IV heparin (or SQ enoxaparin) started immediately. Warfarin started concurrently. Heparin continued until INR therapeutic × 2 days. Or: start a DOAC directly (rivaroxaban and apixaban have acute VTE indications without bridging).\n\n**Atrial fibrillation — outpatient:** DOAC preferred over warfarin for most patients (better safety, less monitoring). Warfarin still for: mechanical heart valves (DOACs NOT indicated), severe renal impairment, cost, or patient preference.\n\n**Mechanical heart valve:** Warfarin is the ONLY option. DOACs failed in trials — higher rates of valve thrombosis and stroke. Target INR depends on valve type and position (2.5-3.5 for mitral mechanical valves).\n\n**Pregnancy:** Heparin or enoxaparin only — these don't cross the placenta. Warfarin is Category X. DOACs lack sufficient pregnancy safety data.\n\n**Post-orthopedic surgery prophylaxis:** Enoxaparin or a DOAC for a fixed duration (10-35 days). Early ambulation and mechanical prophylaxis (SCDs) always used concurrently.\n\n**Heparin failure (HIT):** Stop all heparin. Switch to argatroban IV. Transition to warfarin only after platelet recovery.",
+              "duration": 110
+            },
+            {
+              "id": "m3l3s4",
+              "type": "mcq",
+              "question": "A patient with a mechanical mitral valve requires long-term anticoagulation. Which of the following is the only appropriate option?",
+              "options": ["Apixaban (Eliquis)", "Rivaroxaban (Xarelto)", "Warfarin (Coumadin)", "Dabigatran (Pradaxa)"],
+              "correctOption": "Warfarin (Coumadin)",
+              "answer": "Warfarin (Coumadin)",
+              "explanation": "DOACs have failed in clinical trials for mechanical heart valves — they showed higher rates of valve thrombosis and thromboembolic events compared to warfarin. Warfarin remains the ONLY approved anticoagulant for mechanical heart valves. For mitral mechanical valves, the target INR is typically 2.5-3.5."
+            },
+            {
+              "id": "m3l3s5",
+              "type": "read",
+              "title": "The NCLEX Anticoagulant Decision Tree",
+              "content": "## The NCLEX Anticoagulant Decision Tree\n\nWhen you face any anticoagulant question, follow this sequence:\n\n1. **Which drug?** → This immediately tells you the lab to check and the reversal agent.\n2. **What are the labs?** → Are they therapeutic, subtherapeutic, or supratherapeutic?\n3. **What's the patient doing?** → Bleeding? Clotting? Just maintaining?\n4. **What's the priority?** → Active bleeding > risk of clotting > routine monitoring.\n\n**Red flag values — memorize these thresholds:**\n\n| Drug | Lab | Danger Zone | Action |\n|------|-----|-------------|--------|\n| Heparin | aPTT | > 100 sec | Hold, notify, anticipate protamine |\n| Heparin | Platelets | Drop 50% or < 100K | HIT — stop all heparin, switch to argatroban |\n| Warfarin | INR | > 4.0 (no bleed) | Hold dose, oral vitamin K considered |\n| Warfarin | INR | > 5.0 or any bleeding | Hold, IV vitamin K, FFP/PCC if severe |\n| Any | Any | Active hemorrhage | ABCs first, then reversal agent |\n\n**The universal anticoagulant nursing actions:**\n- Assess for bleeding at every encounter: skin, gums, urine, stool, IV sites\n- No IM injections — ever\n- No aspirin/NSAIDs unless specifically ordered\n- Soft-bristled toothbrush, electric razor\n- Medical alert bracelet\n- Fall prevention — these patients do poorly with head trauma\n- Tell every provider about anticoagulation before any procedure",
+              "duration": 120
+            },
+            {
+              "id": "m3l3s6",
+              "type": "mcq",
+              "question": "A nurse notices that a patient on IV heparin has an aPTT of 115 seconds. The patient has no signs of active bleeding. What should the nurse do?",
+              "options": ["Continue the heparin at the current rate — the patient is protected from clots", "Hold the heparin infusion and notify the provider immediately", "Increase the heparin rate slightly to push the aPTT higher for maximum protection", "Administer protamine sulfate prophylactically"],
+              "correctOption": "Hold the heparin infusion and notify the provider immediately",
+              "answer": "Hold the heparin infusion and notify the provider immediately",
+              "explanation": "Therapeutic aPTT on heparin is 1.5-2.5 × normal (roughly 46-70 seconds). An aPTT of 115 is supratherapeutic and carries serious bleeding risk even without visible bleeding. The infusion must be held and the provider notified — the dose needs reduction. Protamine is reserved for active, life-threatening bleeding, not prophylactic reversal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Clinical Integration & NCLEX Mastery",
+      "lessons": [
+        {
+          "id": "m4l1",
+          "title": "Dangerous Drug Combinations",
+          "xpReward": 30,
+          "estimatedMinutes": 7,
+          "steps": [
+            {
+              "id": "m4l1s1",
+              "type": "read",
+              "title": "The Most Dangerous Cardiovascular Drug Combos",
+              "content": "## The Most Dangerous Cardiovascular Drug Combos\n\nThe NCLEX doesn't just test single drugs — it tests whether you can spot combinations that are about to hurt someone. These are the pairings that appear on every exam:\n\n### Hyperkalemia Combos (Cardiac Arrest Risk)\n- **ACE inhibitor + spironolactone** — both raise potassium. Add a potassium supplement and you've got the NCLEX trifecta. Peaked T waves = emergency.\n- **ACE inhibitor + ARB** — no clinical benefit, doubled hyperkalemia and kidney risk. Don't double up on RAAS blockers.\n- **Spironolactone + salt substitute** — salt substitutes are potassium chloride. Patient thinks they're being healthy, potassium hits 6.5.\n\n### Heart Block Combos (Can Stop the Heart)\n- **Beta blocker + verapamil/diltiazem** — both suppress SA and AV nodes. Together = complete heart block. This is the #1 contraindicated CV drug pair.\n- **Digoxin + verapamil** — verapamil increases digoxin levels by 50-70%. Digoxin toxicity risk.\n\n### Bleeding Combos (Hemorrhage Risk)\n- **Warfarin + amiodarone** — amiodarone inhibits warfarin metabolism. INR can double within days.\n- **Warfarin + NSAIDs** — NSAIDs inhibit platelets AND cause GI ulcers. Perfect storm for GI bleed.\n- **Heparin + aspirin** — additive risk. Often intentional (ACS protocol) but requires close monitoring.\n\n### Toxicity Combos (Drug Levels Spike)\n- **Furosemide + digoxin** — furosemide drops potassium, low K makes digoxin toxic at normal doses.\n- **HCTZ + lithium** — thiazides reduce lithium clearance. Stable lithium patients become toxic.\n- **Amiodarone + simvastatin > 20 mg** — rhabdomyolysis risk. Simvastatin dose must be capped.",
+              "duration": 120
+            },
+            {
+              "id": "m4l1s2",
+              "type": "mcq",
+              "question": "A patient's medication list includes metoprolol 50 mg BID, lisinopril 10 mg daily, spironolactone 25 mg daily, and a potassium chloride supplement. The nurse notes peaked T waves on the ECG and a heart rate of 48. What is the most likely cause of the ECG changes?",
+              "options": ["Metoprolol toxicity causing excessive beta blockade", "Hyperkalemia from the combination of lisinopril, spironolactone, and potassium supplement", "Hypokalemia from metoprolol's diuretic effect", "Digoxin toxicity from the spironolactone interaction"],
+              "correctOption": "Hyperkalemia from the combination of lisinopril, spironolactone, and potassium supplement",
+              "answer": "Hyperkalemia from the combination of lisinopril, spironolactone, and potassium supplement",
+              "explanation": "This is the classic hyperkalemia triad: lisinopril (ACE inhibitor — raises K) + spironolactone (K-sparing diuretic — holds K) + potassium supplement (adds more K). Peaked T waves are the hallmark ECG finding of hyperkalemia. This combination should almost never exist without very close monitoring."
+            },
+            {
+              "id": "m4l1s3",
+              "type": "read",
+              "title": "Lab Value Mastery — What Every Nurse Must Know",
+              "content": "## Lab Value Mastery — What Every Nurse Must Know\n\nCardiovascular drugs demand lab vigilance. Here are the values that determine whether you give the drug or hold it:\n\n### Electrolytes\n| Lab | Normal | Hold Drug If | Drugs Affected |\n|-----|--------|-------------|----------------|\n| Potassium | 3.5-5.0 | < 3.2 or > 5.5 | Diuretics, ACE inhibitors, ARBs, spironolactone |\n| Sodium | 135-145 | < 130 | Diuretics (especially thiazides) |\n| Magnesium | 1.7-2.2 | < 1.5 | Loop diuretics, digoxin (low Mg worsens digoxin toxicity) |\n| Calcium | 8.5-10.5 | < 8.0 or > 11.0 | Loop (↓ Ca) vs thiazide (↑ Ca) diuretics |\n\n### Coagulation\n| Lab | Normal | Therapeutic | Danger Zone | Drug |\n|-----|--------|-------------|-------------|------|\n| aPTT | 25-35 sec | 46-70 sec (1.5-2.5×) | > 100 sec | Heparin |\n| INR | ~1.0 | 2.0-3.0 | > 4.0 | Warfarin |\n| Platelets | 150-400K | — | < 100K or drop 50% | Heparin (HIT) |\n\n### Cardiac\n| Value | Normal | Action Level |\n|-------|--------|-------------|\n| HR | 60-100 | Hold beta blocker, digoxin, verapamil if < 60 |\n| Systolic BP | 100-140 | Hold antihypertensives if < 90-100 |\n| QTc | < 440 ms (M), < 460 ms (F) | Stop offending drug if > 500 ms or Δ > 60 ms |\n\n**The prioritization rule:** Hyperkalemia > hypokalemia (cardiac arrest risk). QTc > 500 > mild lab abnormalities. Active bleeding > lab correction. Always treat the patient, not just the number — but know the numbers that demand action.",
+              "duration": 120
+            },
+            {
+              "id": "m4l1s4",
+              "type": "mcq",
+              "question": "A patient on furosemide 80 mg daily and digoxin 0.25 mg daily has these morning labs: K 3.0, Mg 1.3, digoxin level 2.4 ng/mL (therapeutic 0.5-2.0). The patient reports nausea and anorexia. What is the priority nursing action?",
+              "options": ["Administer both medications — the digoxin level is only slightly elevated", "Hold both medications and notify the provider — hypokalemia and hypomagnesemia potentiate digoxin toxicity", "Hold furosemide only and administer digoxin as scheduled", "Give the scheduled dose and offer the patient an antiemetic for the nausea"],
+              "correctOption": "Hold both medications and notify the provider — hypokalemia and hypomagnesemia potentiate digoxin toxicity",
+              "answer": "Hold both medications and notify the provider — hypokalemia and hypomagnesemia potentiate digoxin toxicity",
+              "explanation": "This is the furosemide-digoxin trap with a bonus: both K (3.0) and Mg (1.3) are low. Hypokalemia AND hypomagnesemia both independently potentiate digoxin toxicity. Digoxin level is elevated (2.4) with clinical symptoms (nausea = early toxicity). Hold both drugs, replace electrolytes, and reassess."
+            },
+            {
+              "id": "m4l1s5",
+              "type": "read",
+              "title": "Priority Setting — The NCLEX Framework",
+              "content": "## Priority Setting — The NCLEX Framework\n\nThe NCLEX is fundamentally a test of clinical judgment. When you see a cardiovascular drug question, the framework is:\n\n### Level 1: Airway & Breathing (Immediate Threats)\n- Angioedema from ACE inhibitors — airway can close in minutes. Stop drug, secure airway, call RRT.\n- Pulmonary fibrosis from amiodarone — progressive respiratory failure. Stop drug, get CXR, notify.\n- Pulmonary edema from heart failure — may need furosemide IV. ABCs first.\n\n### Level 2: Circulation (Minutes to Hours)\n- Hyperkalemia with ECG changes — peaked T waves → wide QRS → sine wave → asystole. Stop K-raising drugs, give calcium gluconate, then shift potassium.\n- Complete heart block (beta blocker + verapamil) — hold drugs, pace.\n- Torsades de pointes (Class IA/III with prolonged QTc) — magnesium sulfate, stop offending drug.\n- Active major hemorrhage on anticoagulants — hold drug, give reversal, support circulation.\n\n### Level 3: Prevent Harm (Hours to Days)\n- Supratherapeutic INR without bleeding — hold warfarin, vitamin K PO if needed.\n- HIT without thrombosis yet — stop heparin, switch to argatroban, prevent clots.\n- Subtherapeutic INR — increase warfarin dose, consider bridge if high thrombotic risk.\n\n### Level 4: Education & Maintenance\n- Diet teaching, medication adherence, lab monitoring schedules, safety precautions.\n\n**The golden rule:** If a patient has an abnormal lab + a drug that causes that abnormality + clinical symptoms = stop the drug and notify. Active symptoms always elevate the priority.",
+              "duration": 120
+            },
+            {
+              "id": "m4l1s6",
+              "type": "mcq",
+              "question": "A patient presents to the clinic with lip swelling and difficulty swallowing that started 30 minutes after taking their first dose of lisinopril. Vital signs: HR 110, BP 98/62, RR 24, O2 sat 93%. What is the priority nursing action?",
+              "options": ["Administer diphenhydramine and observe for 30 minutes", "Secure the airway and call for emergency assistance immediately", "Draw labs to check for elevated tryptase levels", "Reassure the patient this is a common side effect that will resolve"],
+              "correctOption": "Secure the airway and call for emergency assistance immediately",
+              "answer": "Secure the airway and call for emergency assistance immediately",
+              "explanation": "Lip swelling + difficulty swallowing + dropping O2 sat after ACE inhibitor = angioedema with impending airway compromise. This is a Level 1 (Airway) emergency. The airway can close completely in minutes. Do not delay with medications or labs — secure the airway first, then epinephrine, antihistamines, and steroids."
+            }
+          ]
+        },
+        {
+          "id": "m4l2",
+          "title": "NCLEX-Style Clinical Scenarios",
+          "xpReward": 30,
+          "estimatedMinutes": 8,
+          "steps": [
+            {
+              "id": "m4l2s1",
+              "type": "read",
+              "title": "Scenario 1 — The Multiple Medication Patient",
+              "content": "## Scenario 1 — The Multiple Medication Patient\n\nMrs. Chen, 72, is admitted with heart failure exacerbation and rapid atrial fibrillation. Home medications: metoprolol 50 mg BID, lisinopril 20 mg daily, furosemide 40 mg BID, warfarin 5 mg daily. Admission labs: K 3.4, INR 1.6, Cr 1.4 (baseline 1.0), HR 118 irregular, BP 108/68.\n\n**Clinical reasoning walkthrough:**\n\n1. **HR 118 and irregular in AFib:** She needs rate control. Metoprolol isn't cutting it alone. But BP is 108/68 — adding more rate control could tank pressure. Balancing act.\n\n2. **K 3.4 — borderline low:** She's on furosemide BID. Potassium is heading down. When it drops below 3.5, she's at risk for digoxin toxicity (if digoxin were on board) and arrhythmias. Needs potassium replacement before it drops further.\n\n3. **INR 1.6 — subtherapeutic:** She's not protected from AFib-related stroke. Warfarin dose needs adjustment. But Cr bumped from 1.0 to 1.4 — is this prerenal from furosemide/dehydration? Or something else?\n\n4. **Cr 1.4 — trending up:** The lisinopril might need holding if Cr continues to rise. A small bump after starting ACE inhibitor is expected, but progressive rise means trouble.\n\n**The nursing priorities:**\n- Monitor HR/BP frequently — rate control vs hypotension is the immediate tension\n- Replace potassium — K-wasting diuretic + heart failure = high arrhythmia risk\n- Check INR trend — adjust warfarin per protocol, consider if bridging needed\n- Monitor Cr — if it rises to 1.8+, hold lisinopril and notify\n- Strict I&O, daily weights — is the furosemide working?",
+              "duration": 130
+            },
+            {
+              "id": "m4l2s2",
+              "type": "mcq",
+              "question": "The nurse notices Mrs. Chen's potassium has dropped to 3.1 on day 2. The provider orders IV potassium replacement. Before administering IV potassium, what is the most critical nursing action?",
+              "options": ["Check that the patient has adequate urine output", "Verify the patient has eaten a meal recently", "Ensure the patient is on a cardiac monitor", "Both checking urine output AND ensuring cardiac monitoring are essential"],
+              "correctOption": "Both checking urine output AND ensuring cardiac monitoring are essential",
+              "answer": "Both checking urine output AND ensuring cardiac monitoring are essential",
+              "explanation": "IV potassium is a high-alert medication. Two non-negotiable safety checks: (1) verify adequate renal function/urine output (if kidneys aren't working, potassium stays in the blood causing fatal hyperkalemia), and (2) place on cardiac monitor (potassium infusion can cause arrhythmias). IV potassium should NEVER be given as IV push — always dilute and infuse slowly."
+            },
+            {
+              "id": "m4l2s3",
+              "type": "read",
+              "title": "Scenario 2 — The Anticoagulated Patient Who Fell",
+              "content": "## Scenario 2 — The Anticoagulated Patient Who Fell\n\nMr. Davis, 68, is on warfarin for mechanical aortic valve (target INR 2.5-3.5). He slipped on ice and hit his head. In the ED, he's alert and oriented, no visible bleeding. INR is 3.8. CT head is ordered.\n\n**Clinical reasoning walkthrough:**\n\nThis scenario tests the highest-stakes decision in anticoagulation: head trauma + therapeutic/slightly supratherapeutic INR.\n\n**Key facts:**\n- Mechanical valve: must remain anticoagulated. Stopping warfarin = risk of valve thrombosis (potentially fatal).\n- Head trauma on anticoagulation: risk of intracranial hemorrhage is real even with a normal neuro exam initially. The \"talk and deteriorate\" phenomenon — patient seems fine, then deteriorates rapidly from expanding subdural or epidural hematoma.\n- INR 3.8: slightly above target range but not critically high.\n\n**The nursing priorities:**\n1. Neuro checks every 15 minutes initially — any change (headache, drowsiness, confusion, unequal pupils, weakness) is a surgical emergency\n2. CT head STAT — non-negotiable. Negative CT doesn't completely rule out tiny bleeds that expand.\n3. If CT negative and neuro exam stable: warfarin may continue with close monitoring. INR 3.8 may warrant holding one dose.\n4. If CT shows ANY bleeding: hold warfarin, give vitamin K IV + PCC/FFP, neurosurgery consult. The mechanical valve risk becomes secondary to the active brain bleed.\n5. Patient education: head injury on warfarin is ALWAYS an ED visit, even if feeling fine. Delayed bleeding can happen 24-72 hours later.",
+              "duration": 130
+            },
+            {
+              "id": "m4l2s4",
+              "type": "mcq",
+              "question": "Two hours after admission, Mr. Davis develops a severe headache and his right pupil is now larger than the left and reacts sluggishly. What is the nurse's immediate action?",
+              "options": ["Administer the PRN acetaminophen ordered for headache", "Activate the emergency response system and prepare for immediate CT and possible neurosurgical intervention", "Increase the frequency of neuro checks to every 30 minutes", "Administer vitamin K and FFP as ordered and continue monitoring"],
+              "correctOption": "Activate the emergency response system and prepare for immediate CT and possible neurosurgical intervention",
+              "answer": "Activate the emergency response system and prepare for immediate CT and possible neurosurgical intervention",
+              "explanation": "New headache + unilateral pupil dilation (anisocoria) = uncal herniation from expanding intracranial hemorrhage until proven otherwise. This is a neurosurgical emergency — minutes matter. The expanding hematoma compresses CN III (causing pupil dilation) and will progress to brainstem compression and death if not decompressed."
+            },
+            {
+              "id": "m4l2s5",
+              "type": "read",
+              "title": "Scenario 3 — The Polypharmacy Disaster",
+              "content": "## Scenario 3 — The Polypharmacy Disaster\n\nMrs. Garcia, 65, has diabetes, hypertension, heart failure, and chronic atrial fibrillation. Her med list: metformin, lisinopril 40 mg, carvedilol 25 mg BID, furosemide 80 mg BID, spironolactone 25 mg, digoxin 0.125 mg, warfarin 3 mg, amiodarone 200 mg, simvastatin 40 mg. She presents with nausea, fatigue, muscle aches, and \"things look yellow.\"\n\n**This med list is a train wreck. Let's find every problem:**\n\n1. **Lisinopril 40 mg + spironolactone 25 mg** = hyperkalemia risk. Both K-raising.\n2. **Amiodarone + warfarin** = INR likely dangerously high. Amiodarone inhibits warfarin metabolism.\n3. **Amiodarone + digoxin** = digoxin toxicity risk. Amiodarone reduces digoxin clearance.\n4. **Amiodarone + simvastatin 40 mg** = rhabdomyolysis. Simvastatin max with amiodarone is 20 mg.\n5. **Furosemide 80 mg BID + digoxin** = hypokalemia → digoxin toxicity. Furosemide is K-wasting.\n6. **\"Things look yellow\"** = xanthopsia, pathognomonic for digoxin toxicity.\n7. **Nausea, fatigue, muscle aches** = could be digoxin toxicity, simvastatin myopathy, or both.\n\n**The immediate priorities:**\n- Check digoxin level, potassium, INR, CK (for rhabdomyolysis)\n- Hold digoxin, amiodarone, simvastatin, and possibly spironolactone\n- ECG STAT — digoxin toxicity can cause almost any arrhythmia\n- This combination is a textbook example of what NOT to prescribe together without extreme vigilance.",
+              "duration": 140
+            },
+            {
+              "id": "m4l2s6",
+              "type": "mcq",
+              "question": "Mrs. Garcia's labs return: K 5.8, digoxin 3.0 ng/mL (therapeutic 0.5-2.0), INR 6.2, CK 1,800 (normal < 200). Which of the following contributed to the elevated INR?",
+              "options": ["Furosemide-induced dehydration concentrating the warfarin", "Spironolactone displacing warfarin from protein binding sites", "Amiodarone inhibiting warfarin metabolism via CYP450", "Simvastatin enhancing warfarin absorption from the GI tract"],
+              "correctOption": "Amiodarone inhibiting warfarin metabolism via CYP450",
+              "answer": "Amiodarone inhibiting warfarin metabolism via CYP450",
+              "explanation": "Amiodarone is a potent CYP450 inhibitor, particularly CYP2C9 which metabolizes warfarin. When amiodarone is added, INR typically rises significantly within days to weeks. Standard practice is to reduce warfarin dose by 30-50% preemptively. Furosemide, spironolactone, and simvastatin do not have this magnitude of effect on warfarin."
+            }
+          ]
+        },
+        {
+          "id": "m4l3",
+          "title": "Final Mastery Check",
+          "xpReward": 25,
+          "estimatedMinutes": 6,
+          "steps": [
+            {
+              "id": "m4l3s1",
+              "type": "read",
+              "title": "The Four Doors Framework",
+              "content": "## The Four Doors Framework\n\nIf you remember nothing else from this entire course, remember this: every cardiovascular drug works by opening or closing one of four doors.\n\n**The Four Doors:**\n\n1. **Sodium door (Class I antiarrhythmics):** Block it too hard → slow conduction → heart block & proarrhythmia. Class IC + structural heart disease = death (CAST trial).\n\n2. **Beta door (Class II, beta blockers):** Block it → low HR, low BP, less oxygen demand. Safe and first-line for almost everything. Just check HR > 60 and SBP > 90 before giving.\n\n3. **Potassium door (Class III, diuretics, ACE inhibitors):** Block potassium channels → prolonged QT → torsades. Waste potassium (loops, thiazides) → hypokalemia → arrhythmia + digoxin toxicity. Hold potassium (ACE inhibitors, spironolactone) → hyperkalemia → peaked T waves → cardiac arrest.\n\n4. **Calcium door (Class IV, diuretics):** Block at the nodes (verapamil, diltiazem) → slow HR, slow conduction. Block at vessels (amlodipine) → vasodilation. Waste calcium (loops) → osteoporosis. Hold calcium (thiazides) → hypercalcemia.\n\n**The anticoagulation side-door (clotting cascade):**\n- Heparin = immediate on/off switch. aPTT. Protamine. Watch for HIT.\n- Warfarin = slow cook. PT/INR. Vitamin K. Diet, drugs, dosing — everything interacts.\n- DOACs = set and forget. No labs (mostly). Renal clearance. Don't miss a dose.\n\n**The clinical exam rule:** When you see a drug you don't recognize, ask which door it opens or closes. The side effect is always the logical consequence of that door being blocked or opened too much.",
+              "duration": 110
+            },
+            {
+              "id": "m4l3s2",
+              "type": "mcq",
+              "question": "A nursing student is struggling with cardiovascular pharmacology. Using the Four Doors framework, how would you explain why amiodarone is both effective and toxic?",
+              "options": ["Amiodarone only blocks the potassium door, causing QT prolongation as its sole toxicity", "Amiodarone blocks all four doors (sodium, beta, potassium, calcium) — this makes it broadly effective but also causes multi-system toxicity from off-target effects", "Amiodarone selectively targets only diseased heart tissue, making it safe for most patients", "Amiodarone primarily blocks calcium, which is why it causes bradycardia as its main side effect"],
+              "correctOption": "Amiodarone blocks all four doors (sodium, beta, potassium, calcium) — this makes it broadly effective but also causes multi-system toxicity from off-target effects",
+              "answer": "Amiodarone blocks all four doors (sodium, beta, potassium, calcium) — this makes it broadly effective but also causes multi-system toxicity from off-target effects",
+              "explanation": "Amiodarone is unique because it acts like all four Vaughan Williams classes — it blocks sodium, beta receptors, potassium, AND calcium channels. This multi-door blockade makes it effective for both atrial and ventricular arrhythmias. But the same property causes toxicity everywhere the drug accumulates: lungs (fibrosis), thyroid (dysfunction), liver (hepatitis), skin (discoloration), eyes (deposits), and nerves (neuropathy). The 58-day half-life means side effects appear late and persist long after stopping."
+            },
+            {
+              "id": "m4l3s3",
+              "type": "read",
+              "title": "The 60-Second Drug Safety Check",
+              "content": "## The 60-Second Drug Safety Check\n\nBefore you give any cardiovascular drug, run this checklist. It takes 60 seconds and prevents the errors the NCLEX tests for:\n\n**Step 1: What door does this drug block?** → This predicts the side effect.\n- Sodium blocker? → Check QRS, watch for heart block.\n- Beta blocker? → Check HR and BP.\n- Potassium blocker/waster/holder? → Check potassium level.\n- Calcium blocker? → Check HR (nodal) or BP (vascular).\n- Anticoagulant? → Check appropriate lab (aPTT, INR, or platelets).\n\n**Step 2: What's the lab?** → Is it safe to give?\n- HR < 60? Hold beta blockers, digoxin, verapamil.\n- SBP < 90? Hold antihypertensives.\n- K < 3.2 or > 5.5? Hold drugs affecting potassium.\n- aPTT > 100? Hold heparin.\n- INR > 4.0? Hold warfarin.\n- Platelets dropped 50%? Hold heparin, think HIT.\n- QTc > 500? Hold QT-prolonging drugs.\n\n**Step 3: What else is the patient taking?** → Check for dangerous combos.\n- Two potassium-raising drugs? (ACE + spironolactone)\n- Two nodal suppressors? (Beta blocker + verapamil)\n- Warfarin + amiodarone or antibiotic?\n- Furosemide + digoxin with low K?\n\n**Step 4: Assess the patient.** → Are there symptoms?\n- Active bleeding? Headache? (anticoagulants)\n- Cough, dyspnea? (amiodarone — pulmonary fibrosis; ACE inhibitor — cough vs heart failure)\n- Nausea, visual changes? (digoxin toxicity)\n- Face/lip swelling? (ACE inhibitor angioedema)\n\nIf the answer to any safety question is \"yes, there's a problem\" — hold the drug and notify. That's the answer on the NCLEX and the right thing in clinical practice.",
+              "duration": 120
+            },
+            {
+              "id": "m4l3s4",
+              "type": "mcq",
+              "question": "A nurse is about to administer the 0900 medications. Which patient should the nurse assess FIRST?",
+              "options": ["A patient with HTN on lisinopril 20 mg who had a BP of 132/84 at 0800", "A patient on digoxin 0.25 mg who reports nausea and seeing halos around lights this morning", "A patient on metoprolol 50 mg whose HR was 72 and BP was 118/76 at 0800", "A patient on warfarin 5 mg with INR of 2.4 drawn yesterday"],
+              "correctOption": "A patient on digoxin 0.25 mg who reports nausea and seeing halos around lights this morning",
+              "answer": "A patient on digoxin 0.25 mg who reports nausea and seeing halos around lights this morning",
+              "explanation": "Nausea + xanthopsia (yellow-green halos) are classic early signs of digoxin toxicity. This patient needs immediate assessment — check apical pulse for 1 full minute, obtain ECG, draw digoxin level and potassium. Digoxin toxicity can cause life-threatening arrhythmias. The other patients have expected, stable findings requiring no immediate intervention."
+            },
+            {
+              "id": "m4l3s5",
+              "type": "read",
+              "title": "Course Summary & What's Next",
+              "content": "## Course Summary & What's Next\n\nYou've covered the five pillars of cardiovascular pharmacology:\n\n1. **Beta Blockers** — The safe first choice for rate control. M-A-P: Metoprolol (masks hypoglycemia), Atenolol (assess kidneys), Propranolol (prohibited in asthma).\n\n2. **Antiarrhythmics** — Four Vaughan Williams classes. Some Block Potassium Channels. Class IC = \"I Can't\" with structural heart disease. Amiodarone = multi-class, multi-toxicity, multi-interaction.\n\n3. **ACE Inhibitors** — The \"-pril\" drugs. A.C.E.: Angioedema, Cough, Elevated potassium. Pregnancy = absolute no.\n\n4. **Diuretics** — Loops waste everything, thiazides hold calcium, potassium-sparing holds potassium. The electrolyte game: who dropped what where?\n\n5. **Anticoagulants** — Heparin = quick on/off (aPTT, HIT, protamine). Warfarin = slow cook (INR, vitamin K, everything interacts). DOACs = new generation (renal clearance, strict compliance).\n\n**The clinical judgment framework that solves NCLEX questions:**\n- Which door? → predicts side effect\n- What lab? → safe to give?\n- Any dangerous combos? → hyperkalemia, heart block, bleeding, toxicity\n- Any symptoms? → elevates priority\n\n**What's next:** Take what you've learned and apply it. Practice NCLEX questions on cardiovascular drugs. When you get one wrong, trace it back to the door — you'll find the mechanism explains the answer nearly every time. Use MAIA on Bio-Sync Academy to quiz you on specific drug classes with SATA and prioritization questions.\n\nYou now know more about cardiovascular pharmacology than 90% of nursing students. The NCLEX doesn't test whether you memorized every drug name — it tests whether you understand what happens when you open or close the four doors.",
+              "duration": 120
+            },
+            {
+              "id": "m4l3s6",
+              "type": "mcq",
+              "question": "A newly diagnosed heart failure patient asks the nurse, \"Why am I on so many medications? Can't I just take one pill?\" Using the Four Doors framework, what is the best explanation?",
+              "options": ["Each medication targets a different door — beta blockers slow the heart, ACE inhibitors relax vessels and protect kidneys, and diuretics remove excess fluid. Together they address heart failure from multiple angles, which improves survival more than any single drug alone.", "Heart failure requires aggressive treatment, so more medications are always better regardless of mechanism.", "The doctor probably prescribed extra medications to be safe, and you can likely stop some of them once you feel better.", "Most of the medications are for symptoms only — they don't actually improve survival in heart failure."],
+              "correctOption": "Each medication targets a different door — beta blockers slow the heart, ACE inhibitors relax vessels and protect kidneys, and diuretics remove excess fluid. Together they address heart failure from multiple angles, which improves survival more than any single drug alone.",
+              "answer": "Each medication targets a different door — beta blockers slow the heart, ACE inhibitors relax vessels and protect kidneys, and diuretics remove excess fluid. Together they address heart failure from multiple angles, which improves survival more than any single drug alone.",
+              "explanation": "Guideline-directed medical therapy (GDMT) for heart failure uses multiple drug classes because they target different pathophysiological pathways. Beta blockers block the sympathetic nervous system (reduce HR and cardiac workload), ACE inhibitors/ARBs/ARNIs block the RAAS (vasodilation, reduce remodeling), and diuretics manage volume. Each class independently improves survival — the combination is more effective than any single drug."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

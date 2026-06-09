@@ -1,0 +1,53 @@
+{
+  "id": "nclex-session-tracker-strategy",
+  "name": "NCLEX Session Tracker & Strategy",
+  "description": "Calculate practice session scores and review core clinical judgment strategies for NCLEX-style questions.",
+  "category": "Other",
+  "kind": "calculator",
+  "fields": [
+    {
+      "id": "questions_attempted",
+      "label": "Total Questions Attempted",
+      "type": "number",
+      "placeholder": "e.g. 75"
+    },
+    {
+      "id": "questions_correct",
+      "label": "Total Questions Correct",
+      "type": "number",
+      "placeholder": "e.g. 60"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "score_percentage",
+      "label": "Session Score",
+      "expression": "(questions_correct / questions_attempted) * 100",
+      "unit": "%",
+      "precision": 1,
+      "explanation": "Calculates the percentage of correctly answered questions for the session."
+    }
+  ],
+  "sections": [
+    {
+      "title": "NCLEX Test-Taking Strategies",
+      "content": "Apply these core principles when analyzing clinical scenarios and selecting the best nursing action. While this tool tracks your manual study sessions, remember to apply these rules to every question.",
+      "bullets": [
+        "Nursing Process: Always assess before intervening, unless the patient is in acute distress and the intervention is an immediate life-saving measure.",
+        "ABCs: Prioritize Airway, Breathing, and Circulation issues before addressing other physiological needs.",
+        "Maslow's Hierarchy: Prioritize physiological needs (pain, elimination, nutrition) over psychosocial needs.",
+        "Safety First: Choose the action that best prevents immediate harm to the patient.",
+        "Expected vs. Unexpected: Differentiate between expected symptoms of a disease process and unexpected complications that require immediate provider notification."
+      ]
+    }
+  ],
+  "disclaimer": "This tool is for educational study tracking only. It does not predict official NCLEX results, replace adaptive testing environments, or generate AI questions. Always rely on approved nursing program resources.",
+  "createdAt": "2026-05-13T04:39:13.196Z",
+  "sourceTier": "pro",
+  "model": "google/gemini-3.1-pro-preview",
+  "status": "rejected",
+  "reviewedBy": "crusius00@gmail.com",
+  "reviewedAt": "2026-05-16T16:29:59.013Z",
+  "deletedBy": "crusius00@gmail.com",
+  "deletedAt": "2026-05-16T16:30:05.198Z"
+}

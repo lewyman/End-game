@@ -1,0 +1,162 @@
+{
+  "m1l1c1": {
+    "cardId": "m1l1c1",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:33.255Z"
+  },
+  "m1l1c2": {
+    "cardId": "m1l1c2",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:42.892Z"
+  },
+  "m1l1c3": {
+    "cardId": "m1l1c3",
+    "interval": 1,
+    "repetition": 0,
+    "easeFactor": 2.18,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:45.559Z"
+  },
+  "m1l1c4": {
+    "cardId": "m1l1c4",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:51.189Z"
+  },
+  "m1l2c1": {
+    "cardId": "m1l2c1",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:54.483Z"
+  },
+  "m1l2c2": {
+    "cardId": "m1l2c2",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:57.965Z"
+  },
+  "m1l2c3": {
+    "cardId": "m1l2c3",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:40:59.835Z"
+  },
+  "m1l2c4": {
+    "cardId": "m1l2c4",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:41:02.295Z"
+  },
+  "m2l1c1": {
+    "cardId": "m2l1c1",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:41:04.595Z"
+  },
+  "m2l1c2": {
+    "cardId": "m2l1c2",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:41:56.463Z"
+  },
+  "m2l1c3": {
+    "cardId": "m2l1c3",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:41:58.393Z"
+  },
+  "m2l1c4": {
+    "cardId": "m2l1c4",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:07.347Z"
+  },
+  "m2l2c1": {
+    "cardId": "m2l2c1",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:09.210Z"
+  },
+  "m2l2c2": {
+    "cardId": "m2l2c2",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:12.227Z"
+  },
+  "m2l2c3": {
+    "cardId": "m2l2c3",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:20.342Z"
+  },
+  "m2l2c4": {
+    "cardId": "m2l2c4",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:23.129Z"
+  },
+  "m3l1c1": {
+    "cardId": "m3l1c1",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:24.920Z"
+  },
+  "m3l1c2": {
+    "cardId": "m3l1c2",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:27.496Z"
+  },
+  "m3l1c3": {
+    "cardId": "m3l1c3",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:29.153Z"
+  },
+  "m3l1c4": {
+    "cardId": "m3l1c4",
+    "interval": 1,
+    "repetition": 1,
+    "easeFactor": 2.5,
+    "dueDate": "2026-05-26",
+    "lastReviewed": "2026-05-25T03:42:32.024Z"
+  }
+}
