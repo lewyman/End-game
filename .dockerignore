@@ -1,0 +1,9 @@
+node_modules
+dist
+.backups
+.git
+.env
+.runtime-secrets.json
+start-prod-with-secrets.sh
+zosite.json
+*.log
