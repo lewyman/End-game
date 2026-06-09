@@ -1,9 +1,1 @@
-{
-  "buildCommand": "npx vite build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "framework": null,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api" }
-  ]
-}
+{"buildCommand":"npx vite build","outputDirectory":"dist","installCommand":"npm install","framework":null,"rewrites":[{"source":"/(.*)","destination":"/server/vercel-entry"}]}
