@@ -4,6 +4,5 @@
   "installCommand": "npm install",
   "rewrites": [
     { "source": "/((?!api).*)", "destination": "/index.html" }
-  ],
-  "framework": null
+  ]
 }
