@@ -1,0 +1,116 @@
+[
+  {
+    "id": "tracheostomy-care",
+    "title": "Tracheostomy Care",
+    "category": "Airway Management",
+    "icon": "activity",
+    "summary": "Cleaning and maintaining a tracheostomy stoma and inner cannula.",
+    "equipment": ["Tracheostomy care kit or: sterile NS, hydrogen peroxide (per policy), pipe cleaners/brushes, gauze, sterile gloves, spare tracheostomy tube (same size/type at bedside)", "Suction equipment at bedside"],
+    "steps": [
+      "Ensure suction and extra trach tube (same size and one size smaller) are at bedside before starting.",
+      "Perform hand hygiene. Don sterile gloves.",
+      "Suction the tracheostomy first if secretions are present.",
+      "Remove inner cannula if disposable — replace with new one. If reusable — place in hydrogen peroxide (per policy) and clean with brush, rinse with sterile NS, dry.",
+      "Clean the stoma site with sterile NS-moistened gauze, moving from inner to outer in a circular motion.",
+      "Replace stoma gauze dressing if soiled (split gauze around tube).",
+      "Change trach ties if soiled: have assistant hold trach tube in place while one set of ties is removed and replaced. Maintain one finger-width of slack.",
+      "Reinsert cleaned/new inner cannula and lock securely.",
+      "Assess stoma for granulation tissue, skin breakdown, infection.",
+      "Document procedure, secretion color/amount, and site appearance."
+    ],
+    "nursing_considerations": [
+      "Never leave the tracheostomy unattended during tie change — accidental decannulation is a medical emergency.",
+      "Keep obturator and extra tube taped to head of bed at all times.",
+      "Perform care at minimum every 8 hours and whenever soiled.",
+      "Avoid over-suctioning — limit to 10 seconds per suction pass.",
+      "Inflate cuff appropriately if ventilated — check cuff pressure every 8–12 hours (goal 20–30 cmH2O)."
+    ]
+  },
+  {
+    "id": "ett-management",
+    "title": "Endotracheal Tube (ETT) Management",
+    "category": "Airway Management",
+    "icon": "activity",
+    "summary": "Monitoring, securing, and maintaining a patient's endotracheal tube during mechanical ventilation.",
+    "equipment": ["Commercial ET tube holder or tape", "10 mL syringe (cuff inflation)", "Cuff manometer", "End-tidal CO2 (EtCO2) monitor or colorimetric CO2 detector", "Suction equipment (inline or open)", "Gloves", "Oral care kit"],
+    "steps": [
+      "Confirm tube placement: bilateral breath sounds, chest rise, EtCO2, CXR (gold standard).",
+      "Document and verify the cm marking at the lip (common adult: 21–23 cm at lip for women, 23–25 cm for men).",
+      "Check cuff pressure using a cuff manometer: goal 20–30 cmH2O. Overinflation causes tracheal ischemia; underinflation causes aspiration and air leak.",
+      "Assess ET tube security: holder or tape should be intact and snug but not compressing soft tissue or causing pressure injury at lip/mouth corners.",
+      "Reposition the tube to the opposite side of the mouth every 24–48 hours (with two nurses) to prevent pressure injury.",
+      "Suction as needed: oropharyngeal secretions above the cuff (use Yankauer), and tracheal secretions through inline or open suction catheter.",
+      "Inline suction: disconnect ventilator only when necessary. Use closed suction system when available.",
+      "Oral care every 4 hours: brush teeth with soft toothbrush, apply CHG oral rinse per VAP bundle, suction secretions.",
+      "Assess for complications: mainstem intubation (right shift of unilateral breath sounds), cuff leak (audible gurgling around tube, low tidal volumes on vent), tube obstruction (sudden high peak pressures).",
+      "HOB at 30–45° at all times unless contraindicated — reduces aspiration and VAP risk.",
+      "Document: tube position (cm at lip), cuff pressure, breath sounds, secretion character, oral care provided."
+    ],
+    "nursing_considerations": [
+      "Never pull back or reposition an ETT without a physician/CRNA/RT order — extubation or mainstem intubation risks are high.",
+      "VAP (Ventilator-Associated Pneumonia) bundle: HOB 30–45°, daily sedation vacations, spontaneous breathing trials, oral CHG care, avoid unnecessary position changes.",
+      "Cuff pressure must be checked every 8–12 hours — do not assume volume-based inflation maintains correct pressure.",
+      "Sudden rise in peak airway pressures indicates: kinked tubing, tube obstruction, mucus plug, pneumothorax, or bronchospasm — systematically troubleshoot.",
+      "If accidental extubation occurs: maintain airway with jaw thrust/BVM, call STAT, prepare for reintubation."
+    ]
+  },
+  {
+    "id": "bvm-ventilation",
+    "title": "Bag-Valve Mask (BVM) Ventilation",
+    "category": "Airway Management",
+    "icon": "activity",
+    "summary": "Providing manual positive-pressure ventilation using a bag-valve mask device.",
+    "equipment": ["Bag-valve mask (adult: 1L bag, appropriate mask size)", "Oxygen source (connect at 15 L/min for ~100% FiO2 with reservoir)", "Oral airway (OPA) or nasal airway (NPA)", "Gloves", "Suction equipment"],
+    "steps": [
+      "Assess: unresponsive, agonal breathing, or respiratory arrest — initiate BVM immediately.",
+      "Perform hand hygiene. Don gloves and face protection.",
+      "Position patient supine. Apply head-tilt chin-lift (or jaw thrust if spinal injury suspected) to open airway.",
+      "Insert appropriately sized OPA or NPA to maintain airway patency if patient has no gag reflex.",
+      "Connect BVM to oxygen at 15 L/min. Ensure reservoir bag inflates.",
+      "Select correct mask size (seal should cover nose and mouth without covering eyes or extending below chin).",
+      "One-person technique (E-C clamp): place mask over nose and mouth. Use the 'C' formed by thumb and index finger to hold the mask. Use remaining 3 fingers (the 'E') under the mandible to perform jaw thrust and maintain head tilt.",
+      "Two-person technique (preferred): one person maintains mask seal with two-hand E-C clamp; second person squeezes the bag.",
+      "Deliver each breath over 1 second — until visible chest rise. Do not over-ventilate.",
+      "Rate: for respiratory arrest with pulse — 10–12 breaths/min (1 breath every 5–6 seconds). For cardiac arrest (CPR): 2 breaths after every 30 compressions.",
+      "After advanced airway placed: 1 breath every 6 seconds (10/min) — asynchronous from compressions.",
+      "Watch for gastric distension from over-ventilation — increases aspiration risk.",
+      "Reassess for signs of ROSC or improvement in breathing effort.",
+      "Document initiation, duration, tidal volumes (if monitored), and patient response."
+    ],
+    "nursing_considerations": [
+      "Mask seal is the most common point of failure — two-person BVM technique provides significantly better ventilation.",
+      "Avoid excessive tidal volumes — use only enough to produce visible chest rise (500–600 mL in adults). Over-ventilation = gastric distension = aspiration.",
+      "If chest does not rise: recheck head position, check for airway obstruction, adjust mask seal.",
+      "Apply cricoid pressure (Sellick maneuver) if ordered to reduce aspiration risk during BVM ventilation.",
+      "BVM is a bridge to definitive airway (intubation, supraglottic airway) — prepare for advanced airway as soon as available team members arrive."
+    ]
+  },
+  {
+    "id": "oral-care-ventilated",
+    "title": "Oral Care for Ventilated Patients (VAP Bundle)",
+    "category": "Airway Management",
+    "icon": "activity",
+    "summary": "Performing evidence-based oral hygiene for intubated patients to prevent ventilator-associated pneumonia (VAP).",
+    "equipment": ["Chlorhexidine (CHG) 0.12% oral rinse", "Soft-bristle oral care toothbrush", "Yankauer suction catheter", "Moisturizing lip and mouth swabs", "Gloves", "Face protection", "Water"],
+    "steps": [
+      "Perform hand hygiene. Don gloves and face protection.",
+      "Perform oral care every 4 hours and PRN per VAP bundle protocol.",
+      "Suction oropharynx with Yankauer before beginning — clear pooled secretions above the ETT cuff first.",
+      "Use soft toothbrush to gently brush teeth, gums, and tongue in circular motions for 1–2 minutes.",
+      "Apply or rinse with CHG 0.12% oral solution — do not rinse out (for non-swallowing patients).",
+      "Suction oral secretions again with Yankauer.",
+      "Apply moisturizing swabs to lips and oral mucosa — ventilated patients develop severe oral dryness.",
+      "Assess oral cavity: mucosa color, integrity, presence of ulcers, teeth condition.",
+      "Reposition ETT to opposite side of mouth every 24–48 hours as a team (requires 2 nurses).",
+      "Ensure HOB remains at 30–45° unless contraindicated (spinal precautions, hypotension).",
+      "Document oral assessment, care provided, and ETT position (L/R side and cm mark at lip)."
+    ],
+    "nursing_considerations": [
+      "VAP bundle components: HOB 30–45°, oral care with CHG every 4 hours, daily sedation vacations, daily spontaneous breathing trials, subglottic suctioning (if specialized ETT available).",
+      "VAP is the #1 cause of hospital-acquired infection mortality in ICU patients — oral care compliance directly reduces incidence.",
+      "CHG oral care has strong evidence for reducing VAP in cardiac surgery patients; benefit in medical ICU is also supported.",
+      "Oral ulcers and pressure injury from ETT are common — reposition tube and use barrier moisture protectants.",
+      "Never suction below the ETT cuff without inline suction closed system — open suctioning below the cuff introduces contaminants."
+    ]
+  }
+]

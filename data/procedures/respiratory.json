@@ -1,0 +1,148 @@
+[
+  {
+    "id": "oxygen-therapy",
+    "title": "Oxygen Therapy Administration",
+    "category": "Respiratory",
+    "icon": "activity",
+    "summary": "Administering supplemental oxygen to maintain adequate oxygenation.",
+    "equipment": ["Flow meter", "Oxygen delivery device (nasal cannula, simple mask, NRB, Venturi mask)", "Humidifier bottle (for flows >4L/min)", "Pulse oximeter", "Gloves"],
+    "steps": [
+      "Verify order including delivery device and flow rate, or titrate per protocol.",
+      "Assess baseline: SpO2, respiratory rate, effort, breath sounds, mental status.",
+      "Attach flow meter to wall O2 outlet. Attach humidifier if flow >4L/min.",
+      "Set prescribed flow rate.",
+      "Apply delivery device to patient:",
+      "  Nasal cannula: prongs curve downward into nares, tubing over ears and under chin.",
+      "  Simple mask: cover nose and mouth, mold nosepiece, secure straps.",
+      "  NRB mask: pre-inflate reservoir bag before placing on patient.",
+      "Confirm SpO2 improvement. Reassess within 15–30 minutes.",
+      "Titrate per protocol to maintain SpO2 target (typically 94–98% or 88–92% for COPD patients).",
+      "Document device, flow rate, SpO2 before and after, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "COPD patients: target SpO2 88–92% — excess oxygen can blunt hypoxic drive in chronic CO2 retainers.",
+      "Nasal cannula delivers 24–44% FiO2 at 1–6 L/min. Do NOT exceed 6 L/min on a cannula.",
+      "Simple face mask: 35–50% FiO2 at 5–10 L/min. Must maintain at least 5 L/min to prevent CO2 rebreathing.",
+      "NRB (non-rebreather) mask: up to 95% FiO2 at 10–15 L/min — highest non-invasive O2 delivery.",
+      "Venturi mask provides precise FiO2 — used for COPD patients requiring controlled oxygen percentages."
+    ]
+  },
+  {
+    "id": "oropharyngeal-suctioning",
+    "title": "Oropharyngeal & Nasopharyngeal Suctioning",
+    "category": "Respiratory",
+    "icon": "activity",
+    "summary": "Clearing secretions from the upper airway (mouth and throat) using a Yankauer or flexible suction catheter.",
+    "equipment": ["Suction source (wall or portable) with canister and tubing", "Yankauer suction catheter (for oropharyngeal) or flexible suction catheter (for nasopharyngeal)", "Water-soluble lubricant (for nasopharyngeal)", "Gloves", "Eye protection/mask", "Normal saline for rinsing catheter"],
+    "steps": [
+      "Assess the need for suctioning: gurgling respirations, visible secretions, SpO2 drop, coughing without clearing.",
+      "Explain procedure to patient. Elevate HOB 45° if tolerated.",
+      "Perform hand hygiene. Don gloves and face protection.",
+      "Turn suction to appropriate pressure: 80–120 mmHg (adult).",
+      "Connect Yankauer to suction tubing.",
+      "Oropharyngeal technique: Insert Yankauer along the gum line to the back of the mouth. Apply intermittent suction while moving the catheter. Do NOT insert into the pharynx beyond visible structures in awake patients.",
+      "Nasopharyngeal technique: Measure catheter from tip of nose to earlobe. Lubricate catheter tip. Gently insert through the more patent nare. Apply suction while withdrawing. Insert no deeper than the measurement.",
+      "Do NOT apply suction while inserting — only while withdrawing.",
+      "Suction duration: no longer than 10–15 seconds per pass.",
+      "Allow patient to rest and take several breaths between suction passes.",
+      "Flush catheter with NS after each pass.",
+      "Limit to 3 suction passes per session unless absolutely necessary.",
+      "Reassess SpO2 and respiratory status after suctioning.",
+      "Document pre/post SpO2, secretion amount/color/consistency, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Suction only when clinically indicated — unnecessary suctioning causes mucosal trauma, bleeding, and bronchospasm.",
+      "Stimulating the posterior pharynx can trigger a vagal response (bradycardia) — monitor HR during suctioning.",
+      "Nasopharyngeal suctioning is contraindicated with known or suspected basilar skull fracture or recent nasal surgery.",
+      "Oxygenate the patient before and after suctioning if SpO2 is borderline.",
+      "Disposable Yankauer catheters should not be reused — discard after use."
+    ]
+  },
+  {
+    "id": "nebulizer-treatment",
+    "title": "Nebulizer Treatment Administration",
+    "category": "Respiratory",
+    "icon": "activity",
+    "summary": "Administering aerosolized bronchodilator or mucolytic medication via small-volume nebulizer.",
+    "equipment": ["Small-volume nebulizer (SVN) with mask or mouthpiece", "Medication (albuterol, ipratropium, etc.) in unit-dose vial or drawn per order", "Normal saline for dilution if needed", "Oxygen or compressed air source (6–8 L/min)", "Gloves"],
+    "steps": [
+      "Verify medication order. Perform 5 rights check.",
+      "Perform hand hygiene and don gloves.",
+      "Assess patient: breath sounds, respiratory rate, SpO2, heart rate (baseline for bronchodilator effect monitoring).",
+      "Add medication to the nebulizer cup. Dilute with NS if needed to total 3 mL (or per manufacturer instructions).",
+      "Attach mask or mouthpiece. Connect tubing to air or oxygen source.",
+      "Turn on flow at 6–8 L/min — mist should be visible from the nebulizer.",
+      "Place mouthpiece between patient's lips (preferred) or apply mask.",
+      "Instruct patient to breathe slowly and deeply through the mouth. Pause 1–2 seconds at end of inhalation.",
+      "Treatment typically takes 10–15 minutes or until medication cup is empty.",
+      "Tap the cup occasionally to ensure all medication reaches the mist.",
+      "After treatment: assess breath sounds, respiratory rate, SpO2, and heart rate.",
+      "Rinse nebulizer cup with sterile water and air dry after each use (per facility policy).",
+      "Document drug administered, response, and any adverse effects."
+    ],
+    "nursing_considerations": [
+      "Albuterol can cause tachycardia and tremors — monitor HR before and after. Hold if resting HR >100 and notify provider.",
+      "Mouthpiece delivers more medication to the lungs than a mask — use if patient can cooperate.",
+      "In-line nebulizers can be used for intubated patients — suction airway before treatment.",
+      "Spacer/MDI (metered dose inhaler) is preferred over SVN in stable patients — equivalent efficacy, less time.",
+      "Instruct patient to rinse mouth after inhaled corticosteroids (ICS) to prevent oral candidiasis."
+    ]
+  },
+  {
+    "id": "incentive-spirometry",
+    "title": "Incentive Spirometry",
+    "category": "Respiratory",
+    "icon": "activity",
+    "summary": "Using an incentive spirometer to promote deep breathing and prevent atelectasis, especially post-operatively.",
+    "equipment": ["Incentive spirometer (flow or volume type)", "Tissues"],
+    "steps": [
+      "Explain purpose to patient: prevent pneumonia and lung collapse, especially post-op.",
+      "Assess pain level — pre-medicate for incisional pain 20–30 minutes before spirometry if ordered.",
+      "Instruct patient to sit upright (90° if possible) or highest tolerated HOB position.",
+      "Instruct patient to exhale normally, then seal lips tightly around mouthpiece.",
+      "Breathe in SLOWLY and deeply to raise the piston/ball to the target level set by nurse or therapist.",
+      "Hold the breath for 3–5 seconds at peak inspiration (allows air distribution to small airways).",
+      "Remove mouthpiece and exhale normally.",
+      "Cough after each breath if secretions are present — splint incision site with a pillow if applicable.",
+      "Repeat 10 times every hour while awake.",
+      "Record the volume achieved at peak inspiration (highest level the ball/piston reaches).",
+      "Document patient education, frequency performed, and highest volume achieved."
+    ],
+    "nursing_considerations": [
+      "Incentive spirometry is most beneficial when started before surgery (pre-op education) and continued consistently post-op.",
+      "Patients often underuse the spirometer without encouragement — make it part of routine hourly rounding.",
+      "Goal volume is typically 1,500–2,000 mL or 15–20 mL/kg ideal body weight — adjust based on patient baseline.",
+      "Contraindicated in: untreated pneumothorax. Use with caution in: severely limited mouth opening, recent facial surgery.",
+      "Flow vs. volume spirometers: volume type is generally preferred for measuring progress and setting goals."
+    ]
+  },
+  {
+    "id": "chest-tube-management",
+    "title": "Chest Tube Management & Drainage System",
+    "category": "Respiratory",
+    "icon": "activity",
+    "summary": "Monitoring and maintaining a chest tube drainage system for pneumothorax, hemothorax, or pleural effusion.",
+    "equipment": ["Three-chamber water seal drainage system (e.g., Pleur-evac)", "Sterile water", "Occlusive dressing supplies", "Gloves", "Stethoscope", "Petroleum gauze (emergency occlusion)"],
+    "steps": [
+      "Verify suction setting (commonly -20 cmH2O) or water seal (gravity drainage) per order.",
+      "Assess patient: respiratory rate, breath sounds (compare bilateral), SpO2, pain.",
+      "Assess chest tube insertion site: dressing integrity, subcutaneous emphysema (crackling), security of connections.",
+      "Inspect drainage system: chambers and connections. Ensure no kinks or dependent loops in tubing.",
+      "Water-seal chamber: should see gentle tidaling (fluid rises on inspiration, falls on expiration with spontaneous breathing — reverses on mechanical ventilation). No tidaling may indicate tube blockage or lung re-expansion.",
+      "Suction control chamber: gentle, continuous bubbling indicates suction is active and set correctly.",
+      "Water-seal chamber: intermittent bubbling is normal for active air leak. Continuous bubbling may indicate a system air leak — clamp progressively from patient to system to locate.",
+      "Drainage collection chamber: measure and record output every shift (or more frequently if output is high). Normal drainage after thoracotomy: <100–200 mL/hr. Alert: >200 mL/hr (hemothorax).",
+      "Keep drainage system BELOW chest level at all times — do NOT clamp without explicit order (risk of tension pneumothorax).",
+      "If chest tube accidentally disconnects: immediately submerge the patient end in sterile water to maintain water seal, or apply occlusive dressing — notify provider STAT.",
+      "Ambulation: keep system below chest, ensure no tension on tube. Use portable Pleur-evac on water seal (off suction) during ambulation.",
+      "Document drainage amount/color, water-seal tidaling, presence/absence of air leak, site assessment, and patient status."
+    ],
+    "nursing_considerations": [
+      "NEVER clamp a chest tube without explicit provider order — can cause fatal tension pneumothorax.",
+      "Milking/stripping chest tubes is no longer recommended — may cause excessive negative pressure.",
+      "Sudden cessation of drainage in a patient with continued symptoms may indicate a clot blocking the tube — notify provider.",
+      "Subcutaneous emphysema (crackling under skin) may indicate tube displacement — notify provider.",
+      "Chest X-ray confirms tube placement and lung expansion — usually ordered post-insertion and daily."
+    ]
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "efm-monitoring",
+    "title": "External Fetal Heart Rate Monitoring (EFM)",
+    "category": "Maternal/OB",
+    "icon": "activity",
+    "summary": "Applying and interpreting continuous external electronic fetal monitoring during labor.",
+    "equipment": [
+      "Fetal monitor with tocodynamometer and ultrasound transducer",
+      "Conductive gel",
+      "Monitoring belts",
+      "Nonreassuring FHR strip \u2014 call provider immediately"
+    ],
+    "steps": [
+      "Verify provider order. Explain procedure to patient.",
+      "Position patient in lateral or semi-Fowler position \u2014 avoid supine hypotension.",
+      "Apply gel to ultrasound transducer. Locate fetal heart rate using Doppler first.",
+      "Secure ultrasound transducer over the point of maximum intensity (PMI) with belt.",
+      "Position tocodynamometer (toco) at the fundus \u2014 secure with second belt.",
+      "Confirm baseline FHR (110\u2013160 bpm is normal). Zero the toco. Start the strip.",
+      "Assess and document: baseline FHR, variability (moderate = reassuring), accelerations, decelerations, and contraction frequency/duration.",
+      "Category I strip: normal baseline, moderate variability, absent late/variable decelerations \u2014 continue monitoring.",
+      "Category II or III strip: notify provider immediately; reposition patient, administer O2 10L via NRB, increase IV fluids, discontinue oxytocin if running.",
+      "Perform Leopold maneuvers to confirm fetal position as needed.",
+      "Document strip interpretation every 15\u201330 minutes active labor, every 5\u201315 minutes in second stage."
+    ],
+    "safetyTips": [
+      "Never leave a Category II or III strip unaddressed \u2014 escalate promptly.",
+      "Late decelerations (starting after peak of contraction) suggest uteroplacental insufficiency \u2014 report immediately.",
+      "Variable decelerations (abrupt onset/offset) suggest cord compression \u2014 reposition to relieve."
+    ],
+    "documentation": [
+      "FHR baseline and variability",
+      "Presence/absence of accelerations and decelerations",
+      "Contraction frequency, duration, intensity",
+      "Maternal position",
+      "Interventions and patient response"
+    ],
+    "keyTakeaways": [
+      "Category I = reassuring",
+      "Category III = requires emergency intervention",
+      "Moderate variability (6\u201325 bpm) is the most reassuring sign"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "postpartum-assessment",
+    "title": "Postpartum Uterine & BUBBLE-HE Assessment",
+    "category": "Maternal/OB",
+    "icon": "activity",
+    "summary": "Systematic postpartum assessment using the BUBBLE-HE framework: Breasts, Uterus, Bowel, Bladder, Lochia, Episiotomy/incision, Homan's, Emotions.",
+    "equipment": [
+      "Gloves",
+      "Fundal massage technique knowledge",
+      "Peripad",
+      "Ice pack if needed"
+    ],
+    "steps": [
+      "Perform hand hygiene. Explain assessment to patient. Ensure privacy.",
+      "B \u2014 Breasts: Inspect for engorgement, cracking, mastitis signs. Assess for colostrum/milk let-down if breastfeeding.",
+      "U \u2014 Uterus: Palpate fundus. Normal: firm, midline, at or below umbilicus (descends 1 cm/day). If boggy \u2014 perform fundal massage.",
+      "FUNDAL MASSAGE: Cup the lower uterine segment with non-dominant hand. Gently massage the fundus with the other until firm.",
+      "B \u2014 Bowel: Assess for return of bowel sounds. Ask about flatus, first BM. Encourage early ambulation.",
+      "B \u2014 Bladder: Palpate for distension. Encourage void q2\u20134h. Urine output >30mL/hr expected.",
+      "L \u2014 Lochia: Assess color (rubra \u2192 serosa \u2192 alba), amount (scant/light/moderate/heavy), and odor. Report foul-smelling or heavy (soaking pad in 15 min).",
+      "E \u2014 Episiotomy/Incision: Inspect for REEDA (Redness, Edema, Ecchymosis, Discharge, Approximation). Apply ice pack for first 24h.",
+      "H \u2014 Homan's Sign (limited utility): Assess for calf tenderness, warmth, redness (DVT risk is elevated postpartum).",
+      "E \u2014 Emotions: Screen for postpartum depression/anxiety using Edinburgh scale. Assess bonding and support system.",
+      "Document all findings and compare to prior assessment."
+    ],
+    "safetyTips": [
+      "A boggy, displaced uterus = likely full bladder \u2014 have patient void first before attributing to uterine atony.",
+      "Heavy lochia + hypotension + tachycardia = postpartum hemorrhage \u2014 activate emergency response.",
+      "Edinburgh score \u226510 warrants provider notification and follow-up."
+    ],
+    "documentation": [
+      "Fundal height and consistency",
+      "Lochia type and amount",
+      "Episiotomy/incision status",
+      "Bladder and bowel assessment",
+      "Edinburgh score if performed"
+    ],
+    "keyTakeaways": [
+      "BUBBLE-HE is the systematic framework",
+      "Fundus should firm up with massage",
+      "Postpartum hemorrhage is the leading cause of maternal mortality"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "apgar-newborn-assessment",
+    "title": "Newborn Assessment & APGAR Scoring",
+    "category": "Maternal/OB",
+    "icon": "activity",
+    "summary": "Assessing the newborn immediately after birth using APGAR and performing the initial head-to-toe neonatal assessment.",
+    "equipment": [
+      "Warm, dry blankets",
+      "Radiant warmer",
+      "Bulb syringe or suction",
+      "Stethoscope",
+      "Pulse oximeter (neonatal probe)",
+      "APGAR scoring tool",
+      "Identification bands"
+    ],
+    "steps": [
+      "Dry and stimulate newborn immediately upon delivery. Place under radiant warmer.",
+      "Suction mouth then nose (only if needed \u2014 routine suctioning not recommended).",
+      "APGAR at 1 minute and 5 minutes (and 10 min if score <7):",
+      "  A \u2014 Appearance (skin color): 0=blue all over, 1=blue extremities, 2=pink all over",
+      "  P \u2014 Pulse: 0=absent, 1=<100, 2=\u2265100",
+      "  G \u2014 Grimace (reflex irritability): 0=none, 1=grimace, 2=cry/cough/sneeze",
+      "  A \u2014 Activity (muscle tone): 0=limp, 1=some flexion, 2=active motion",
+      "  R \u2014 Respiration: 0=absent, 1=weak cry, 2=strong cry",
+      "Score 7\u201310 = normal. Score 4\u20136 = moderate depression (stimulate, O2). Score 0\u20133 = severe (initiate resuscitation).",
+      "Apply ID bands to infant and mother before leaving delivery room.",
+      "Initial newborn assessment: head circumference, length, weight. Assess fontanels, eyes, palate, clavicles, umbilical cord (2 arteries, 1 vein), digits, hips (Ortolani/Barlow), reflexes (Moro, rooting, grasp).",
+      "First bath after temperature stabilizes (axillary \u226536.5\u00b0C / 97.7\u00b0F).",
+      "Administer erythromycin eye ointment and vitamin K IM per orders/protocol."
+    ],
+    "safetyTips": [
+      "Delay cord clamping 30\u201360 seconds unless resuscitation is required.",
+      "Hypothermia is the #1 preventable cause of neonatal morbidity \u2014 keep warm.",
+      "APGAR does not predict long-term outcomes \u2014 it guides immediate resuscitation decisions."
+    ],
+    "documentation": [
+      "APGAR scores at 1 and 5 minutes",
+      "Birth weight, length, head circumference",
+      "Time of first breath, first cry",
+      "Medications administered",
+      "ID band numbers"
+    ],
+    "keyTakeaways": [
+      "Dry, stimulate, warm are the first three interventions",
+      "Score 7\u201310 normal",
+      "Delay cord clamping when possible"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "epidural-management",
+    "title": "Epidural Analgesia Monitoring & Management",
+    "category": "Maternal/OB",
+    "icon": "activity",
+    "summary": "Monitoring and managing epidural analgesia in laboring patients, including assessment of sensory/motor block and complications.",
+    "equipment": [
+      "Blood pressure cuff (automatic or manual)",
+      "Pulse oximeter",
+      "Ice or cold sensation test",
+      "Epidural pump",
+      "Emergency medications: ephedrine, epinephrine, naloxone, intralipid emulsion at bedside"
+    ],
+    "steps": [
+      "Ensure IV access is patent and NS bolus (500\u20131000mL) given prior to epidural placement (per anesthesia orders).",
+      "After placement: monitor BP every 5 minutes \u00d7 20 minutes, then per facility policy (hypotension is the most common complication).",
+      "Assess sensory block level using ice or cold sensation \u2014 report levels above T6 to anesthesia.",
+      "Assess motor block: ask patient to move legs. Bromage scale: 0=full movement, 3=no movement. Report dense motor block to anesthesia.",
+      "Position patient: lateral or wedge under right hip \u2014 avoid aorta/vena cava compression.",
+      "Monitor FHR continuously \u2014 epidural can cause maternal hypotension \u2192 uteroplacental insufficiency.",
+      "Assess for: itching (opioid side effect \u2014 treat with naloxone or diphenhydramine), urinary retention, nausea.",
+      "Do NOT give IV opioids without anesthesia approval \u2014 additive CNS/respiratory depression risk.",
+      "High spinal emergency: sudden inability to speak, breathlessness, BP crash \u2014 call anesthesia STAT, lay flat, O2, vasopressors.",
+      "Document all assessments per policy. Inspect catheter site each shift for infection or migration."
+    ],
+    "safetyTips": [
+      "Hypotension (<90 mmHg systolic or 20% drop from baseline): lateral position, IV fluid bolus, notify anesthesia, ephedrine per order.",
+      "Pruritus is common with intrathecal opioids \u2014 not an allergy.",
+      "Never inject anything into the epidural catheter without anesthesia order \u2014 wrong-route errors are fatal."
+    ],
+    "documentation": [
+      "Sensory block level",
+      "Motor block score",
+      "Pain score pre/post",
+      "BP and HR q5 min \u00d7 20 min post-bolus",
+      "Side effects and interventions"
+    ],
+    "keyTakeaways": [
+      "Hypotension is the most common complication",
+      "Sensory level >T6 = notify anesthesia",
+      "Continuous FHR monitoring required"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "oxytocin-infusion",
+    "title": "Oxytocin (Pitocin) Infusion Management",
+    "category": "Maternal/OB",
+    "icon": "activity",
+    "summary": "Titrating IV oxytocin for labor induction or augmentation and monitoring for uterine tachysystole.",
+    "equipment": [
+      "IV infusion pump",
+      "Oxytocin solution per order (typically 10\u201320 units in 500mL\u20131L NS)",
+      "Continuous EFM",
+      "IV access (dedicated line)"
+    ],
+    "steps": [
+      "Obtain provider order including starting dose (typically 0.5\u20132 mU/min) and titration instructions.",
+      "Prepare oxytocin solution per pharmacy or order. Use infusion pump \u2014 never free-flow.",
+      "Initiate EFM before starting oxytocin.",
+      "Start infusion at prescribed rate. Titrate per order (typically increase by 1\u20132 mU/min every 15\u201340 min).",
+      "Assess uterine activity: goal is contractions every 2\u20133 minutes, lasting 60\u201390 seconds, with adequate rest between.",
+      "TACHYSYSTOLE = >5 contractions in 10 minutes: STOP or decrease oxytocin, reposition, increase IV fluids, apply O2, notify provider.",
+      "Monitor: maternal BP, HR, urine output (oxytocin has antidiuretic effect \u2014 watch for water intoxication with high doses).",
+      "Continuously monitor FHR \u2014 look for late decelerations (uteroplacental compromise).",
+      "Titrate down once labor well established; may discontinue when active phase maintained.",
+      "NEVER give IV oxytocin bolus \u2014 must be infused on a pump."
+    ],
+    "safetyTips": [
+      "Oxytocin is a HIGH-ALERT medication \u2014 independent double-check required for dose and pump settings.",
+      "Tachysystole with non-reassuring FHR = emergency \u2014 stop infusion and notify provider immediately.",
+      "Prolonged high-dose oxytocin + excess free water = hyponatremia/water intoxication."
+    ],
+    "documentation": [
+      "Dose in mU/min and mL/hr",
+      "Contraction frequency, duration, intensity",
+      "FHR findings",
+      "Maternal vital signs",
+      "Any dose changes and reason"
+    ],
+    "keyTakeaways": [
+      "High-alert medication \u2014 pump only",
+      ">5 contractions/10 min = tachysystole, stop oxytocin",
+      "Continuous EFM is mandatory"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "breastfeeding-support",
+    "title": "Breastfeeding Support & Latch Assessment",
+    "category": "Maternal/OB",
+    "icon": "activity",
+    "summary": "Assessing and supporting breastfeeding initiation, latch, and maternal confidence in the postpartum period.",
+    "equipment": [
+      "LATCH assessment tool",
+      "Nipple shield (if needed)",
+      "Breast pump for engorgement",
+      "Lanolin nipple cream"
+    ],
+    "steps": [
+      "Encourage breastfeeding within the first hour after birth (skin-to-skin).",
+      "Assess readiness cues: rooting, sucking on hands, alertness.",
+      "Help mother achieve proper position: cradle, cross-cradle, football, or side-lying.",
+      "Instruct on proper latch: infant mouth wide open, lower lip flanged out, chin touching breast, nose clear. Most of the areola should be in the mouth (not just the nipple).",
+      "LATCH Score: L=Latch, A=Audible swallowing, T=Type of nipple, C=Comfort, H=Hold (0\u201310; higher = better).",
+      "Assess milk transfer: listen for audible swallows, assess infant satisfaction after feeding, monitor infant weight.",
+      "Feeding frequency: 8\u201312 times per 24 hours (on demand). Each breast ~10\u201320 minutes.",
+      "Assess for engorgement: encourage frequent feeding, warm compresses before feeding, cold compresses after.",
+      "Mastitis signs: localized warmth, redness, fever >38.5\u00b0C \u2014 continue breastfeeding, refer to provider for antibiotics if needed.",
+      "Document LATCH score, feeding duration, infant behavior post-feed."
+    ],
+    "safetyTips": [
+      "Nipple pain is NOT normal after the first days \u2014 reassess latch.",
+      "Jaundice can worsen with inadequate intake \u2014 monitor bilirubin and feeding frequency.",
+      "Inverted nipples may require a nipple shield \u2014 refer to lactation consultant."
+    ],
+    "documentation": [
+      "LATCH score",
+      "Feeding frequency and duration",
+      "Maternal comfort level",
+      "Infant weight trend",
+      "Referral to lactation consultant if needed"
+    ],
+    "keyTakeaways": [
+      "Skin-to-skin within first hour",
+      "8\u201312 feedings per 24 hours",
+      "LATCH score guides assessment"
+    ],
+    "nursing_considerations": []
+  }
+]

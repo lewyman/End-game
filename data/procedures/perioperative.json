@@ -1,0 +1,217 @@
+[
+  {
+    "id": "preoperative-checklist",
+    "title": "Preoperative Assessment & Safety Checklist",
+    "category": "Perioperative",
+    "icon": "activity",
+    "summary": "Completing the preoperative safety checklist, patient teaching, and handoff before surgery.",
+    "equipment": [
+      "Preoperative checklist form",
+      "Patient identification bands",
+      "Surgical consent form",
+      "Allergy wristband"
+    ],
+    "steps": [
+      "Verify patient identity using two identifiers.",
+      "Confirm signed, witnessed informed consent matches the scheduled procedure and surgeon.",
+      "Assess and document: allergies, current medications, NPO status (nothing by mouth \u2014 typically 8h for solids, 6h for non-clear liquids, 2h for clear liquids).",
+      "Assess baseline vital signs, height, weight, O2 saturation, pain level.",
+      "Complete a full medication reconciliation. Note anticoagulants, antidiabetics, and cardiac medications.",
+      "Confirm lab results, imaging, and blood type/screen are available if required.",
+      "Remove: jewelry, piercings, nail polish (fingers/toes), contact lenses, hearing aids, dentures, hairpins.",
+      "Apply: identification bands, allergy bands, fall risk band as appropriate. Apply anti-embolic stockings or SCDs per order.",
+      "Mark surgical site with indelible marker per surgeon order (extremity, laterality).",
+      "Administer preoperative medications (antibiotics within 60 min of incision per SCIP guidelines, anxiolytics, etc.).",
+      "Perform skin assessment. Clip hair at surgical site only if needed (do NOT shave \u2014 increases SSI risk).",
+      "Ensure IV access is patent. Complete handoff to OR team using SBAR."
+    ],
+    "safetyTips": [
+      "Wrong-site surgery is a never event \u2014 confirm site marking with patient while awake.",
+      "Antibiotic prophylaxis must be given within 60 minutes of incision \u2014 not before, not after.",
+      "Shaving the surgical site INCREASES infection risk \u2014 use clippers only if hair removal needed."
+    ],
+    "documentation": [
+      "Checklist completion",
+      "Consent verification",
+      "Medication given with time",
+      "Site marking confirmed",
+      "IV access and type"
+    ],
+    "keyTakeaways": [
+      "Consent must match procedure exactly",
+      "NPO rules: 2/6/8 hours",
+      "Mark site with patient awake"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "pacu-assessment",
+    "title": "Post-Anesthesia Care Unit (PACU) Assessment",
+    "category": "Perioperative",
+    "icon": "activity",
+    "summary": "Systematic assessment of the patient immediately following surgery and anesthesia in the PACU.",
+    "equipment": [
+      "Cardiac monitor",
+      "Pulse oximeter",
+      "Oxygen delivery device",
+      "Stethoscope",
+      "Aldrete/MPADSS scoring tool"
+    ],
+    "steps": [
+      "Receive handoff from anesthesia provider: procedure, anesthetic agents, estimated blood loss, IV fluids given, medications given in OR, any complications.",
+      "Immediately assess: airway patency, respiratory rate, SpO2, level of consciousness.",
+      "Apply O2 per protocol (most patients receive 2\u20134L NC or mask initially).",
+      "Attach cardiac monitor. Obtain and document vital signs q15 min minimum.",
+      "Assess surgical site: dressing integrity, drainage, color, amount.",
+      "Assess pain using appropriate scale (NRS, Wong-Baker FACES).",
+      "Assess for PONV (postoperative nausea and vomiting) \u2014 administer antiemetics per order.",
+      "Assess level of consciousness: oriented \u00d7 4, emergence agitation vs. normal emergence.",
+      "Assess motor/sensory return if regional anesthesia used.",
+      "Monitor urine output (catheter if present) \u2014 minimum 0.5mL/kg/hr.",
+      "ALDRETE SCORE for discharge readiness (each category 0\u20132): Activity, Respiration, Circulation, Consciousness, O2 Saturation. Score \u22659 required for discharge.",
+      "Complete discharge teaching including activity restrictions, pain management, and follow-up instructions."
+    ],
+    "safetyTips": [
+      "Airway obstruction post-anesthesia is common \u2014 tongue, secretions, laryngospasm. Jaw thrust + suction + airway adjunct.",
+      "Emergence agitation: reorient calmly, ensure pain is controlled, rule out hypoxia before sedating.",
+      "Malignant hyperthermia can occur post-op \u2014 fever + rigidity + tachycardia = call anesthesia STAT."
+    ],
+    "documentation": [
+      "Admission assessment and ALDRETE score",
+      "Vital signs frequency",
+      "Pain/PONV scores and treatments",
+      "Discharge ALDRETE score",
+      "Discharge teaching completed"
+    ],
+    "keyTakeaways": [
+      "Aldrete \u22659 required for PACU discharge",
+      "Airway is the #1 priority",
+      "PONV prevention is key to PACU length of stay"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "surgical-drain-management",
+    "title": "Surgical Drain Management (JP / Hemovac)",
+    "category": "Perioperative",
+    "icon": "activity",
+    "summary": "Monitoring and emptying closed-suction surgical drains (Jackson-Pratt and Hemovac).",
+    "equipment": [
+      "Gloves",
+      "Measuring cup/graduated container",
+      "Alcohol swab",
+      "Drain log"
+    ],
+    "steps": [
+      "Perform hand hygiene. Don gloves.",
+      "Assess drain site: skin integrity, signs of infection (redness, warmth, purulence), drain security.",
+      "JP Drain: bulb should be compressed (creating suction). If expanded, it needs emptying.",
+      "Hemovac: flat disk should be compressed. If expanded, needs emptying.",
+      "To empty: open the drainage port. Pour contents into graduated container. Measure and record.",
+      "Assess drainage: color (serosanguineous \u2192 serous is normal progression), amount, and odor.",
+      "Compress the drain (JP: squeeze bulb; Hemovac: press flat) before closing the port to reestablish suction.",
+      "Wipe port with alcohol swab and close securely.",
+      "Secure drain to prevent tension on insertion site \u2014 pin to gown, never hang free.",
+      "Report: sudden increase in output, bright red output, or output >100mL/hr (possible hemorrhage)."
+    ],
+    "safetyTips": [
+      "A drain that stops collecting suddenly may be clotted or kinked \u2014 assess patency before assuming output has decreased.",
+      "Never pull on a drain \u2014 if accidentally dislodged, cover site, apply pressure, notify surgeon.",
+      "Bright red output suggests active bleeding \u2014 do not empty, notify surgeon immediately with volume estimate."
+    ],
+    "documentation": [
+      "Time of emptying",
+      "Amount, color, and character of drainage",
+      "Drain site assessment",
+      "Cumulative 24-hour drain output"
+    ],
+    "keyTakeaways": [
+      "Keep compressed for suction to work",
+      "Serosanguineous \u2192 serous is normal progression",
+      "Bright red or sudden increase = notify surgeon"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "surgical-site-prep",
+    "title": "Surgical Site Skin Preparation",
+    "category": "Perioperative",
+    "icon": "activity",
+    "summary": "Preparing the patient's skin before surgery to reduce surgical site infection (SSI) risk.",
+    "equipment": [
+      "Chlorhexidine gluconate (CHG) scrub cloths or solution",
+      "Clippers (if hair removal needed)",
+      "Sterile drapes",
+      "Warming blanket"
+    ],
+    "steps": [
+      "Preoperative shower/bath: instruct patient to shower with CHG soap the night before AND morning of surgery.",
+      "Hair removal (in OR or preop): use clippers ONLY \u2014 never a razor (razors increase SSI risk). Remove only hair in the operative field.",
+      "In OR: surgical prep is performed after positioning.",
+      "Apply antimicrobial prep agent (chlorhexidine-alcohol preferred for most sites; iodine for mucous membranes or alcohol-contraindicated areas).",
+      "Scrub using friction: start at incision site and work outward in circular or back-and-forth motion. Never return a contaminated applicator to the incision area.",
+      "Allow prep to fully dry before draping \u2014 chlorhexidine-alcohol is flammable when wet.",
+      "Apply sterile drapes to define the surgical field \u2014 expose only the operative area.",
+      "Eye, ear, or facial surgery: avoid prep agents near eyes/mucous membranes unless specific prep ordered."
+    ],
+    "safetyTips": [
+      "Chlorhexidine-alcohol is flammable \u2014 allow full drying time before draping to prevent OR fires.",
+      "CHG is toxic to the middle ear \u2014 never use near the tympanic membrane.",
+      "Do NOT use CHG on open wounds or mucous membranes \u2014 use iodine-based prep instead."
+    ],
+    "documentation": [
+      "Prep agent used",
+      "Area prepped",
+      "Hair removal method if used",
+      "Skin condition at site prior to prep"
+    ],
+    "keyTakeaways": [
+      "Clippers not razors",
+      "CHG-alcohol is preferred",
+      "Must dry fully before draping \u2014 fire risk"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "intraoperative-positioning",
+    "title": "Intraoperative Patient Positioning",
+    "category": "Perioperative",
+    "icon": "activity",
+    "summary": "Safely positioning the surgical patient to provide operative exposure while preventing injury.",
+    "equipment": [
+      "Positioning devices (foam pads, gel pads, arm boards, stirrups)",
+      "Safety strap",
+      "Eye protection",
+      "Warm blanket"
+    ],
+    "steps": [
+      "Identify required surgical position based on procedure: supine, prone, lateral, lithotomy, Trendelenburg, reverse Trendelenburg, sitting.",
+      "Assess patient: BMI, joint mobility, history of pressure injuries, vascular disease, implants.",
+      "Supine: pad all bony prominences (heels, sacrum, elbows). Arms on arm boards at <90\u00b0 \u2014 prevents brachial plexus stretch.",
+      "Prone: ensure chest rolls support the thorax \u2014 abdomen hangs free to allow ventilation. Head in neutral position. Eyes protected.",
+      "Lithotomy: raise both legs simultaneously into stirrups. Level of stirrups and hip flexion must be symmetrical.",
+      "Protect eyes in all positions where head is not in neutral \u2014 use tape or shields.",
+      "Apply safety strap (2 inches above knees) after positioning.",
+      "Pad any bony prominence that contacts a hard surface.",
+      "After positioning: confirm IV lines/catheters are not kinked. Verify airway is still secure.",
+      "Document: position used, padding devices, duration."
+    ],
+    "safetyTips": [
+      "Trendelenburg for prolonged time \u2192 increased ICP, periorbital edema, airway edema \u2014 monitor carefully.",
+      "Lithotomy position causes compartment syndrome risk in legs if >2 hours \u2014 document start time.",
+      "Arms hyperextended on arm boards \u2192 brachial plexus injury. Keep at \u226490\u00b0 from body."
+    ],
+    "documentation": [
+      "Position and time in position",
+      "Padding devices used",
+      "Skin condition pre/post",
+      "Eye protection applied"
+    ],
+    "keyTakeaways": [
+      "Pad all bony prominences",
+      "Arms \u226490\u00b0 in supine to prevent brachial plexus injury",
+      "Lithotomy >2h = compartment syndrome risk"
+    ],
+    "nursing_considerations": []
+  }
+]

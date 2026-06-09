@@ -1,0 +1,280 @@
+[
+  {
+    "id": "rapid-response-activation",
+    "title": "Rapid Response Team (RRT) Activation",
+    "category": "Emergency & Critical Care",
+    "icon": "activity",
+    "summary": "Recognizing early clinical deterioration and activating the rapid response team before cardiac arrest occurs.",
+    "equipment": [
+      "Hospital call system",
+      "Vital signs equipment",
+      "O2 delivery device",
+      "IV access"
+    ],
+    "steps": [
+      "Recognize early warning signs of deterioration (any of the following):",
+      "  HR <40 or >130 bpm",
+      "  RR <8 or >28 breaths/min",
+      "  SpO2 <90% on supplemental O2",
+      "  Systolic BP <90 mmHg",
+      "  Acute change in level of consciousness",
+      "  Urine output <50mL over 4 hours",
+      "  Acute, uncontrolled pain",
+      "  Staff or family 'gut feeling' that something is wrong",
+      "CALL THE RAPID RESPONSE TEAM: activate per facility protocol (usually dedicated RRT number or call overhead).",
+      "Stay with patient. Send someone else to call if needed.",
+      "While awaiting RRT: apply O2, obtain vital signs, establish IV access if not present.",
+      "Prepare SBAR: Situation (what's wrong), Background (history/admitting diagnosis), Assessment (vital signs, clinical findings), Recommendation (what you need).",
+      "Gather: chart, medication list, allergies, code status, provider contact info.",
+      "Document: time of deterioration first noticed, interventions prior to RRT arrival, RRT team members."
+    ],
+    "safetyTips": [
+      "Calling RRT is NEVER wrong if you are concerned. Under-calling leads to preventable codes.",
+      "RRT activation is not a personal failure \u2014 it is the correct clinical decision.",
+      "Document the time you first noticed deterioration \u2014 this is critical for incident review."
+    ],
+    "documentation": [
+      "Time of first concern",
+      "Vital signs and assessment findings",
+      "RRT call time",
+      "Interventions initiated",
+      "RRT team response and plan"
+    ],
+    "keyTakeaways": [
+      "Recognize early \u2014 call early",
+      "SBAR for efficient communication",
+      "Any nurse can and should call RRT"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "sepsis-bundle",
+    "title": "Sepsis Recognition & Hour-1 Bundle",
+    "category": "Emergency & Critical Care",
+    "icon": "activity",
+    "summary": "Recognizing sepsis and initiating the Surviving Sepsis Campaign Hour-1 Bundle.",
+    "equipment": [
+      "IV access (large bore \u00d72)",
+      "Blood culture bottles (aerobic + anaerobic)",
+      "IV fluid (30mL/kg NS or LR bolus)",
+      "Broad-spectrum antibiotics per order",
+      "Lactate blood tube"
+    ],
+    "steps": [
+      "SCREEN for sepsis: suspected infection + \u22652 SIRS criteria (HR>90, RR>20, Temp>38\u00b0C or <36\u00b0C, WBC>12K or <4K) OR using qSOFA (\u22652 of: altered mental status, RR\u226522, SBP\u2264100).",
+      "HOUR-1 BUNDLE (Surviving Sepsis Campaign 2018):",
+      "1. Measure lactate (target <2 mmol/L; re-measure if >2 mmol/L after resuscitation).",
+      "2. Blood cultures BEFORE antibiotics (2 sets from different sites \u2014 do not delay antibiotics >45 min for cultures).",
+      "3. Broad-spectrum antibiotics within 1 hour of sepsis recognition.",
+      "4. 30 mL/kg IV crystalloid bolus for hypotension (SBP<90 or MAP<65) or lactate \u22654 mmol/L.",
+      "5. Vasopressors if MAP <65 after fluid resuscitation (norepinephrine is first-line; via central line preferred).",
+      "Monitor response: MAP, urine output, lactate clearance, mental status.",
+      "Reassess fluid responsiveness \u2014 avoid fluid overload in patients without response (consider passive leg raise test)."
+    ],
+    "safetyTips": [
+      "Do NOT delay antibiotics waiting for cultures \u2014 each hour of delay increases mortality by ~7%.",
+      "Septic shock vasopressors via peripheral IV temporarily acceptable if central line not available.",
+      "Lactate \u22654 mmol/L = septic shock even without hypotension \u2014 initiate bundle immediately."
+    ],
+    "documentation": [
+      "Time sepsis suspected",
+      "Lactate result and time",
+      "Blood culture draw times and sites",
+      "Antibiotic times and names",
+      "Fluid volume given",
+      "Vasopressor started if applicable"
+    ],
+    "keyTakeaways": [
+      "Hour-1 bundle: lactate, cultures, antibiotics, fluids, vasopressors",
+      "Antibiotics within 1 hour",
+      "Lactate \u22654 = septic shock"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "stroke-assessment",
+    "title": "Stroke Recognition & Assessment (BE-FAST / NIH Stroke Scale)",
+    "category": "Emergency & Critical Care",
+    "icon": "activity",
+    "summary": "Rapidly recognizing stroke symptoms, completing the NIH Stroke Scale, and activating the stroke response.",
+    "equipment": [
+      "NIH Stroke Scale (NIHSS) tool",
+      "Penlight",
+      "BP cuff",
+      "Glucometer",
+      "IV access"
+    ],
+    "steps": [
+      "RECOGNIZE with BE-FAST:",
+      "  B \u2014 Balance: sudden loss of balance or coordination",
+      "  E \u2014 Eyes: sudden vision changes",
+      "  F \u2014 Face: facial drooping (ask patient to smile)",
+      "  A \u2014 Arm: arm weakness (ask patient to hold arms up)",
+      "  S \u2014 Speech: slurred or strange speech (ask to repeat a phrase)",
+      "  T \u2014 Time: note exact time of symptom onset (or last-known-well)",
+      "ACTIVATE STROKE CODE: notify provider and stroke team IMMEDIATELY.",
+      "Check blood glucose \u2014 hypoglycemia mimics stroke. If <60 mg/dL, treat first.",
+      "Obtain IV access. NPO. Do NOT give food or fluids (dysphagia risk).",
+      "Complete NIHSS (scored 0\u201342): consciousness, gaze, visual fields, facial palsy, motor arm/leg, limb ataxia, sensory, language, dysarthria, extinction.",
+      "Obtain stat CT head without contrast (rules out hemorrhage before tPA).",
+      "tPA (alteplase) time window: 3\u20134.5 hours from symptom onset. Document last-known-well time precisely.",
+      "BP management: keep BP <185/110 before tPA. Do not treat BP aggressively unless \u2265220/120 and tPA not planned."
+    ],
+    "safetyTips": [
+      "TIME IS BRAIN: 1.9 million neurons die per minute during stroke. Speed is critical.",
+      "Never give tPA without CT confirming no hemorrhage.",
+      "Correct last-known-well time is crucial \u2014 patient waking with symptoms = time was at sleep."
+    ],
+    "documentation": [
+      "Symptom onset/last-known-well time",
+      "NIHSS score",
+      "Glucose result",
+      "CT head result",
+      "tPA administration or reason not given"
+    ],
+    "keyTakeaways": [
+      "BE-FAST screening",
+      "Time = brain",
+      "CT head before tPA always"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "trauma-primary-survey",
+    "title": "Trauma Primary Survey (ABCDE)",
+    "category": "Emergency & Critical Care",
+    "icon": "activity",
+    "summary": "Performing the ATLS-based primary survey to identify and treat immediately life-threatening injuries.",
+    "equipment": [
+      "Cervical collar",
+      "O2 delivery device",
+      "Large-bore IVs",
+      "Warmed crystalloid",
+      "Blood products if available"
+    ],
+    "steps": [
+      "GENERAL IMPRESSION: mechanism of injury, visible hemorrhage, level of consciousness.",
+      "A \u2014 AIRWAY with cervical spine protection: is airway patent? Jaw thrust (not chin-lift) if trauma. Apply c-collar. If obstructed: suction, airway adjunct, prepare for intubation.",
+      "B \u2014 BREATHING & VENTILATION: RR, SpO2, tracheal deviation, breath sounds. Apply 100% O2 NRB. Tension pneumothorax: absent breath sounds + tracheal deviation + hypotension \u2014 needle decompression STAT.",
+      "C \u2014 CIRCULATION & HEMORRHAGE CONTROL: HR, BP, skin (pale/cool = shock). Stop external bleeding: direct pressure, tourniquet for extremity. Start 2 large-bore IVs. Warm crystalloid 1\u20132L (consider early blood products).",
+      "D \u2014 DISABILITY (NEUROLOGICAL STATUS): GCS, pupils (PERRLA), focal deficits. Check glucose.",
+      "E \u2014 EXPOSURE & ENVIRONMENT: fully expose patient to find all injuries. Log roll to assess back. Cover with warm blanket immediately to prevent hypothermia.",
+      "ADJUNCTS: cardiac monitor, 12-lead ECG, foley if no urethral injury, NG tube if no facial fractures, portable X-rays (chest, pelvis), FAST ultrasound.",
+      "Transition to secondary survey (head-to-toe) once life threats addressed."
+    ],
+    "safetyTips": [
+      "Hypothermia + acidosis + coagulopathy = the lethal trauma triad. Prevent with warming, early blood products, damage control.",
+      "Tension pneumothorax: do NOT wait for X-ray. Clinical diagnosis \u2014 needle decompression immediately.",
+      "Tourniquet for uncontrolled extremity hemorrhage. Document application time \u2014 ischemic risk >2 hours."
+    ],
+    "documentation": [
+      "Mechanism of injury",
+      "GCS on arrival",
+      "Vital signs",
+      "Injuries found per survey",
+      "Interventions and responses"
+    ],
+    "keyTakeaways": [
+      "ABCDE in order every time",
+      "Stop the bleeding \u2014 hemorrhage is the #1 preventable death",
+      "Warm the patient immediately"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "anaphylaxis-management",
+    "title": "Anaphylaxis Recognition & Emergency Management",
+    "category": "Emergency & Critical Care",
+    "icon": "activity",
+    "summary": "Recognizing and managing anaphylaxis, a life-threatening systemic allergic reaction.",
+    "equipment": [
+      "Epinephrine 1:1000 solution",
+      "Auto-injector (EpiPen) if available",
+      "O2 via NRB mask",
+      "IV access",
+      "Normal saline bolus",
+      "Diphenhydramine",
+      "Corticosteroids",
+      "Albuterol inhaler/nebulizer"
+    ],
+    "steps": [
+      "RECOGNIZE: rapid onset of \u22652 body systems after allergen exposure:",
+      "  Skin: hives, flushing, angioedema (lips/tongue/throat)",
+      "  Respiratory: bronchospasm, stridor, hypoxia",
+      "  Cardiovascular: hypotension, tachycardia, dizziness",
+      "  GI: nausea, vomiting, abdominal cramping",
+      "CALL FOR HELP. Activate rapid response / code as appropriate.",
+      "EPINEPHRINE FIRST \u2014 0.3mg (0.3mL of 1:1000) IM into outer mid-thigh. This is the primary treatment. Do NOT delay.",
+      "Repeat epinephrine every 5\u201315 minutes if needed. Up to 3 doses.",
+      "Position: supine with legs elevated (unless respiratory distress \u2014 then semi-Fowler).",
+      "Apply high-flow O2 via NRB mask. Be prepared for intubation (airway edema can close rapidly).",
+      "IV access: large bore \u00d72. NS bolus 1\u20132L for hypotension.",
+      "Secondary medications (AFTER epinephrine): diphenhydramine 50mg IV/IM, methylprednisolone 125mg IV, albuterol for bronchospasm.",
+      "Monitor for biphasic reaction (symptom return 1\u201372 hours later) \u2014 observe minimum 4\u20138 hours post-reaction."
+    ],
+    "safetyTips": [
+      "Epinephrine is the ONLY first-line treatment \u2014 antihistamines alone will NOT reverse anaphylaxis.",
+      "Angioedema of the airway can close within minutes. Have intubation equipment at bedside.",
+      "Biphasic reaction occurs in up to 20% \u2014 do not discharge immediately after initial stabilization."
+    ],
+    "documentation": [
+      "Time of reaction onset",
+      "Trigger identified if known",
+      "Epinephrine dose, route, time",
+      "Vital signs trend",
+      "Response to treatment"
+    ],
+    "keyTakeaways": [
+      "Epinephrine IM is always first",
+      "Antihistamines are adjuncts only",
+      "Monitor 4\u20138 hours for biphasic reaction"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "abg-collection",
+    "title": "Arterial Blood Gas (ABG) Collection",
+    "category": "Emergency & Critical Care",
+    "icon": "activity",
+    "summary": "Collecting an arterial blood gas sample from the radial artery and interpreting the results.",
+    "equipment": [
+      "Pre-heparinized ABG syringe with needle",
+      "Alcohol swab",
+      "2x2 gauze",
+      "Tape",
+      "Gloves",
+      "Ice bag (for transport if delay >15 min)"
+    ],
+    "steps": [
+      "Verify order. Perform Allen's test to assess collateral circulation:",
+      "  Compress both radial and ulnar arteries. Have patient clench fist until blanched.",
+      "  Release ulnar artery only. Hand should flush pink within 5\u20136 seconds. >10 seconds = inadequate collateral circulation. Choose another site.",
+      "Position wrist in extension (rolled towel under wrist).",
+      "Perform hand hygiene. Don gloves.",
+      "Clean radial pulse with alcohol swab. Allow to dry.",
+      "Palpate radial artery with non-dominant index finger.",
+      "Insert needle bevel up at 30\u201345\u00b0 angle over pulsation. Advance slowly \u2014 blood will flash back under arterial pressure (pulsatile).",
+      "Allow 0.5\u20131 mL to fill (gravity/pulsatile \u2014 do not pull back on plunger).",
+      "Withdraw needle. Apply firm pressure for minimum 5 minutes (10 minutes if anticoagulated).",
+      "Expel air bubbles from syringe immediately. Cap the syringe. Label and transport to lab (or on ice if >15 minute delay)."
+    ],
+    "safetyTips": [
+      "Pressure is critical \u2014 arterial hematomas can be large. Do not release pressure early.",
+      "If patient is on anticoagulation (heparin, warfarin) hold pressure for 10\u201315 minutes minimum.",
+      "Air bubbles in the syringe falsely normalize PaO2 and PaCO2 \u2014 expel immediately."
+    ],
+    "documentation": [
+      "Allen's test result",
+      "Site used",
+      "Time of collection",
+      "O2 therapy and FiO2 at time of sample",
+      "Patient temperature (for correction)"
+    ],
+    "keyTakeaways": [
+      "Allen's test before radial stick",
+      "Pulsatile flashback = arterial",
+      "Hold pressure minimum 5 minutes"
+    ],
+    "nursing_considerations": []
+  }
+]

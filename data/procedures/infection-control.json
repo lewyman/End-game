@@ -1,0 +1,99 @@
+[
+  {
+    "id": "isolation-precautions",
+    "title": "Isolation Precautions (PPE Donning & Doffing)",
+    "category": "Infection Control",
+    "icon": "shield",
+    "summary": "Proper sequence for applying and removing personal protective equipment (PPE).",
+    "equipment": ["Gloves", "Gown", "Surgical mask or N95 respirator", "Eye protection (goggles or face shield)", "Hand sanitizer"],
+    "steps": [
+      "DONNING (putting on):",
+      "1. Perform hand hygiene.",
+      "2. Put on gown — tie at neck and waist.",
+      "3. Put on mask or respirator — ensure proper fit/seal for N95.",
+      "4. Put on eye protection.",
+      "5. Put on gloves — pull over gown cuffs.",
+      "DOFFING (removing — most contaminated items first):",
+      "1. Remove gloves: grasp outside of one glove, peel off. Hold in gloved hand. Slide finger under clean cuff of other glove, peel off over first glove. Discard.",
+      "2. Perform hand hygiene.",
+      "3. Remove gown: untie, pull from neck and shoulders, roll away from body, discard.",
+      "4. Perform hand hygiene.",
+      "5. Remove eye protection — handle by the arms/headband, not the front.",
+      "6. Remove mask — handle by straps only, do not touch front.",
+      "7. Perform hand hygiene immediately."
+    ],
+    "nursing_considerations": [
+      "Contact: gloves + gown (MRSA, C. diff, VRE).",
+      "Droplet: gloves + gown + surgical mask + eye protection (influenza, COVID, RSV).",
+      "Airborne: gloves + gown + N95 + eye protection — negative pressure room required (TB, measles, varicella).",
+      "C. diff requires soap and water hand hygiene — alcohol gel is NOT effective against spores.",
+      "Perform hand hygiene at every step of doffing to prevent self-contamination."
+    ]
+  },
+  {
+    "id": "hand-hygiene",
+    "title": "Hand Hygiene (Medical & Surgical)",
+    "category": "Infection Control",
+    "icon": "shield",
+    "summary": "Performing WHO-5-moment and routine hand hygiene with soap/water or alcohol-based hand rub (ABHR) to prevent infection transmission.",
+    "equipment": ["Alcohol-based hand rub (ABHR) dispenser", "Soap and water sink with paper towels", "Nail pick (if visible debris)"],
+    "steps": [
+      "WHO 5 Moments — perform hand hygiene:",
+      "  1. Before touching a patient.",
+      "  2. Before a clean/aseptic procedure.",
+      "  3. After body fluid exposure risk.",
+      "  4. After touching a patient.",
+      "  5. After touching patient surroundings.",
+      "Alcohol-Based Hand Rub (ABHR) — 20–30 seconds:",
+      "  Apply enough product to cover all surfaces (typically 1–2 pumps).",
+      "  Rub palm to palm, interlace fingers, rub backs of hands, clean thumbs in circular motion, rub fingertips into opposite palm, rub wrists.",
+      "  Continue until completely dry — do not wipe off.",
+      "Soap and Water — 40–60 seconds (required when: hands visibly soiled, after C. diff contact, before eating, after restroom use):",
+      "  Wet hands. Apply soap.",
+      "  Lather vigorously for at least 20 seconds — all surfaces including between fingers, backs of hands, thumbs, and nails.",
+      "  Rinse thoroughly under running water.",
+      "  Dry with single-use paper towel.",
+      "  Use towel to turn off faucet — avoid recontaminating clean hands.",
+      "Surgical Hand Scrub (pre-operative, 3–5 minutes):",
+      "  Remove jewelry. Use nail pick under each nail first.",
+      "  Apply antimicrobial scrub solution (CHG or povidone-iodine). Brush nails for 30 seconds each hand.",
+      "  Scrub palms, backs of hands, fingers, wrists, and forearms to 2 inches above elbow.",
+      "  Rinse, keeping hands above elbows. Dry with sterile towel."
+    ],
+    "nursing_considerations": [
+      "ABHR is preferred for routine clinical hand hygiene — it is faster, less irritating, and more effective than soap/water for most pathogens.",
+      "Soap and water is mandatory after C. difficile contact — spores are resistant to ABHR.",
+      "Rings, watches, and artificial nails harbor more bacteria — remove before patient care when possible.",
+      "Compliance with hand hygiene is the single most effective measure to prevent healthcare-associated infections (HAIs).",
+      "After 5+ applications of ABHR, wash with soap and water — build-up of emollients can decrease antimicrobial effectiveness."
+    ]
+  },
+  {
+    "id": "sterile-field-setup",
+    "title": "Sterile Field Setup & Maintenance",
+    "category": "Infection Control",
+    "icon": "shield",
+    "summary": "Establishing and maintaining a sterile field for aseptic procedures such as catheterization, wound care, and IV insertion.",
+    "equipment": ["Sterile drape or sterile towel", "Sterile gloves", "Sterile supplies specific to procedure", "Sterile NS or sterile water (if needed)"],
+    "steps": [
+      "Prepare a clean, dry, flat surface for the sterile field.",
+      "Inspect sterile packages: check expiration date, package integrity, and moisture (wet packaging = no longer sterile).",
+      "Open the outer wrapper of the sterile drape/towel: open away from the body, drop contents onto clean surface without touching the inside of the package.",
+      "The sterile field is considered contaminated within a 1-inch border around all edges — work inside this border only.",
+      "Don sterile gloves AFTER the sterile field is set up (to prevent contamination from package opening).",
+      "Add sterile supplies: open sterile packages and flip or drop contents onto field without contaminating sterile gloves or the field.",
+      "Pour sterile solutions: hold bottle label facing up, open away from the field. Pour from about 4–6 inches above the sterile container on the field. Do not let bottle touch the field.",
+      "Maintain line-of-sight with the sterile field at all times — never turn your back on it.",
+      "Keep sterile field at waist level or above — below-waist level is considered contaminated.",
+      "If any portion of the sterile field is contaminated (touched by non-sterile item, splashed, breached), replace that item or discard the field entirely.",
+      "A sterile field becomes contaminated when: wet, touched by non-sterile item, left unattended, taken below waist level, or if sterility of any item is in doubt."
+    ],
+    "nursing_considerations": [
+      "When in doubt, throw it out — never proceed with a questionable sterile field.",
+      "Talking, sneezing, or coughing over a sterile field contaminates it — wear a mask and minimize talking.",
+      "Sterile gloves do NOT protect the field from your reaching over it — stay on the sterile field side.",
+      "Open-package technique: contents always go ONTO the field (flipped or dropped). Never reach across a sterile field with a non-sterile arm.",
+      "Time matters: the longer a sterile field is left open, the higher the risk of contamination by airborne particles."
+    ]
+  }
+]

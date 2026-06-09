@@ -1,0 +1,152 @@
+[
+  {
+    "id": "blood-glucose",
+    "title": "Blood Glucose Monitoring (POC)",
+    "category": "Assessment",
+    "icon": "activity",
+    "summary": "Point-of-care capillary blood glucose testing using a glucometer.",
+    "equipment": ["Glucometer", "Test strips", "Lancet/lancing device", "Alcohol swab", "Gauze", "Gloves"],
+    "steps": [
+      "Verify orders or protocol (frequency, target glucose range, sliding scale).",
+      "Perform hand hygiene and don gloves.",
+      "Turn on glucometer and insert test strip — confirm no error codes.",
+      "Have patient warm their hands or use the side of the fingertip for better blood flow.",
+      "Clean fingertip with alcohol swab. Allow to dry fully.",
+      "Lance the lateral aspect of the fingertip.",
+      "Apply gentle pressure to promote blood droplet. Wipe away first drop.",
+      "Touch second drop to test strip — do not smear.",
+      "Apply gauze to fingertip once sample collected.",
+      "Read result and compare to ordered parameters.",
+      "Administer insulin per sliding scale or notify provider if out of range.",
+      "Document result, time, and any interventions taken."
+    ],
+    "nursing_considerations": [
+      "Rotate sites — lateral fingertips, avoid thumb and index finger.",
+      "Critical lows (<70) and highs (>400) require immediate intervention and provider notification.",
+      "Glucometer readings can be falsely low in severe hypoperfusion — confirm with venous glucose if concerned.",
+      "Change lancets each use — never reuse.",
+      "Document glucometer QC/calibration checks per facility policy."
+    ]
+  },
+  {
+    "id": "vital-signs",
+    "title": "Vital Signs Measurement",
+    "category": "Assessment",
+    "icon": "activity",
+    "summary": "Measuring and interpreting temperature, pulse, respirations, blood pressure, SpO2, and pain.",
+    "equipment": ["Electronic thermometer (oral, axillary, or temporal)", "Pulse oximeter", "Stethoscope", "Sphygmomanometer or automated BP cuff", "Watch with second hand or timer", "Gloves (if contact precautions)"],
+    "steps": [
+      "Perform hand hygiene. Identify patient.",
+      "Temperature: Insert electronic thermometer per appropriate route. Normal: 97–99°F (36.1–37.2°C) oral. Report: >38.3°C (100.9°F) or <36°C (96.8°F).",
+      "Pulse: Palpate radial pulse for 60 seconds (if irregular) or 30 seconds × 2 (if regular). Note rate, rhythm, and strength. Normal: 60–100 bpm.",
+      "Respirations: Count breaths for 30 seconds × 2 while appearing to still take pulse (patients alter breathing when aware). Normal: 12–20 breaths/min.",
+      "SpO2: Apply pulse oximeter to finger (ensure good waveform). Normal: ≥95%. Alert: <92% or rapid drop.",
+      "Blood pressure: Position arm at heart level. Apply cuff over brachial artery (2–3 cm above antecubital fossa). Inflate 20–30 mmHg above palpated systolic. Deflate at 2 mmHg/second. Record Korotkoff sounds.",
+      "Normal BP: <120/80. Hypertension: ≥130/80. Hypotension: <90/60.",
+      "Assess pain using appropriate scale: 0–10 numeric, FACES scale, or CPOT for non-verbal patients.",
+      "Compare all values to the patient's baseline and previous readings.",
+      "Report significant changes: fever, HR >100 or <60, RR >20 or <12, SpO2 <92%, BP >160/100 or <90/60.",
+      "Document all values with time and any interventions."
+    ],
+    "nursing_considerations": [
+      "Never take BP on an arm with an IV infusion, AV fistula, lymphedema, or recent mastectomy.",
+      "Orthostatic BP: measure supine, then standing at 1 and 3 minutes. >20 mmHg systolic drop = orthostatic hypotension.",
+      "Falsely low SpO2: poor perfusion, cold extremities, nail polish, motion — use earlobe or forehead probe as alternative.",
+      "Rectal temperature is the most accurate but invasive — use temporal or tympanic as alternatives.",
+      "Trending vital signs over time provides more clinical information than a single set of values."
+    ]
+  },
+  {
+    "id": "neurological-assessment",
+    "title": "Neurological Assessment & Glasgow Coma Scale",
+    "category": "Assessment",
+    "icon": "activity",
+    "summary": "Performing a focused neurological assessment including level of consciousness, GCS scoring, and cranial nerve evaluation.",
+    "equipment": ["Penlight", "Tongue depressor", "Reflex hammer", "Cotton-tip applicator", "Gloves"],
+    "steps": [
+      "Introduce yourself. Assess level of consciousness (LOC) using AVPU: Alert, Verbal stimulation response, Painful stimulation response, Unresponsive.",
+      "Assess orientation: person, place, time, and situation (A&Ox4).",
+      "Perform Glasgow Coma Scale (GCS):",
+      "  Eyes (E): Spontaneous = 4, To voice = 3, To pain = 2, None = 1.",
+      "  Verbal (V): Oriented = 5, Confused = 4, Words = 3, Sounds = 2, None = 1.",
+      "  Motor (M): Obeys commands = 6, Localizes pain = 5, Withdraws = 4, Abnormal flexion = 3, Extension = 2, None = 1.",
+      "  Score: 15 = intact. 13–15 = mild impairment. 9–12 = moderate. ≤8 = severe — airway management indicated.",
+      "Assess pupils: size (mm), equality, and reaction to light (PERRL — Pupils Equal and Reactive to Light).",
+      "  Normal: 2–6 mm, equal, brisk consensual response.",
+      "  Fixed and dilated: herniation or atropine. Pinpoint: opiates, pontine lesion.",
+      "Assess cranial nerves as clinically indicated (smile for VII, tongue out for XII, shoulder shrug for XI).",
+      "Assess motor strength: grip strength bilateral, leg push/pull. Grade 0–5 scale.",
+      "Assess sensation: light touch and pain in extremities. Compare bilateral.",
+      "Assess coordination: finger-to-nose, heel-to-shin.",
+      "Document GCS score (with component scores), pupil response, motor strength, and any changes from baseline.",
+      "Report any changes: GCS decrease ≥2 points, unequal pupils, new focal deficits — immediate notification."
+    ],
+    "nursing_considerations": [
+      "Sudden deterioration in neurological status (headache, vomiting, GCS drop) — notify provider STAT and prepare for emergent imaging.",
+      "GCS ≤8 is the threshold for considering airway protection — have airway equipment ready.",
+      "Do not attribute altered LOC to 'just sedation' without assessing — rule out physiological causes first.",
+      "Assess neuro checks at frequency ordered — for acute TBI or post-op craniotomy, checks may be every 15–30 minutes initially.",
+      "CIWA (alcohol withdrawal) and CPOT (pain in non-verbal patients) are specialized scales used alongside standard neuro checks."
+    ]
+  },
+  {
+    "id": "fall-risk-assessment",
+    "title": "Fall Risk Assessment (Morse Fall Scale)",
+    "category": "Assessment",
+    "icon": "activity",
+    "summary": "Evaluating a patient's fall risk using the Morse Fall Scale and implementing appropriate prevention measures.",
+    "equipment": ["Morse Fall Scale (paper or EHR)", "Non-slip footwear", "Bed alarm", "Fall prevention signage", "Assistive device assessment"],
+    "steps": [
+      "Complete Morse Fall Scale on admission, after falls, and per facility reassessment schedule.",
+      "Score the 6 Morse criteria:",
+      "  History of falling (within 3 months): No = 0, Yes = 25.",
+      "  Secondary diagnosis (≥2 medical diagnoses): No = 0, Yes = 15.",
+      "  Ambulatory aid: None/bed rest/nurse assist = 0, Crutches/cane/walker = 15, Furniture = 30.",
+      "  IV therapy/IV access: No = 0, Yes = 20.",
+      "  Gait: Normal/bed rest/immobile = 0, Weak = 10, Impaired = 20.",
+      "  Mental status: Knows own limits = 0, Forgets limitations = 15.",
+      "  Total Score: 0–24 = No risk. 25–44 = Low risk. ≥45 = High risk.",
+      "Implement standard precautions for ALL patients: call light in reach, bed in lowest position, wheels locked.",
+      "For low-risk (25–44): ensure bed alarm, non-slip footwear, frequent rounding.",
+      "For high-risk (≥45): bed alarm ON, assistive device at bedside, fall risk band and signage, toilet/chair close, hourly rounding, consider chair alarm, educate patient and family.",
+      "Reassess after any change in condition, procedure, or medication change (sedatives, opioids, diuretics).",
+      "Document score, interventions, and patient/family education."
+    ],
+    "nursing_considerations": [
+      "Falls are one of the most common inpatient adverse events — prevention requires consistent nursing surveillance, not just tools.",
+      "Patients often fall attempting to get to the bathroom — anticipate toileting needs and toilet before leaving the room.",
+      "Post-operative day 1 and medication changes (new opioids, sedatives, blood pressure meds) significantly increase fall risk.",
+      "Bed alarms do NOT prevent falls — they alert nurses after the patient is already moving to get up.",
+      "Never leave a high-fall-risk patient unattended when ambulating — use a gait belt and stay close."
+    ]
+  },
+  {
+    "id": "pain-assessment",
+    "title": "Pain Assessment & Management",
+    "category": "Assessment",
+    "icon": "activity",
+    "summary": "Systematically assessing and documenting pain characteristics and evaluating effectiveness of interventions.",
+    "equipment": ["Numeric Rating Scale (NRS) 0–10 chart or FACES scale", "CPOT scale (for non-verbal patients)", "MAR (to review analgesic administration)", "Vital signs equipment"],
+    "steps": [
+      "Assess pain routinely per facility schedule: on admission, every 4–8 hours, before and after analgesic administration.",
+      "Use appropriate pain scale:",
+      "  NRS (0–10): 0 = no pain, 1–3 = mild, 4–6 = moderate, 7–10 = severe. Use for verbal, cognitively intact adults.",
+      "  FACES scale: Use for pediatric patients or those with cognitive impairment who can point.",
+      "  CPOT (Critical-Care Pain Observation Tool): Use for non-verbal or sedated patients. Scores facial expression, body movements, muscle tension, and ventilator compliance.",
+      "Characterize pain using PQRST: Precipitating/Palliating factors, Quality, Region/Radiation, Severity (score), Timing (onset, duration, pattern).",
+      "Assess impact: effect on activity, sleep, appetite, and mood.",
+      "Review current analgesic regimen and last administration time.",
+      "Implement non-pharmacologic interventions as appropriate: repositioning, ice/heat, distraction, relaxation.",
+      "Administer prescribed analgesics per order and reassess pain score 30–60 minutes after IV/IM, 60–90 minutes after oral.",
+      "If pain is uncontrolled: reassess trigger, contact provider, advocate for dose adjustment or rescue medication.",
+      "Document: pain score, location, quality, timing, interventions, and re-assessment score."
+    ],
+    "nursing_considerations": [
+      "Pain is subjective — always believe the patient's self-report. Do not let vital signs or facial expression alone contradict self-reported pain.",
+      "Under-treating pain leads to physiological stress, delayed healing, and decreased patient satisfaction.",
+      "Over-treating with opioids causes sedation and respiratory depression — balance is key.",
+      "A pain score decrease of ≥2 points or 30–50% from baseline is generally considered clinically meaningful improvement.",
+      "Document reassessment after interventions — this is a regulatory and safety requirement, not optional."
+    ]
+  }
+]

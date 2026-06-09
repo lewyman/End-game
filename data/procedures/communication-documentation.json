@@ -1,0 +1,180 @@
+[
+  {
+    "id": "sbar-communication",
+    "title": "SBAR Communication Framework",
+    "category": "Communication & Documentation",
+    "icon": "activity",
+    "summary": "Using the SBAR framework for structured, concise clinical communication with providers and team members.",
+    "equipment": [
+      "Patient chart access",
+      "Current vital signs",
+      "Medication list",
+      "Labs and imaging results"
+    ],
+    "steps": [
+      "Prepare BEFORE calling: have the patient's chart in front of you. Know: current vitals, admission diagnosis, relevant history, current medications, labs/imaging results.",
+      "S \u2014 SITUATION: Who you are, where you are, what is happening right now.",
+      "  'This is Nurse [Name] calling from [Unit]. I'm calling about [Patient Name], Room [#]. The reason I'm calling is [specific concern].'",
+      "B \u2014 BACKGROUND: relevant clinical context.",
+      "  'Patient is a [age]-year-old [sex] admitted for [diagnosis]. Relevant history includes [PMHx]. Current medications include [key meds].'",
+      "A \u2014 ASSESSMENT: your clinical conclusion.",
+      "  'I think the problem is... OR I'm not sure what the problem is, but I am concerned because...'",
+      "R \u2014 RECOMMENDATION: what you are asking for.",
+      "  'I would like you to [come evaluate the patient / order a medication / clarify the treatment plan / etc.].'",
+      "Document the call: time, provider name, SBAR content, orders received, read-back completed.",
+      "Read back ALL verbal orders to confirm accuracy.",
+      "If concerned response was inadequate: escalate up the chain of command."
+    ],
+    "safetyTips": [
+      "Incomplete handoff communication is the #1 cause of adverse events in hospitals.",
+      "Always read back verbal orders \u2014 it is a Joint Commission requirement and prevents medication errors.",
+      "If you are dismissed but remain concerned \u2014 escalate. Document that you escalated."
+    ],
+    "documentation": [
+      "Time of call",
+      "Provider name",
+      "SBAR content summary",
+      "Orders received and read-back completed"
+    ],
+    "keyTakeaways": [
+      "Prepare before calling",
+      "SBAR: Situation-Background-Assessment-Recommendation",
+      "Read back all verbal orders"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "handoff-report",
+    "title": "Structured Nurse-to-Nurse Handoff Report (I-PASS / SBAR)",
+    "category": "Communication & Documentation",
+    "icon": "activity",
+    "summary": "Providing a complete and accurate patient handoff to the oncoming nurse at shift change.",
+    "equipment": [
+      "SBAR/I-PASS or facility handoff tool",
+      "Current EMAR, MAR, and chart access"
+    ],
+    "steps": [
+      "Use a standardized format. I-PASS:",
+      "  I \u2014 Illness severity: stable, watcher, unstable.",
+      "  P \u2014 Patient summary: one-line summary of who the patient is, admission reason, course.",
+      "  A \u2014 Action list: pending tasks, labs to follow, calls to make.",
+      "  S \u2014 Situation awareness: what could go wrong? What should the next nurse watch for?",
+      "  S \u2014 Synthesis: oncoming nurse reads back/summarizes plan.",
+      "Cover the following for each patient:",
+      "  - Name, age, diagnosis, day of admission.",
+      "  - Code status, allergies.",
+      "  - Lines/tubes/drains and last assessment of each.",
+      "  - IV access type and location.",
+      "  - Last vitals, pain score, neurological status.",
+      "  - PRN medications given last shift.",
+      "  - Pending labs, cultures, imaging.",
+      "  - Specific concerns for the upcoming shift.",
+      "Perform bedside handoff when possible \u2014 patient can contribute and nurse can visually verify.",
+      "Do NOT hand off tasks that can be completed before leaving your shift."
+    ],
+    "safetyTips": [
+      "Incomplete handoffs are the #1 communication failure in adverse event reviews.",
+      "Bedside handoff reduces errors and increases patient satisfaction \u2014 make it standard.",
+      "Never hand off an unstable patient without ensuring the oncoming nurse acknowledges the situation."
+    ],
+    "documentation": [
+      "Handoff completed (time and to whom)",
+      "Any critical findings communicated"
+    ],
+    "keyTakeaways": [
+      "I-PASS: Illness severity, Patient summary, Action list, Situation awareness, Synthesis",
+      "Bedside handoff preferred",
+      "Don't hand off tasks you can complete"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "critical-value-reporting",
+    "title": "Critical Lab Value Recognition & Reporting",
+    "category": "Communication & Documentation",
+    "icon": "activity",
+    "summary": "Recognizing critical lab values and reporting them to the provider using a structured closed-loop communication process.",
+    "equipment": [
+      "Lab results",
+      "Provider contact information",
+      "Documentation system"
+    ],
+    "steps": [
+      "KNOW your facility's critical lab value list (examples):",
+      "  K+ <2.5 or >6.5 mEq/L",
+      "  Na+ <120 or >160 mEq/L",
+      "  Glucose <40 or >500 mg/dL",
+      "  Hgb <7 g/dL",
+      "  pH <7.2 or >7.6",
+      "  Platelets <20,000",
+      "  INR >5.0",
+      "  Troponin positive (any)",
+      "  Lactate >4 mmol/L",
+      "  WBC >30,000 or <2,000",
+      "ASSESS the patient clinically \u2014 is the result consistent with how the patient looks?",
+      "CALL the provider IMMEDIATELY. Do not wait until rounds.",
+      "Use SBAR: state the critical value, patient's clinical status, and what action you are recommending or need.",
+      "READ BACK any verbal orders received.",
+      "Document: value, time reported, provider name, orders received, and patient's clinical response.",
+      "Follow up to confirm orders were acted on."
+    ],
+    "safetyTips": [
+      "Critical values require immediate action \u2014 a delayed call for a K+ of 6.8 can mean a fatal arrhythmia.",
+      "Document the time the result was reported. Medicolegally, undocumented notification = no notification.",
+      "If the provider is unresponsive, escalate up the chain of command \u2014 and document this."
+    ],
+    "documentation": [
+      "Lab value and reference range",
+      "Time result received by nurse",
+      "Time reported to provider",
+      "Provider name",
+      "Orders received and time of documentation"
+    ],
+    "keyTakeaways": [
+      "Immediate notification \u2014 never wait until rounds",
+      "Document time reported to provider",
+      "Escalate if provider unresponsive"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "medication-reconciliation",
+    "title": "Medication Reconciliation",
+    "category": "Communication & Documentation",
+    "icon": "activity",
+    "summary": "Comparing a patient's medication orders to all medications they have been taking to avoid discrepancies.",
+    "equipment": [
+      "Complete medication list from patient/family/PCP",
+      "Current hospital MAR",
+      "Pharmacy support as needed"
+    ],
+    "steps": [
+      "Obtain the BEST possible medication history (BPMH) on admission:",
+      "  Ask patient AND family/caregiver.",
+      "  Review pharmacy records, PCP medication list, discharge summaries.",
+      "  Ask specifically about: OTC medications, vitamins, supplements, herbal products, topical medications, PRN medications.",
+      "  Ask about allergies and the specific reaction type (anaphylaxis vs. GI intolerance).",
+      "Compare home medications to admission orders: identify intentional changes, omissions, dosing discrepancies.",
+      "Flag HIGH-RISK medications for mandatory reconciliation: anticoagulants, insulin, opioids, cardiac medications.",
+      "Reconcile at TRANSITIONS: admission, transfer between units, discharge.",
+      "DISCHARGE: compare final hospital medication list to home medications. Explicitly communicate what is new, what is changed, what is stopped.",
+      "Provide patient with a complete, up-to-date medication list in plain language on discharge."
+    ],
+    "safetyTips": [
+      "Medication reconciliation errors at discharge are a leading cause of hospital readmissions and adverse events.",
+      "Anticoagulants are the #1 drug class involved in reconciliation errors. Document dose, route, indication, and monitoring requirements.",
+      "Unintentional omission of home medications (e.g., beta-blockers, seizure meds) is as dangerous as a wrong medication."
+    ],
+    "documentation": [
+      "BPMH source (patient/family/PCP records)",
+      "Discrepancies identified and resolved",
+      "Discharge medication list given to patient"
+    ],
+    "keyTakeaways": [
+      "Reconcile at every transition",
+      "Anticoagulants #1 class for errors",
+      "Patient gets a written updated list at discharge"
+    ],
+    "nursing_considerations": []
+  }
+]

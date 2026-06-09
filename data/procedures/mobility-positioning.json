@@ -1,0 +1,219 @@
+[
+  {
+    "id": "bed-to-chair-transfer",
+    "title": "Safe Patient Transfer (Bed to Chair / Wheelchair)",
+    "category": "Mobility & Positioning",
+    "icon": "activity",
+    "summary": "Safely transferring a patient from bed to chair using proper body mechanics and assistive devices.",
+    "equipment": [
+      "Gait belt",
+      "Non-slip footwear for patient",
+      "Chair or wheelchair with brakes locked",
+      "Lift device if needed (Hoyer lift for non-weight-bearing)"
+    ],
+    "steps": [
+      "Assess patient: strength, balance, weight-bearing status, fall risk, cognitive ability, previous transfer method.",
+      "Explain procedure to patient. Obtain assistance if needed (weight-bearing capacity guides number of staff).",
+      "Raise bed to chair-height. Lock bed wheels and chair wheels.",
+      "Assist patient to sit at edge of bed (dangle): place non-dominant arm behind shoulders, dominant arm under knees, pivot and swing to sitting. Allow 1\u20132 minutes to assess for orthostatic hypotension.",
+      "Apply gait belt snugly at waist (2 fingers fit). Have patient put on non-slip footwear.",
+      "Position chair at 45\u00b0 angle to the bed on the patient's stronger side.",
+      "Instruct patient: lean forward, push up with arms, stand. Nurse grasps the gait belt (not the arms or shoulders).",
+      "Once standing: patient pivots toward chair. Nurse guides with gait belt.",
+      "Instruct patient to back up to chair until they feel it behind the knees, then slowly lower using arms.",
+      "Ensure patient is positioned correctly in chair. Ensure call light within reach."
+    ],
+    "safetyTips": [
+      "NEVER transfer a patient alone if they are a fall risk or have limited strength without proper assistance or a lift device.",
+      "Gait belt on the WAIST \u2014 not under the axilla. Lifting under the arms causes shoulder injury.",
+      "Orthostatic hypotension: allow dangling time before standing. Monitor for dizziness and BP drop."
+    ],
+    "documentation": [
+      "Transfer method",
+      "Number of assist (1, 2, device)",
+      "Patient tolerance and weight-bearing status",
+      "Fall precautions maintained"
+    ],
+    "keyTakeaways": [
+      "Gait belt at waist",
+      "Chair at 45\u00b0 on strong side",
+      "Allow dangling to prevent orthostasis"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "ambulation-assist",
+    "title": "Assisted Ambulation (with Assistive Devices)",
+    "category": "Mobility & Positioning",
+    "icon": "activity",
+    "summary": "Assisting a patient with ambulation safely, using gait belt and appropriate assistive devices.",
+    "equipment": [
+      "Gait belt",
+      "Non-slip footwear",
+      "Walker, cane, or crutches as appropriate",
+      "IV pole with wheels if needed"
+    ],
+    "steps": [
+      "Assess: fall risk score, pain, balance, endurance, weight-bearing restrictions, orthostasis history.",
+      "Verify physical therapy orders or weight-bearing restrictions.",
+      "Apply gait belt. Ensure patient has non-slip footwear.",
+      "Assist patient to standing (per transfer procedure). Pause 1\u20132 minutes \u2014 assess for dizziness, pallor.",
+      "WALKER: patient pushes walker forward, steps into it. Repeat. Walker should be at wrist height with elbows slightly flexed.",
+      "CANE: cane in hand opposite the weak/injured side. Advance cane, then weak leg, then strong leg (cane-weak-strong).",
+      "NURSE POSITION: stand at patient's weaker side and slightly behind. Hold gait belt with both hands.",
+      "Encourage patient to look up and ahead \u2014 not at their feet.",
+      "Observe gait: steadiness, steps, stride length, use of device.",
+      "IF PATIENT BEGINS TO FALL: do not try to hold them up. Guide the fall: lean patient into you, bend knees, lower them to the ground. Protect the head.",
+      "After ambulation: assist to chair or bed. Assess pain, tolerance, vital signs if indicated."
+    ],
+    "safetyTips": [
+      "If a patient is falling, guiding a controlled fall is safer than trying to catch them \u2014 prevents injury to both patient and nurse.",
+      "First ambulation post-surgery or immobility: two staff minimum. High fall risk.",
+      "Orthostatic hypotension is common in hospitalized patients \u2014 always dangle before standing."
+    ],
+    "documentation": [
+      "Distance ambulated",
+      "Assistive device used",
+      "Gait quality",
+      "Tolerance and any symptoms",
+      "Fall precautions"
+    ],
+    "keyTakeaways": [
+      "Cane on strong side, advance with weak leg first",
+      "Guide a fall \u2014 don't try to stop it",
+      "Gait belt always"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "passive-rom",
+    "title": "Passive Range of Motion (PROM) Exercises",
+    "category": "Mobility & Positioning",
+    "icon": "activity",
+    "summary": "Performing passive range of motion to maintain joint mobility in dependent or immobile patients.",
+    "equipment": [
+      "Gloves if wounds present",
+      "Pain scale"
+    ],
+    "steps": [
+      "Verify PT/provider orders or nursing protocol for PROM. Assess for contraindications: unstable fractures, joint dislocations, severe pain, recent joint surgery, deep vein thrombosis.",
+      "Explain procedure to patient. Assess pain level before starting.",
+      "Perform in a smooth, controlled, rhythmic manner \u2014 NO jerking or forced movement.",
+      "Support the joint above and below during each movement.",
+      "Neck: flexion, extension, rotation (NOT in trauma/cervical spine precautions).",
+      "Shoulder: flexion/extension, abduction/adduction, internal/external rotation, circumduction.",
+      "Elbow: flexion/extension, supination/pronation.",
+      "Wrist: flexion/extension, radial/ulnar deviation.",
+      "Fingers: flexion/extension, abduction/adduction.",
+      "Hip: flexion/extension, abduction/adduction, internal/external rotation.",
+      "Knee: flexion/extension.",
+      "Ankle: dorsiflexion/plantar flexion, inversion/eversion (prevents foot drop).",
+      "Perform each movement 5\u201310 times per joint. Stop if patient reports pain.",
+      "Document: joints exercised, patient tolerance, ROM limitations noted."
+    ],
+    "safetyTips": [
+      "Stop immediately if you feel a click, crepitus, or patient reports sudden pain.",
+      "PROM does not build strength \u2014 it maintains joint mobility and prevents contractures.",
+      "Suspected DVT in a limb: DO NOT perform PROM on that extremity until cleared."
+    ],
+    "documentation": [
+      "Joints exercised",
+      "Any limitations in ROM",
+      "Patient pain response",
+      "Frequency performed"
+    ],
+    "keyTakeaways": [
+      "Support above and below the joint",
+      "Smooth, controlled movements only",
+      "Ankle dorsiflexion prevents foot drop"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "prone-positioning",
+    "title": "Prone Positioning (ARDS / Acute Lung Injury)",
+    "category": "Mobility & Positioning",
+    "icon": "activity",
+    "summary": "Positioning a critically ill ventilated patient prone to improve oxygenation in severe ARDS.",
+    "equipment": [
+      "Prone positioning team (minimum 4\u20135 staff)",
+      "Prone positioning device or rolled blankets",
+      "Specialty face cradle or face pillow",
+      "Foam padding for bony prominences",
+      "Extra tube securing supplies"
+    ],
+    "steps": [
+      "Indications: PaO2/FiO2 ratio <150 on FiO2 \u22650.6 and PEEP \u22655 for >12h (severe ARDS).",
+      "Pre-proning checklist: secure all lines/tubes (ETT, NG, IV lines, catheters). Note ETT cm mark.",
+      "Pre-oxygenate to 100% FiO2 for 2\u20135 minutes before turning.",
+      "Assign roles: one person per extremity + one for head and airway.",
+      "TURN: log roll to side, then onto prone in one coordinated movement called by the airway nurse.",
+      "Head: place in padded face cradle or turn to one side (alternate direction every 2h).",
+      "Chest rolls/positioning pillows: support under clavicles and ASIS to free the abdomen for diaphragmatic movement.",
+      "Arms: either in swimmer's position or at sides \u2014 pad elbows, knees, toes.",
+      "Eyes: closed and protected (corneal exposure risk). Check after turning.",
+      "Verify ETT position immediately after turn. Auscultate bilateral breath sounds.",
+      "Prone session: minimum 16 hours per session per evidence (PROSEVA trial).",
+      "Monitor: oxygenation, ETT security, skin under pressure points, facial edema."
+    ],
+    "safetyTips": [
+      "Airway displacement is the most critical risk \u2014 airway nurse never leaves the head during the turn.",
+      "Facial edema develops rapidly in prone \u2014 corneal exposure can cause vision loss. Check eyes frequently.",
+      "Prone is contraindicated in: spinal instability, open abdomen, increased ICP, hemodynamic instability."
+    ],
+    "documentation": [
+      "Prone start time and end time",
+      "ETT position before and after",
+      "Oxygenation (SpO2/PaO2) response",
+      "Skin integrity checks"
+    ],
+    "keyTakeaways": [
+      "Minimum 16h per prone session",
+      "Airway nurse leads the turn",
+      "Pre-secure ALL tubes before turning"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "turning-repositioning",
+    "title": "Turning & Repositioning Schedule (Pressure Injury Prevention)",
+    "category": "Mobility & Positioning",
+    "icon": "activity",
+    "summary": "Implementing a systematic turning and repositioning schedule to prevent pressure injuries in at-risk patients.",
+    "equipment": [
+      "Positioning wedges/pillows",
+      "Heel protector boots",
+      "Pressure redistribution mattress",
+      "Repositioning pad/draw sheet"
+    ],
+    "steps": [
+      "Assess Braden Scale at admission and daily: score \u226414 = high risk for pressure injury.",
+      "Standard repositioning: q2h for bed-bound patients, q1h for those at very high risk.",
+      "Turn sequence: supine \u2192 right lateral (30\u00b0 tilt) \u2192 supine \u2192 left lateral (30\u00b0 tilt).",
+      "30\u00b0 lateral tilt (NOT 90\u00b0 side-lying): distributes weight over greater trochanter \u2014 avoids direct pressure on hip.",
+      "Inspect skin at EVERY repositioning: heels, sacrum/coccyx, trochanters, occiput, scapulae, elbows, ankles, medial knees.",
+      "HEELS: suspend heels off the mattress using heel protector boots or pillows under the calves. Never rest heels directly on the mattress.",
+      "Document repositioning times, position used, and skin findings.",
+      "Use pressure redistribution surface (foam overlay, low-air-loss mattress) for all high-risk patients.",
+      "Apply moisturizer to dry skin. Apply barrier cream to skin exposed to moisture (incontinence).",
+      "Patient education: shift weight q15 min if capable of chair sitting."
+    ],
+    "safetyTips": [
+      "Heels are the second most common pressure injury site. Suspension is the only reliable prevention.",
+      "A 30\u00b0 tilt (not 90\u00b0) avoids direct trochanter pressure \u2014 use wedge pillow to maintain position.",
+      "Repositioning alone is insufficient for very high-risk patients \u2014 combine with pressure redistribution mattress."
+    ],
+    "documentation": [
+      "Braden score",
+      "Repositioning times and positions",
+      "Skin findings per assessment",
+      "Support surface in use"
+    ],
+    "keyTakeaways": [
+      "q2h repositioning",
+      "30\u00b0 tilt not 90\u00b0",
+      "Heels must be suspended off the mattress"
+    ],
+    "nursing_considerations": []
+  }
+]

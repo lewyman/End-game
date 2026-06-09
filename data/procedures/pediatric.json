@@ -1,0 +1,220 @@
+[
+  {
+    "id": "pediatric-assessment-triangle",
+    "title": "Pediatric Assessment Triangle (PAT)",
+    "category": "Pediatric Nursing",
+    "icon": "activity",
+    "summary": "Rapid 30-second across-the-room assessment using the PAT to identify the sick child.",
+    "equipment": [
+      "Eyes and ears (no equipment needed for initial PAT)",
+      "Stethoscope for follow-up",
+      "Pulse oximeter"
+    ],
+    "steps": [
+      "Observe from a distance (do not touch yet \u2014 avoids fear response that alters assessment).",
+      "A \u2014 Appearance (TICLS): Tone (limp vs. normal), Interactibility (responsive vs. unresponsive), Consolability, Look/Gaze (tracks caregiver), Speech/Cry (strong vs. weak/absent).",
+      "B \u2014 Breathing: Look for abnormal positioning (tripod, sniffing), visible retractions (subcostal, intercostal, suprasternal), paradoxical breathing, nasal flaring, head bobbing (infant).",
+      "C \u2014 Circulation to skin: Look for pallor, mottling, cyanosis.",
+      "Interpret findings:",
+      "  Abnormal A only \u2192 Primary CNS or metabolic problem.",
+      "  Abnormal B only \u2192 Primary respiratory problem.",
+      "  Abnormal C only \u2192 Primary cardiovascular/shock problem.",
+      "  Abnormal A + B \u2192 Respiratory failure.",
+      "  Abnormal A + C \u2192 Shock causing end-organ dysfunction.",
+      "  Abnormal A + B + C \u2192 Cardiopulmonary failure \u2014 most critical.",
+      "Proceed immediately with hands-on assessment based on PAT findings.",
+      "Apply pediatric-specific norms for HR, RR, and BP based on age group."
+    ],
+    "safetyTips": [
+      "A quiet, alert, and comforted child is rarely critically ill.",
+      "A limp, unresponsive, or inconsolable child requires immediate intervention.",
+      "Never assume a quiet child is comfortable \u2014 they may be too ill to cry."
+    ],
+    "documentation": [
+      "PAT findings (appearance, work of breathing, circulation)",
+      "Vital signs with age-appropriate norms noted",
+      "Interventions initiated"
+    ],
+    "keyTakeaways": [
+      "30-second across-the-room assessment",
+      "Abnormal appearance = brain not getting what it needs",
+      "Drive immediate triage decisions"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "weight-based-dosing",
+    "title": "Pediatric Weight-Based Medication Dosing Verification",
+    "category": "Pediatric Nursing",
+    "icon": "activity",
+    "summary": "Safely calculating and verifying weight-based pediatric medication doses before administration.",
+    "equipment": [
+      "Calibrated scale (kg)",
+      "MAR / provider order",
+      "Dosing reference (Harriet Lane Handbook or facility drug guide)",
+      "Calculator"
+    ],
+    "steps": [
+      "Obtain accurate weight in KILOGRAMS. Document the date and measurement method.",
+      "Verify order includes weight-based dose (mg/kg or mcg/kg/min).",
+      "Calculate: Dose = weight (kg) \u00d7 dose per kg. Example: 10mg/kg \u00d7 20kg = 200mg.",
+      "Verify calculated dose against reference range maximum (e.g., max single dose, max daily dose).",
+      "Check concentration available: if drug is 250mg/5mL, calculate volume to draw up.",
+      "Perform independent double-check with second nurse for high-alert medications (antibiotics, opioids, chemotherapy, electrolytes).",
+      "Round appropriately \u2014 do not assume decimal points are correct. 10-fold dosing errors are the most common fatal pediatric error.",
+      "Verify the FIVE rights and route before administration.",
+      "For continuous infusions: verify drug, concentration, dose rate, and pump settings independently.",
+      "Document dose in mg/kg administered, not just total mg."
+    ],
+    "safetyTips": [
+      "Decimal point errors kill children \u2014 always write 0.5mg, never .5mg. Never write 5.0mg.",
+      "When in doubt about a dose, call pharmacy or the provider \u2014 never guess.",
+      "Use pre-printed or electronic dosing tools when available to reduce calculation errors."
+    ],
+    "documentation": [
+      "Weight in kg (date obtained)",
+      "Calculated dose in mg/kg",
+      "Confirming nurse's initials (for double-check)",
+      "Actual dose administered"
+    ],
+    "keyTakeaways": [
+      "Always weigh in kg",
+      "Decimal point errors are the #1 pediatric medication error",
+      "Independent double-check for all high-alert meds"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "fever-management-peds",
+    "title": "Pediatric Fever Assessment & Management",
+    "category": "Pediatric Nursing",
+    "icon": "activity",
+    "summary": "Assessing and managing fever in pediatric patients, including age-specific thresholds and antipyretic administration.",
+    "equipment": [
+      "Age-appropriate thermometer (rectal for <3 months, temporal/axillary for older)",
+      "Antipyretics per order (acetaminophen, ibuprofen)",
+      "Fluids"
+    ],
+    "steps": [
+      "Assess temperature using appropriate method:",
+      "  <3 months: rectal temperature is gold standard.",
+      "  3 months\u20134 years: temporal artery or tympanic.",
+      "  >4 years: oral or tympanic.",
+      "Fever thresholds: \u226538.0\u00b0C (100.4\u00b0F) rectal; \u226537.5\u00b0C axillary/temporal.",
+      "RED FLAGS requiring immediate provider notification:",
+      "  Any fever in infant <28 days (neonatal sepsis risk).",
+      "  Fever + petechiae/purpura (meningococcemia).",
+      "  Fever + bulging fontanel (meningitis).",
+      "  Febrile seizure.",
+      "  Fever in immunocompromised child (oncology, transplant).",
+      "Non-pharmacologic: lightweight clothing, room-temperature fluids, tepid sponging (NOT ice water).",
+      "Pharmacologic: acetaminophen 10\u201315mg/kg q4\u20136h OR ibuprofen 5\u201310mg/kg q6\u20138h (>6 months only). Verify weight-based dose.",
+      "Reassess temperature 30\u201360 minutes after antipyretic.",
+      "Ensure hydration \u2014 encourage age-appropriate fluids."
+    ],
+    "safetyTips": [
+      "NEVER give aspirin to children (Reye's syndrome risk).",
+      "Do not alternate antipyretics without provider order \u2014 risk of dosing errors.",
+      "Fever itself is not dangerous below 41\u00b0C \u2014 it is a sign, not the disease."
+    ],
+    "documentation": [
+      "Temperature method and value",
+      "Time of antipyretic given, dose, and route",
+      "Reassessment temperature",
+      "Associated symptoms"
+    ],
+    "keyTakeaways": [
+      "Rectal temp gold standard <3 months",
+      "No aspirin in children",
+      "Any fever in newborn <28 days is an emergency"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "umbilical-cord-care",
+    "title": "Newborn Umbilical Cord Care",
+    "category": "Pediatric Nursing",
+    "icon": "activity",
+    "summary": "Providing proper care to the umbilical cord stump to prevent infection and promote separation.",
+    "equipment": [
+      "Gloves",
+      "Clean water (dry cord care is current evidence-based standard)",
+      "Diaper (fold below cord level)"
+    ],
+    "steps": [
+      "Assess the umbilical cord stump at each diaper change: color, odor, signs of infection.",
+      "Normal cord: yellow-green at birth, dries and turns black/brown over 1\u20133 weeks.",
+      "Dry cord care (WHO and AAP recommendation): keep the stump dry. No alcohol or antiseptics unless in high-risk settings.",
+      "Keep stump exposed to air \u2014 fold diaper below the cord level.",
+      "Sponge baths only until cord falls off (avoid submersion baths).",
+      "INFECTION signs \u2014 notify provider: redness or warmth of surrounding skin (periumbilical erythema), foul smell, purulent discharge, fever.",
+      "Normal cord separation: 7\u201321 days. Small amount of dried blood at separation is normal.",
+      "Do NOT pull or cut the cord \u2014 let it separate naturally.",
+      "Granuloma (small pink nodule after cord falls off): refer to provider \u2014 may require silver nitrate treatment."
+    ],
+    "safetyTips": [
+      "Omphalitis (cord infection) can rapidly lead to neonatal sepsis \u2014 treat red, warm, swollen periumbilical skin as urgent.",
+      "Never submerge infant in water until cord has completely separated.",
+      "Alcohol-based cleaning is no longer recommended \u2014 it delays separation."
+    ],
+    "documentation": [
+      "Cord appearance (color, moisture, odor)",
+      "Signs of infection (positive/negative)",
+      "Parent teaching completed"
+    ],
+    "keyTakeaways": [
+      "Dry cord care \u2014 no alcohol",
+      "Fold diaper below cord",
+      "Redness of surrounding skin = omphalitis \u2014 notify provider"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "pals-pediatric-resuscitation",
+    "title": "Pediatric Resuscitation (PALS Framework)",
+    "category": "Pediatric Nursing",
+    "icon": "activity",
+    "summary": "Recognizing and initiating resuscitation in pediatric patients using the PALS systematic approach.",
+    "equipment": [
+      "Resuscitation cart with pediatric equipment",
+      "Bag-valve mask (appropriate size)",
+      "Oxygen source",
+      "Cardiac monitor/defibrillator with pediatric pads",
+      "IV/IO access supplies",
+      "Broselow tape"
+    ],
+    "steps": [
+      "Assess safety. Tap and shout \u2014 is child responsive?",
+      "If unresponsive: call for help / activate code. Get AED/defibrillator.",
+      "Open airway (head-tilt chin-lift; jaw thrust if trauma). Look, listen, feel for breathing.",
+      "If not breathing: give 2 rescue breaths with appropriate-size BVM \u2014 watch for chest rise.",
+      "Check pulse: carotid (>1 year), brachial or femoral (infant) for up to 10 seconds.",
+      "Start CPR if no pulse or HR <60 with poor perfusion:",
+      "  Compression rate: 100\u2013120/min. Depth: 1/3 AP diameter of chest.",
+      "  Ratio: 30:2 (single rescuer) or 15:2 (two rescuers for children).",
+      "Use Broselow tape to estimate weight-based drug doses and equipment sizes.",
+      "Establish IV or IO access \u2014 IO is preferred if IV unsuccessful after 60\u201390 seconds.",
+      "Administer epinephrine 0.01mg/kg IV/IO (max 1mg) every 3\u20135 minutes for cardiac arrest.",
+      "Defibrillate VF/pVT: 2 J/kg first shock, 4 J/kg subsequent. Use pediatric pads if <10kg.",
+      "Identify and treat reversible causes (H's and T's)."
+    ],
+    "safetyTips": [
+      "Respiratory failure is the most common cause of pediatric arrest \u2014 airway is priority.",
+      "IO access is lifesaving \u2014 do not delay drug delivery for IV attempts.",
+      "Broselow tape reduces dosing errors significantly \u2014 always use it."
+    ],
+    "documentation": [
+      "Time arrest recognized",
+      "CPR initiated time",
+      "Drug doses and times",
+      "Rhythm changes",
+      "Defibrillation joules and times"
+    ],
+    "keyTakeaways": [
+      "Respiratory cause is #1 in children",
+      "15:2 ratio for two-rescuer pediatric CPR",
+      "IO when IV fails \u2014 do not delay"
+    ],
+    "nursing_considerations": []
+  }
+]

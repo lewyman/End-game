@@ -1,0 +1,214 @@
+[
+  {
+    "id": "cast-care",
+    "title": "Cast Care & Neurovascular Assessment",
+    "category": "Orthopedic Nursing",
+    "icon": "activity",
+    "summary": "Monitoring and caring for a patient with a cast to detect early neurovascular compromise.",
+    "equipment": [
+      "Permanent marker",
+      "Penlight",
+      "Pulse oximeter"
+    ],
+    "steps": [
+      "Perform neurovascular assessment every 1\u20134 hours in the acute period. Use the '5 P's':",
+      "  Pain: is it proportionate to the injury? Pain out of proportion = compartment syndrome.",
+      "  Pallor: assess skin color distal to cast. Pale or cyanotic = vascular compromise.",
+      "  Paresthesia: tingling or numbness = nerve compression.",
+      "  Paralysis: inability to move fingers/toes = neurological or severe vascular compromise.",
+      "  Pulse (Pulselessness): assess pulse distal to cast. Absent pulse = arterial compromise. Use Doppler if not palpable.",
+      "Compare to contralateral extremity for all assessments.",
+      "Monitor skin at cast edges: assess for redness, blistering, or skin breakdown.",
+      "Instruct patient: do NOT insert objects inside the cast. Report any foul odor, increased pain, or drainage.",
+      "Elevate extremity above heart level for first 24\u201348 hours to reduce edema.",
+      "Plaster cast: takes 24\u201348h to dry fully. Handle with palms (not fingers) to prevent indentations.",
+      "Fiberglass cast: dries in 30\u201360 minutes. More durable and water-resistant."
+    ],
+    "safetyTips": [
+      "Pain out of proportion to injury + paresthesia + pallor = compartment syndrome. Notify provider immediately.",
+      "Do NOT bivalve, windowing, or loosen cast without provider order \u2014 may reduce fracture stability.",
+      "Foreign objects inside the cast cause pressure injuries and infections \u2014 strict education required."
+    ],
+    "documentation": [
+      "5 P's assessment findings",
+      "Neurovascular status hourly in acute period",
+      "Capillary refill time",
+      "Edema level"
+    ],
+    "keyTakeaways": [
+      "5 P's: Pain, Pallor, Paresthesia, Paralysis, Pulselessness",
+      "Pain out of proportion = compartment syndrome",
+      "Elevate above heart level"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "compartment-syndrome-assessment",
+    "title": "Compartment Syndrome Assessment",
+    "category": "Orthopedic Nursing",
+    "icon": "activity",
+    "summary": "Recognizing and reporting acute compartment syndrome, a limb-threatening emergency.",
+    "equipment": [
+      "Pulse oximeter",
+      "Doppler",
+      "Compartment pressure monitor (if ordered by provider)"
+    ],
+    "steps": [
+      "KNOW THE RISK: compartment syndrome most common after tibial fracture, forearm fracture, crush injury, circumferential burns, and tight casts.",
+      "THE 5 P'S (in order of earliest to latest):",
+      "  1. Pain: disproportionate to injury. Worsens with passive stretch of muscles in the compartment.",
+      "  2. Paresthesia: tingling, numbness distal to compartment.",
+      "  3. Pressure: tense, wooden feel of the extremity on palpation.",
+      "  4. Pallor: pale or dusky distal skin (late sign).",
+      "  5. Pulselessness: absence of distal pulse (very late \u2014 if present, ischemia is severe).",
+      "PASSIVE STRETCH TEST: gently dorsiflex the toes/fingers (stretches the muscles in the compartment). Severe pain = positive test = compartment syndrome until proven otherwise.",
+      "Remove all external wrappings: loosen/bivalve cast, remove splint padding, cut circumferential dressings.",
+      "Notify surgeon IMMEDIATELY. This is a surgical emergency.",
+      "Do NOT elevate above heart \u2014 reduces perfusion pressure to the compartment.",
+      "Fasciotomy is the definitive treatment. Damage is irreversible after 6\u20138 hours of ischemia."
+    ],
+    "safetyTips": [
+      "Compartment syndrome can develop under a cast, after revascularization, or hours after injury.",
+      "Pulselessness is a LATE sign \u2014 do not wait for it. Act on pain + paresthesia.",
+      "Do NOT elevate the limb (reduces perfusion). Position at heart level."
+    ],
+    "documentation": [
+      "Time of symptom onset",
+      "5 P's findings",
+      "Passive stretch test result",
+      "Time surgeon notified",
+      "Actions taken"
+    ],
+    "keyTakeaways": [
+      "Pain out of proportion = red flag",
+      "Passive stretch test is the earliest clinical sign",
+      "6\u20138 hour window before irreversible damage"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "crutch-walking",
+    "title": "Crutch Walking & Gait Training",
+    "category": "Orthopedic Nursing",
+    "icon": "activity",
+    "summary": "Teaching and supervising proper axillary crutch use and gait patterns.",
+    "equipment": [
+      "Properly fitted axillary crutches",
+      "Gait belt",
+      "Non-slip footwear"
+    ],
+    "steps": [
+      "FIT CRUTCHES: patient stands upright in crutches. 2\u20133 finger-widths between axilla and crutch pad (prevents axillary nerve compression). Elbows slightly flexed (20\u201330\u00b0). Handgrips at hip level.",
+      "Instruct: weight through hands on grips \u2014 NEVER rest axilla on the crutch pad.",
+      "NON-WEIGHT-BEARING (NWB): affected leg off the ground. 3-point gait: advance both crutches and affected leg forward together, then swing good leg through.",
+      "PARTIAL WEIGHT-BEARING (PWB): touch-down or percentage of weight on affected leg. 3-point gait: advance crutches + affected leg, then step good leg through.",
+      "WEIGHT-BEARING AS TOLERATED (WBAT): same 3-point or 4-point gait as tolerated.",
+      "SITTING DOWN: back up to chair edge. Transfer both crutches to one hand. Place other hand on armrest. Lower yourself to seat.",
+      "STANDING UP: both crutches in one hand on affected side. Push up with good leg and arm on armrest.",
+      "STAIRS \u2014 going UP: good leg first, then crutches + affected leg (good goes to heaven).",
+      "STAIRS \u2014 going DOWN: crutches + affected leg first, then good leg (bad goes down)."
+    ],
+    "safetyTips": [
+      "Axillary crutch palsy (radial nerve): from resting armpit on crutch pad. Emphasize weight on hands.",
+      "Confirm weight-bearing status with surgeon BEFORE ambulation teaching \u2014 NWB vs. WBAT are very different.",
+      "Monitor for fatigue in elderly patients \u2014 crutch walking is physically demanding."
+    ],
+    "documentation": [
+      "Gait pattern taught",
+      "Weight-bearing restriction confirmed",
+      "Patient return demonstration",
+      "Safety on stairs assessed"
+    ],
+    "keyTakeaways": [
+      "Good goes to heaven (up stairs first)",
+      "Bad goes down (down stairs first)",
+      "Weight on hands, never axilla"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "traction-care",
+    "title": "Skin & Skeletal Traction Care",
+    "category": "Orthopedic Nursing",
+    "icon": "activity",
+    "summary": "Maintaining traction setup and monitoring for neurovascular compromise and skin integrity.",
+    "equipment": [
+      "Traction frame/trapeze",
+      "Weights (never remove without order)",
+      "Pulley system",
+      "Foam padding"
+    ],
+    "steps": [
+      "Assess traction setup at every assessment: ropes are taut, pulleys are aligned, weights hang freely (not on bed or floor).",
+      "NEVER remove or lift weights without a provider order \u2014 disrupts fracture alignment.",
+      "Maintain correct alignment: body is in a straight line. Hip/knee at prescribed angles. Foot of bed elevated per order (countertraction).",
+      "NEUROVASCULAR ASSESSMENT q2\u20134h: 5 P's \u2014 pain, pallor, paresthesia, paralysis, pulselessness.",
+      "Skin care: inspect skin under traction boots or foam padding every shift for breakdown.",
+      "Skin traction: monitor for blistering, redness, or itching under the straps. Skin traction is for temporary use only.",
+      "Skeletal traction (pin/wire): pin site care per order (usually NS or H2O2 per policy). Assess for infection: redness, warmth, purulent drainage, loosening pin.",
+      "Trapeze bar: instruct patient to use it to lift themselves for back care and bedpan.",
+      "Log roll technique for position changes \u2014 maintain alignment.",
+      "Assess for complications: pressure injuries (heels, sacrum), DVT, atelectasis, constipation."
+    ],
+    "safetyTips": [
+      "Weights are therapeutic \u2014 elevating or removing them disrupts fracture healing. Never remove without explicit order.",
+      "Pin site infection leads to osteomyelitis. Strict pin site care and aseptic technique are essential.",
+      "DVT is a major risk in traction patients \u2014 ensure pharmacologic prophylaxis is ordered."
+    ],
+    "documentation": [
+      "Traction setup integrity",
+      "Weight amount",
+      "Neurovascular checks",
+      "Pin site appearance",
+      "Skin integrity"
+    ],
+    "keyTakeaways": [
+      "Never remove weights without order",
+      "Weights must hang freely",
+      "q2\u20134h neurovascular checks"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "external-fixator-pin-care",
+    "title": "External Fixator Pin Site Care",
+    "category": "Orthopedic Nursing",
+    "icon": "activity",
+    "summary": "Maintaining pin site cleanliness to prevent infection in patients with external fixation devices.",
+    "equipment": [
+      "Sterile NS or chlorhexidine per protocol",
+      "Sterile cotton-tipped applicators",
+      "Sterile gauze",
+      "Sterile gloves"
+    ],
+    "steps": [
+      "Perform pin site care per protocol frequency (daily to twice daily).",
+      "Perform hand hygiene. Don sterile gloves.",
+      "Assess each pin site: redness, warmth, swelling, drainage (serous is normal \u2014 purulent is not), skin tenting around pin.",
+      "Serous drainage that dries around the pin (crusting) = normal. Do NOT aggressively remove all crusting in the first weeks as it acts as a natural seal.",
+      "After the initial healing phase (typically 48\u201372 hours): clean crusts that are accumulating or causing skin tension using NS-moistened applicators with a gentle twisting motion.",
+      "Clean each pin site with a SEPARATE applicator \u2014 never use the same applicator on two pins.",
+      "Apply chlorhexidine or NS per order. Allow to air dry.",
+      "Apply loose gauze if ordered \u2014 tight dressings restrict drainage and promote infection.",
+      "Assess fixator frame for stability, loosening, or corrosion.",
+      "Instruct patient to avoid submerging pins in water."
+    ],
+    "safetyTips": [
+      "Pin site infection leads to osteomyelitis \u2014 the most serious complication of external fixation.",
+      "Loosening of pins = pin tract infection suspected until proven otherwise. Notify orthopedic surgeon.",
+      "Skin tenting = skin being pulled by the pin as it loosens. Report to surgeon promptly."
+    ],
+    "documentation": [
+      "Appearance of each pin site",
+      "Drainage amount and character",
+      "Care method used",
+      "Frame integrity"
+    ],
+    "keyTakeaways": [
+      "Separate applicator per pin",
+      "Purulent drainage = infection",
+      "Loose pin = notify surgeon"
+    ],
+    "nursing_considerations": []
+  }
+]

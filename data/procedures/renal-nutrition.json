@@ -1,0 +1,212 @@
+[
+  {
+    "id": "enteral-nutrition",
+    "title": "Enteral Nutrition (Tube Feeding) Administration",
+    "category": "Renal & Nutrition",
+    "icon": "activity",
+    "summary": "Administering tube feeding via nasogastric, nasojejunal, or gastrostomy tube.",
+    "equipment": [
+      "Enteral formula per order",
+      "Enteral feeding pump and tubing",
+      "60mL syringe",
+      "Stethoscope",
+      "Gloves",
+      "pH paper (for NG confirmation)"
+    ],
+    "steps": [
+      "Verify tube placement before initiating or resuming feeding: pH <5.5 confirms gastric position (pH 5.5\u20136 = re-check). Confirm via X-ray if pH is questionable.",
+      "Elevate HOB to at least 30\u201345\u00b0 during feeding and for 30\u201360 minutes after (reduces aspiration risk).",
+      "Assess gastric residual volume (GRV) per policy (typically q4h for continuous feeds): aspirate via syringe. GRV >500mL = hold feeding and notify provider.",
+      "Return aspirated residual unless policy states otherwise (avoids electrolyte loss).",
+      "Flush tube with 30mL water before and after feeding/medications (15mL for critically ill/fluid-restricted).",
+      "Prime feeding pump tubing. Set rate per order. Connect to feeding port of tube.",
+      "Label feeding tubing with date and time \u2014 change tubing per policy (q24h).",
+      "Assess bowel sounds, abdominal distension, nausea, diarrhea, and stool output each shift.",
+      "Monitor blood glucose as ordered (tube feeding can cause hyperglycemia).",
+      "Use enteral-only tubing (ENFit connectors) \u2014 prevents wrong-route errors with IV tubing."
+    ],
+    "safetyTips": [
+      "Confirm tube placement EVERY time before feeding \u2014 tube migration can lead to pulmonary aspiration.",
+      "ENFit connectors are designed to prevent IV\u2194enteral wrong-route errors. Never connect IV tubing to a feeding tube.",
+      "Aspiration is the most serious complication \u2014 HOB elevation and GRV checks are protective."
+    ],
+    "documentation": [
+      "Tube placement confirmation method and result",
+      "HOB elevation",
+      "GRV and action taken",
+      "Formula, rate, total volume infused",
+      "Flush volumes"
+    ],
+    "keyTakeaways": [
+      "pH <5.5 confirms gastric placement",
+      "HOB 30\u201345\u00b0 always",
+      "GRV >500mL = hold and notify"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "tpn-administration",
+    "title": "Total Parenteral Nutrition (TPN) Administration",
+    "category": "Renal & Nutrition",
+    "icon": "activity",
+    "summary": "Administering TPN safely through a central venous access device with monitoring for metabolic complications.",
+    "equipment": [
+      "TPN bag (prepared by pharmacy)",
+      "IV tubing with 1.2-micron filter",
+      "Infusion pump",
+      "Glucose meter",
+      "Central line"
+    ],
+    "steps": [
+      "Verify TPN label matches the MAR: patient name, MRN, formula components, rate, and expiration. Two-nurse check required.",
+      "TPN must be administered through a dedicated central line lumen \u2014 never through a peripheral IV (osmolarity >900 mOsm/L damages veins).",
+      "Use a 1.2-micron in-line filter to trap precipitates.",
+      "Inspect the bag: clear solution without cloudiness, precipitate, or discoloration. Do NOT use if lipids are separated (cracked emulsion).",
+      "Connect to dedicated central line lumen using aseptic technique. Label as TPN line.",
+      "Set rate per order. Do NOT hang TPN with other IV medications (incompatibility risk).",
+      "Monitor blood glucose every 4\u20136 hours initially (goal 140\u2013180 mg/dL in most ICU patients).",
+      "Monitor labs: BMP (glucose, electrolytes, BUN/Cr), LFTs, phosphorus, magnesium, triglycerides per schedule.",
+      "Refeeding syndrome risk: low phosphorus, potassium, magnesium after initiation in malnourished patients. Start TPN at low rate and advance.",
+      "If TPN must be suddenly stopped, hang D10W at the same rate to prevent hypoglycemia."
+    ],
+    "safetyTips": [
+      "Never use TPN line for blood draws, blood products, or other medications.",
+      "Cracked lipid emulsion (orange streaks, layering) = DO NOT USE. Return to pharmacy.",
+      "Refeeding syndrome: check phosphorus, K+, Mg2+ before starting TPN in severely malnourished patients."
+    ],
+    "documentation": [
+      "TPN bag check (two nurses)",
+      "Infusion start time and rate",
+      "Blood glucose values and interventions",
+      "Lab results and trends"
+    ],
+    "keyTakeaways": [
+      "Central line only",
+      "1.2-micron filter required",
+      "Monitor glucose q4\u20136h; D10W if suddenly stopped"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "io-measurement",
+    "title": "Intake & Output (I&O) Measurement",
+    "category": "Renal & Nutrition",
+    "icon": "activity",
+    "summary": "Accurately measuring and documenting all fluid intake and output to monitor fluid balance.",
+    "equipment": [
+      "Graduated measuring container (hat/urinal)",
+      "I&O documentation sheet or EHR"
+    ],
+    "steps": [
+      "INTAKE: Document all fluid inputs every shift and cumulatively every 24 hours.",
+      "IV fluids: read infusion pump totals at each shift change.",
+      "Oral intake: use patient reporting + estimated volumes from food trays (1oz = 30mL).",
+      "Other inputs: blood products, IV medications, tube feeding, irrigation fluids.",
+      "OUTPUT: Document all fluid outputs.",
+      "Urine: measure in graduated hat (toilet) or catheter bag. Normal: 0.5\u20131 mL/kg/hr adult.",
+      "Emesis: estimate in mL using basin measurements.",
+      "Drains: wound drains, NG output, chest tube, colostomy.",
+      "Insensible losses (not directly measurable): estimate 500\u20131000mL/day (respiration + perspiration).",
+      "Report: urine output <0.5mL/kg/hr \u00d7 2 hours (oliguria). Urine output <30mL/hr = notify provider.",
+      "Calculate fluid balance: Total Intake \u2212 Total Output = Fluid Balance.",
+      "Positive balance (more in than out): edema risk. Negative balance: dehydration risk."
+    ],
+    "safetyTips": [
+      "Urine output <30mL/hr for 2 consecutive hours in an adult = notify provider \u2014 may indicate AKI or shock.",
+      "Never estimate urine without measuring \u2014 guessing invalidates the fluid balance and clinical decision-making.",
+      "Diuretic administration should be followed by output monitoring to confirm response."
+    ],
+    "documentation": [
+      "Every-shift I&O totals",
+      "24-hour cumulative fluid balance",
+      "Urine output per hour if ordered or clinically indicated"
+    ],
+    "keyTakeaways": [
+      "Normal urine output 0.5\u20131 mL/kg/hr",
+      "<30 mL/hr = notify provider",
+      "Fluid balance = intake minus output"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "hemodialysis-access-assessment",
+    "title": "Hemodialysis Vascular Access Assessment (AV Fistula / Graft)",
+    "category": "Renal & Nutrition",
+    "icon": "activity",
+    "summary": "Assessing and protecting arteriovenous fistulas and grafts used for hemodialysis access.",
+    "equipment": [
+      "Stethoscope",
+      "Gloves"
+    ],
+    "steps": [
+      "Assess AV fistula/graft every shift.",
+      "AUSCULTATE: Place stethoscope over the access site. A continuous machine-like bruit = patent access. Absence of bruit = possible thrombosis. Report immediately.",
+      "PALPATE: Feel for a continuous thrill (vibration) = normal flow. Absence of thrill = possible thrombosis.",
+      "Inspect site: redness, warmth, swelling, skin breakdown, signs of infection, aneurysm.",
+      "PROTECT THE ACCESS ARM: NO blood pressure measurements, NO blood draws, NO IV insertions on the fistula arm. Post sign at bedside.",
+      "No tight clothing, jewelry, or restraints on the fistula arm.",
+      "Patient education: no sleeping on fistula arm, avoid lifting heavy objects, check thrill daily.",
+      "Post-dialysis: assess needle site for bleeding or hematoma. Apply finger pressure x15 minutes if bleeding.",
+      "Notify dialysis team and provider immediately if: bruit/thrill absent, significant swelling, excessive bleeding, signs of infection."
+    ],
+    "safetyTips": [
+      "Loss of thrill or bruit = thrombosis until proven otherwise \u2014 STAT notification to provider/dialysis team.",
+      "Never take BP in the fistula arm \u2014 even once. One incorrect measurement can clot the access.",
+      "Fistula is the patient's lifeline \u2014 treat it with absolute care."
+    ],
+    "documentation": [
+      "Bruit and thrill (present/absent)",
+      "Site appearance",
+      "Signs posted",
+      "Patient education provided"
+    ],
+    "keyTakeaways": [
+      "Bruit + thrill = patent access",
+      "No BP/IV/blood draws on fistula arm",
+      "Absent bruit = emergency"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "nutritional-screening",
+    "title": "Nutritional Screening & Assessment",
+    "category": "Renal & Nutrition",
+    "icon": "activity",
+    "summary": "Performing admission nutritional screening and referring at-risk patients to a registered dietitian.",
+    "equipment": [
+      "Nutritional screening tool (MUST, NRS-2002, or facility tool)",
+      "Scale",
+      "Height measurement"
+    ],
+    "steps": [
+      "Screen all admitted patients within 24 hours using the facility's validated tool.",
+      "MUST (Malnutrition Universal Screening Tool) \u2014 community/hospital:",
+      "  Step 1: BMI score (>20=0, 18.5\u201320=1, <18.5=2).",
+      "  Step 2: Unintentional weight loss in past 3\u20136 months (>10%=2, 5\u201310%=1).",
+      "  Step 3: Acute disease effect (not eating >5 days = +2).",
+      "  Score 0=low risk, 1=medium risk, 2+=high risk \u2014 refer to dietitian.",
+      "Assess: appetite changes, dysphagia, nausea/vomiting, diarrhea, recent dietary restrictions.",
+      "Assess: muscle wasting (temporal, thenar eminence), edema (can mask weight loss), ascites.",
+      "Review labs: albumin, prealbumin, total protein, lymphocyte count, transferrin.",
+      "Dysphagia screen (bedside): observe patient drinking small amount of water. Coughing, wet voice, or choking = refer to speech-language pathology.",
+      "Refer high-risk patients to registered dietitian within 24\u201348 hours."
+    ],
+    "safetyTips": [
+      "Albumin reflects inflammation and hydration status more than acute nutritional status \u2014 prealbumin is a better short-term marker.",
+      "Dysphagia increases aspiration risk \u2014 do not offer oral diet until cleared by SLP if dysphagia is suspected.",
+      "Malnutrition is associated with increased LOS, pressure injuries, infections, and mortality."
+    ],
+    "documentation": [
+      "Screening tool score",
+      "Referral to dietitian (yes/no)",
+      "Dysphagia screen result",
+      "Current diet order"
+    ],
+    "keyTakeaways": [
+      "MUST score \u22652 = high risk, refer dietitian",
+      "Prealbumin > albumin for acute status",
+      "Dysphagia screen before oral diet"
+    ],
+    "nursing_considerations": []
+  }
+]

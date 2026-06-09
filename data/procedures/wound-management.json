@@ -1,0 +1,120 @@
+[
+  {
+    "id": "wound-care",
+    "title": "Wound Care & Dressing Change",
+    "category": "Wound Management",
+    "icon": "bandage",
+    "summary": "Assessing and redressing a wound to promote healing and prevent infection.",
+    "equipment": ["Sterile gloves", "Clean gloves", "Normal saline or wound cleanser", "Appropriate dressing (gauze, foam, hydrocolloid)", "Tape or securing method", "Sterile field/drape", "Wound measurement tool", "Biohazard bag"],
+    "steps": [
+      "Review orders for specific wound care instructions. Perform hand hygiene.",
+      "Gather all supplies and set up sterile field if required.",
+      "Don clean gloves. Gently remove old dressing, noting type, amount, color, and odor of drainage.",
+      "Dispose of soiled dressing in biohazard bag. Remove gloves and perform hand hygiene.",
+      "Don sterile gloves. Assess the wound — note size (length × width × depth), wound bed color, surrounding skin, and signs of infection.",
+      "Irrigate the wound with normal saline or prescribed cleanser. Use a 35mL syringe with 18g angiocath for 8psi irrigation if appropriate.",
+      "Pat the periwound skin dry with sterile gauze.",
+      "Apply appropriate dressing per wound type and provider order.",
+      "Secure dressing with tape or other appropriate method.",
+      "Remove gloves and perform hand hygiene.",
+      "Document wound assessment including size, color, drainage, odor, periwound skin, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Obtain a wound culture before cleaning if infection is suspected.",
+      "Use Sterile technique for surgical wounds and clean technique for chronic wounds (per facility policy).",
+      "Stage pressure injuries (I–IV) and document accurately.",
+      "Refer to wound care specialist for non-healing wounds or wounds requiring debridement.",
+      "Assess patient pain before, during, and after the procedure."
+    ]
+  },
+  {
+    "id": "suture-staple-removal",
+    "title": "Suture & Staple Removal",
+    "category": "Wound Management",
+    "icon": "bandage",
+    "summary": "Removing sutures or staples from a healed surgical or laceration wound.",
+    "equipment": ["Suture removal kit (iris scissors + tissue forceps) OR staple remover", "Clean gloves", "Sterile gloves (for sterile wounds)", "Sterile gauze", "Normal saline", "Steri-strips (if closure support needed)", "Biohazard container"],
+    "steps": [
+      "Verify provider order specifying partial or full removal, and any site-specific instructions.",
+      "Explain procedure to patient. Perform hand hygiene and don gloves.",
+      "Remove old dressing. Assess wound: approximation, signs of healing, absence of infection.",
+      "Clean wound gently with NS-moistened gauze if needed.",
+      "For sutures: Grasp the knot with forceps. Slide one blade of iris scissors under the suture adjacent to the knot. Cut and pull the suture through the skin in one smooth motion — pulling toward the wound, not away.",
+      "For staples: Position the staple remover under the staple so the lower jaw is centered. Squeeze handles to deform and lift the staple out in one motion.",
+      "Place each removed suture/staple on gauze for counting — verify all are removed.",
+      "Assess wound after removal — confirm edges remain well-approximated.",
+      "Apply Steri-strips if ordered or wound edges appear slightly gapped for additional support.",
+      "Cover with a light dressing if wound is not fully epithelialized.",
+      "Document number of sutures/staples removed, wound appearance, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "General healing timelines: face 3–5 days, scalp 7–10 days, trunk/extremities 7–14 days, joints 14 days.",
+      "Never remove sutures from a wound that shows signs of infection (dehiscence risk) — notify provider.",
+      "Always pull the suture toward the wound — pulling away can reopen the healing tissue.",
+      "If wound gapes during removal, stop and notify provider before removing remaining sutures.",
+      "Instruct patient to protect the wound from sun exposure for 6–12 months to minimize scarring."
+    ]
+  },
+  {
+    "id": "pressure-injury-staging",
+    "title": "Pressure Injury Prevention & Staging",
+    "category": "Wound Management",
+    "icon": "bandage",
+    "summary": "Assessing, staging, and documenting pressure injuries, and implementing prevention strategies.",
+    "equipment": ["Gloves", "Wound measurement tool (ruler)", "Camera (per facility policy for documentation)", "Turning schedule chart", "Pressure-redistributing support surfaces (foam mattress, heel protectors, wedge pillows)"],
+    "steps": [
+      "Perform a skin assessment on admission and per facility protocol (typically every shift).",
+      "Identify high-risk patients using a validated scale (Braden Scale: scores ≤18 indicate risk).",
+      "Inspect bony prominences: sacrum, coccyx, heels, trochanters, elbows, occiput, scapulae.",
+      "Stage any identified pressure injury:",
+      "  Stage 1: Non-blanchable erythema of intact skin.",
+      "  Stage 2: Partial-thickness skin loss — shallow open ulcer or intact/ruptured blister.",
+      "  Stage 3: Full-thickness skin loss — subcutaneous fat may be visible.",
+      "  Stage 4: Full-thickness tissue loss — exposed bone, tendon, or muscle.",
+      "  Unstageable: Full-thickness loss, wound base obscured by slough or eschar.",
+      "  Deep Tissue Injury (DTI): Persistent non-blanchable deep red/maroon discoloration or blood-filled blister.",
+      "Measure wound dimensions (length × width × depth). Assess wound bed, drainage, periwound skin.",
+      "Implement prevention: reposition every 2 hours, use pressure-redistributing surfaces, keep skin clean/dry.",
+      "Off-load heels completely — use heel suspension boots or pillows under calves.",
+      "Apply moisture barrier cream to areas exposed to incontinence.",
+      "Document staging, measurements, and prevention interventions in care plan."
+    ],
+    "nursing_considerations": [
+      "Heels and sacrum are the most common pressure injury sites — prioritize off-loading these areas.",
+      "Never massage reddened areas over bony prominences — it increases tissue damage.",
+      "Incontinence-associated dermatitis (IAD) can mimic or worsen pressure injuries — treat moisture separately.",
+      "Stage a pressure injury based on what is visible — do not reverse-stage as it heals.",
+      "Pressure injuries are largely preventable — document interventions as evidence of proactive care."
+    ]
+  },
+  {
+    "id": "npwt",
+    "title": "Negative Pressure Wound Therapy (NPWT)",
+    "category": "Wound Management",
+    "icon": "bandage",
+    "summary": "Applying and managing a vacuum-assisted closure (VAC) device to promote wound healing.",
+    "equipment": ["NPWT unit (e.g., KCI V.A.C.)", "Foam/gauze wound filler (per wound type)", "Transparent adhesive drape", "NPWT canister with tubing", "Scissors", "Clean and sterile gloves", "Normal saline", "Wound measurement tools"],
+    "steps": [
+      "Verify order including pressure setting (commonly -75 to -125 mmHg) and foam/gauze type.",
+      "Perform hand hygiene. Prepare supplies. Explain procedure to patient — offer analgesia 30 minutes prior.",
+      "Don gloves. Remove old NPWT dressing. Note foam color, wound drainage, and odor.",
+      "Perform wound assessment and measurement. Irrigate wound with NS per order.",
+      "Dry the periwound skin thoroughly — NPWT dressing will not seal over moist skin.",
+      "Apply skin barrier/prep to periwound area if ordered to protect fragile skin.",
+      "Cut foam to fit the wound bed contours. Do NOT pack foam into tunnels/tracts unless specifically ordered.",
+      "Place foam into wound. Count and record number of foam pieces used.",
+      "Cut transparent drape to cover the foam and extend at least 3–5 cm onto intact periwound skin. Apply smoothly.",
+      "Cut a small hole (2–3 cm) in the center of the drape. Apply the SensaT.R.A.C. pad or tubing connector.",
+      "Connect tubing to NPWT unit. Insert canister. Turn on device and confirm negative pressure achieved (dressing should collapse).",
+      "Set ordered pressure and therapy mode (continuous vs. intermittent) per provider order.",
+      "Document wound assessment, foam count, pressure settings, drainage amount/characteristics."
+    ],
+    "nursing_considerations": [
+      "Never place NPWT over exposed vessels, nerves, anastomotic sites, or malignant wounds.",
+      "Alarm troubleshooting: check for air leaks (press around edges of drape), ensure canister is not full, confirm tubing is not kinked.",
+      "Change dressing every 48–72 hours or per order — foam should NOT be left in wound longer than 72 hours.",
+      "Always count foam pieces in and out — retained foam is a serious complication.",
+      "Discontinue and notify provider if signs of bleeding (bright red drainage, increasing drainage >10x baseline) appear."
+    ]
+  }
+]

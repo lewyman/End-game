@@ -1,0 +1,170 @@
+[
+  {
+    "id": "discharge-teaching",
+    "title": "Discharge Teaching & Discharge Planning",
+    "category": "Patient Education",
+    "icon": "activity",
+    "summary": "Providing comprehensive discharge education to ensure safe patient transition from hospital to home.",
+    "equipment": [
+      "Discharge instruction sheet",
+      "Medication list",
+      "Follow-up appointment information",
+      "Return precautions documentation"
+    ],
+    "steps": [
+      "Start discharge planning at ADMISSION \u2014 not the morning of discharge.",
+      "Assess barriers: language, health literacy, cognitive ability, social support, financial, transportation.",
+      "Involve family/caregiver in all teaching if appropriate (with patient consent).",
+      "DISCHARGE EDUCATION topics (MEDICATIONS + DIET + ACTIVITY + WOUNDS + SYMPTOMS to watch for + FOLLOW-UP = MDAWSF mnemonic):",
+      "  M \u2014 Medications: new medications, changed doses, stopped medications. Side effects to watch for.",
+      "  D \u2014 Diet: restrictions or changes (low sodium, diabetic, renal, etc.).",
+      "  A \u2014 Activity: weight-bearing restrictions, driving limitations, sexual activity, exercise progression.",
+      "  W \u2014 Wounds: incision/wound care instructions, dressing changes, when to contact surgeon.",
+      "  S \u2014 Symptoms to watch for (return precautions): fever, increasing pain, SOB, bleeding, etc.",
+      "  F \u2014 Follow-up: exact appointment date/time/provider/location. What to bring.",
+      "Use TEACH-BACK method to verify understanding.",
+      "Provide written materials at appropriate reading level (6th grade or below is recommended).",
+      "Document: topics taught, method, patient/family response, teach-back result."
+    ],
+    "safetyTips": [
+      "Lack of discharge education is the #1 modifiable cause of preventable readmission.",
+      "30-day readmissions are scrutinized by CMS \u2014 thorough, documented discharge teaching is both clinical and regulatory.",
+      "Verbal education alone is insufficient. Always provide written take-home instructions."
+    ],
+    "documentation": [
+      "Topics covered",
+      "Patient's stated understanding",
+      "Teach-back result",
+      "Written materials provided",
+      "Follow-up confirmed"
+    ],
+    "keyTakeaways": [
+      "Start at admission, not day of discharge",
+      "MDAWSF mnemonic",
+      "Written materials at 6th grade reading level"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "teach-back-method",
+    "title": "Teach-Back Method",
+    "category": "Patient Education",
+    "icon": "activity",
+    "summary": "Using the teach-back method to verify patient comprehension of healthcare education.",
+    "equipment": [
+      "The content you just taught"
+    ],
+    "steps": [
+      "Teach the concept in plain, simple language first. Avoid medical jargon.",
+      "After teaching, use teach-back to verify understanding \u2014 NOT a test of the patient, but a check of your teaching.",
+      "Ask the patient to explain it back IN THEIR OWN WORDS:",
+      "  CORRECT: 'I want to make sure I explained this well. Can you tell me in your own words how you'll take this medication?'",
+      "  WRONG: 'Do you understand?' (Yes/No answer \u2014 not verify comprehension)",
+      "  WRONG: 'Can you repeat what I said?' (tests memory, not understanding)",
+      "If patient cannot explain it correctly: reteach using different words, visual aids, or demonstration. Do NOT repeat the same explanation louder or faster.",
+      "Use show-back for procedural skills (wound care, insulin injection): 'Can you show me how you would do this?'",
+      "Teach in small chunks \u2014 3 key pieces of information per session maximum.",
+      "Document: what was taught, teach-back question asked, patient response, reteaching needed (yes/no)."
+    ],
+    "safetyTips": [
+      "'Do you understand?' is not teach-back. Patients say yes to avoid embarrassment \u2014 it does not verify comprehension.",
+      "Low health literacy affects 36% of U.S. adults. Plain language is not optional \u2014 it is standard of care.",
+      "Teaching a patient who is in pain, anxious, or sleep-deprived will not be retained \u2014 timing matters."
+    ],
+    "documentation": [
+      "Content taught",
+      "Teach-back question used",
+      "Patient's teach-back response",
+      "Reteaching required (yes/no)"
+    ],
+    "keyTakeaways": [
+      "'Tell me in your own words' not 'Do you understand?'",
+      "Teach in chunks of 3",
+      "Poor teach-back = unclear teaching, not a dumb patient"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "home-medication-teaching",
+    "title": "Home Medication Teaching",
+    "category": "Patient Education",
+    "icon": "activity",
+    "summary": "Teaching patients to safely self-administer and manage their home medications at discharge.",
+    "equipment": [
+      "Current medication list",
+      "Pillbox/organizer (recommend)",
+      "Medication teaching sheets"
+    ],
+    "steps": [
+      "Review each discharge medication with the patient and/or caregiver:",
+      "  Name of the medication (brand AND generic if possible).",
+      "  What it is for (indication in simple language).",
+      "  How and when to take it (dose, route, frequency, with food or not).",
+      "  Important side effects to monitor and report.",
+      "  Special instructions (don't crush, take with water, avoid grapefruit, etc.).",
+      "Highlight NEW medications and CHANGES from prior regimen.",
+      "Teach patients how to safely store medications: room temp vs. refrigerator, away from children.",
+      "Discuss adherence strategies: pill organizer, phone reminders, pharmacy blister packs.",
+      "Teach what to do for missed doses (each drug is different \u2014 do not double-up without checking).",
+      "Identify patients on HIGH-ALERT home meds (warfarin, insulin, digoxin) \u2014 provide extra counseling.",
+      "Encourage patient to fill ALL prescriptions before leaving (or before the pharmacy closes).",
+      "Provide phone number to call with questions."
+    ],
+    "safetyTips": [
+      "Medication non-adherence causes 125,000 preventable deaths per year in the U.S. Education is protective.",
+      "For anticoagulants: teach signs of bleeding and INR monitoring. For insulin: teach hypoglycemia recognition and treatment.",
+      "Do NOT assume the patient knows what a medication is for because they've been taking it for years \u2014 often they don't."
+    ],
+    "documentation": [
+      "Each medication reviewed",
+      "Patient demonstration (for injectables)",
+      "Teach-back result",
+      "Written medication list provided"
+    ],
+    "keyTakeaways": [
+      "Name, dose, purpose, side effects for every medication",
+      "Special attention to HIGH-ALERT home meds",
+      "Written list always provided"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "activity-restriction-teaching",
+    "title": "Activity & Restriction Teaching (Post-Discharge)",
+    "category": "Patient Education",
+    "icon": "activity",
+    "summary": "Teaching patients about activity restrictions, return-to-activity progression, and when to seek care.",
+    "equipment": [
+      "Discharge instruction sheet with specific restrictions"
+    ],
+    "steps": [
+      "Clarify activity orders with provider BEFORE teaching (restrictions vary by diagnosis/procedure).",
+      "Driving: most post-surgical patients cannot drive while on opioids or with restricted extremity use. Provide specific timeline.",
+      "Lifting restrictions: specify in exact pounds. Post-laparotomy: typically no lifting >10 lbs \u00d7 6 weeks. Post-cardiac cath: no lifting >10 lbs \u00d7 24h on access arm.",
+      "Ambulation: specify if walker/cane/crutches needed. Stairs assessment \u2014 can patient do them safely?",
+      "Work and school return: provide specific timeline or 'return to work slip' if facility policy allows.",
+      "Sexual activity: specific to procedure \u2014 post-cardiac: typically 2\u20134 weeks. Post-gynecologic surgery: typically 6 weeks. Post-ortho: highly variable.",
+      "Exercise progression: 'Light activity' \u2192 'Moderate' \u2192 'Full return' \u2014 provide specific milestones.",
+      "RETURN PRECAUTIONS (reasons to go to the ER or call provider):",
+      "  Fever >38.3\u00b0C (101\u00b0F) | Uncontrolled pain | Wound opening/drainage | Shortness of breath | Chest pain | Excessive swelling or redness.",
+      "Provide 24-hour contact number and when to call 911 vs. the clinic."
+    ],
+    "safetyTips": [
+      "Vague instructions like 'take it easy' are not safe discharge instructions \u2014 be specific.",
+      "Driving while on opioids is illegal in most states. Document that this was explicitly taught.",
+      "Return precautions must be given in writing \u2014 verbal alone is insufficient for safety and documentation."
+    ],
+    "documentation": [
+      "Specific restrictions reviewed",
+      "Patient understanding confirmed via teach-back",
+      "Written instructions provided",
+      "Return precautions covered"
+    ],
+    "keyTakeaways": [
+      "Be specific \u2014 pounds, weeks, activities",
+      "Return precautions in writing",
+      "Document driving restriction counseling"
+    ],
+    "nursing_considerations": []
+  }
+]

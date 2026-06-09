@@ -1,0 +1,128 @@
+[
+  {
+    "id": "seizure-management",
+    "title": "Seizure Management",
+    "category": "Patient Safety",
+    "icon": "shield",
+    "summary": "Responding safely and effectively to a patient experiencing a generalized seizure.",
+    "equipment": ["Gloves", "Oxygen delivery device (NRB or nasal cannula)", "Suction equipment", "Timing device (watch/phone)", "IV access", "Seizure medications available (lorazepam, diazepam, levetiracetam per order)"],
+    "steps": [
+      "If seizure occurs: stay with the patient and note the exact time seizure began.",
+      "Call for help — activate emergency response if this is a first seizure or seizure >5 minutes.",
+      "Protect from injury: lower patient to bed/floor if standing. Remove sharp objects from surroundings. Lower side rails and pad if applicable.",
+      "Turn patient to lateral (recovery) position — reduces aspiration risk.",
+      "Do NOT restrain extremities during active seizure — you will cause injury. Do NOT put anything in the mouth.",
+      "Maintain airway: position jaw, clear secretions if needed with suction after convulsive phase ends.",
+      "Apply oxygen per protocol (2–4 L/min nasal cannula or NRB if needed) after the convulsive phase.",
+      "Monitor and document: seizure type (focal vs. generalized), body parts affected, eye deviation, duration, level of consciousness.",
+      "If IV access: administer anticonvulsant medications per order (lorazepam 2–4 mg IV is first-line for active seizure).",
+      "If no IV: rectal diazepam or buccal/nasal midazolam per protocol.",
+      "Status epilepticus (seizure >5 min or 2+ seizures without recovery): emergency. Escalate immediately.",
+      "Post-ictal phase: assess LOC, neurological status, airway, SpO2, vital signs. Reorient patient.",
+      "Document: onset time, duration, seizure characteristics, interventions, post-ictal status."
+    ],
+    "nursing_considerations": [
+      "NEVER put anything in a seizing patient's mouth — this is a myth, causes injury to patient and nurse.",
+      "Status epilepticus (>5 minutes) is a neurological emergency — call code/STAT if not already done.",
+      "Document seizure characteristics comprehensively — helps classify seizure type and adjust medications.",
+      "After a breakthrough seizure: assess for triggers (missed medications, electrolyte imbalance, infection, fever, toxicity).",
+      "Post-ictal confusion can last minutes to hours — protect the patient from falls during this period."
+    ]
+  },
+  {
+    "id": "fall-prevention",
+    "title": "Fall Prevention Protocol",
+    "category": "Patient Safety",
+    "icon": "shield",
+    "summary": "Implementing a comprehensive inpatient fall prevention program for high-risk patients.",
+    "equipment": ["Bed alarm system", "Non-slip hospital socks/footwear", "Fall risk wristband and door signage", "Gait belt", "Bedside commode (if appropriate)", "Assistive device (walker, cane) at bedside"],
+    "steps": [
+      "Complete and document fall risk assessment on admission and per policy (see Fall Risk Assessment procedure for Morse Scale scoring).",
+      "Implement universal fall precautions for ALL patients regardless of risk score:",
+      "  Bed in lowest locked position. Call light within reach. Non-slip footwear on.",
+      "  Personal items, water, and phone within reach. Hourly rounding.",
+      "For moderate/high risk patients (Morse ≥25), add:",
+      "  Bed exit alarm — confirm it is ON and functional each shift.",
+      "  Fall risk identification (colored wristband per facility policy, door signage).",
+      "  Assistive device at bedside and confirmed that patient knows to use it.",
+      "  Ensure patient can verbalize when and how to call for help.",
+      "  Toilet patient before leaving the room and at the start of each shift.",
+      "  Consider bedside commode to reduce transfer distance.",
+      "Medication review: identify and flag high-risk medications (sedatives, opioids, diuretics, antihypertensives, hypoglycemics).",
+      "For very high risk or confused patients: consider a safety companion/sitter, low bed with floor mat, frequent monitoring.",
+      "Patient and family education: explain fall risks, when to call for help, safe ambulation, footwear.",
+      "Post-fall: complete incident report, full assessment (vital signs, neuro check, injury assessment), notify provider, family, and charge nurse. Implement post-fall huddle.",
+      "Document all fall prevention interventions in the care plan."
+    ],
+    "nursing_considerations": [
+      "Falls with injury are never events in many hospital programs — thorough documentation of preventive measures is critical.",
+      "Bed alarms create alarm fatigue if not calibrated properly — confirm sensitivity and placement each shift.",
+      "Patients often underreport dizziness or weakness — proactively assess with standing transfer and observe gait.",
+      "Post-fall huddle (5–15 min debrief with the care team) identifies system failures and prevents repeat falls.",
+      "Never leave a high-risk patient alone in the bathroom — wait outside the door or stay with them."
+    ]
+  },
+  {
+    "id": "patient-positioning",
+    "title": "Patient Positioning & Log Rolling",
+    "category": "Patient Safety",
+    "icon": "activity",
+    "summary": "Safely repositioning patients to prevent pressure injuries, maintain spinal alignment, or post-procedure recovery.",
+    "equipment": ["Drawsheet/repositioning sheet", "Wedge pillows or foam positioners", "Pillow for limb support", "Additional nurses as needed (2+ for log roll)", "Gait belt (for transfers)"],
+    "steps": [
+      "Assess patient: mobility, pain, weight, spinal precautions, post-op restrictions, skin breakdown risk.",
+      "Reposition at minimum every 2 hours for immobile patients — use a turning schedule.",
+      "Supine positioning: HOB ≤30° (unless contraindicated). Pillow under head (not above shoulders). Heels elevated off mattress. Arms at sides with palms down. Maintain spinal alignment.",
+      "Semi-Fowler's: HOB 30–45°. Used for respiratory support, tube feedings, and after meals.",
+      "Fowler's: HOB 60–90°. Supports breathing, oral intake.",
+      "Lateral/Side-lying: 30° lateral tilt (avoid 90°). Place pillow between knees, under top arm, and at back. Off-load trochanter.",
+      "Prone positioning (ARDS protocol): requires 4–6 nurses, advanced team. Used for severe ARDS to improve oxygenation. Requires specialized turning and positioning.",
+      "Log Roll (spinal precautions):",
+      "  Position 3 nurses on same side of bed. One at head, one at torso, one at legs.",
+      "  Nurse at head maintains manual cervical stabilization in-line with body axis throughout.",
+      "  On count of 3: roll patient as ONE UNIT — head, spine, and legs move simultaneously.",
+      "  Do not twist or flex spine. Place pillow between knees and maintain straight spinal alignment in lateral position.",
+      "Transfers: use gait belt for all ambulation assistance. Standby assist vs. full assist vs. 2-person lift — match to patient assessment.",
+      "Document: repositioning time, position used, skin assessment, patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Heels are the second most common pressure injury site — off-load completely using heel suspension boots or calf pillows.",
+      "Shear forces (sliding down in bed) are as damaging as direct pressure — use repositioning sheets and adjust HOB to minimize shear.",
+      "Log roll requires practice and team communication — assign roles before initiating.",
+      "Prone positioning carries high complication risk (facial pressure injuries, ETT dislodgement, line complications) — follow a structured protocol.",
+      "Use safe patient handling equipment (ceiling lifts, repositioning aids) to protect both patient and nurse."
+    ]
+  },
+  {
+    "id": "restraint-application",
+    "title": "Restraint Application & Monitoring",
+    "category": "Patient Safety",
+    "icon": "shield",
+    "summary": "Applying and monitoring physical restraints as a last resort when less restrictive interventions have failed.",
+    "equipment": ["Soft wrist restraints or mitt restraints (per type ordered)", "Padding if needed", "Monitoring flow sheet"],
+    "steps": [
+      "Verify provider order: type of restraint, clinical indication, and time limit.",
+      "Confirm that less restrictive alternatives have been attempted and documented: redirection, reorientation, family presence, activity devices, repositioning.",
+      "Explain the restraint rationale to patient/family. Obtain consent per facility policy.",
+      "Perform hand hygiene. Apply restraint per manufacturer instructions.",
+      "Soft wrist restraints: apply with enough slack that 2 fingers fit under the restraint. Tie with a clove hitch or quick-release knot to bed frame (NOT side rail).",
+      "Ensure proper circulation: assess skin color, capillary refill, sensation, and movement distal to restraint.",
+      "Position patient comfortably with HOB elevated and call light within reach.",
+      "Assess and document every 2 hours (or per facility policy):",
+      "  Behavior requiring restraint. Neurovascular check (CMS: circulation, movement, sensation).",
+      "  Skin integrity under and around restraint. Restraint position and security.",
+      "  Attempt to use least restrictive alternative at each assessment.",
+      "Remove restraint at least every 2 hours (per shift) for ROM exercises, toileting, nutrition.",
+      "Reassess ongoing need for restraint every shift — document justification for continuing.",
+      "Discontinue as soon as clinically safe — restraint use should be minimal and time-limited.",
+      "Document all assessments, alternatives attempted, and discontinuation."
+    ],
+    "nursing_considerations": [
+      "Restraints are a last resort — they do NOT prevent falls, they can cause injury, and they increase agitation in confused patients.",
+      "Respiratory complications: patients in wrist restraints can develop aspiration and asphyxiation — maintain HOB ≥30° and monitor closely.",
+      "Never tie restraints to side rails — side rail lowering can cause serious injury from restraint tension.",
+      "Regulatory requirement: restrained patients must be assessed every 2 hours — non-compliance is a major survey finding.",
+      "Alternatives to try first: bed alarm, medication review (reduce sedating agents), scheduled toileting, family at bedside, diversional activities, soft arm immobilizers."
+    ]
+  }
+]

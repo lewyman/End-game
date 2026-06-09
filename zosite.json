@@ -1,0 +1,15 @@
+{
+  "name": "bio-sync-academy",
+  "local_port": 55141,
+  "entrypoint": "bun run dev",
+  "publish": {
+    "label": "bio-sync-academy",
+    "type": "http",
+    "entrypoint": "/usr/local/bin/bun server.ts",
+    "published_port": 54104,
+    "env": {
+      "NODE_ENV": "production",
+      "MAIA_PRO_MODEL": "vercel:deepseek/deepseek-v4-pro"
+    }
+  }
+}

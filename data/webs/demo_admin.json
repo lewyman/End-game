@@ -1,0 +1,471 @@
+{
+  "userId": "demo_admin",
+  "nodes": {
+    "n_01": {
+      "id": "n_01",
+      "title": "IV Access Types",
+      "depth": 0,
+      "category": "procedures",
+      "content": "## IV Access Types\n\nIntravenous (IV) access is one of the most common nursing procedures, used for fluid resuscitation, medication administration, blood product delivery, and parenteral nutrition. The nurse must select the appropriate IV access device based on the patient's condition, expected duration of therapy, and the type of solution or medication being administered.\n\n**Peripheral IV (PIV)** catheters are the most frequently used. They are short (\u00be to 2 inches), inserted into veins of the hand or forearm. They are appropriate for short-term therapy (< 7 days) and solutions with osmolarity < 900 mOsm/L. Common gauges include 22G (pediatric/elderly), 20G (standard adult), 18G (surgery/trauma/rapid infusion).\n\n**Midline catheters** are longer (3-8 inches) than PIVs and are inserted via ultrasound guidance into the upper arm basilic, brachial, or cephalic veins. They are appropriate for therapy lasting 1-4 weeks. The tip terminates in the axillary region, not centrally.\n\n**Central venous access devices (CVADs)** include PICCs, tunneled catheters (Hickman/Broviac), and implanted ports. These terminate in the superior vena cava near the right atrium and are used for vesicant medications, hypertonic solutions, long-term IV therapy, and when peripheral access is exhausted.\n\nKey nursing considerations: always assess the insertion site before every infusion, use the smallest gauge appropriate for the therapy, avoid areas of flexion (antecubital fossa) for continuous infusions, and rotate peripheral sites every 72-96 hours per facility policy.",
+      "prerequisites": [],
+      "related": [
+        "n_02",
+        "n_03"
+      ],
+      "quiz": [
+        {
+          "id": "n_01_q1",
+          "question": "Which IV access device is appropriate for therapy expected to last 10 days?",
+          "options": [
+            "Peripheral IV",
+            "Midline catheter",
+            "Implanted port",
+            "Butterfly needle"
+          ],
+          "correctOption": "Midline catheter",
+          "explanation": "Midline catheters are designed for intermediate-term therapy lasting 1-4 weeks. Peripheral IVs should be rotated every 72-96 hours. Implanted ports are for long-term intermittent therapy, and butterfly needles are primarily for phlebotomy."
+        },
+        {
+          "id": "n_01_q2",
+          "question": "What is the appropriate gauge for a standard adult peripheral IV?",
+          "options": [
+            "24G",
+            "22G",
+            "20G",
+            "16G"
+          ],
+          "correctOption": "20G",
+          "explanation": "20-gauge is the standard for most adult peripheral IV therapy. 22G is for pediatric/elderly or small veins. 24G is for neonates. 16G-18G are for surgery/trauma/rapid infusion."
+        }
+      ],
+      "xpValue": 25,
+      "source": "ai-generated",
+      "position": {
+        "x": 156,
+        "y": -90
+      }
+    },
+    "n_02": {
+      "id": "n_02",
+      "title": "Crystalloids vs Colloids",
+      "depth": 0,
+      "category": "pharmacology",
+      "content": "## Crystalloids vs. Colloids\n\nIntravenous fluids are broadly classified into **crystalloids** and **colloids**. Understanding the difference is critical for safe fluid management.\n\n**Crystalloids** are solutions containing small molecules that freely cross semipermeable membranes. They distribute throughout the extracellular space. Examples include:\n- **Normal Saline (0.9% NaCl)**: Isotonic (308 mOsm/L), stays primarily in the intravascular space initially. Use with caution in heart failure and hyperchloremic metabolic acidosis.\n- **Lactated Ringer's**: Isotonic (273 mOsm/L), more physiologic electrolyte composition. Buffers with lactate (converted to bicarbonate by liver). Avoid in hyperkalemia, severe liver disease, and blood product co-administration due to calcium content.\n- **D5W (5% Dextrose in Water)**: Isotonic in the bag but becomes hypotonic once dextrose is metabolized. Never use for resuscitation \u2014 it rapidly leaves the intravascular space.\n- **Hypertonic Saline (3% NaCl)**: Used for severe hyponatremia and cerebral edema. Must be administered slowly via central line in ICU setting. Risk: central pontine myelinolysis if corrected too rapidly.\n\n**Colloids** contain large molecules that do not readily cross capillary membranes, exerting oncotic pressure to pull fluid into the intravascular space. Examples:\n- **Albumin (5% and 25%)**: Derived from human plasma. Used in hypovolemia, large-volume paracentesis, and hepatorenal syndrome. Cannot be used in traumatic brain injury (SAFE trial evidence).\n- **Hetastarch/Dextran**: Less commonly used now due to risk of coagulopathy, renal failure, and anaphylaxis.\n\nGuidelines (Surviving Sepsis Campaign): Crystalloids are first-line for resuscitation. Colloids are not superior for mortality outcomes and are more expensive. Use balanced crystalloids (Lactated Ringer's, Plasma-Lyte) over saline when possible to reduce hyperchloremic acidosis.",
+      "prerequisites": [],
+      "related": [
+        "n_01",
+        "n_04"
+      ],
+      "quiz": [
+        {
+          "id": "n_02_q1",
+          "question": "Which IV fluid should NEVER be used for fluid resuscitation?",
+          "options": [
+            "Normal Saline",
+            "Lactated Ringer's",
+            "D5W",
+            "Albumin 5%"
+          ],
+          "correctOption": "D5W",
+          "explanation": "D5W is isotonic in the bag but becomes hypotonic once the dextrose is metabolized. It rapidly leaves the intravascular space (only about 8% stays intravascular) and is therefore ineffective for resuscitation."
+        },
+        {
+          "id": "n_02_q2",
+          "question": "Why should Lactated Ringer's not be co-administered with blood products?",
+          "options": [
+            "It causes hemolysis",
+            "Calcium in LR chelates citrate anticoagulant",
+            "LR is too acidic",
+            "LR increases potassium levels"
+          ],
+          "correctOption": "Calcium in LR chelates citrate anticoagulant",
+          "explanation": "Lactated Ringer's contains calcium, which can bind to the citrate anticoagulant used in stored blood products, potentially causing clot formation in the IV line."
+        }
+      ],
+      "xpValue": 30,
+      "source": "ai-generated",
+      "position": {
+        "x": 0,
+        "y": 180
+      }
+    },
+    "n_03": {
+      "id": "n_03",
+      "title": "IV Flow Rate Calculations",
+      "depth": 1,
+      "category": "clinical-reasoning",
+      "content": "## IV Flow Rate Calculations\n\nAccurate IV flow rate calculation is a fundamental nursing competency. Errors can lead to fluid overload, dehydration, or medication toxicity.\n\n**Basic formula for mL/hour**:\n`Rate (mL/hr) = Total Volume (mL) / Time (hours)`\n\n**Drops per minute (gtt/min)** for manual gravity infusions:\n`gtt/min = (Volume in mL \u00d7 Drop Factor in gtt/mL) / Time in minutes`\n\n**Drop factors** (tubes per mL):\n- **Macrodrip (10 gtt/mL)**: Standard adult IV set\n- **Macrodrip (15 gtt/mL)**: Common in US hospitals\n- **Macrodrip (20 gtt/mL)**: Common for blood administration sets\n- **Microdrip (60 gtt/mL)**: Used for pediatric patients and when precise control is needed\n\n**Example calculation**: Order: 1000 mL NS over 8 hours. Using 15 gtt/mL tubing:\n- mL/hr = 1000/8 = 125 mL/hr\n- gtt/min = (1000 \u00d7 15) / (8 \u00d7 60) = 15000 / 480 = 31.25 \u2192 **31 gtt/min** (always round down for safety)\n\n**Infusion pump considerations**:\n- For critical drips (vasopressors, insulin, sedation), ALWAYS use an infusion pump, not gravity\n- Program the pump with volume, rate, and VTBI (volume to be infused)\n- Check the pump at least hourly \u2014 document volume infused and remaining\n- When titrating, document the new rate and clinical rationale\n\n**Pediatric and weight-based dosing**:\n- Always calculate based on weight (kg) for pediatric patients\n- Use mcg/kg/min formulas for dopamine, dobutamine, and other vasoactive drips\n- `mL/hr = (Dose \u00d7 Weight \u00d7 60) / Concentration`",
+      "prerequisites": [
+        "n_01"
+      ],
+      "related": [
+        "n_02",
+        "n_04"
+      ],
+      "quiz": [
+        {
+          "id": "n_03_q1",
+          "question": "Order: 500 mL NS over 4 hours using 15 gtt/mL tubing. What is the drip rate?",
+          "options": [
+            "21 gtt/min",
+            "31 gtt/min",
+            "42 gtt/min",
+            "15 gtt/min"
+          ],
+          "correctOption": "31 gtt/min",
+          "explanation": "gtt/min = (500 \u00d7 15) / (4 \u00d7 60) = 7500 / 240 = 31.25 \u2192 31 gtt/min. Always round down for safety with IV drips."
+        },
+        {
+          "id": "n_03_q2",
+          "question": "When is a microdrip (60 gtt/mL) tubing most appropriate?",
+          "options": [
+            "Trauma resuscitation",
+            "Pediatric IV infusions",
+            "Blood product administration",
+            "Routine adult IV fluids"
+          ],
+          "correctOption": "Pediatric IV infusions",
+          "explanation": "Microdrip tubing delivers 60 drops per mL, allowing much more precise flow rate control. This is critical for pediatric patients where small volume differences can have significant clinical effects."
+        }
+      ],
+      "xpValue": 25,
+      "source": "ai-generated",
+      "position": {
+        "x": 241,
+        "y": 240
+      }
+    },
+    "n_04": {
+      "id": "n_04",
+      "title": "Phlebitis Assessment",
+      "depth": 1,
+      "category": "assessment",
+      "content": "## Phlebitis Assessment and Grading\n\nPhlebitis is inflammation of the vein and is one of the most common complications of peripheral IV therapy, occurring in 20-80% of hospitalized patients with IV catheters.\n\n**Phlebitis Grading Scale (Infusion Nurses Society)**\n\n| Grade | Clinical Findings |\n|-------|-------------------|\n| 0 | No symptoms |\n| 1 | Erythema at access site with or without pain |\n| 2 | Pain at access site with erythema and/or edema |\n| 3 | Pain at access site with erythema, streak formation, and/or palpable venous cord |\n| 4 | Pain at access site with erythema, streak formation, palpable venous cord >1 inch, with purulent drainage |\n\n**Types of Phlebitis:**\n- **Chemical phlebitis**: Caused by the chemical irritation of medications or solutions. Vesicants (dopamine, potassium chloride, chemotherapy agents) and hypertonic solutions (>900 mOsm/L) are common culprits.\n- **Mechanical phlebitis**: Caused by the physical irritation of the catheter against the vein wall. Larger gauge catheters, poorly secured catheters, and insertion near areas of flexion increase risk.\n- **Infectious phlebitis**: Bacterial infection of the vein, most commonly from poor hand hygiene, failure to clean the site before insertion, prolonged catheter dwell time, or contaminated infusate.\n\n**Nursing Assessment:**\n- Assess IV site q1h for inpatients, q4h for stable outpatients\n- Look for: redness, swelling, warmth, tenderness, palpable venous cord\n- Ask patient about pain or discomfort\n- Document using phlebitis scale (0-4)\n- **If Grade \u22652: STOP the infusion, remove the catheter, and notify the provider**\n\n**Prevention:**\n- Rotate PIV sites every 72-96 hours (per CDC and INS guidelines)\n- Use the smallest gauge appropriate\n- Secure catheter with transparent semipermeable dressing\n- Use aseptic technique during insertion\n- Inspect IV solutions for particulates, turbidity, or expiration",
+      "prerequisites": [
+        "n_01"
+      ],
+      "related": [
+        "n_05",
+        "n_03"
+      ],
+      "quiz": [
+        {
+          "id": "n_04_q1",
+          "question": "A patient has pain at their IV site with erythema and streak formation. What phlebitis grade is this?",
+          "options": [
+            "Grade 1",
+            "Grade 2",
+            "Grade 3",
+            "Grade 4"
+          ],
+          "correctOption": "Grade 3",
+          "explanation": "Grade 3 phlebitis includes pain, erythema, AND streak formation and/or palpable venous cord. Grade 2 lacks streak formation. Grade 4 adds purulent drainage."
+        },
+        {
+          "id": "n_04_q2",
+          "question": "What is the recommended PIV site rotation interval per CDC guidelines?",
+          "options": [
+            "24-48 hours",
+            "48-72 hours",
+            "72-96 hours",
+            "7 days"
+          ],
+          "correctOption": "72-96 hours",
+          "explanation": "CDC and Infusion Nurses Society guidelines recommend rotating peripheral IV sites every 72-96 hours to reduce the risk of phlebitis and infection."
+        }
+      ],
+      "xpValue": 25,
+      "source": "ai-generated",
+      "position": {
+        "x": -240,
+        "y": 241
+      }
+    },
+    "n_05": {
+      "id": "n_05",
+      "title": "Infiltration & Extravasation",
+      "depth": 1,
+      "category": "assessment",
+      "content": "## Infiltration and Extravasation\n\n**Infiltration** is the migration of a non-vesicant IV solution into surrounding tissues. **Extravasation** is the same event, but with a vesicant drug or solution that can cause tissue necrosis.\n\n**Key Distinction**: ALL extravasations are infiltrations, but not all infiltrations are extravasations. The distinction matters because management is vastly different.\n\n**Vesicants** (cause tissue damage if extravasated):\n- Vasopressors: dopamine, norepinephrine, epinephrine\n- Chemotherapy agents: doxorubicin, vincristine, vinblastine\n- Calcium preparations: calcium chloride, calcium gluconate\n- Hypertonic solutions: >900 mOsm/L (parenteral nutrition, mannitol 20%+)\n- Potassium chloride in high concentrations\n\n**Assessment Findings:**\n- Coolness of skin around site\n- Edema (swelling) \u2014 compare to opposite limb\n- Blanching or pallor at the site\n- Change in quality of IV flow (slowing, resistance)\n- Patient reports pain, burning, or tightness\n- Absent blood return (though false negatives are possible with small-gauge catheters)\n\n**Grading (Infiltration Scale):**\n| Grade | Description |\n|-------|-------------|\n| 1 | Cool, edema <1 inch in any direction |\n| 2 | Cool, edema 1-6 inches |\n| 3 | Cool, edema >6 inches, pale, mild-moderate pain |\n| 4 | Cool, edema >6 inches, pale, pitting, circulatory impairment, skin breakdown |\n\n**Nursing Management:**\n1. **STOP the infusion immediately** \u2014 do not flush\n2. Disconnect IV tubing, but leave the catheter in place (for antidote administration for extravasation)\n3. Elevate the affected extremity\n4. Apply warm or cold compresses per facility policy (warm for non-vesicants to promote absorption; cold for vesicants to reduce cellular metabolism and hopefully limit injury)\n5. **For suspected extravasation**: notify provider emergently. Administer antidote (phentolamine for vasopressors, hyaluronidase for calcium/chemotherapy) as ordered\n6. Document: time, grade, description, notification, and interventions\n7. Monitor the site q15min \u00d7 1 hour, then hourly for progression",
+      "prerequisites": [
+        "n_04"
+      ],
+      "related": [
+        "n_04",
+        "n_06"
+      ],
+      "quiz": [
+        {
+          "id": "n_05_q1",
+          "question": "What is the FIRST nursing action when infiltration is suspected?",
+          "options": [
+            "Apply a warm compress",
+            "Stop the infusion",
+            "Elevate the extremity",
+            "Notify the provider"
+          ],
+          "correctOption": "Stop the infusion",
+          "explanation": "Stopping the infusion immediately is the priority to prevent further fluid from entering the tissue space. All other actions follow after stopping the infusion."
+        },
+        {
+          "id": "n_05_q2",
+          "question": "Why should the catheter NOT be removed immediately in suspected vesicant extravasation?",
+          "options": [
+            "Risk of bleeding",
+            "It allows antidote administration through the same catheter",
+            "It confirms the diagnosis",
+            "It helps with fluid drainage"
+          ],
+          "correctOption": "It allows antidote administration through the same catheter",
+          "explanation": "In extravasation of a vesicant, the catheter is left in place to allow aspiration of residual drug and administration of an antidote (e.g., phentolamine for vasopressors)."
+        }
+      ],
+      "xpValue": 30,
+      "source": "ai-generated",
+      "position": {
+        "x": -241,
+        "y": -240
+      }
+    },
+    "n_06": {
+      "id": "n_06",
+      "title": "Fluid Volume Assessment",
+      "depth": 0,
+      "category": "assessment",
+      "content": "## Fluid Volume Status Assessment\n\nAccurate fluid volume assessment is one of the most critical nursing skills. It guides fluid resuscitation, diuresis decisions, and allows early detection of complications.\n\n**Signs of Fluid Volume Deficit (Hypovolemia):**\n- **Cardiovascular**: Tachycardia, orthostatic hypotension, weak/thready pulses, flat neck veins (JVD)\n- **Skin/Mucous Membranes**: Dry mucous membranes, poor skin turgor (tenting), dry axillae, sunken eyes\n- **Renal**: Oliguria (<0.5 mL/kg/hr), dark/amber urine, increased specific gravity (>1.030)\n- **Neurologic**: Confusion, lethargy (especially in elderly), thirst\n- **Labs**: Elevated BUN/Cr ratio >20:1, elevated hematocrit (hemoconcentration), elevated serum osmolality\n\n**Signs of Fluid Volume Excess (Hypervolemia):**\n- **Cardiovascular**: Hypertension, bounding pulses, distended neck veins (JVD), S3 gallop\n- **Respiratory**: Crackles/rales (particularly in dependent lung bases), dyspnea, orthopnea, pink frothy sputum (pulmonary edema)\n- **Extremities**: Dependent edema (pitting), ascites, weight gain\n- **Labs**: Decreased BUN (dilutional), decreased hematocrit, decreased serum osmolality, elevated BNP (indicating cardiac stretch)\n\n**The I&O (Intake and Output) Assessment:**\n- Track ALL sources of intake: oral, IV fluids, tube feeds, medication fluids, flush fluids\n- Track ALL output: urine, emesis, diarrhea, wound/tube drainage, blood loss, insensible losses (~500 mL/day through skin and lungs)\n- **Normal urine output**: 0.5-1 mL/kg/hr (adult)\n- **Oliguria**: <400 mL/24hr or <0.5 mL/kg/hr\n- **Anuria**: <50 mL/24hr\n\n**Daily weights**: The single most ACCURATE indicator of fluid volume status. 1 kg weight change = approximately 1 L fluid change. Weigh at the same time daily, same scale, same clothing.",
+      "prerequisites": [],
+      "related": [
+        "n_02",
+        "n_07"
+      ],
+      "quiz": [
+        {
+          "id": "n_06_q1",
+          "question": "What is the most ACCURATE indicator of fluid volume status?",
+          "options": [
+            "Urine output",
+            "Daily weight",
+            "Blood pressure",
+            "Skin turgor"
+          ],
+          "correctOption": "Daily weight",
+          "explanation": "Daily weight is the gold standard for fluid volume assessment. 1 kg change \u2248 1 L fluid change. It's objective, reproducible, and not influenced by compensatory mechanisms that can mask other vital sign changes."
+        },
+        {
+          "id": "n_06_q2",
+          "question": "A patient has a BUN/Cr ratio of 25:1 with dry mucous membranes and orthostatic hypotension. What condition is suggested?",
+          "options": [
+            "Fluid volume excess",
+            "Fluid volume deficit / dehydration",
+            "Renal failure",
+            "SIADH"
+          ],
+          "correctOption": "Fluid volume deficit / dehydration",
+          "explanation": "Elevated BUN/Cr ratio (>20:1) with clinical signs of dry mucous membranes and orthostatic hypotension points to hypovolemia. The elevated BUN occurs because the kidneys reabsorb urea in response to low volume states."
+        }
+      ],
+      "xpValue": 28,
+      "source": "ai-generated",
+      "position": {
+        "x": -156,
+        "y": -90
+      }
+    },
+    "n_07": {
+      "id": "n_07",
+      "title": "IV Medication Administration",
+      "depth": 1,
+      "category": "pharmacology",
+      "content": "## IV Medication Administration\n\nIV medication administration requires vigilance \u2014 the nurse is the last line of defense between a medication error and the patient.\n\n**The 7 Rights of IV Medication Administration:**\n1. Right patient (2 identifiers)\n2. Right drug (verify against MAR, check 3 times)\n3. Right dose (calculate mg/kg when weight-based)\n4. Right route (verify IV compatibility)\n5. Right time (within 30 min of scheduled time for most scheduled drugs)\n6. Right documentation\n7. Right to refuse (respect patient autonomy)\n\n**Push vs. Piggyback vs. Continuous Infusion:**\n- **IV Push (Bolus)**: Drug injected directly into the IV line over specified time (usually 1-5 min). Used for rapid onset medications (furosemide, ondansetron, naloxone). Verify push rate \u2014 some drugs (adenosine, diltiazem) require extremely rapid push, while others (phenytoin) require very slow push to prevent cardiac effects.\n- **IV Piggyback (IVPB)**: Drug diluted in small volume (50-250 mL) and infused over 30-120 minutes. Common for antibiotics, electrolyte replacements. The secondary bag must hang HIGHER than the primary bag for gravity flow.\n- **Continuous Infusion**: Drug infused at a constant rate via pump. Used for vasopressors, sedation, heparin, insulin.\n\n**High-Alert Medications** (ISMP list \u2014 double-check with another RN):\n- Insulin IV, heparin, warfarin, opioids, concentrated electrolytes (KCl, MgSO4, hypertonic NaCl)\n- Epidural/intrathecal medications, neuromuscular blockers\n\n**Compatibility:**\n- Check IV compatibility before co-administering or Y-site connecting drugs\n- Incompatibilities can cause precipitation, inactivation, or toxicity\n- Use a compatibility reference (Trissel's, Micromedex) or pharmacy\n- When in doubt: administer through separate IV lines or flush thoroughly between drugs\n\n**Flushing:**\n- Flush with 5-10 mL NS before and after each medication\n- Always use 10 mL syringe minimum with central lines \u2014 smaller syringes generate higher pressure that can rupture the catheter\n- Assess for patency: flush should meet no resistance, and blood return should be present\n- Never force against resistance \u2014 this is the hallmark of infiltration or thrombosis",
+      "prerequisites": [
+        "n_01",
+        "n_02"
+      ],
+      "related": [
+        "n_01",
+        "n_03",
+        "n_08"
+      ],
+      "quiz": [
+        {
+          "id": "n_07_q1",
+          "question": "Why should you use a minimum 10 mL syringe when flushing a central line?",
+          "options": [
+            "Larger syringes create higher pressure for better flushing",
+            "Smaller syringes generate higher pressure that can rupture the catheter",
+            "10 mL ensures adequate flush volume",
+            "It's just institutional preference"
+          ],
+          "correctOption": "Smaller syringes generate higher pressure that can rupture the catheter",
+          "explanation": "Per Pascal's principle, a smaller syringe barrel generates significantly higher pressure for the same applied force compared to a larger syringe. A 3 mL syringe can generate >100 psi \u2014 enough to rupture a central line catheter."
+        },
+        {
+          "id": "n_07_q2",
+          "question": "For IV piggyback administration, where should the secondary bag be positioned relative to the primary bag?",
+          "options": [
+            "Same level",
+            "Lower than primary",
+            "Higher than primary",
+            "Position doesn't matter"
+          ],
+          "correctOption": "Higher than primary",
+          "explanation": "The IV piggyback (secondary) bag must hang higher than the primary bag for the gravity-based flow. The higher column of fluid creates enough hydrostatic pressure to overcome the primary bag's pressure."
+        }
+      ],
+      "xpValue": 30,
+      "source": "ai-generated",
+      "position": {
+        "x": 240,
+        "y": -241
+      }
+    },
+    "n_08": {
+      "id": "n_08",
+      "title": "IV Therapy Documentation",
+      "depth": 2,
+      "category": "nursing-intervention",
+      "content": "## IV Therapy Documentation Requirements\n\n**IV Documentation** serves as both a legal record and a communication tool for the healthcare team. Incomplete or inaccurate documentation can lead to medication errors, legal liability, and poor patient outcomes.\n\n**PIV Insertion Documentation:**\n- Date and time of insertion\n- Catheter gauge and type\n- Insertion site: specific vein and location (e.g., \"20G in L forearm cephalic vein\")\n- Number of attempts (document each attempt separately)\n- Patient tolerance and pain assessment\n- Dressing type applied\n- Any complications during insertion\n- Nurse's name, credentials, and signature\n\n**Ongoing PIV Assessment Documentation:**\n- Site assessment: date, time, phlebitis grade (0-4), infiltration grade (0-4)\n- Dressing condition: clean/dry/intact vs. needing change\n- Fluid type, rate, and volume infused\n- Patient complaints: pain, burning, tightness\n- Tubing change date (every 96 hours for continuous infusions, every 24 hours for TPN/IL)\n\n**Blood Product Administration Documentation:**\n- Patient consent verified\n- Two-nurse verification of product, patient, and compatibility\n- Pre-transfusion vital signs (within 30 min)\n- Vital signs at: 15 min, 30 min, 1 hour, then q1hr until completion, then post-transfusion\n- Volume infused, start and stop times\n- Any transfusion reaction findings and interventions\n\n**Central Line Documentation:**\n- Dressing change: frequency (every 7 days for transparent, every 48 hours for gauze), appearance assessment\n- Needleless connector change (every 7 days or per facility policy)\n- Scrub-the-hub: document \"hub scrubbed \u00d7 15 seconds with chlorhexidine/alcohol\"\n- Daily necessity review: is the central line still indicated?\n\n**Narrative Note Example:**\n\"1630 - PIV site R forearm 20G assessed. Site clean, dry, intact. Transparent dressing applied 6/3. No signs of phlebitis (grade 0), infiltration, or infection. NS infusing at 125 mL/hr via infusion pump. 400 mL infused, 600 mL remaining. Patient denies pain or discomfort. --- J. Smith, RN\"",
+      "prerequisites": [
+        "n_01",
+        "n_04"
+      ],
+      "related": [
+        "n_06",
+        "n_03"
+      ],
+      "quiz": [
+        {
+          "id": "n_08_q1",
+          "question": "How often should IV tubing be changed for a continuous infusion?",
+          "options": [
+            "Every 24 hours",
+            "Every 48 hours",
+            "Every 72 hours",
+            "Every 96 hours"
+          ],
+          "correctOption": "Every 96 hours",
+          "explanation": "CDC and INS guidelines recommend changing continuous IV tubing no more frequently than every 96 hours (unless used for TPN/lipids \u2014 then every 24 hours). More frequent changes increase cost and infection risk without benefit."
+        },
+        {
+          "id": "n_08_q2",
+          "question": "What is the required frequency for blood product transfusion vital signs after the initial 1 hour?",
+          "options": [
+            "Every 15 minutes",
+            "Every 30 minutes",
+            "Every hour",
+            "Only at completion"
+          ],
+          "correctOption": "Every hour",
+          "explanation": "Blood transfusion vital sign protocol: pre-transfusion (within 30 min), at 15 min, 30 min, 1 hour, then q1hr until infusion complete, and post-transfusion. The most critical monitoring is in the first 15 minutes when most hemolytic reactions occur."
+        }
+      ],
+      "xpValue": 20,
+      "source": "ai-generated",
+      "position": {
+        "x": 0,
+        "y": 500
+      }
+    },
+    "n_09": {
+      "id": "n_09",
+      "title": "Complications of IV Therapy",
+      "depth": 2,
+      "category": "pathophysiology",
+      "content": "## Complications of IV Therapy\n\nEvery IV insertion carries risk. The nurse must be able to promptly recognize, respond to, and document complications.\n\n**Systemic Complications:**\n\n**1. Air Embolism:**\n- Pathophysiology: Air enters the venous system \u2192 travels to right ventricle \u2192 obstructs pulmonary outflow tract \u2192 cardiovascular collapse\n- Most dangerous with central lines (negative intrathoracic pressure during inspiration)\n- Signs: sudden dyspnea, chest pain, mill-wheel murmur, hypotension, cyanosis, LOC change\n- Management: Immediately clamp catheter (if central), place patient in LEFT lateral Trendelenburg position (traps air in right atrium), administer 100% O2, call rapid response\n\n**2. Catheter-Related Bloodstream Infection (CRBSI):**\n- Signs: Fever, chills, hypotension, erythema/purulence at insertion site\n- Pathogens: Coagulase-negative staphylococci (most common), S. aureus, gram-negative rods, Candida\n- Diagnosis: Blood cultures from catheter AND peripheral site; catheter tip culture\n- Management: Remove catheter, start empiric antibiotics, obtain cultures first\n\n**3. Fluid Overload / TACO (Transfusion-Associated Circulatory Overload):**\n- Pathophysiology: Rapid or excessive IV fluid/blood administration exceeding cardiac capacity\n- High-risk: elderly, heart failure, renal failure, pediatric/neonatal patients\n- Signs: Dyspnea, crackles, JVD, hypertension, hypoxemia, frothy sputum\n- Management: Stop/reduce infusion, elevate HOB, administer O2, notify provider (diuretic likely needed)\n\n**4. Catheter Embolism:**\n- Pathophysiology: A piece of catheter shears off during insertion or removal and embolizes\n- NEVER reinsert the stylet/needle through a catheter (shearing risk)\n- Signs: Catheter fragment visible; may have sudden dyspnea or chest pain if fragment reaches pulmonary circulation\n- Management: If fragment missing, apply tourniquet proximal to site, notify provider emergently for surgical retrieval\n\n**Prevention Bundle (every nurse should follow):**\n- Perform hand hygiene before any IV manipulation\n- Scrub the hub for 15 seconds with alcohol/chlorhexidine before each access\n- Change needleless connectors every 7 days\n- Remove catheters as soon as they are no longer needed\n- Use chlorhexidine for skin antisepsis (>0.5% concentration)",
+      "prerequisites": [
+        "n_04",
+        "n_05"
+      ],
+      "related": [
+        "n_05",
+        "n_07"
+      ],
+      "quiz": [
+        {
+          "id": "n_09_q1",
+          "question": "A patient with a central line develops sudden dyspnea and chest pain after the IV tubing was disconnected. What complication is most likely?",
+          "options": [
+            "Catheter-related infection",
+            "Fluid overload",
+            "Air embolism",
+            "Allergic reaction"
+          ],
+          "correctOption": "Air embolism",
+          "explanation": "Sudden onset of symptoms after tubing disconnection in a central line patient is classic for air embolism. Central catheters create a direct path to the right atrium, and negative thoracic pressure during inspiration can pull air into the circulation."
+        },
+        {
+          "id": "n_09_q2",
+          "question": "What is the proper positioning for a patient with suspected air embolism?",
+          "options": [
+            "Supine flat",
+            "Right lateral Trendelenburg",
+            "Left lateral Trendelenburg",
+            "High Fowler's"
+          ],
+          "correctOption": "Left lateral Trendelenburg",
+          "explanation": "Left lateral Trendelenburg position traps the air bubble in the right atrium (the non-dependent portion), preventing it from entering the pulmonary artery where it would cause an outflow tract obstruction."
+        }
+      ],
+      "xpValue": 35,
+      "source": "ai-generated",
+      "position": {
+        "x": -433,
+        "y": -250
+      }
+    },
+    "n_10": {
+      "id": "n_10",
+      "title": "Special Population IV Considerations",
+      "depth": 2,
+      "category": "nursing-intervention",
+      "content": "## Special Population IV Considerations\n\nDifferent patient populations present unique challenges for IV therapy. The nurse must adapt assessment, site selection, and monitoring accordingly.\n\n**Geriatric Patients:**\n- Veins are more fragile and \"roll\" due to decreased subcutaneous tissue and connective tissue support\n- Use a small gauge (22-24G) with a shallow insertion angle (<15\u00b0)\n- Stabilize the vein by applying traction below the intended site\n- AVOID veins that appear superficial but hard on palpation (sclerotic) \u2014 they are thrombosed and will not provide adequate flow\n- Tourniquet pressure should be minimal \u2014 elderly veins are easily ruptured\n- Monitor for fluid overload carefully (age-related decrease in cardiac reserve)\n- Skin is thinner and more prone to tape/dressing tears \u2014 use paper tape and gentle removal\n\n**Pediatric Patients:**\n- Vein selection: dorsal hand, foot (before walking age), scalp (infants), antecubital\n- Use a transilluminator or vein finder when available\n- Distraction techniques: parent involvement, sweet solution (sucrose 24%) for infants, play therapy\n- Restraint: secure the extremity to prevent dislodgment; use arm boards with soft restraints\n- Infusion pumps ONLY \u2014 no gravity infusions for children\n- Fluid maintenance: 4-2-1 rule (4 mL/kg/hr for first 10 kg, +2 mL/kg/hr for next 10 kg, +1 mL/kg/hr for each additional kg)\n- Signs of fluid overload in neonates: periorbital edema, increased BUN, hepatomegaly\n\n**Obese Patients:**\n- Veins are deep and often not visible; palpation is key\n- Use a longer catheter to ensure adequate dwell in the vein\n- Secure dressing well \u2014 moisture and skin folds can compromise adhesion\n- Weight-based dosing must use actual body weight or adjusted body weight, depending on drug characteristics\n\n**Patients on Anticoagulation:**\n- Apply firm, prolonged pressure after IV removal (5-10 minutes vs. standard 2-3)\n- Prefer upper extremity over lower (lower extremity has higher venous pressure)\n- Use the smallest gauge necessary\n- Monitor for expanding hematoma at the insertion site\n- Avoid multiple attempts \u2014 consider ultrasound-guided insertion",
+      "prerequisites": [
+        "n_01",
+        "n_06"
+      ],
+      "related": [
+        "n_06",
+        "n_08"
+      ],
+      "quiz": [
+        {
+          "id": "n_10_q1",
+          "question": "What is the recommended insertion angle for peripheral IVs in geriatric patients?",
+          "options": [
+            "45 degrees",
+            "30 degrees",
+            "15 degrees or less",
+            "90 degrees"
+          ],
+          "correctOption": "15 degrees or less",
+          "explanation": "Geriatric veins are more superficial due to loss of subcutaneous tissue. A shallow insertion angle (<15\u00b0) reduces the risk of going through the back wall of the vein."
+        },
+        {
+          "id": "n_10_q2",
+          "question": "Using the 4-2-1 rule, what is the maintenance IV fluid rate for a child weighing 32 kg?",
+          "options": [
+            "40 mL/hr",
+            "52 mL/hr",
+            "64 mL/hr",
+            "72 mL/hr"
+          ],
+          "correctOption": "72 mL/hr",
+          "explanation": "4-2-1 rule: First 10 kg \u00d7 4 = 40 mL/hr, Next 10 kg \u00d7 2 = 20 mL/hr, Remaining 12 kg \u00d7 1 = 12 mL/hr. Total: 40 + 20 + 12 = 72 mL/hr."
+        }
+      ],
+      "xpValue": 25,
+      "source": "ai-generated",
+      "position": {
+        "x": 433,
+        "y": -250
+      }
+    }
+  },
+  "rootNodeIds": [
+    "n_01",
+    "n_02",
+    "n_06"
+  ],
+  "createdAt": "2026-06-04T03:50:00.000Z",
+  "updatedAt": "2026-06-04T03:50:00.000Z"
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "foley-catheter",
+    "title": "Foley (Indwelling Urinary) Catheter Insertion",
+    "category": "Genitourinary",
+    "icon": "activity",
+    "summary": "Inserting a sterile indwelling urinary catheter to drain the bladder.",
+    "equipment": ["Sterile Foley catheter kit (includes catheter, drape, betadine, lubricant, syringe, collection bag)", "Sterile gloves", "Extra lighting if needed"],
+    "steps": [
+      "Verify provider order. Explain procedure to patient and provide privacy.",
+      "Position patient: female — dorsal recumbent (frog-leg); male — supine.",
+      "Perform hand hygiene. Open catheter kit using sterile technique.",
+      "Don sterile gloves. Organize sterile field — open all supplies onto field.",
+      "Place sterile drape under the patient's buttocks and fenestrated drape over the perineum.",
+      "Female: Separate labia with non-dominant hand (this hand is now contaminated). Use dominant hand to cleanse urethral meatus with betadine swabs — front to back, center, then each side.",
+      "Male: Hold penis with non-dominant hand perpendicular to body. Retract foreskin if present. Cleanse meatus in circular motion from center outward.",
+      "Lubricate catheter tip. Insert catheter gently into urethra — female: 2–3 inches; male: 6–9 inches — until urine flows.",
+      "Advance 1–2 more inches after urine appears. Inflate balloon with sterile water per catheter size (typically 10mL).",
+      "Gently pull back until resistance is felt — confirms balloon is in bladder.",
+      "Secure catheter to inner thigh. Connect drainage bag and position below bladder level.",
+      "Document insertion, initial urine output, color, clarity, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Use CAUTIs bundle: insert only when medically necessary, use aseptic technique, reassess need daily.",
+      "Never force the catheter — if resistance is met, stop and notify provider.",
+      "Replace foreskin to original position after insertion (prevent paraphimosis).",
+      "Assess for CAUTI symptoms: fever, cloudy/foul urine, suprapubic pain.",
+      "Remove catheter as soon as no longer clinically indicated to reduce infection risk."
+    ]
+  },
+  {
+    "id": "straight-catheterization",
+    "title": "Straight (In-and-Out) Catheterization",
+    "category": "Genitourinary",
+    "icon": "activity",
+    "summary": "Temporarily inserting a urinary catheter to drain the bladder once, then removing it immediately.",
+    "equipment": ["Straight catheter kit (catheter 14–16Fr, drape, cleanser, lubricant)", "Sterile gloves", "Collection basin or graduated cylinder", "Specimen container (if culture ordered)"],
+    "steps": [
+      "Verify provider order and indication (urinary retention, post-void residual check, urine specimen).",
+      "Explain procedure to patient. Ensure privacy.",
+      "Position patient same as for Foley insertion (female dorsal recumbent, male supine).",
+      "Perform hand hygiene. Open catheter kit using sterile technique on a clean surface.",
+      "Don sterile gloves. Set up sterile field.",
+      "Cleanse the urethral meatus using the same technique as Foley insertion.",
+      "Lubricate catheter. Gently insert straight catheter into urethra until urine flows.",
+      "If obtaining a specimen: collect urine mid-stream into specimen container using sterile technique.",
+      "Allow bladder to fully drain into basin. Note total volume.",
+      "If PVR (post-void residual): drain completely and record volume.",
+      "Once drainage is complete, pinch the catheter and withdraw smoothly.",
+      "Cleanse perineal area. Make patient comfortable.",
+      "Document volume drained, urine characteristics, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Post-void residual (PVR) >150–200 mL is generally considered significant — report to provider.",
+      "Do not drain more than 500–1000 mL at one time (facility-dependent) to prevent rapid decompression vasovagal response.",
+      "Straight catheterization has a lower infection risk than indwelling catheter — preferred when temporary drainage is sufficient.",
+      "If patient has a history of urethral stricture or prostate enlargement, notify provider before attempting.",
+      "Maintain strict sterile technique — even single-use catheters can introduce bacteria if contaminated."
+    ]
+  },
+  {
+    "id": "bladder-scan",
+    "title": "Bladder Ultrasound Scan (PVR Assessment)",
+    "category": "Genitourinary",
+    "icon": "activity",
+    "summary": "Non-invasive ultrasound measurement of bladder volume to assess post-void residual or urinary retention.",
+    "equipment": ["Portable bladder scanner (e.g., BladderScan BVI 3000)", "Ultrasound gel", "Gloves", "Gauze or paper towel"],
+    "steps": [
+      "Verify order or protocol (e.g., assess PVR, suspect urinary retention).",
+      "Explain procedure to patient — painless and non-invasive.",
+      "Ask patient to void before scan (if measuring PVR). Scan within 10–15 minutes of voiding.",
+      "Position patient supine. Expose lower abdomen just above the pubic bone.",
+      "Perform hand hygiene and don gloves.",
+      "Turn on bladder scanner. Select patient gender (affects scan algorithm).",
+      "Apply ultrasound gel to the scan head.",
+      "Place the scanner head approximately 1 inch above the pubic symphysis, aiming toward the bladder (angled slightly toward the coccyx).",
+      "Press the scan button. Hold the probe steady until the device beeps and displays volume.",
+      "If volume is ≥300 mL or as ordered, repeat scan for confirmation.",
+      "Wipe gel off patient's abdomen with gauze.",
+      "Document scan volume, number of scans, timing relative to voiding, and clinical action taken."
+    ],
+    "nursing_considerations": [
+      "Bladder scanner may overestimate volume in obese patients or those with ascites — use clinical judgment.",
+      "Scanning over a uterus (pregnant or fibroid) may falsely elevate results — note in documentation.",
+      "A single scan may vary ±15% — perform 2–3 scans and average, or use highest consistent reading.",
+      "PVR >200 mL typically warrants straight catheterization and provider notification.",
+      "Do not delay catheterization in a patient with obvious urinary retention symptoms (distended bladder, severe discomfort, no urine output) just to scan first."
+    ]
+  },
+  {
+    "id": "ostomy-care-urinary",
+    "title": "Urinary Ostomy (Urostomy) Pouch Change",
+    "category": "Genitourinary",
+    "icon": "activity",
+    "summary": "Emptying and replacing a urinary ostomy (ileal conduit) pouching system.",
+    "equipment": ["One-piece or two-piece urostomy pouch system", "Skin barrier paste or powder (if needed)", "Skin prep wipes", "Warm water and gentle soap or no-rinse cleanser", "Gauze or soft cloth", "Scissors", "Measurement guide", "Gloves"],
+    "steps": [
+      "Gather all supplies. Perform hand hygiene and don gloves.",
+      "Empty the pouch by opening the tap/valve and draining into the toilet before removing.",
+      "Gently remove the old pouch: push skin down and away while lifting the pouch up — do not rip.",
+      "Note stoma color, size, and condition. Observe peristomal skin for redness, erosion, or yeast.",
+      "Cleanse the stoma and surrounding skin with warm water. Pat dry completely — moisture prevents seal.",
+      "Measure the stoma with a guide. Cut the skin barrier opening to the correct size (2–3 mm larger than stoma).",
+      "Apply skin barrier paste or powder to peristomal skin if irritation is present.",
+      "Apply skin prep wipe and allow to dry to create a tacky base.",
+      "Remove backing from the skin barrier. Center over stoma and press firmly for 30 seconds.",
+      "For a two-piece system, attach the pouch to the flange, pressing around the entire ring to seal.",
+      "Ensure drainage tap/valve is closed. Smooth out any wrinkles in the pouch.",
+      "Document stoma appearance, pouch change, output color and amount, and peristomal skin condition."
+    ],
+    "nursing_considerations": [
+      "A healthy stoma should be beefy red/pink and moist — pale, dark, or black stoma requires immediate provider notification.",
+      "Change pouch every 3–5 days or sooner if leaking — prolonged contact of urine with skin causes severe irritation.",
+      "Mucus shreds in urostomy drainage are normal (ileal mucosa still produces mucus).",
+      "Avoid oil-based lotions near the stoma — they prevent the pouch from adhering.",
+      "Teach patient/family self-care before discharge — ostomy management is primarily a self-care skill."
+    ]
+  }
+]

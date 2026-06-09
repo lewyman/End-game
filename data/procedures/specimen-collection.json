@@ -1,0 +1,118 @@
+[
+  {
+    "id": "blood-draw",
+    "title": "Venipuncture / Blood Draw",
+    "category": "Specimen Collection",
+    "icon": "syringe",
+    "summary": "Collecting a venous blood sample for laboratory analysis.",
+    "equipment": ["Vacutainer holder/needle (21–23g)", "Appropriate collection tubes (per orders)", "Tourniquet", "Alcohol swabs", "Gauze", "Bandage", "Gloves", "Biohazard specimen bag", "Labels"],
+    "steps": [
+      "Review lab orders. Verify patient ID using two identifiers. Explain procedure.",
+      "Select site — antecubital fossa preferred. Avoid hematoma sites, edematous areas, mastectomy side.",
+      "Apply tourniquet 3–4 inches above site. Palpate and identify vein.",
+      "Perform hand hygiene and don gloves.",
+      "Clean site with alcohol swab using circular motion. Allow to dry fully (30 seconds).",
+      "Anchor vein with non-dominant thumb pulling skin taut below the site.",
+      "Insert needle bevel up at 15–30° angle into the vein.",
+      "Advance needle slightly after flashback. Attach first collection tube — blood will flow automatically.",
+      "Keep needle stable while changing tubes using correct draw order (see below).",
+      "Release tourniquet before removing needle (or as last tube fills).",
+      "Remove needle swiftly, apply gauze with firm pressure for 2–3 minutes.",
+      "Invert tubes gently per manufacturer instructions. Label at bedside.",
+      "Apply bandage. Document."
+    ],
+    "nursing_considerations": [
+      "Draw order: Blood cultures → Light blue (citrate) → Red/Gold → Green → Purple/Lavender → Grey.",
+      "Mix tubes by gentle inversion immediately after collection.",
+      "If using a line draw, discard first 5–10mL per facility policy.",
+      "Do not draw from an arm with an active IV infusion in the same site if possible.",
+      "Apply pressure longer (5 min) for patients on anticoagulants."
+    ]
+  },
+  {
+    "id": "clean-catch-urine",
+    "title": "Clean-Catch Midstream Urine Specimen",
+    "category": "Specimen Collection",
+    "icon": "activity",
+    "summary": "Collecting a midstream urine specimen with minimal contamination for urinalysis or culture.",
+    "equipment": ["Sterile specimen container with lid", "Individually packaged antiseptic towelettes (3)", "Gloves", "Biohazard transport bag", "Specimen label"],
+    "steps": [
+      "Verify order. Explain procedure to patient. Ideally collect first morning void for best results.",
+      "Label the specimen container at bedside before collection.",
+      "Instruct or assist patient:",
+      "  Female: Spread labia with one hand. With the other hand, use 3 towelettes to cleanse: center, then left side, then right side — always front to back. Do not let labia fall back.",
+      "  Male: Retract foreskin (if present). Cleanse meatus with all 3 towelettes in a circular motion from center outward.",
+      "Instruct patient to start urinating into the toilet. After the initial stream (first 2–4 seconds), move the specimen container into the stream mid-void.",
+      "Collect 30–60 mL (or fill container approximately half full). Move container away before end of stream.",
+      "Cap specimen container immediately without contaminating the inside.",
+      "Perform hand hygiene.",
+      "Label specimen with patient name, MRN, date, time, and initials.",
+      "Place in biohazard bag and transport to lab within 30 minutes, or refrigerate at 4°C if delay is expected.",
+      "Document collection time and method."
+    ],
+    "nursing_considerations": [
+      "If patient is unable to collect a clean catch, a straight catheter specimen is preferred for culture accuracy.",
+      "Contaminated specimens show mixed flora on culture — they often need to be repeated.",
+      "Transport specimen to lab within 30 minutes. Refrigerate if unavoidable delay — room temp ≥2 hours invalidates culture.",
+      "Do not collect specimen from a diaper, absorbent pad, or bedpan — highly contaminated.",
+      "Document any factors that may affect results: recent antibiotic use, menstruation, Foley removal."
+    ]
+  },
+  {
+    "id": "wound-culture",
+    "title": "Wound Culture Collection",
+    "category": "Specimen Collection",
+    "icon": "activity",
+    "summary": "Collecting a wound swab or tissue specimen for microbiological analysis of suspected infection.",
+    "equipment": ["Culture swab (Levine technique swab or Culturette)", "Sterile gloves", "Clean gloves", "Normal saline for irrigation", "Sterile gauze", "Biohazard bag", "Lab requisition"],
+    "steps": [
+      "Verify provider order. Collect culture before initiating or changing antibiotics if possible.",
+      "Perform hand hygiene. Don clean gloves.",
+      "Remove old dressing and assess the wound.",
+      "Irrigate the wound with sterile NS to clean surface exudate — do NOT culture wound surfaces without cleaning first (surface bacteria ≠ causative organisms).",
+      "Remove clean gloves. Perform hand hygiene. Don sterile gloves.",
+      "Levine technique (preferred): Press the swab firmly into the wound. Rotate the swab 360° using Z-stroke technique over a 1 cm² area of viable tissue. Apply enough pressure to express tissue fluid.",
+      "Do NOT swab pus, necrotic tissue, or eschar — these yield contaminated results.",
+      "For deep wound/tissue culture (if ordered): use a sterile needle and syringe to aspirate fluid from within the wound depth.",
+      "Immediately insert swab into culture transport medium and activate the tube's medium.",
+      "Label at bedside: patient name, MRN, wound location, date/time, collection method.",
+      "Place in biohazard bag. Transport to lab promptly (within 2 hours for aerobic cultures).",
+      "Apply new dressing to wound. Document collection."
+    ],
+    "nursing_considerations": [
+      "Always clean the wound before swabbing — swabbing unclean exudate grows surface contaminants, not the infecting organisms.",
+      "Levine technique (pressure/rotation) is more reliable than simple swipe — it collects subsurface bacteria.",
+      "Anaerobic cultures require specific transport medium — confirm with the lab order.",
+      "Notify provider if wound shows systemic signs of infection (fever, elevated WBC) — culture alone does not diagnose infection.",
+      "Multiple wound cultures from the same wound site at the same time are usually redundant — one Levine technique swab is typically sufficient."
+    ]
+  },
+  {
+    "id": "sputum-specimen",
+    "title": "Sputum Specimen Collection",
+    "category": "Specimen Collection",
+    "icon": "activity",
+    "summary": "Collecting an expectorated sputum sample for culture, sensitivity, or cytology.",
+    "equipment": ["Sterile sputum collection container", "Gloves", "Mask (for nurse if patient has suspected respiratory infection)", "Mouth rinse water (plain water — not mouthwash)", "Biohazard bag", "Specimen label"],
+    "steps": [
+      "Verify order: culture and sensitivity, AFB smear, cytology, or other testing.",
+      "Best timing: first thing in the morning before eating — secretions pool overnight and are most concentrated.",
+      "Explain the difference between sputum (from deep in the lungs) and saliva (from the mouth) — patient must cough deeply.",
+      "Have patient rinse mouth with plain water to reduce oral flora contamination. Do NOT use mouthwash or toothpaste.",
+      "Don gloves and mask. Have patient sit upright.",
+      "Instruct patient to take several slow deep breaths, then forcefully cough and expectorate sputum directly into the specimen container.",
+      "Goal: ≥1 mL of purulent or mucopurulent sputum. Thin saliva is an inadequate specimen.",
+      "If patient cannot produce sputum spontaneously, consider: nebulized hypertonic saline to induce sputum, or chest physiotherapy.",
+      "Cap container immediately. Label at bedside.",
+      "Place in biohazard bag. Transport to lab promptly — within 1–2 hours for routine culture; AFB specimens may be refrigerated.",
+      "Document time of collection, specimen appearance, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Wear a mask when collecting sputum from patients with suspected TB, COVID, or other airborne organisms.",
+      "An inadequate specimen (all saliva, <1 mL) should be recollected — lab may reject it.",
+      "For suspected TB: collect 3 consecutive early-morning specimens on 3 separate days for AFB smear and culture.",
+      "Induced sputum (hypertonic saline nebulization) yields better specimens for difficult-to-collect patients.",
+      "In intubated patients, a suctioned tracheal aspirate is preferred over expectorated sputum."
+    ]
+  }
+]

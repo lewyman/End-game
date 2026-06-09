@@ -1,0 +1,177 @@
+[
+  {
+    "id": "port-access",
+    "title": "Implanted Port (Port-a-Cath) Access",
+    "category": "Oncology Nursing",
+    "icon": "activity",
+    "summary": "Accessing and maintaining a subcutaneous implanted venous access port for chemotherapy or long-term IV therapy.",
+    "equipment": [
+      "Non-coring (Huber) needle (19\u201322g, appropriate length)",
+      "10mL syringes \u00d72",
+      "NS flush (10mL)",
+      "Heparin lock flush per policy",
+      "Chlorhexidine swab sticks",
+      "Transparent dressing",
+      "Sterile gloves",
+      "Sterile drape"
+    ],
+    "steps": [
+      "Palpate the port septum through the skin \u2014 identify the center and edges of the port body.",
+      "Perform hand hygiene. Open sterile field. Don sterile gloves.",
+      "Clean the skin over the port with chlorhexidine \u2014 scrub for 30 seconds, allow to dry 30 seconds.",
+      "Stabilize the port with non-dominant hand, holding it between thumb and first two fingers.",
+      "Insert the Huber needle perpendicular to the port septum, pushing firmly until you feel the needle hit the back of the port reservoir.",
+      "NEVER use a standard bevel needle \u2014 it will core the silicone septum and destroy the port.",
+      "Aspirate for blood return to confirm placement. If no return: flush with 10mL NS, reposition patient (arm overhead, deep breath), try aspirating again.",
+      "Flush with 10mL NS using turbulent (push-pause) technique.",
+      "Apply transparent dressing. Secure Huber needle tubing to skin.",
+      "Deaccess: flush with 10mL NS then heparin lock (100 units/mL per policy). Withdraw needle while maintaining positive pressure."
+    ],
+    "safetyTips": [
+      "Only Huber needles may access an implanted port \u2014 regular needles core the septum and cause permanent damage.",
+      "No blood return despite correct needle position: flush and reposition \u2014 a fibrin sheath may be present. Notify provider if unresolved.",
+      "Accidental dislodgement of a port needle during infusion = extravasation of chemotherapy. Stop infusion immediately."
+    ],
+    "documentation": [
+      "Needle gauge and length",
+      "Blood return (yes/no)",
+      "Flush volume",
+      "Dressing applied and type",
+      "Port site assessment"
+    ],
+    "keyTakeaways": [
+      "Only Huber (non-coring) needles",
+      "Blood return confirms placement",
+      "Stop infusion immediately for extravasation"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "chemo-safe-handling",
+    "title": "Chemotherapy Safe Handling & Administration",
+    "category": "Oncology Nursing",
+    "icon": "activity",
+    "summary": "Safely preparing, administering, and disposing of hazardous chemotherapy agents (NIOSH hazardous drugs).",
+    "equipment": [
+      "Chemotherapy-designated PPE: double gloves (chemo-rated), gown (water-resistant, long sleeves, closed front), face shield",
+      "Closed system transfer device (CSTD) if applicable",
+      "Chemo-labeled IV tubing",
+      "Chemo waste container (yellow/labeled)"
+    ],
+    "steps": [
+      "Verify chemotherapy orders per protocol: name, dose in mg/m\u00b2 or mg/kg, route, cycle/day, required premedications.",
+      "Confirm BSA (body surface area) or weight calculation matches the dose ordered.",
+      "Two-nurse verification required: drug, dose, route, rate, patient ID.",
+      "Don PPE: double gloves (check for pinholes), gown, face shield. Don gown first, then outer gloves over gown cuffs.",
+      "Inspect the prepared bag for clarity, color, precipitation, label accuracy.",
+      "Administer premedications (antiemetics, corticosteroids, hydration) as ordered.",
+      "Verify IV access patency \u2014 blood return required for vesicant agents.",
+      "Infuse per order. Monitor IV site every 15\u201330 minutes for vesicants (extravasation risk).",
+      "Post-infusion: flush line per protocol. Doff PPE in correct order.",
+      "Dispose of all supplies in chemotherapy waste container. Do NOT place in regular trash.",
+      "Chemotherapy spill kit must be at bedside. If spill occurs: don PPE, contain spill with kit, clean per policy, complete incident report."
+    ],
+    "safetyTips": [
+      "Chemotherapy is a hazardous drug \u2014 absorb through skin/mucous membranes. PPE is not optional.",
+      "Vesicant extravasation is an oncologic emergency \u2014 stop infusion, aspirate residual, notify provider, apply cold or warm compress per vesicant type.",
+      "Pregnant nurses should NOT administer chemotherapy \u2014 teratogenic risk."
+    ],
+    "documentation": [
+      "Two-nurse verification completed",
+      "Premedications given with times",
+      "Start/stop times",
+      "IV site assessments",
+      "Any adverse reactions"
+    ],
+    "keyTakeaways": [
+      "Double-nurse check required",
+      "PPE is mandatory \u2014 hazardous drug",
+      "Vesicant extravasation = stop immediately"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "transfusion-reaction",
+    "title": "Blood Transfusion Reaction Recognition & Response",
+    "category": "Oncology Nursing",
+    "icon": "activity",
+    "summary": "Recognizing acute transfusion reactions and initiating the correct response.",
+    "equipment": [
+      "Normal saline",
+      "Blood bank notification",
+      "Provider contact"
+    ],
+    "steps": [
+      "Monitor patient at bedside for the FIRST 15 MINUTES of each unit \u2014 most acute reactions occur here.",
+      "FEBRILE NON-HEMOLYTIC REACTION (most common): fever >1\u00b0C rise, chills, no hemolysis. Stop transfusion, notify provider, give antipyretics, may resume with pre-medication.",
+      "ALLERGIC REACTION (urticaria): hives, pruritis. Stop transfusion, give diphenhydramine, notify provider. May resume if mild urticaria resolves.",
+      "ANAPHYLAXIS: bronchospasm, hypotension, angioedema. STOP transfusion, 911/RRT, epinephrine 0.3mg IM, O2, IV fluids. Do NOT restart.",
+      "ACUTE HEMOLYTIC REACTION (most dangerous): fever, chills, flank/back pain, dark urine (hemoglobinuria), hypotension. STOP immediately \u2014 ABO incompatibility.",
+      "TRANSFUSION-RELATED ACUTE LUNG INJURY (TRALI): acute onset respiratory failure within 6h. Stop, O2, supportive care, notify provider.",
+      "FOR ALL REACTIONS: Stop transfusion. Maintain IV with NS using NEW tubing. Obtain vital signs. Notify provider. Send blood bag and new blood sample to blood bank.",
+      "Complete incident report. Document all interventions and patient response."
+    ],
+    "safetyTips": [
+      "Sending the blood bag back to the blood bank is critical \u2014 they must verify the unit against the patient's sample.",
+      "Back and flank pain during transfusion = hemolytic reaction until proven otherwise \u2014 stop immediately.",
+      "TACO (Transfusion-Associated Circulatory Overload): dyspnea, hypertension, bilateral crackles. More common in elderly/heart failure. Slow rate or stop; diuresis."
+    ],
+    "documentation": [
+      "Reaction onset time",
+      "Signs and symptoms",
+      "Vital signs",
+      "Interventions and times",
+      "Blood bank notification time"
+    ],
+    "keyTakeaways": [
+      "Stop transfusion for ANY suspected reaction",
+      "Flank pain = hemolytic reaction",
+      "Keep IV open with NS via NEW tubing"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "extravasation-management",
+    "title": "IV Extravasation & Infiltration Management",
+    "category": "Oncology Nursing",
+    "icon": "activity",
+    "summary": "Recognizing and managing IV extravasation (vesicant) and infiltration (non-vesicant) to minimize tissue damage.",
+    "equipment": [
+      "Gloves",
+      "Antidote per drug protocol (hyaluronidase, sodium thiosulfate, phentolamine, DMSO)",
+      "Warm or cold compress per protocol",
+      "Measuring tape"
+    ],
+    "steps": [
+      "IDENTIFY: Infiltration (non-vesicant) = swelling, cool skin, slowed infusion rate, pain. Extravasation (vesicant) = same + burning, blanching, blistering possible.",
+      "STOP the infusion immediately. Do NOT remove the IV catheter yet.",
+      "Attempt to aspirate residual drug through the catheter (do not irrigate \u2014 dilution may spread the drug).",
+      "Remove catheter after aspiration attempt.",
+      "Mark the area of swelling/redness with a marker. Photograph and measure the affected area.",
+      "Notify provider and follow drug-specific protocol for antidote and compress type:",
+      "  Vesicants with cold compress: anthracyclines (doxorubicin, daunorubicin), mechlorethamine.",
+      "  Vesicants with warm compress: vinca alkaloids (vincristine, vinblastine), taxanes.",
+      "  Antidotes: hyaluronidase (vinca alkaloids), sodium thiosulfate (mechlorethamine), DMSO (anthracyclines), phentolamine (vasopressors).",
+      "Elevate extremity. Monitor every 15\u201330 minutes. Refer to plastic surgery/wound care if blistering or necrosis.",
+      "Complete incident report. Document size, photo, interventions."
+    ],
+    "safetyTips": [
+      "Do NOT apply warm compress to anthracycline extravasation \u2014 heat increases local drug toxicity.",
+      "Vesicant extravasation can cause full-thickness necrosis requiring surgical debridement \u2014 treat aggressively.",
+      "Prevention: use central access for vesicants; verify blood return before and during infusion."
+    ],
+    "documentation": [
+      "Time of discovery",
+      "Drug extravasated",
+      "Area measurement and photo",
+      "Antidote given",
+      "Plastic surgery consult if warranted"
+    ],
+    "keyTakeaways": [
+      "Stop immediately; aspirate before removing IV",
+      "Cold = anthracyclines; warm = vincas",
+      "Mark and photograph the area"
+    ],
+    "nursing_considerations": []
+  }
+]

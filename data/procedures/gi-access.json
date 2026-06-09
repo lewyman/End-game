@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ng-tube",
+    "title": "Nasogastric (NG) Tube Insertion",
+    "category": "GI Access",
+    "icon": "activity",
+    "summary": "Inserting a nasogastric tube for feeding, medication administration, or gastric decompression.",
+    "equipment": ["NG tube (14–18Fr)", "Water-soluble lubricant", "60mL catheter tip syringe", "pH paper or CO2 detector", "Stethoscope", "Tape/commercial holder", "Emesis basin", "Cup of water with straw (if patient can swallow)", "Gloves", "Pulse oximeter"],
+    "steps": [
+      "Verify order and assess for contraindications (facial trauma, esophageal varices, recent surgery).",
+      "Elevate HOB to 45–90°. Assess nares — choose the more patent side.",
+      "Measure tube length: earlobe → tip of nose → xiphoid process. Mark or note the measurement.",
+      "Lubricate the first 3–4 inches of the tube with water-soluble lubricant.",
+      "Don gloves. Insert tube through nare and advance posteriorly — aim toward ear, not top of head.",
+      "Advance tube while asking patient to swallow (or tilt chin to chest). If gagging is excessive, pause and allow to pass.",
+      "Monitor for respiratory distress, cyanosis, or inability to speak — if these occur, remove immediately.",
+      "Advance to the marked measurement. Secure tube temporarily.",
+      "Verify placement by: (1) aspirating gastric contents and checking pH ≤ 5.5 or using CO2 detector, (2) X-ray confirmation before first feeding.",
+      "Do NOT rely solely on air insufflation (whoosh test) — not reliable.",
+      "Secure tube to nose with tape or commercial holder. Mark tube at nare exit point.",
+      "Document insertion, tube length at nare, confirmation method, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "X-ray is the gold standard for confirmation before initiating feeds.",
+      "Recheck tube placement before each feeding and medication administration.",
+      "Assess nare for pressure injury — rotate side if long-term use.",
+      "Never insert in patients with basilar skull fracture — use OG tube instead.",
+      "Monitor for tube migration, especially after coughing or vomiting episodes."
+    ]
+  },
+  {
+    "id": "peg-tube-care",
+    "title": "Gastrostomy / PEG Tube Care & Feeding",
+    "category": "GI Access",
+    "icon": "activity",
+    "summary": "Caring for a percutaneous endoscopic gastrostomy (PEG) tube and administering enteral feedings.",
+    "equipment": ["Gloves", "Warm water and soft cloth/gauze", "60mL catheter-tip syringe", "Enteral formula (per order)", "pH paper", "Enteral feeding pump and tubing (for continuous feeds)", "Medication crusher (if applicable)"],
+    "steps": [
+      "Verify tube feeding order: formula type, rate, schedule, and flushing protocol.",
+      "Perform hand hygiene and don gloves.",
+      "Assess tube exit site: redness, granulation tissue, leakage, skin breakdown.",
+      "Gently clean around the site with warm water and mild soap. Dry thoroughly.",
+      "Rotate the tube 360° once daily (unless a balloon-type G-tube — do not rotate).",
+      "Check external tube length/markings to confirm no migration since last assessment.",
+      "Before feeding: check residual volume by aspirating stomach contents. If residual is >200–500 mL (per policy), hold feed and notify provider.",
+      "Aspirate and check pH if tube placement is in question (gastric pH ≤5.5).",
+      "Flush tube with 30 mL water before feeding.",
+      "Administer formula via gravity or pump at prescribed rate. Keep HOB elevated ≥30°.",
+      "Flush with 30 mL water after feeding and before/after each medication administration.",
+      "Crush and dissolve medications separately. Never mix medications with formula.",
+      "Document site assessment, residual volume, volume administered, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Blue/green food coloring in enteral feedings is no longer recommended — it has been associated with patient deaths.",
+      "Keep HOB elevated ≥30° during and for 30–60 minutes after feedings — prevents aspiration.",
+      "Never administer feedings into a jejunostomy tube at gastric rates — jejunum cannot tolerate high bolus volumes.",
+      "Medications must be liquid form or fully dissolved before administration — crushed tablet clumps can clog tube.",
+      "A clogged tube can often be cleared with warm water and a 60mL syringe using gentle back-and-forth pressure — never use a wire stylet."
+    ]
+  },
+  {
+    "id": "colostomy-care",
+    "title": "Ostomy Care (Colostomy / Ileostomy)",
+    "category": "GI Access",
+    "icon": "activity",
+    "summary": "Emptying and changing a fecal ostomy pouching system and assessing the stoma.",
+    "equipment": ["One-piece or two-piece ostomy pouching system", "Skin barrier paste or rings", "Skin prep wipes", "Warm water and gentle soap", "Soft washcloth or gauze", "Scissors and measuring guide", "Gloves", "Biohazard bag"],
+    "steps": [
+      "Gather all supplies. Perform hand hygiene and don gloves.",
+      "Empty the ostomy pouch: open the clamp/tail closure at the bottom, drain into toilet. Wipe the end clean and re-clamp.",
+      "If changing the pouch: gently remove entire system using one hand to press skin down while lifting pouch up — never rip.",
+      "Note stoma color, shape, height, and any signs of complication.",
+      "Assess peristomal skin: redness, erosion, hyperplasia, fistula, retraction.",
+      "Cleanse stoma and surrounding skin with warm water. A small amount of mild soap is acceptable. Rinse and pat dry completely.",
+      "Measure stoma with the guide. Cut the barrier opening 2–3 mm larger than the stoma to allow for peristalsis.",
+      "Apply skin barrier paste around the stoma if needed (fills uneven surfaces to prevent leakage).",
+      "Apply skin prep wipe and allow to dry.",
+      "Warm the skin barrier between your hands for 30 seconds to improve adhesion.",
+      "Center the pouch over the stoma and press firmly for 30–60 seconds from inner to outer edges.",
+      "Close the tail/clamp at the bottom. Smooth out the pouch.",
+      "Document stoma assessment, output characteristics (color, consistency, amount), and skin condition."
+    ],
+    "nursing_considerations": [
+      "Healthy stoma should be beefy red/pink and moist — notify provider immediately for pale, blue, or black stoma.",
+      "Ileostomy output is liquid-green, high volume, and enzymatic — highly corrosive to skin if it leaks.",
+      "Colostomy output varies by location: ascending = liquid; transverse = semi-formed; descending/sigmoid = formed.",
+      "Change pouching system every 3–5 days or immediately if leaking — 'just adding tape' around a leak delays skin breakdown.",
+      "Assess for parastomal hernia: bulge around stoma when patient bears down; report to provider, modify pouch system."
+    ]
+  },
+  {
+    "id": "enema-administration",
+    "title": "Enema Administration",
+    "category": "GI Access",
+    "icon": "activity",
+    "summary": "Instilling solution into the rectum and colon to relieve constipation, cleanse the bowel, or administer medications.",
+    "equipment": ["Enema kit (bag/container, tubing with rectal tip) or pre-packaged enema (Fleet)", "Enema solution per order (NS, tap water, soapsuds, mineral oil, or medicated)", "Water-soluble lubricant", "Gloves", "Waterproof pad/chux", "Bedpan or access to bathroom"],
+    "steps": [
+      "Verify provider order: type of enema, volume, and retention time if applicable.",
+      "Explain procedure to patient. Provide privacy.",
+      "Perform hand hygiene and don gloves.",
+      "Prepare enema solution at room temperature (105–110°F for adults). Clamp tubing.",
+      "Position patient in left Sims' position (left lateral with right knee drawn toward chest) — aligns with rectum anatomy.",
+      "Place waterproof pad under the patient's buttocks.",
+      "Lubricate the rectal tip generously.",
+      "Gently separate buttocks and insert rectal tip 3–4 inches (adult) into the rectum, aimed toward the umbilicus.",
+      "Open clamp. Raise bag 12–18 inches above rectum and allow solution to flow slowly.",
+      "If patient reports cramping, lower the bag or clamp tubing briefly until cramping subsides, then continue.",
+      "Administer prescribed volume. Clamp tubing and remove rectal tip smoothly.",
+      "Instruct patient to retain enema as long as possible (at least 5–15 minutes or per order).",
+      "Assist patient to bedpan or bathroom. Do NOT leave a patient with severe cramping or urgency unattended.",
+      "Document type, volume instilled, patient tolerance, and results (stool character and amount)."
+    ],
+    "nursing_considerations": [
+      "Contraindications: recent rectal/bowel surgery, inflamed bowel disease (Crohn's/UC flare), bowel obstruction, rectal bleeding, hemorrhoids (use caution).",
+      "Never give enemas to patients with a recent bowel anastomosis without explicit surgical order.",
+      "Cleansing enemas may need to be repeated until return is clear — follow order carefully.",
+      "Hypertonic phosphate enemas (Fleet) can cause dangerous electrolyte shifts — avoid in renal failure or elderly.",
+      "Do not force the rectal tip if resistance is felt — could indicate impaction or tumor."
+    ]
+  }
+]

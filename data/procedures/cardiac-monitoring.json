@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ecg-12lead",
+    "title": "12-Lead ECG Acquisition",
+    "category": "Cardiac Monitoring",
+    "icon": "activity",
+    "summary": "Acquiring a 12-lead electrocardiogram for cardiac rhythm and ischemia evaluation.",
+    "equipment": ["12-lead ECG machine with cables and electrodes", "Razor (to shave excess hair if needed)", "Alcohol swabs", "Gloves"],
+    "steps": [
+      "Verify order. Explain procedure to patient. Ensure privacy.",
+      "Position patient supine. Expose chest and all four extremities.",
+      "Perform hand hygiene and don gloves.",
+      "Prep skin: clean and dry electrode sites with alcohol swabs. Shave excess hair if present — electrode contact is critical.",
+      "Apply limb leads to fleshy part of extremities (avoid bony prominences):",
+      "  RA (white) — right arm. LA (black) — left arm. RL (green) — right leg. LL (red) — left leg.",
+      "Apply precordial leads:",
+      "  V1: 4th intercostal space, right sternal border.",
+      "  V2: 4th intercostal space, left sternal border.",
+      "  V3: Diagonal between V2 and V4.",
+      "  V4: 5th intercostal space, midclavicular line.",
+      "  V5: Anterior axillary line, same level as V4.",
+      "  V6: Midaxillary line, same level as V4–V5.",
+      "Instruct patient to lie still, breathe normally, and not talk.",
+      "Acquire ECG tracing. Check for artifact or loose leads — repeat if needed.",
+      "Remove electrodes and clean gel from skin.",
+      "Document time of acquisition and deliver tracing to ordering provider promptly."
+    ],
+    "nursing_considerations": [
+      "STEMI is a time-critical emergency — door-to-ECG goal is ≤10 minutes for chest pain patients.",
+      "Correct lead placement is critical — misplacement leads to false positives/negatives.",
+      "Baseline wander, movement, and loose electrodes cause artifact — reapply if needed.",
+      "Right-sided ECG (V3R–V6R) ordered when right ventricular MI suspected.",
+      "For female patients, place V3–V6 under the breast, not on top of it."
+    ]
+  },
+  {
+    "id": "telemetry-setup",
+    "title": "Continuous Cardiac Monitor / Telemetry Setup",
+    "category": "Cardiac Monitoring",
+    "icon": "activity",
+    "summary": "Applying a 5-lead telemetry system for continuous cardiac rhythm monitoring.",
+    "equipment": ["Telemetry transmitter with lead wires", "5-lead electrode set (snap or tab electrodes)", "Alcohol swabs", "Telemetry pouch or pocket", "Gloves"],
+    "steps": [
+      "Verify order for continuous cardiac monitoring.",
+      "Explain procedure to patient. Perform hand hygiene and don gloves.",
+      "Assess the chest for electrode placement sites. Prep skin: clean with alcohol, dry completely. Shave area if needed.",
+      "Apply 5 electrodes (LA, RA, LL, RL, V1 or modified V1) using standard placement:",
+      "  RA (white): right infraclavicular area.",
+      "  LA (black): left infraclavicular area.",
+      "  RL (green): lower right abdomen/torso.",
+      "  LL (red): lower left abdomen/torso.",
+      "  V (brown): 4th intercostal space, right sternal border (for Modified Chest Lead MCL1) or standard V1.",
+      "Attach lead wires to electrodes. Insert transmitter into the telemetry pouch. Place pouch around patient's neck or clip to gown.",
+      "Select lead for monitoring — MCL1 or Lead II most commonly used for arrhythmia detection.",
+      "Confirm signal on bedside monitor. Verify clear, artifact-free waveform with identifiable P, QRS, T.",
+      "Set monitor alarms: HR high/low, ST deviation, pause duration — per facility protocol.",
+      "Assess rhythm: rate, regularity, P waves present, PR interval, QRS width.",
+      "Change electrodes every 24–48 hours or when adhesion is poor.",
+      "Document rhythm strip, rate, intervals (PR, QRS, QTc), and alarm settings."
+    ],
+    "nursing_considerations": [
+      "Proper skin prep is the #1 factor in signal quality — poor prep = artifact = false alarms = alarm fatigue.",
+      "QTc prolongation (>450 ms men; >470 ms women) is a critical finding — many medications prolong QT (amiodarone, antipsychotics, fluoroquinolones).",
+      "Alarm fatigue is a major safety hazard — set alarms to clinically meaningful limits, not default factory settings.",
+      "A continuous rhythm strip is not a substitute for a 12-lead ECG for diagnosis.",
+      "Assess for electrode site skin breakdown with each change — adhesive injury is common in frail or edematous skin."
+    ]
+  },
+  {
+    "id": "cpr-bls",
+    "title": "Cardiopulmonary Resuscitation (CPR) / BLS",
+    "category": "Cardiac Monitoring",
+    "icon": "activity",
+    "summary": "Performing adult Basic Life Support (BLS) including chest compressions, rescue breaths, and AED use.",
+    "equipment": ["AED (Automated External Defibrillator)", "Pocket mask or bag-valve mask (BVM)", "Gloves", "Protective face shield", "Resuscitation cart"],
+    "steps": [
+      "STEP 1 — Scene safety: Ensure environment is safe before approaching.",
+      "STEP 2 — Assess responsiveness: Tap shoulders, shout 'Are you okay?' If no response — activate emergency response (call a code, call 911), get AED.",
+      "STEP 3 — Check breathing and pulse simultaneously for no more than 10 seconds. Gasping is not effective breathing.",
+      "STEP 4 — If no pulse: Begin high-quality chest compressions immediately.",
+      "  Position: heel of hand on center of chest (lower half of sternum).",
+      "  Rate: 100–120 compressions/minute.",
+      "  Depth: ≥2 inches (5 cm) for adults. Do not exceed 2.4 inches.",
+      "  Full chest recoil: allow complete recoil between compressions — do not lean on chest.",
+      "  Minimize interruptions: <10 seconds between compression cycles.",
+      "STEP 5 — Rescue breaths (30:2 ratio without advanced airway): Provide 2 breaths over 1 second each. Visible chest rise required.",
+      "STEP 6 — Use AED as soon as available:",
+      "  Power on. Apply pads (right subclavicular + left lateral chest).",
+      "  Clear patient and analyze rhythm.",
+      "  If shock advised: deliver shock, resume CPR immediately for 2 minutes before re-analyzing.",
+      "STEP 7 — Rotate compressor every 2 minutes to prevent fatigue.",
+      "STEP 8 — Continue until ROSC (return of spontaneous circulation), advanced providers take over, or resuscitation is discontinued.",
+      "Document: time of arrest, time CPR initiated, interventions, time of ROSC or termination."
+    ],
+    "nursing_considerations": [
+      "High-quality CPR saves lives — rate (100–120/min) and depth (≥2 in) are the two most impactful factors.",
+      "Minimize pause in compressions — each pause drops perfusion pressure. Analyze, shock, resume — no delay.",
+      "If multiple rescuers: rotate compressors every 2 minutes, have one person on airway, one managing AED/defibrillation.",
+      "For hospital arrests, CPR continues until ACLS-trained team takes over — do not stop to place IV or advanced airway before compressions begin.",
+      "Push hard, push fast, allow recoil, minimize interruptions — these are the 4 pillars of quality CPR."
+    ]
+  },
+  {
+    "id": "defibrillation-assist",
+    "title": "Defibrillation & Cardioversion (Assisting)",
+    "category": "Cardiac Monitoring",
+    "icon": "activity",
+    "summary": "Assisting with synchronized cardioversion or defibrillation for life-threatening dysrhythmias.",
+    "equipment": ["Defibrillator/cardioverter", "Conductive pads or paddles with gel", "Crash cart", "IV access and resuscitation medications", "Sedation medications (for cardioversion)", "Emergency airway equipment"],
+    "steps": [
+      "Recognize the indication: VF/pulseless VT → defibrillation (unsynchronized). Unstable SVT/A-flutter/A-fib/stable VT → synchronized cardioversion.",
+      "Call for help. Activate emergency response if patient is pulseless.",
+      "Ensure IV/IO access is established. Attach continuous cardiac monitor.",
+      "Turn on defibrillator. Apply pads in anterolateral position (right subclavicular, left lateral chest) or AP position (anterior chest + left scapula).",
+      "For defibrillation (VF/pVT): select energy level (biphasic: 120–200 J for first shock, or per manufacturer; monophasic: 360 J).",
+      "For synchronized cardioversion: press SYNC button — confirm R-wave markers appear on screen. Select energy level per provider/protocol.",
+      "Charge defibrillator. Announce 'Charging!'",
+      "Confirm rhythm on monitor — confirm correct indication before delivering shock.",
+      "Announce 'All clear!' Visually sweep from head to toe. Confirm NO ONE is touching patient or bed.",
+      "Deliver shock. Immediately resume CPR for pulseless patients (do not pause to check rhythm for 2 minutes).",
+      "For cardioversion: immediately reassess rhythm and pulse after delivery.",
+      "If no conversion: repeat per ACLS/protocol at higher energy. Notify physician.",
+      "Administer antiarrhythmic medications as ordered (amiodarone, lidocaine, adenosine).",
+      "Document rhythm before/after, energy levels, number of shocks, time, patient response."
+    ],
+    "nursing_considerations": [
+      "Never delay defibrillation for VF/VT — each minute without defibrillation decreases survival by 7–10%.",
+      "Synchronized cardioversion for stable VT: sedate the patient first (midazolam, propofol, etomidate as ordered) — cardioversion is extremely painful in awake patients.",
+      "Remove transdermal medication patches from chest before defibrillation — can cause burns and interfere with conduction.",
+      "Pacemakers and ICDs: place pads at least 1 inch from device, avoid placing directly over the device.",
+      "After ROSC: begin post-cardiac arrest care — targeted temperature management, coronary intervention evaluation per order."
+    ]
+  }
+]

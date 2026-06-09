@@ -1,0 +1,213 @@
+[
+  {
+    "id": "mental-status-exam",
+    "title": "Mental Status Examination (MSE)",
+    "category": "Mental Health Nursing",
+    "icon": "activity",
+    "summary": "Performing a systematic mental status examination to assess psychiatric and cognitive functioning.",
+    "equipment": [
+      "Quiet, private environment",
+      "MSE documentation tool"
+    ],
+    "steps": [
+      "Establish rapport. Ensure privacy and minimize distractions.",
+      "APPEARANCE: grooming, hygiene, dress (appropriate to season/weather?), eye contact, psychomotor activity (agitation, retardation).",
+      "BEHAVIOR: calm, cooperative, guarded, hostile, bizarre? Level of engagement.",
+      "SPEECH: rate (rapid, slow), volume, tone, clarity, quantity (verbose vs. minimal), spontaneous or requires prompting.",
+      "MOOD: subjective report from patient in their own words (e.g., 'I feel empty').",
+      "AFFECT: objective observed emotional tone. Range (full vs. restricted/blunted/flat), appropriateness to content (congruent vs. incongruent), lability.",
+      "THOUGHT PROCESS: logical and linear vs. tangential, circumstantial, flight of ideas, loosening of associations, word salad.",
+      "THOUGHT CONTENT: delusions (fixed false beliefs), paranoia, ideas of reference, obsessions, suicidal/homicidal ideation.",
+      "PERCEPTIONS: hallucinations (auditory, visual, tactile, olfactory), illusions.",
+      "COGNITION: orientation \u00d74 (person, place, time, situation), memory (recent and remote), attention/concentration (serial 7s), abstract thinking (proverb interpretation).",
+      "INSIGHT: does patient understand they have a mental illness and need treatment? (poor, limited, fair, full)",
+      "JUDGMENT: hypothetical scenarios (what would you do if you found a stamped envelope?)."
+    ],
+    "safetyTips": [
+      "Never conduct MSE through a locked door or in a punitive manner \u2014 therapeutic alliance affects validity.",
+      "SI/HI assessment is part of thought content \u2014 always ask directly. Asking about suicide does not increase risk.",
+      "Compare findings to baseline and prior documentation."
+    ],
+    "documentation": [
+      "All 10 MSE categories documented",
+      "Comparison to baseline",
+      "SI/HI status clearly stated"
+    ],
+    "keyTakeaways": [
+      "MSE documents objective and subjective psychiatric findings",
+      "Mood = subjective (patient words); Affect = objective (nurse observes)",
+      "Always ask about SI/HI directly"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "suicide-risk-assessment",
+    "title": "Suicide Risk Assessment (Columbia Protocol / C-SSRS)",
+    "category": "Mental Health Nursing",
+    "icon": "activity",
+    "summary": "Assessing suicide ideation and risk using the Columbia Suicide Severity Rating Scale (C-SSRS).",
+    "equipment": [
+      "C-SSRS or facility suicide screening tool",
+      "Private, quiet space",
+      "Crisis resources list"
+    ],
+    "steps": [
+      "Ask ALL patients on admission and per protocol. Do NOT avoid the question \u2014 asking does not plant the idea.",
+      "C-SSRS IDEATION SCALE:",
+      "  1. Passive ideation: 'I wish I were dead.' (no intent or plan)",
+      "  2. Active ideation, no plan, no intent.",
+      "  3. Active ideation with some method (but no plan or intent).",
+      "  4. Active ideation with intent but no plan.",
+      "  5. Active ideation with intent AND plan.",
+      "ASSESS ADDITIONAL RISK FACTORS: prior attempts (strongest predictor), means access (gun in home), substance use, recent loss, isolation, hopelessness.",
+      "PROTECTIVE FACTORS: social support, religious beliefs, children, reasons for living, engaged in treatment.",
+      "LEVEL OF CARE based on findings:",
+      "  Passive ideation or C-SSRS 1\u20132: safety plan, follow-up.",
+      "  Active ideation C-SSRS 3\u20134: notify provider, consider 1:1 monitoring.",
+      "  C-SSRS 5 or imminent risk: 1:1 constant observation, STAT psychiatric evaluation, remove means.",
+      "Implement environmental safety: remove sharps, ligature points, medications, cords from room.",
+      "Document: exact language patient used, C-SSRS score, risk level, actions taken, and provider notification."
+    ],
+    "safetyTips": [
+      "Never leave a high-risk patient alone to 'get help' \u2014 call from the room or have a colleague come to you.",
+      "Removal of means is a proven life-saving intervention. Check the room for sharps, cords, and medications.",
+      "Documentation must include exact patient statements \u2014 never paraphrase SI/HI as 'denies.'"
+    ],
+    "documentation": [
+      "C-SSRS score or facility tool result",
+      "Exact patient quotes for ideation",
+      "Risk and protective factors",
+      "Interventions implemented",
+      "Provider notification time"
+    ],
+    "keyTakeaways": [
+      "Ask directly \u2014 does not increase risk",
+      "Prior attempt is the strongest predictor",
+      "C-SSRS 5 = imminent risk, 1:1 now"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "de-escalation",
+    "title": "Verbal De-Escalation Techniques",
+    "category": "Mental Health Nursing",
+    "icon": "activity",
+    "summary": "Using evidence-based verbal techniques to reduce agitation and prevent escalation to aggression.",
+    "equipment": [
+      "No physical equipment \u2014 your presence, voice, and nonverbal communication",
+      "Duress alarm accessible"
+    ],
+    "steps": [
+      "SAFETY FIRST: assess your exit. Do not allow patient to block your egress. Stay near the door.",
+      "APPROACH: calm body language. Do NOT cross your arms or point. Maintain non-threatening posture at a slight angle (not directly facing \u2014 can feel confrontational).",
+      "PERSONAL SPACE: allow extra space (1.5\u20133\u00d7 normal) for agitated patients. Approaching too close escalates.",
+      "VOICE: calm, quiet, slow. Lower volume often has more effect than raising it.",
+      "LISTEN: allow patient to express grievances without interruption. Use reflective listening: 'It sounds like you're feeling frustrated because...'",
+      "VALIDATE the emotion without necessarily agreeing with behavior: 'I can see why that would be upsetting.'",
+      "OFFER CHOICES to restore a sense of control: 'Would you like to talk here or in the quiet room?'",
+      "AVOID: arguing, threatening, authoritative posturing, sarcasm, or telling patient to 'calm down.'",
+      "SET LIMITS CLEARLY and calmly: 'I need you to lower your voice so we can talk about this.'",
+      "TEAM RESPONSE: if escalating, call for a show of force calmly \u2014 additional staff present without threatening.",
+      "LAST RESORT: chemical or physical restraint per facility policy and provider order."
+    ],
+    "safetyTips": [
+      "Your safety is the priority. No intervention is worth a physical assault.",
+      "Never touch an agitated patient without warning \u2014 it can trigger physical aggression.",
+      "Document all de-escalation attempts before using restraints."
+    ],
+    "documentation": [
+      "Patient behavior (specific descriptions)",
+      "Verbal interventions attempted",
+      "Patient response",
+      "Team involvement",
+      "Outcome"
+    ],
+    "keyTakeaways": [
+      "Stay near exit",
+      "Validate emotions, not behavior",
+      "Offer choices to restore control"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "therapeutic-communication",
+    "title": "Therapeutic Communication Skills",
+    "category": "Mental Health Nursing",
+    "icon": "activity",
+    "summary": "Applying therapeutic communication techniques to establish trust and facilitate patient disclosure.",
+    "equipment": [
+      "No equipment \u2014 requires skill and presence"
+    ],
+    "steps": [
+      "ACTIVE LISTENING: give full attention. Make eye contact. Nod. Avoid interrupting or finishing the patient's sentences.",
+      "OPEN-ENDED QUESTIONS: 'Tell me more about that' rather than yes/no questions.",
+      "FOCUSING: bring patient back to key theme: 'You mentioned earlier that you were feeling hopeless \u2014 can you tell me more about that?'",
+      "REFLECTION: mirror back feelings or content: 'It sounds like you felt abandoned by your family.'",
+      "CLARIFICATION: 'I want to make sure I understand \u2014 can you say more about what you mean by that?'",
+      "SILENCE: allow therapeutic silence. Do NOT rush to fill silence \u2014 it gives the patient time to process and speak.",
+      "SUMMARIZING: at end of interaction, summarize key points to validate and confirm understanding.",
+      "NONVERBAL SKILLS: lean slightly forward, uncrossed arms, appropriate distance (1.5\u20133 feet), be at eye level.",
+      "AVOID:",
+      "  Giving advice or false reassurance: 'Everything will be fine.'",
+      "  Asking 'why' questions (implies judgment): 'Why did you stop your meds?'",
+      "  Changing the subject when patient discloses something difficult.",
+      "  Defending the healthcare system or minimizing the patient's concerns."
+    ],
+    "safetyTips": [
+      "False reassurance damages trust and discourages future disclosure.",
+      "Breaching confidentiality without cause destroys therapeutic alliance \u2014 disclose only as required (safety exceptions).",
+      "Your reaction to what the patient says will either open or close further communication."
+    ],
+    "documentation": [
+      "Key disclosures from patient",
+      "Communication strategies used",
+      "Patient response and affect"
+    ],
+    "keyTakeaways": [
+      "Open-ended questions over yes/no",
+      "Silence is therapeutic \u2014 do not rush to fill it",
+      "Avoid advice, avoid 'why' questions"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "behavioral-safety-monitoring",
+    "title": "Inpatient Behavioral Safety Monitoring (1:1 / Q15)",
+    "category": "Mental Health Nursing",
+    "icon": "activity",
+    "summary": "Conducting structured safety checks for patients on psychiatric observation precautions.",
+    "equipment": [
+      "Safety monitoring log",
+      "Visual access to patient"
+    ],
+    "steps": [
+      "Determine level of observation ordered by provider:",
+      "  Q15 (every 15 minutes): high-risk patient not requiring constant observation.",
+      "  1:1 constant: patient in sight at all times. Staff within arm's reach.",
+      "  1:1 direct: maximum risk. Staff within arm's reach AT ALL TIMES (including bathroom).",
+      "Q15 CHECKS: at each 15-minute interval, visually locate patient and document: location, behavior (sleeping, talking, calm, agitated), and physical status.",
+      "STAGGER the checks \u2014 do NOT do them at exactly 15:00, 15:15, 15:30 (patients learn the pattern). Vary slightly within each window.",
+      "1:1 CONSTANT: staff must maintain visual contact at ALL times. Cannot leave to get supplies. Must be relieved for breaks.",
+      "Environmental safety check each shift: scan room for ligature points, weapons, accumulated medications, sharps, and hazardous items.",
+      "Document each check accurately. False documentation (noting patient as calm when not observed) is a serious safety and legal issue.",
+      "Report any concerns immediately to charge nurse/provider."
+    ],
+    "safetyTips": [
+      "Never falsify observation records. Documenting without actually observing has led to patient suicides and criminal charges against nurses.",
+      "Patients on 1:1 constant must be visible during bathroom use (door ajar or female staff present per policy).",
+      "If the patient refuses to be seen, this must be documented AND reported to the charge nurse \u2014 it is a safety event."
+    ],
+    "documentation": [
+      "Time of each observation",
+      "Location of patient",
+      "Behavior and status at each check",
+      "Any unusual findings or interventions"
+    ],
+    "keyTakeaways": [
+      "Stagger Q15 checks to prevent predictability",
+      "Never leave 1:1 patient without relief",
+      "False documentation is a criminal matter"
+    ],
+    "nursing_considerations": []
+  }
+]

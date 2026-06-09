@@ -1,0 +1,219 @@
+[
+  {
+    "id": "ophthalmic-drops",
+    "title": "Ophthalmic (Eye Drop / Ointment) Administration",
+    "category": "Medication Advanced",
+    "icon": "activity",
+    "summary": "Correctly instilling eye drops and ophthalmic ointments to the conjunctival sac.",
+    "equipment": [
+      "Prescribed eye drops or ointment",
+      "Gloves",
+      "Tissue or gauze"
+    ],
+    "steps": [
+      "Verify the medication: correct eye (OD=right, OS=left, OU=both), dose, and frequency.",
+      "Perform hand hygiene and don gloves.",
+      "Position patient supine or with head tilted back.",
+      "Instruct patient to look UP.",
+      "With non-dominant hand, gently pull the lower lid downward to expose the conjunctival sac.",
+      "EYE DROPS: hold bottle 1\u20132 cm above the eye. Instill prescribed number of drops into the LOWER conjunctival sac \u2014 NOT directly on the cornea.",
+      "OINTMENT: squeeze a thin ribbon (0.5\u20131 cm) into the lower conjunctival sac from inner to outer canthus.",
+      "Instruct patient to close eyes gently for 1\u20132 minutes \u2014 do NOT squeeze tight.",
+      "Apply nasolacrimal occlusion (gentle pressure on inner corner of eye for 1\u20132 minutes) to reduce systemic absorption.",
+      "If multiple drops ordered: wait 5 minutes between different drops.",
+      "Eye drops before ointment when both are ordered (ointment seals the drops in)."
+    ],
+    "safetyTips": [
+      "Never touch the dropper tip to the eye or eyelashes \u2014 causes contamination of the entire bottle.",
+      "Nasolacrimal occlusion reduces systemic absorption of beta-blockers and other drops \u2014 always apply.",
+      "Ointment causes temporary blurred vision \u2014 administer at bedtime when possible."
+    ],
+    "documentation": [
+      "Drug name and concentration",
+      "Which eye (OD/OS/OU)",
+      "Number of drops or ointment length",
+      "Patient tolerance and response"
+    ],
+    "keyTakeaways": [
+      "Lower conjunctival sac, not cornea",
+      "5 minutes between drops",
+      "Nasolacrimal occlusion reduces systemic absorption"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "otic-drops",
+    "title": "Otic (Ear Drop) Administration",
+    "category": "Medication Advanced",
+    "icon": "activity",
+    "summary": "Correctly instilling ear drops to treat external otitis, cerumen impaction, or infection.",
+    "equipment": [
+      "Prescribed otic drops",
+      "Gloves",
+      "Cotton ball (if ordered)",
+      "Warm water basin for warming drops"
+    ],
+    "steps": [
+      "Verify order: correct ear (AD=right, AS=left, AU=both), dose, and temperature.",
+      "Warm drops to body temperature: hold bottle in hands for 2\u20133 minutes OR place in warm water. NEVER administer cold drops directly \u2014 can cause vertigo.",
+      "Perform hand hygiene and don gloves.",
+      "Position patient: affected ear facing upward (side-lying or head tilted).",
+      "ADULT/CHILD >3 years: pull the pinna UP and BACK to straighten the ear canal.",
+      "CHILD <3 years: pull the pinna DOWN and BACK.",
+      "Hold dropper above the ear canal. Instill prescribed number of drops along the EAR CANAL WALL (not directly on the drum).",
+      "Instruct patient to remain with ear facing up for 5 minutes.",
+      "Gently insert a cotton ball if ordered (not pushed deep).",
+      "Assess for relief or adverse effects (worsening pain, vertigo, discharge)."
+    ],
+    "safetyTips": [
+      "Contraindicated in perforated tympanic membrane UNLESS the medication is specifically approved for perforated TM (check order).",
+      "Cold drops cause caloric stimulation of the vestibular system \u2014 always warm first.",
+      "Different techniques for adults vs. children <3 years \u2014 pulling direction is opposite."
+    ],
+    "documentation": [
+      "Drops administered, dose, ear",
+      "Patient positioning",
+      "Tolerance and symptom response"
+    ],
+    "keyTakeaways": [
+      "Adult: pull pinna up and back",
+      "Child <3: pull down and back",
+      "Warm drops before instilling"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "rectal-suppository",
+    "title": "Rectal Suppository Administration",
+    "category": "Medication Advanced",
+    "icon": "activity",
+    "summary": "Inserting a rectal suppository for systemic medication delivery, constipation, or local treatment.",
+    "equipment": [
+      "Prescribed suppository",
+      "Water-soluble lubricant",
+      "Gloves",
+      "Tissues",
+      "Drape for privacy"
+    ],
+    "steps": [
+      "Verify order and consent. Assess for contraindications: rectal surgery, rectal or anal bleeding, neutropenia, thrombocytopenia, or low platelet count (rectal manipulation risk).",
+      "Explain procedure and provide privacy.",
+      "Position patient in Sims' position (left lateral with right knee flexed) \u2014 this straightens the sigmoid colon.",
+      "Don gloves. Unwrap suppository. Apply water-soluble lubricant to the rounded end.",
+      "Ask patient to breathe slowly through the mouth (relaxes external sphincter).",
+      "With non-dominant hand: separate the buttocks.",
+      "With dominant hand: insert suppository rounded end FIRST, directing it toward the umbilicus (not straight in).",
+      "Advance 2\u20134 cm (1\u20131.5 inches) in adults beyond the internal sphincter.",
+      "Hold buttocks together for 15\u201330 seconds to prevent expulsion.",
+      "Instruct patient to retain for appropriate time: laxative suppository \u2212 15\u201360 min; medication \u2212 per drug instructions.",
+      "Assist with hygiene. Note suppository retention and any stool passed."
+    ],
+    "safetyTips": [
+      "Do NOT administer rectal suppositories in patients with recent rectal/anal surgery, active rectal bleeding, or absolute neutropenia.",
+      "Must pass beyond the internal sphincter to be retained and absorbed.",
+      "Direct toward the umbilicus to follow the bowel anatomy \u2014 not straight posteriorly."
+    ],
+    "documentation": [
+      "Drug name, dose",
+      "Retention (yes/no)",
+      "Bowel movement or effect noted"
+    ],
+    "keyTakeaways": [
+      "Sims' position",
+      "Insert rounded end first, toward umbilicus",
+      "Hold 15\u201330 seconds after insertion"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "heparin-drip-titration",
+    "title": "Unfractionated Heparin (UFH) Infusion Titration",
+    "category": "Medication Advanced",
+    "icon": "activity",
+    "summary": "Managing an IV heparin infusion using a weight-based titration protocol and aPTT monitoring.",
+    "equipment": [
+      "IV heparin infusion (per pharmacy)",
+      "Infusion pump",
+      "aPTT lab orders",
+      "Weight-based nomogram/protocol"
+    ],
+    "steps": [
+      "Heparin is a HIGH-ALERT medication. Require two-nurse check for dose, rate, and pump settings.",
+      "Obtain baseline aPTT and weight before initiating.",
+      "Loading dose per protocol (if ordered): typically 80 units/kg IV bolus (max per protocol). Two-nurse check before administering.",
+      "Start maintenance infusion per weight-based protocol (typically 18 units/kg/hr starting rate, capped at protocol maximum).",
+      "Check aPTT 6 hours after initiation and after EVERY rate change.",
+      "TARGET aPTT: 60\u2013100 seconds (1.5\u20132.5\u00d7 normal; verify facility protocol).",
+      "TITRATE per protocol:",
+      "  aPTT <40: bolus + increase rate.",
+      "  aPTT 40\u201349: small increase in rate.",
+      "  aPTT 50\u2013100: no change (therapeutic).",
+      "  aPTT 101\u2013120: decrease rate.",
+      "  aPTT >120: STOP infusion for 1 hour, then restart at reduced rate. Notify provider.",
+      "Monitor for bleeding: neuro checks (headache, mental status), hematuria, guaiac stools, IV sites, bruising.",
+      "Antidote: protamine sulfate. Have available for major bleeding events."
+    ],
+    "safetyTips": [
+      "Heparin is a HIGH-ALERT drug. Two-nurse independent check every time dose is changed.",
+      "aPTT >120 with symptoms of bleeding = notify provider STAT. Stop infusion.",
+      "HIT (Heparin-Induced Thrombocytopenia): platelet drop >50% after heparin start \u2014 STOP heparin, notify provider."
+    ],
+    "documentation": [
+      "Bolus given (dose, time)",
+      "Infusion rate changes and reason (aPTT value)",
+      "aPTT results and timing",
+      "Bleeding assessment findings"
+    ],
+    "keyTakeaways": [
+      "Two-nurse check always",
+      "aPTT q6h after each change",
+      "Platelet drop >50% = suspect HIT"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "insulin-drip-management",
+    "title": "Insulin Infusion (Regular Insulin Drip) Management",
+    "category": "Medication Advanced",
+    "icon": "activity",
+    "summary": "Managing a continuous IV regular insulin infusion using a bedside glucose protocol.",
+    "equipment": [
+      "IV regular insulin infusion (per pharmacy)",
+      "Infusion pump",
+      "Point-of-care glucometer",
+      "Dextrose 50% (D50) at bedside"
+    ],
+    "steps": [
+      "Insulin infusions are HIGH-ALERT medications. Require independent two-nurse check.",
+      "Verify: concentration is correct (typical: 1 unit/mL in NS), patient name, blood glucose target per protocol (ICU: 140\u2013180 mg/dL; surgical: 140\u2013200 mg/dL).",
+      "Check blood glucose per protocol (typically hourly when initiating or changing rates, then q2h once stable).",
+      "Keep D50W at bedside for hypoglycemia.",
+      "TITRATE per facility insulin protocol based on current glucose and rate of change.",
+      "HYPOGLYCEMIA protocol (glucose <70 mg/dL):",
+      "  STOP insulin infusion.",
+      "  If alert and able to swallow: 15\u201320g fast-acting glucose PO.",
+      "  If altered or unable to swallow: D50W 25g (50mL) IV push.",
+      "  Recheck glucose in 15 minutes. Repeat if still <70.",
+      "  Do NOT restart infusion until glucose >100 and stable.",
+      "Avoid interrupting glucose (tube feeding, TPN) without adjusting insulin accordingly.",
+      "Transition to SQ insulin before discontinuing infusion (overlap 1\u20132 hours per protocol)."
+    ],
+    "safetyTips": [
+      "Insulin is the most common medication associated with adverse drug events. Two-nurse checks are mandatory.",
+      "Hypoglycemia is the primary risk. D50W must be at the bedside before starting the infusion.",
+      "Abrupt discontinuation of enteral nutrition or TPN without adjusting insulin = rebound hypoglycemia."
+    ],
+    "documentation": [
+      "Glucose values and times",
+      "Infusion rate changes and reason",
+      "Hypoglycemia episodes and treatment",
+      "Transition to SQ insulin plan"
+    ],
+    "keyTakeaways": [
+      "Two-nurse check always",
+      "D50W at bedside before starting",
+      "Glucose <70 = stop infusion immediately"
+    ],
+    "nursing_considerations": []
+  }
+]

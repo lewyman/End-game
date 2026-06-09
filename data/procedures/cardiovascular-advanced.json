@@ -1,0 +1,217 @@
+[
+  {
+    "id": "arterial-line-management",
+    "title": "Arterial Line (A-Line) Management & Zeroing",
+    "category": "Cardiovascular Advanced",
+    "icon": "activity",
+    "summary": "Managing an indwelling arterial catheter for continuous blood pressure monitoring and ABG sampling.",
+    "equipment": [
+      "Arterial line transducer set",
+      "Pressurized normal saline bag (300 mmHg pressure)",
+      "Leveling device or stopcock cap",
+      "Sterile caps",
+      "Flush solution (heparinized NS per policy)"
+    ],
+    "steps": [
+      "Confirm arterial line placement site (radial most common) and verify Allen's test was performed prior to insertion.",
+      "Pressurize the NS bag to 300 mmHg to ensure the continuous flush (3 mL/hr) is active.",
+      "ZEROING: Level the transducer to the phlebostatic axis (4th intercostal space, mid-axillary line \u2014 right atrium level).",
+      "Turn the stopcock off to the patient and open to air. Press 'zero' on the monitor. Wait for confirmation.",
+      "Turn stopcock back to patient. Confirm a sharp waveform with systolic peak, dicrotic notch, and diastolic trough.",
+      "Compare arterial BP reading to cuff BP upon any concern about accuracy.",
+      "Waveform assessment: Over-damped (no dicrotic notch, blunt) \u2014 air bubble or clot. Under-damped (exaggerated systolic) \u2014 check connections.",
+      "Assess insertion site hourly: skin color, sensation, capillary refill of hand/fingers distal to line.",
+      "ABG sampling: cleanse stopcock, withdraw waste (1\u20132 mL), withdraw sample into ABG syringe, flush line, recap.",
+      "Document: zeroing time, waveform quality, distal perfusion assessment."
+    ],
+    "safetyTips": [
+      "NEVER inject medications or IV fluids through an arterial line \u2014 intra-arterial injection can cause permanent limb ischemia.",
+      "Label all arterial line tubing RED to prevent wrong-route errors.",
+      "Accidental disconnection = massive hemorrhage. Keep connections secure and visible at all times."
+    ],
+    "documentation": [
+      "Zero time and level",
+      "Waveform quality",
+      "Systolic/diastolic/MAP values",
+      "Distal perfusion checks hourly",
+      "ABG sample times"
+    ],
+    "keyTakeaways": [
+      "Level to phlebostatic axis before zeroing",
+      "Label RED \u2014 no medications",
+      "Over-damped = false low; under-damped = false high"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "temporary-pacemaker",
+    "title": "Temporary Transvenous Pacemaker Management",
+    "category": "Cardiovascular Advanced",
+    "icon": "activity",
+    "summary": "Monitoring and managing a temporary transvenous cardiac pacemaker.",
+    "equipment": [
+      "Pacemaker generator",
+      "Connecting cable",
+      "Cardiac monitor",
+      "Gloves",
+      "Tape to secure generator"
+    ],
+    "steps": [
+      "Confirm pacemaker settings per order: rate (demand pacing: 60\u201380 bpm), output (mA), sensitivity (mV).",
+      "Identify pacemaker spikes on the rhythm strip. Pacing spikes should be followed by capture (P wave for atrial; wide QRS for ventricular).",
+      "CAPTURE: Pacemaker spike followed by the appropriate complex = captured. Every spike should capture.",
+      "SENSING: Pacemaker should inhibit when patient's own rate is above set rate (demand mode). Failure to sense = competes with native rhythm.",
+      "Failure to capture: increase output (mA). Notify provider. Ensure connections are secure.",
+      "Failure to sense: adjust sensitivity. Notify provider.",
+      "Secure the pulse generator to patient (pinned to gown or bed \u2014 never hanging free).",
+      "Protect insertion site (subclavian or femoral) \u2014 assess for infection, bleeding, dislodgement.",
+      "Limit movement of the insertion-side extremity.",
+      "Keep rubber gloves at bedside \u2014 if generator disconnects, wear gloves before touching bare wire ends (microshock risk).",
+      "Document: set rate, output, sensitivity, underlying rhythm, capture and sensing status."
+    ],
+    "safetyTips": [
+      "Microshock risk: exposed pacing wires can transmit stray current directly to the myocardium. Wear gloves when handling.",
+      "Maintain electrical safety: avoid contact with electrical equipment and patient simultaneously.",
+      "Loss of capture in a pacer-dependent patient = emergency. Have atropine and transcutaneous pacing available."
+    ],
+    "documentation": [
+      "Generator settings (rate/mA/mV)",
+      "Capture and sensing status",
+      "Underlying rhythm",
+      "Insertion site assessment"
+    ],
+    "keyTakeaways": [
+      "Spike + complex = capture",
+      "Demand mode inhibits when native rate is adequate",
+      "Microshock risk \u2014 gloves for all wire handling"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "scd-application",
+    "title": "Sequential Compression Device (SCD) Application",
+    "category": "Cardiovascular Advanced",
+    "icon": "activity",
+    "summary": "Applying and managing sequential compression devices for DVT prophylaxis in hospitalized patients.",
+    "equipment": [
+      "SCD pump/controller",
+      "SCD sleeves (knee-length or thigh-length)",
+      "Measuring tape for sleeve sizing"
+    ],
+    "steps": [
+      "Verify order for SCDs and confirm no contraindications: active DVT, acute PE, severe peripheral arterial disease, open wounds on the legs, recent vascular surgery on the extremity.",
+      "Assess bilateral lower extremities: skin integrity, pulses, edema, warmth, calf tenderness (Homans' sign \u2014 limited specificity).",
+      "Select correct sleeve size based on calf circumference (measured at widest point).",
+      "Apply sleeves with the tubing connector positioned on the outer aspect of the leg.",
+      "Ensure one to two fingers fit between the sleeve and the leg \u2014 not too tight, not loose.",
+      "Connect tubing to the pump controller. Turn on controller.",
+      "Confirm inflation cycle: distal \u2192 proximal compression (peristaltic cycle promotes venous return).",
+      "Remove sleeves for skin assessment and hygiene at least once per shift. Reassess legs each removal.",
+      "Reinforce to patient to keep SCDs on except when ambulating or bathing.",
+      "Document: application time, sleeve size and type, bilateral leg assessment findings."
+    ],
+    "safetyTips": [
+      "SCDs are contraindicated with known DVT \u2014 compression could dislodge a thrombus causing PE.",
+      "Remove and assess skin every shift \u2014 moisture and pressure under SCDs can cause skin breakdown.",
+      "SCDs alone are not sufficient for high-risk patients \u2014 ensure pharmacologic prophylaxis is also ordered."
+    ],
+    "documentation": [
+      "Application time",
+      "Sleeve type and size",
+      "Skin assessment findings",
+      "Contraindications checked"
+    ],
+    "keyTakeaways": [
+      "Contraindicated in known DVT",
+      "Check fit: two fingers between sleeve and leg",
+      "Remove each shift for skin assessment"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "doppler-assessment",
+    "title": "Doppler Vascular Assessment (Peripheral Pulses)",
+    "category": "Cardiovascular Advanced",
+    "icon": "activity",
+    "summary": "Using a hand-held Doppler to assess peripheral pulses when manual palpation is inadequate.",
+    "equipment": [
+      "Hand-held Doppler device",
+      "Conductive gel",
+      "Gauze"
+    ],
+    "steps": [
+      "Identify indication: pulses not palpable, post-vascular procedure, concern for arterial compromise.",
+      "Perform hand hygiene. Apply conductive gel to Doppler probe tip.",
+      "Locate the pulse site:",
+      "  Dorsalis pedis (DP): top of foot between 1st and 2nd metatarsals.",
+      "  Posterior tibial (PT): behind medial malleolus.",
+      "  Radial: radial groove of the wrist.",
+      "  Popliteal: posterior knee (with slight knee flexion).",
+      "  Femoral: femoral triangle (NAVEL: nerve-artery-vein-empty-lymphatics; artery is central).",
+      "Place probe at 45\u00b0 angle to the vessel. Move gently until you hear the signal.",
+      "Triphasic signal (whoosh-whoosh-whoosh) = normal arterial flow.",
+      "Biphasic signal = mildly reduced flow.",
+      "Monophasic signal = significantly reduced flow \u2014 notify provider.",
+      "No signal = emergency \u2014 arterial occlusion suspected \u2014 notify provider immediately.",
+      "Clean gel from skin and probe. Document signal quality and location."
+    ],
+    "safetyTips": [
+      "Loss of a previously present Doppler signal after vascular procedure = arterial emergency \u2014 notify surgeon immediately.",
+      "Comparing bilateral extremities is essential \u2014 unilateral absence is more significant than bilateral weak signals.",
+      "A pulse oximeter waveform can also confirm distal perfusion when Doppler is unavailable."
+    ],
+    "documentation": [
+      "Pulse sites assessed",
+      "Signal quality (triphasic/biphasic/monophasic/absent)",
+      "Comparison to contralateral extremity",
+      "Skin color/temperature/capillary refill"
+    ],
+    "keyTakeaways": [
+      "Triphasic = normal",
+      "Monophasic = notify provider",
+      "Absent signal = vascular emergency"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "cvp-monitoring",
+    "title": "Central Venous Pressure (CVP) Monitoring",
+    "category": "Cardiovascular Advanced",
+    "icon": "activity",
+    "summary": "Measuring and interpreting central venous pressure from a central line transducer to assess volume status.",
+    "equipment": [
+      "Central line with transducer",
+      "Pressurized flush bag",
+      "Leveling device",
+      "Cardiac monitor"
+    ],
+    "steps": [
+      "Level the transducer to the phlebostatic axis (4th ICS, mid-axillary line).",
+      "Zero the transducer: turn stopcock off to patient, open to air, press zero on monitor.",
+      "Position patient supine (or 0\u201330\u00b0 elevation consistently \u2014 document position used).",
+      "Read CVP from the waveform or numeric display. Normal CVP: 2\u20138 mmHg.",
+      "Low CVP (<2 mmHg): suggests hypovolemia \u2014 anticipate fluid challenge.",
+      "High CVP (>10\u201312 mmHg): suggests fluid overload, right heart failure, or tamponade.",
+      "Assess CVP trend rather than single value \u2014 response to fluid bolus is more meaningful.",
+      "CVP waveform components: a wave (atrial contraction), c wave (tricuspid closure), v wave (venous filling).",
+      "Cannon a-waves: large 'a' waves = AV dissociation (A-fib with CHB, V-pacing) \u2014 notify provider.",
+      "Document reading, patient position, and clinical correlation."
+    ],
+    "safetyTips": [
+      "CVP alone is a poor predictor of fluid responsiveness \u2014 use in context with other hemodynamic parameters.",
+      "Never use CVP port for blood products or vasopressors without verifying intended lumen.",
+      "Air embolism risk with central line: always cap stopcocks, have patient do Valsalva during tubing changes."
+    ],
+    "documentation": [
+      "CVP value and patient position",
+      "Waveform quality",
+      "Clinical correlation (urine output, BP, HR)"
+    ],
+    "keyTakeaways": [
+      "Normal 2\u20138 mmHg",
+      "Trend > single value",
+      "Level to phlebostatic axis for accurate reading"
+    ],
+    "nursing_considerations": []
+  }
+]

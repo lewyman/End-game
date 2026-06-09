@@ -1,0 +1,175 @@
+[
+  {
+    "id": "evd-care",
+    "title": "External Ventricular Drain (EVD) Management",
+    "category": "Neurological Advanced",
+    "icon": "activity",
+    "summary": "Managing an external ventricular drain for ICP monitoring and CSF drainage in neurocritical patients.",
+    "equipment": [
+      "EVD system (transducer, drip chamber, collection bag)",
+      "Leveling device (laser or carpenter level)",
+      "Sterile cap/supplies for dressing changes",
+      "Gloves"
+    ],
+    "steps": [
+      "EVD is inserted by neurosurgery (bedside or OR). Nursing manages the drainage system.",
+      "LEVELING: Level the 'zero reference point' of the EVD system to the tragus of the ear (external auditory meatus) = foramen of Monro.",
+      "Set the drainage level (height above the reference) per order (commonly 10\u201320 cm H2O above the foramen of Monro).",
+      "Keep the drainage system closed (clamped) unless ordered for continuous or intermittent drainage.",
+      "Monitor CSF: color (clear/pink/bloody/cloudy), quantity per hour, and trend. Cloudy CSF = possible ventriculitis \u2014 notify neurosurgery.",
+      "NEVER lower the drainage chamber below the reference without an order \u2014 uncontrolled CSF drainage can cause brain herniation.",
+      "Assess EVD site dressing: intact, dry, no signs of infection. Change per policy (sterile technique).",
+      "During patient repositioning: CLAMP the EVD first, reposition, re-level, then unclamp per policy.",
+      "Monitor ICP waveform if transducer is connected: normal ICP <20 mmHg. ICP \u226520 mmHg >5 min = notify neurosurgery.",
+      "CPP (Cerebral Perfusion Pressure) = MAP \u2212 ICP. Target CPP 60\u201370 mmHg typically."
+    ],
+    "safetyTips": [
+      "NEVER flush, irrigate, or inject anything into an EVD \u2014 can cause ventriculitis or fatal overdrainage.",
+      "Clamp before repositioning \u2014 siphon effect during movement can cause rapid overdrainage and brain herniation.",
+      "Cloudy CSF or fever = ventriculitis until proven otherwise \u2014 neurosurgery STAT notification."
+    ],
+    "documentation": [
+      "CSF hourly output, color, character",
+      "ICP values and waveform",
+      "Drainage level setting",
+      "Dressing status",
+      "CPP calculation"
+    ],
+    "keyTakeaways": [
+      "Level to tragus (foramen of Monro)",
+      "Clamp before repositioning",
+      "Cloudy CSF = emergent notification"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "icp-monitoring",
+    "title": "Intracranial Pressure (ICP) Monitoring & Management",
+    "category": "Neurological Advanced",
+    "icon": "activity",
+    "summary": "Monitoring ICP values and implementing interventions to reduce elevated intracranial pressure.",
+    "equipment": [
+      "ICP monitor/transducer",
+      "Mannitol or hypertonic saline per order",
+      "Head of bed elevation supplies"
+    ],
+    "steps": [
+      "Normal ICP: 0\u201310 mmHg. Elevated ICP: \u226520 mmHg sustained >5 min requires intervention.",
+      "Position: HOB 30\u201345\u00b0. Head midline (avoid neck flexion or rotation which impairs venous drainage).",
+      "Avoid: coughing, suctioning without lidocaine, Valsalva, sustained hip flexion \u2014 all transiently raise ICP.",
+      "Avoid clustering care activities \u2014 space procedures to allow ICP to return to baseline.",
+      "Osmotherapy for ICP \u226520 mmHg:",
+      "  Mannitol 0.25\u20131 g/kg IV bolus: monitor serum osmolality (hold if >320 mOsm/L) and urine output.",
+      "  Hypertonic saline (3% NaCl): monitor sodium (target 145\u2013155 mEq/L per protocol). Via central line.",
+      "Sedation/analgesia: reduces ICP by reducing cerebral metabolic demand. Common: fentanyl + propofol or midazolam.",
+      "Avoid hypoxia (SpO2 <95%) and hypercarbia (PaCO2 >45) \u2014 both cause cerebral vasodilation and worsen ICP.",
+      "Hyperventilation (PaCO2 30\u201335): temporary bridge measure only (causes vasoconstriction) \u2014 use for acute herniation.",
+      "Temperature control: fever increases CMRO2 \u2192 raises ICP. Target normothermia or mild hypothermia per protocol."
+    ],
+    "safetyTips": [
+      "ICP >20 mmHg sustained = notify neurosurgery. ICP >30 mmHg = brain herniation risk.",
+      "Cushing's Triad (late sign of herniation): hypertension, bradycardia, irregular respirations \u2014 emergency.",
+      "Never suction without pre-oxygenation and lidocaine instillation \u2014 suctioning causes a significant ICP spike."
+    ],
+    "documentation": [
+      "ICP values (continuous or periodic)",
+      "CPP = MAP \u2212 ICP",
+      "Interventions and response",
+      "Neurological exam changes"
+    ],
+    "keyTakeaways": [
+      "Normal ICP <20 mmHg",
+      "CPP = MAP \u2212 ICP (target \u226560)",
+      "HOB 30\u201345\u00b0, head midline"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "pupil-assessment",
+    "title": "Pupil Assessment (PERRLA + Grading)",
+    "category": "Neurological Advanced",
+    "icon": "activity",
+    "summary": "Assessing pupil size, shape, equality, and reactivity to monitor neurological status.",
+    "equipment": [
+      "Penlight or pupil gauge light",
+      "Pupil size gauge chart (mm)",
+      "Dark room or dim lighting"
+    ],
+    "steps": [
+      "Dim the room. Allow eyes to naturally dilate before assessment.",
+      "PERRLA: Pupils Equal Round Reactive to Light and Accommodation.",
+      "DIRECT RESPONSE: shine light into each eye. Observe that pupil constricts promptly (brisk) or sluggishly.",
+      "CONSENSUAL RESPONSE: when light is shone in one eye, the opposite eye should also constrict.",
+      "ACCOMMODATION: ask patient to look far away, then at your finger close up. Pupils should constrict (near response).",
+      "DOCUMENT: size in millimeters (use pupil gauge), shape (round, irregular, oval), equality (equal vs. anisocoria), and reactivity (brisk, sluggish, non-reactive, fixed).",
+      "Normal pupil: 2\u20136mm, equal, round, brisk reaction.",
+      "CRITICAL FINDINGS \u2014 notify provider immediately:",
+      "  Fixed and dilated (blown pupil) unilaterally: CN III compression = uncal herniation.",
+      "  Bilateral fixed and dilated: severe midbrain dysfunction or drug effect.",
+      "  Pinpoint pupils: opioid toxicity or pontine lesion.",
+      "  New anisocoria (>1mm difference): new finding always warrants notification."
+    ],
+    "safetyTips": [
+      "A blown (fixed, dilated) pupil in a head-injured patient = uncal herniation \u2014 neurosurgery emergency.",
+      "Cataracts, artificial eyes, and previous eye surgery affect pupil assessment \u2014 note medical history.",
+      "Compare to baseline \u2014 a change is more significant than a single finding."
+    ],
+    "documentation": [
+      "Pupil size (mm each eye)",
+      "Shape",
+      "Equality",
+      "Direct and consensual reactivity",
+      "Change from baseline"
+    ],
+    "keyTakeaways": [
+      "Normal: 2\u20136mm, equal, brisk",
+      "Fixed + dilated = herniation until proven otherwise",
+      "Pinpoint = opioids or pontine lesion"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "lumbar-puncture-assist",
+    "title": "Lumbar Puncture (LP) Assist",
+    "category": "Neurological Advanced",
+    "icon": "activity",
+    "summary": "Assisting with lumbar puncture for CSF collection and opening pressure measurement.",
+    "equipment": [
+      "LP tray (spinal needles, manometer, collection tubes 1\u20134, stopcock)",
+      "Sterile gloves",
+      "Betadine or chlorhexidine prep",
+      "Local anesthetic (lidocaine)",
+      "Bandage"
+    ],
+    "steps": [
+      "Verify consent. Assess for contraindications: papilledema, coagulopathy, thrombocytopenia, local infection at site, suspected spinal cord lesion.",
+      "Obtain baseline neuro exam and vital signs.",
+      "POSITION: lateral decubent (fetal position) \u2014 chin to chest, knees to abdomen to maximize lumbar flexion. OR sitting and leaning forward over a bedside table.",
+      "Coach patient to remain very still during needle insertion. Reassure patient they will feel pressure but the area will be anesthetized.",
+      "Assist provider with sterile field setup: open LP tray, provide sterile gloves, pour prep solution.",
+      "Label CSF collection tubes 1\u20134 in order of collection.",
+      "After CSF collection: apply small bandage to site. Assist patient to comfortable position.",
+      "POST-LP CARE: Instruct patient to lie flat for 1\u20134 hours per protocol (reduces post-LP headache risk).",
+      "Monitor for post-LP headache (worst when upright, relieved supine): encourage oral fluids, caffeine, acetaminophen. Severe/persistent headache = blood patch may be needed.",
+      "Transport labeled tubes to lab immediately (CSF glucose degrades quickly)."
+    ],
+    "safetyTips": [
+      "Do NOT perform LP with suspected increased ICP without CT head first \u2014 risk of herniation if mass lesion present.",
+      "If patient moves during needle placement, provider must stop. Coach stillness carefully.",
+      "Bloody tap: tubes 1 and 4 \u2014 if tube 4 clears, suggests traumatic tap. True SAH: xanthochromia and equal blood all tubes."
+    ],
+    "documentation": [
+      "Opening pressure (normal: 6\u201320 cm H2O)",
+      "CSF color and clarity",
+      "Number of tubes collected",
+      "Lab orders sent",
+      "Post-procedure neuro check"
+    ],
+    "keyTakeaways": [
+      "CT head before LP if papilledema or focal neuro deficits",
+      "Fetal position maximizes lumbar flexion",
+      "Flat post-procedure to reduce headache"
+    ],
+    "nursing_considerations": []
+  }
+]

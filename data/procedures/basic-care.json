@@ -1,0 +1,218 @@
+[
+  {
+    "id": "complete-bed-bath",
+    "title": "Complete Bed Bath",
+    "category": "Basic Patient Care",
+    "icon": "activity",
+    "summary": "Providing a full bed bath to a dependent patient, maintaining dignity, privacy, and skin integrity.",
+    "equipment": [
+      "Warm water basin",
+      "Soap or no-rinse cleanser",
+      "Washcloths (minimum 3)",
+      "Towels",
+      "Clean patient gown/linens",
+      "Gloves",
+      "Lotion",
+      "Privacy screen"
+    ],
+    "steps": [
+      "Explain procedure to patient. Close door and draw curtain for privacy.",
+      "Raise bed to working height. Lower far side rail. Maintain opposite rail up for safety.",
+      "Fill basin with water 105\u2013115\u00b0F (41\u201346\u00b0C). Test on wrist first.",
+      "Don gloves. Place towel over patient's chest as you wash: expose only the area being washed.",
+      "Order: face \u2192 neck \u2192 arms \u2192 hands \u2192 chest \u2192 abdomen \u2192 legs \u2192 feet \u2192 back \u2192 perineal area (last).",
+      "Face: use plain warm water. Wash inner to outer canthus of each eye with a separate clean area of cloth.",
+      "Rinse each area thoroughly \u2014 soap residue causes skin breakdown.",
+      "Pat dry \u2014 do NOT rub. Apply lotion to dry areas (back, heels, elbows) unless contraindicated.",
+      "Inspect skin during bath: redness, rash, bruising, pressure injury, edema, skin tears.",
+      "Change water when cool or soapy. Change gloves after perineal care.",
+      "Change gown and bed linens. Reposition patient in comfortable alignment.",
+      "Document: skin condition, patient tolerance, any abnormal findings."
+    ],
+    "safetyTips": [
+      "Never leave a dependent patient alone with side rails down.",
+      "Test water temperature before applying \u2014 patients with neuropathy may not feel burning.",
+      "Redness over bony prominences that does not blanch = Stage 1 pressure injury. Document and implement pressure relief immediately."
+    ],
+    "documentation": [
+      "Skin condition and integrity",
+      "Patient tolerance",
+      "Lotion/moisture applied",
+      "Assistive devices used"
+    ],
+    "keyTakeaways": [
+      "Face to perineal last",
+      "Pat dry, never rub",
+      "Inspect skin every bath"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "oral-hygiene",
+    "title": "Oral Hygiene Care (Non-Ventilated Patient)",
+    "category": "Basic Patient Care",
+    "icon": "activity",
+    "summary": "Providing comprehensive oral hygiene to maintain comfort, prevent infection, and reduce aspiration risk.",
+    "equipment": [
+      "Soft-bristle toothbrush",
+      "Toothpaste or chlorhexidine gel",
+      "Suction toothbrush or yankauer for at-risk patients",
+      "Cup of water",
+      "Emesis basin",
+      "Gloves",
+      "Lip balm"
+    ],
+    "steps": [
+      "Assess oral cavity: mucous membrane moisture, ulcers, bleeding, debris, condition of teeth/dentures.",
+      "Elevate HOB to 30\u201345\u00b0 to reduce aspiration risk.",
+      "Perform hand hygiene and don gloves.",
+      "Brush all tooth surfaces \u2014 outer, inner, chewing surfaces \u2014 for 2 minutes. Use circular motion.",
+      "Brush tongue gently to remove bacteria.",
+      "Have patient rinse and spit (if able). Use suction if patient cannot spit effectively.",
+      "Apply chlorhexidine per order (aspiration risk patients \u2014 especially head of bed <30\u00b0).",
+      "Apply lip moisturizer to prevent drying and cracking.",
+      "Clean dentures separately over basin with water. Re-insert or store in labeled container.",
+      "Perform oral care at minimum twice daily (every 8\u201312h) and after meals."
+    ],
+    "safetyTips": [
+      "Poor oral hygiene is linked to aspiration pneumonia \u2014 especially in NPO, dysphagia, and non-ambulatory patients.",
+      "Dry oral mucosa + decreased fluid intake = increased infection and pain risk.",
+      "Use suction toothbrush for dysphagic or unconscious patients to prevent aspiration of fluids."
+    ],
+    "documentation": [
+      "Oral assessment findings",
+      "Care frequency",
+      "Unusual findings (ulcers, bleeding, thrush)"
+    ],
+    "keyTakeaways": [
+      "Every 8\u201312h minimum",
+      "HOB 30\u201345\u00b0 during care",
+      "Suction for dysphagic/unconscious patients"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "perineal-care",
+    "title": "Perineal Care (Peri-Care)",
+    "category": "Basic Patient Care",
+    "icon": "activity",
+    "summary": "Cleansing the perineal and genital area to maintain hygiene, prevent infection, and promote comfort.",
+    "equipment": [
+      "Warm water or no-rinse perineal cleanser",
+      "Washcloths or disposable wipes",
+      "Gloves",
+      "Moisture barrier cream",
+      "Towels",
+      "Clean linens"
+    ],
+    "steps": [
+      "Explain procedure and provide privacy. Raise bed to working height.",
+      "Don gloves. Position patient supine with knees bent and legs separated.",
+      "FEMALE: clean from front to back (urethra to rectum). Use a clean area of the cloth for each stroke. Separate labia and cleanse the urethral meatus directly.",
+      "MALE: retract foreskin (if uncircumcised). Clean from urethral meatus outward in circular motion. Replace foreskin after cleaning \u2014 leaving foreskin retracted causes paraphimosis.",
+      "Cleanse skin folds and surrounding area (inner thighs, gluteal fold).",
+      "Rinse thoroughly if soap used. Pat dry completely \u2014 moisture promotes skin breakdown and infection.",
+      "Apply moisture barrier cream to areas exposed to incontinence.",
+      "Change soiled linens and incontinence briefs.",
+      "For patients with Foley catheters: cleanse along catheter tubing from insertion site outward.",
+      "Perform peri-care after each episode of incontinence and at minimum twice daily."
+    ],
+    "safetyTips": [
+      "Leaving the foreskin retracted after peri-care = paraphimosis (medical emergency). Always replace it.",
+      "Inadequate perineal care is the primary cause of CAUTI (catheter-associated urinary tract infection).",
+      "Front to back in females is non-negotiable \u2014 fecal organisms near the urethra cause UTI."
+    ],
+    "documentation": [
+      "Skin condition in perineal area",
+      "Moisture barrier applied",
+      "Incontinent episode noted"
+    ],
+    "keyTakeaways": [
+      "Female: front to back always",
+      "Replace foreskin after male peri-care",
+      "Moisture barrier for incontinent patients"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "eye-care",
+    "title": "Eye Care (Unconscious / At-Risk Patients)",
+    "category": "Basic Patient Care",
+    "icon": "activity",
+    "summary": "Preventing corneal injury and drying in patients who cannot protect their own eyes.",
+    "equipment": [
+      "Normal saline for irrigation",
+      "Eye lubricant (artificial tears or ophthalmic gel)",
+      "Moisture chamber goggles or clear film",
+      "Gauze pads",
+      "Gloves"
+    ],
+    "steps": [
+      "Assess eye risk factors: GCS <8, corneal reflex absent, incomplete eyelid closure (lagophthalmos), sedation/paralysis.",
+      "Perform hand hygiene and don gloves.",
+      "Gently clean eyelids: moisten gauze with NS and wipe from inner to outer canthus. Use a separate gauze for each eye.",
+      "Instill lubricating eye drops or gel per order (typically q2\u20134h).",
+      "If patient cannot fully close eyelids: apply moisture chamber (clear film or moisture goggles) to prevent evaporative corneal exposure.",
+      "Tape eyelids shut as a last resort only if moisture chambers unavailable \u2014 use soft paper tape, not adhesive tape.",
+      "Assess eyes every shift: redness, discharge, corneal haziness, foreign body sensation when patient is awake.",
+      "Report: purulent discharge (infection), corneal clouding (exposure keratopathy), or eye trauma."
+    ],
+    "safetyTips": [
+      "Corneal exposure in unconscious patients leads to keratitis and permanent vision loss within hours \u2014 prevention is the intervention.",
+      "Never use dry gauze directly on the eye surface.",
+      "Consult ophthalmology if corneal haziness or discharge is noted."
+    ],
+    "documentation": [
+      "Eye appearance and closure ability",
+      "Lubricant applied and frequency",
+      "Moisture chamber applied (yes/no)"
+    ],
+    "keyTakeaways": [
+      "GCS <8 = automatic eye care protocol",
+      "Moisture chambers prevent exposure keratopathy",
+      "Inner to outer canthus cleaning direction"
+    ],
+    "nursing_considerations": []
+  },
+  {
+    "id": "indwelling-catheter-daily-care",
+    "title": "Indwelling Urinary Catheter Daily Care (CAUTI Prevention)",
+    "category": "Basic Patient Care",
+    "icon": "activity",
+    "summary": "Daily care of an indwelling urinary catheter to prevent infection and maintain patency.",
+    "equipment": [
+      "Gloves",
+      "Soap and water or perineal cleanser",
+      "Assessment: catheter secure device"
+    ],
+    "steps": [
+      "DAILY NECESSITY REVIEW: question the need for catheter every day. Remove catheter as soon as clinically appropriate (each additional day = increased CAUTI risk).",
+      "Assess: output color, clarity, amount, odor. Report concentrated, cloudy, or foul-smelling urine.",
+      "Perform catheter care at minimum daily and after each bowel movement:",
+      "  Clean insertion site and catheter tubing for 6 inches from meatus outward using soap and water \u2014 do NOT use povidone-iodine (ineffective for prevention).",
+      "  Clean from meatus outward, not back-and-forth.",
+      "Secure catheter to inner thigh (female) or upper thigh/lower abdomen (male) to prevent traction on the urethra.",
+      "Keep drainage bag below bladder level at ALL times (gravity drainage). Never raise bag above the bladder.",
+      "Keep drainage bag off the floor. Empty bag when 2/3 full or every 8 hours. Use a separate container for each patient.",
+      "Maintain a closed system \u2014 never disconnect catheter from drainage bag unnecessarily.",
+      "Do NOT irrigate the catheter routinely. Irrigate only for blockage and with a provider order."
+    ],
+    "safetyTips": [
+      "Raising the drainage bag above the bladder causes reflux of urine back into the bladder \u2014 direct route for CAUTI.",
+      "Each day with a catheter increases CAUTI risk by 5\u20137%. Advocate for daily removal review.",
+      "Do NOT break the closed system \u2014 disconnecting catheter from tubing dramatically increases infection risk."
+    ],
+    "documentation": [
+      "Urine output, color, and character",
+      "Daily necessity review documented",
+      "Catheter care performed",
+      "Securing device intact"
+    ],
+    "keyTakeaways": [
+      "Bag always below bladder",
+      "Daily removal review is a patient safety measure",
+      "Closed system \u2014 never disconnect"
+    ],
+    "nursing_considerations": []
+  }
+]

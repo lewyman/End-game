@@ -1,0 +1,350 @@
+[
+  {
+    "id": "iv-insertion",
+    "title": "Peripheral IV Catheter Insertion",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Inserting a short peripheral IV catheter into a peripheral vein for medication/fluid administration.",
+    "equipment": ["IV catheter (18–22g)", "Tourniquet", "Alcohol/chlorhexidine swab", "Tegaderm/transparent dressing", "Tape", "Flush (10mL NS)", "Gloves", "Extension set/cap"],
+    "steps": [
+      "Perform hand hygiene and don gloves.",
+      "Identify appropriate vein — antecubital, forearm, or dorsal hand. Avoid areas of bruising, infection, or AV fistula side.",
+      "Apply tourniquet 4–6 inches above the insertion site.",
+      "Clean the site with chlorhexidine or alcohol swab using a circular or back-and-forth motion. Allow to fully dry.",
+      "Remove catheter needle cap. Bevel up, insert at 10–30° angle in the direction of blood flow.",
+      "Watch for flashback (blood in the catheter chamber). Once visible, lower the angle and advance 1–2mm further.",
+      "Slide the catheter off the needle while stabilizing the needle — do not reinsert needle once removed.",
+      "Release the tourniquet. Apply pressure proximal to the site with one finger while removing the needle.",
+      "Dispose of needle immediately in sharps container.",
+      "Attach extension set or cap. Flush with 10mL NS using a push-pause technique to confirm patency.",
+      "Apply transparent dressing (Tegaderm) and secure with tape. Label with date, time, gauge, and your initials.",
+      "Document site appearance, gauge, attempts, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Avoid the dominant arm, areas of edema, or the arm with a mastectomy.",
+      "If two attempts fail, have another nurse attempt or consider escalating.",
+      "Assess insertion site every shift for signs of infiltration, phlebitis, or infection.",
+      "Replace peripheral IVs per facility policy (typically every 72–96 hours).",
+      "Use smallest gauge appropriate for treatment — 18g for blood, 20–22g for general meds."
+    ]
+  },
+  {
+    "id": "wound-care",
+    "title": "Wound Care & Dressing Change",
+    "category": "Wound Management",
+    "icon": "bandage",
+    "summary": "Assessing and redressing a wound to promote healing and prevent infection.",
+    "equipment": ["Sterile gloves", "Clean gloves", "Normal saline or wound cleanser", "Appropriate dressing (gauze, foam, hydrocolloid)", "Tape or securing method", "Sterile field/drape", "Wound measurement tool", "Biohazard bag"],
+    "steps": [
+      "Review orders for specific wound care instructions. Perform hand hygiene.",
+      "Gather all supplies and set up sterile field if required.",
+      "Don clean gloves. Gently remove old dressing, noting type, amount, color, and odor of drainage.",
+      "Dispose of soiled dressing in biohazard bag. Remove gloves and perform hand hygiene.",
+      "Don sterile gloves. Assess the wound — note size (length × width × depth), wound bed color, surrounding skin, and signs of infection.",
+      "Irrigate the wound with normal saline or prescribed cleanser. Use a 35mL syringe with 18g angiocath for 8psi irrigation if appropriate.",
+      "Pat the periwound skin dry with sterile gauze.",
+      "Apply appropriate dressing per wound type and provider order.",
+      "Secure dressing with tape or other appropriate method.",
+      "Remove gloves and perform hand hygiene.",
+      "Document wound assessment including size, color, drainage, odor, periwound skin, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Obtain a wound culture before cleaning if infection is suspected.",
+      "Use Sterile technique for surgical wounds and clean technique for chronic wounds (per facility policy).",
+      "Stage pressure injuries (I–IV) and document accurately.",
+      "Refer to wound care specialist for non-healing wounds or wounds requiring debridement.",
+      "Assess patient pain before, during, and after the procedure."
+    ]
+  },
+  {
+    "id": "foley-catheter",
+    "title": "Foley (Indwelling Urinary) Catheter Insertion",
+    "category": "Genitourinary",
+    "icon": "activity",
+    "summary": "Inserting a sterile indwelling urinary catheter to drain the bladder.",
+    "equipment": ["Sterile Foley catheter kit (includes catheter, drape, betadine, lubricant, syringe, collection bag)", "Sterile gloves", "Extra lighting if needed"],
+    "steps": [
+      "Verify provider order. Explain procedure to patient and provide privacy.",
+      "Position patient: female — dorsal recumbent (frog-leg); male — supine.",
+      "Perform hand hygiene. Open catheter kit using sterile technique.",
+      "Don sterile gloves. Organize sterile field — open all supplies onto field.",
+      "Place sterile drape under the patient's buttocks and fenestrated drape over the perineum.",
+      "Female: Separate labia with non-dominant hand (this hand is now contaminated). Use dominant hand to cleanse urethral meatus with betadine swabs — front to back, center, then each side.",
+      "Male: Hold penis with non-dominant hand perpendicular to body. Retract foreskin if present. Cleanse meatus in circular motion from center outward.",
+      "Lubricate catheter tip. Insert catheter gently into urethra — female: 2–3 inches; male: 6–9 inches — until urine flows.",
+      "Advance 1–2 more inches after urine appears. Inflate balloon with sterile water per catheter size (typically 10mL).",
+      "Gently pull back until resistance is felt — confirms balloon is in bladder.",
+      "Secure catheter to inner thigh. Connect drainage bag and position below bladder level.",
+      "Document insertion, initial urine output, color, clarity, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Use CAUTIs bundle: insert only when medically necessary, use aseptic technique, reassess need daily.",
+      "Never force the catheter — if resistance is met, stop and notify provider.",
+      "Replace foreskin to original position after insertion (prevent paraphimosis).",
+      "Assess for CAUTI symptoms: fever, cloudy/foul urine, suprapubic pain.",
+      "Remove catheter as soon as no longer clinically indicated to reduce infection risk."
+    ]
+  },
+  {
+    "id": "ng-tube",
+    "title": "Nasogastric (NG) Tube Insertion",
+    "category": "GI Access",
+    "icon": "activity",
+    "summary": "Inserting a nasogastric tube for feeding, medication administration, or gastric decompression.",
+    "equipment": ["NG tube (14–18Fr)", "Water-soluble lubricant", "60mL catheter tip syringe", "pH paper or CO2 detector", "Stethoscope", "Tape/commercial holder", "Emesis basin", "Cup of water with straw (if patient can swallow)", "Gloves", "Pulse oximeter"],
+    "steps": [
+      "Verify order and assess for contraindications (facial trauma, esophageal varices, recent surgery).",
+      "Elevate HOB to 45–90°. Assess nares — choose the more patent side.",
+      "Measure tube length: earlobe → tip of nose → xiphoid process. Mark or note the measurement.",
+      "Lubricate the first 3–4 inches of the tube with water-soluble lubricant.",
+      "Don gloves. Insert tube through nare and advance posteriorly — aim toward ear, not top of head.",
+      "Advance tube while asking patient to swallow (or tilt chin to chest). If gagging is excessive, pause and allow to pass.",
+      "Monitor for respiratory distress, cyanosis, or inability to speak — if these occur, remove immediately.",
+      "Advance to the marked measurement. Secure tube temporarily.",
+      "Verify placement by: (1) aspirating gastric contents and checking pH ≤ 5.5 or using CO2 detector, (2) X-ray confirmation before first feeding.",
+      "Do NOT rely solely on air insufflation (whoosh test) — not reliable.",
+      "Secure tube to nose with tape or commercial holder. Mark tube at nare exit point.",
+      "Document insertion, tube length at nare, confirmation method, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "X-ray is the gold standard for confirmation before initiating feeds.",
+      "Recheck tube placement before each feeding and medication administration.",
+      "Assess nare for pressure injury — rotate side if long-term use.",
+      "Never insert in patients with basilar skull fracture — use OG tube instead.",
+      "Monitor for tube migration, especially after coughing or vomiting episodes."
+    ]
+  },
+  {
+    "id": "blood-draw",
+    "title": "Venipuncture / Blood Draw",
+    "category": "Specimen Collection",
+    "icon": "syringe",
+    "summary": "Collecting a venous blood sample for laboratory analysis.",
+    "equipment": ["Vacutainer holder/needle (21–23g)", "Appropriate collection tubes (per orders)", "Tourniquet", "Alcohol swabs", "Gauze", "Bandage", "Gloves", "Biohazard specimen bag", "Labels"],
+    "steps": [
+      "Review lab orders. Verify patient ID using two identifiers. Explain procedure.",
+      "Select site — antecubital fossa preferred. Avoid hematoma sites, edematous areas, mastectomy side.",
+      "Apply tourniquet 3–4 inches above site. Palpate and identify vein.",
+      "Perform hand hygiene and don gloves.",
+      "Clean site with alcohol swab using circular motion. Allow to dry fully (30 seconds).",
+      "Anchor vein with non-dominant thumb pulling skin taut below the site.",
+      "Insert needle bevel up at 15–30° angle into the vein.",
+      "Advance needle slightly after flashback. Attach first collection tube — blood will flow automatically.",
+      "Keep needle stable while changing tubes using correct draw order (see below).",
+      "Release tourniquet before removing needle (or as last tube fills).",
+      "Remove needle swiftly, apply gauze with firm pressure for 2–3 minutes.",
+      "Invert tubes gently per manufacturer instructions. Label at bedside.",
+      "Apply bandage. Document."
+    ],
+    "nursing_considerations": [
+      "Draw order: Blood cultures → Light blue (citrate) → Red/Gold → Green → Purple/Lavender → Grey.",
+      "Mix tubes by gentle inversion immediately after collection.",
+      "If using a line draw, discard first 5–10mL per facility policy.",
+      "Do not draw from an arm with an active IV infusion in the same site if possible.",
+      "Apply pressure longer (5 min) for patients on anticoagulants."
+    ]
+  },
+  {
+    "id": "medication-administration",
+    "title": "Medication Administration (5 Rights)",
+    "category": "Medication Safety",
+    "icon": "pill",
+    "summary": "Safely administering medications using the 5 rights framework across all routes.",
+    "equipment": ["Medication Administration Record (MAR)", "Medications", "Administration supplies per route (oral cup, syringe, IV tubing, etc.)", "Gloves as appropriate"],
+    "steps": [
+      "Right Patient: Verify using two identifiers (name + DOB or MRN) — ask patient to state their name.",
+      "Right Medication: Compare the medication label to the MAR — three times (pulling, preparing, administering).",
+      "Right Dose: Calculate and verify dose. Use a second nurse check for high-alert medications.",
+      "Right Route: Confirm the ordered route (PO, IV, IM, SQ, topical, etc.).",
+      "Right Time: Administer within 30 minutes before or after scheduled time (per facility policy).",
+      "Perform hand hygiene and prepare medication in a clean area.",
+      "Educate the patient on what the medication is and why it's being given.",
+      "Administer the medication per the correct route technique.",
+      "Stay with patient for PO medications until swallowed.",
+      "Document administration immediately in the MAR.",
+      "Monitor for therapeutic effects and adverse reactions per medication."
+    ],
+    "nursing_considerations": [
+      "Also apply Right Reason and Right Documentation (7 Rights extended framework).",
+      "High-alert medications (insulin, heparin, opioids) require independent double-checks.",
+      "Never crush enteric-coated or extended-release medications.",
+      "Reassess patient's condition before administering — hold if contraindicated and notify provider.",
+      "Document any refused or held medications and clinical rationale."
+    ]
+  },
+  {
+    "id": "blood-glucose",
+    "title": "Blood Glucose Monitoring (POC)",
+    "category": "Assessment",
+    "icon": "activity",
+    "summary": "Point-of-care capillary blood glucose testing using a glucometer.",
+    "equipment": ["Glucometer", "Test strips", "Lancet/lancing device", "Alcohol swab", "Gauze", "Gloves"],
+    "steps": [
+      "Verify orders or protocol (frequency, target glucose range, sliding scale).",
+      "Perform hand hygiene and don gloves.",
+      "Turn on glucometer and insert test strip — confirm no error codes.",
+      "Have patient warm their hands or use the side of the fingertip for better blood flow.",
+      "Clean fingertip with alcohol swab. Allow to dry fully.",
+      "Lance the lateral aspect of the fingertip.",
+      "Apply gentle pressure to promote blood droplet. Wipe away first drop.",
+      "Touch second drop to test strip — do not smear.",
+      "Apply gauze to fingertip once sample collected.",
+      "Read result and compare to ordered parameters.",
+      "Administer insulin per sliding scale or notify provider if out of range.",
+      "Document result, time, and any interventions taken."
+    ],
+    "nursing_considerations": [
+      "Rotate sites — lateral fingertips, avoid thumb and index finger.",
+      "Critical lows (<70) and highs (>400) require immediate intervention and provider notification.",
+      "Glucometer readings can be falsely low in severe hypoperfusion — confirm with venous glucose if concerned.",
+      "Change lancets each use — never reuse.",
+      "Document glucometer QC/calibration checks per facility policy."
+    ]
+  },
+  {
+    "id": "oxygen-therapy",
+    "title": "Oxygen Therapy Administration",
+    "category": "Respiratory",
+    "icon": "activity",
+    "summary": "Administering supplemental oxygen to maintain adequate oxygenation.",
+    "equipment": ["Flow meter", "Oxygen delivery device (nasal cannula, simple mask, NRB, Venturi mask)", "Humidifier bottle (for flows >4L/min)", "Pulse oximeter", "Gloves"],
+    "steps": [
+      "Verify order including delivery device and flow rate, or titrate per protocol.",
+      "Assess baseline: SpO2, respiratory rate, effort, breath sounds, mental status.",
+      "Attach flow meter to wall O2 outlet. Attach humidifier if flow >4L/min.",
+      "Set prescribed flow rate.",
+      "Apply delivery device to patient:",
+      "  Nasal cannula: prongs curve downward into nares, tubing over ears and under chin.",
+      "  Simple mask: cover nose and mouth, mold nosepiece, secure straps.",
+      "  NRB mask: pre-inflate reservoir bag before placing on patient.",
+      "Confirm SpO2 improvement. Reassess within 15–30 minutes.",
+      "Titrate per protocol to maintain SpO2 target (typically 94–98% or 88–92% for COPD patients).",
+      "Document device, flow rate, SpO2 before and after, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "COPD patients: target SpO2 88–92% — high-flow O2 may suppress hypoxic drive.",
+      "Provide humidification for flows >4L/min to prevent mucosal drying.",
+      "Assess skin integrity under mask/cannula — reposition and pad as needed.",
+      "O2 is a medication — always requires an order except in emergencies.",
+      "Monitor for CO2 retention in at-risk patients."
+    ]
+  },
+  {
+    "id": "12-lead-ecg",
+    "title": "12-Lead ECG Acquisition",
+    "category": "Cardiac Monitoring",
+    "icon": "activity",
+    "summary": "Obtaining a 12-lead electrocardiogram for cardiac rhythm and ischemia assessment.",
+    "equipment": ["ECG machine with leads", "10 electrodes", "Razor (if needed)", "Alcohol wipes", "Gown for patient privacy"],
+    "steps": [
+      "Verify order. Explain procedure to patient. Ensure privacy.",
+      "Position patient supine. Expose chest, wrists, and ankles.",
+      "Prep skin: shave hair if needed, wipe sites with alcohol, allow to dry.",
+      "Apply limb leads first: RA (right arm), LA (left arm), RL (right leg), LL (left leg).",
+      "Apply precordial leads in order:",
+      "  V1: 4th intercostal space, right sternal border.",
+      "  V2: 4th intercostal space, left sternal border.",
+      "  V3: Between V2 and V4.",
+      "  V4: 5th intercostal space, midclavicular line.",
+      "  V5: Anterior axillary line, same horizontal as V4.",
+      "  V6: Midaxillary line, same horizontal as V4–V5.",
+      "Ask patient to lie still, breathe normally, and not talk.",
+      "Acquire ECG tracing. Check for artifact or loose leads — repeat if needed.",
+      "Remove electrodes and clean gel from skin.",
+      "Document time of acquisition and deliver tracing to ordering provider promptly."
+    ],
+    "nursing_considerations": [
+      "STEMI is a time-critical emergency — door-to-ECG goal is ≤10 minutes for chest pain patients.",
+      "Correct lead placement is critical — misplacement leads to false positives/negatives.",
+      "Baseline wander, movement, and loose electrodes cause artifact — reapply if needed.",
+      "Right-sided ECG (V3R–V6R) ordered when right ventricular MI suspected.",
+      "For female patients, place V3–V6 under the breast, not on top of it."
+    ]
+  },
+  {
+    "id": "central-line-care",
+    "title": "Central Line / PICC Dressing Change",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Performing a sterile dressing change on a central venous catheter or PICC line.",
+    "equipment": ["CVAD dressing change kit (includes sterile gloves, CHG disc/swab, transparent dressing, Steri-strips, mask)", "Clean gloves", "Mask for patient"],
+    "steps": [
+      "Review order and last dressing change date. Check for signs of infection or dislodgement.",
+      "Perform hand hygiene. Don clean gloves and mask. Apply mask to patient.",
+      "Carefully remove old dressing by stabilizing catheter hub — pull dressing parallel to skin toward insertion site.",
+      "Inspect site: redness, swelling, discharge, catheter migration (check external length vs. documented).",
+      "Remove clean gloves. Perform hand hygiene. Don sterile gloves.",
+      "Clean insertion site with CHG swab using a back-and-forth scrub motion for 30 seconds. Allow to dry 30 seconds.",
+      "Apply CHG disc (if used) around catheter at insertion site.",
+      "Apply transparent semipermeable dressing over site, starting at insertion point and pressing outward.",
+      "Secure catheter hub and tubing to prevent tension on the line.",
+      "Label dressing with date, time, and initials.",
+      "Document dressing change, site assessment, and external catheter length."
+    ],
+    "nursing_considerations": [
+      "Change dressing every 7 days (transparent) or every 2 days (gauze) or when soiled/loosened.",
+      "Use CHG-based dressings when available — they significantly reduce CLABSI rates.",
+      "Never reinsert a migrated catheter — notify provider.",
+      "Assess for CLABSI signs: fever, rigors, erythema >2cm, purulent drainage.",
+      "Maintain strict sterile technique — central line infections are life-threatening."
+    ]
+  },
+  {
+    "id": "tracheostomy-care",
+    "title": "Tracheostomy Care",
+    "category": "Airway Management",
+    "icon": "activity",
+    "summary": "Cleaning and maintaining a tracheostomy stoma and inner cannula.",
+    "equipment": ["Tracheostomy care kit or: sterile NS, hydrogen peroxide (per policy), pipe cleaners/brushes, gauze, sterile gloves, spare tracheostomy tube (same size/type at bedside)", "Suction equipment at bedside"],
+    "steps": [
+      "Ensure suction and extra trach tube (same size and one size smaller) are at bedside before starting.",
+      "Perform hand hygiene. Don sterile gloves.",
+      "Suction the tracheostomy first if secretions are present.",
+      "Remove inner cannula if disposable — replace with new one. If reusable — place in hydrogen peroxide (per policy) and clean with brush, rinse with sterile NS, dry.",
+      "Clean the stoma site with sterile NS-moistened gauze, moving from inner to outer in a circular motion.",
+      "Replace stoma gauze dressing if soiled (split gauze around tube).",
+      "Change trach ties if soiled: have assistant hold trach tube in place while one set of ties is removed and replaced. Maintain one finger-width of slack.",
+      "Reinsert cleaned/new inner cannula and lock securely.",
+      "Assess stoma for granulation tissue, skin breakdown, infection.",
+      "Document procedure, secretion color/amount, and site appearance."
+    ],
+    "nursing_considerations": [
+      "Never leave the tracheostomy unattended during tie change — accidental decannulation is a medical emergency.",
+      "Keep obturator and extra tube taped to head of bed at all times.",
+      "Perform care at minimum every 8 hours and whenever soiled.",
+      "Avoid over-suctioning — limit to 10 seconds per suction pass.",
+      "Inflate cuff appropriately if ventilated — check cuff pressure every 8–12 hours (goal 20–30 cmH2O)."
+    ]
+  },
+  {
+    "id": "isolation-precautions",
+    "title": "Isolation Precautions (PPE Donning & Doffing)",
+    "category": "Infection Control",
+    "icon": "shield",
+    "summary": "Proper sequence for applying and removing personal protective equipment (PPE).",
+    "equipment": ["Gloves", "Gown", "Surgical mask or N95 respirator", "Eye protection (goggles or face shield)", "Hand sanitizer"],
+    "steps": [
+      "DONNING (putting on):",
+      "1. Perform hand hygiene.",
+      "2. Put on gown — tie at neck and waist.",
+      "3. Put on mask or respirator — ensure proper fit/seal for N95.",
+      "4. Put on eye protection.",
+      "5. Put on gloves — pull over gown cuffs.",
+      "DOFFING (removing — most contaminated items first):",
+      "1. Remove gloves: grasp outside of one glove, peel off. Hold in gloved hand. Slide finger under clean cuff of other glove, peel off over first glove. Discard.",
+      "2. Perform hand hygiene.",
+      "3. Remove gown: untie, pull from neck and shoulders, roll away from body, discard.",
+      "4. Perform hand hygiene.",
+      "5. Remove eye protection — handle by the arms/headband, not the front.",
+      "6. Remove mask — handle by straps only, do not touch front.",
+      "7. Perform hand hygiene immediately."
+    ],
+    "nursing_considerations": [
+      "Contact: gloves + gown (MRSA, C. diff, VRE).",
+      "Droplet: gloves + gown + surgical mask + eye protection (influenza, COVID, RSV).",
+      "Airborne: gloves + gown + N95 + eye protection — negative pressure room required (TB, measles, varicella).",
+      "C. diff requires soap and water hand hygiene — alcohol gel is NOT effective against spores.",
+      "Perform hand hygiene at every step of doffing to prevent self-contamination."
+    ]
+  }
+]

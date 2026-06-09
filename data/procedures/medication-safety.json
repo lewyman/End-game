@@ -1,0 +1,147 @@
+[
+  {
+    "id": "medication-administration",
+    "title": "Medication Administration (5 Rights)",
+    "category": "Medication Safety",
+    "icon": "pill",
+    "summary": "Safely administering medications using the 5 rights framework across all routes.",
+    "equipment": ["Medication Administration Record (MAR)", "Medications", "Administration supplies per route (oral cup, syringe, IV tubing, etc.)", "Gloves as appropriate"],
+    "steps": [
+      "Right Patient: Verify using two identifiers (name + DOB or MRN) — ask patient to state their name.",
+      "Right Medication: Compare the medication label to the MAR — three times (pulling, preparing, administering).",
+      "Right Dose: Calculate and verify dose. Use a second nurse check for high-alert medications.",
+      "Right Route: Confirm the ordered route (PO, IV, IM, SQ, topical, etc.).",
+      "Right Time: Administer within 30 minutes before or after scheduled time (per facility policy).",
+      "Perform hand hygiene and prepare medication in a clean area.",
+      "Educate the patient on what the medication is and why it's being given.",
+      "Administer the medication per the correct route technique.",
+      "Stay with patient for PO medications until swallowed.",
+      "Document administration immediately in the MAR.",
+      "Monitor for therapeutic effects and adverse reactions per medication."
+    ],
+    "nursing_considerations": [
+      "Also apply Right Reason and Right Documentation (7 Rights extended framework).",
+      "High-alert medications (insulin, heparin, opioids) require independent double-checks.",
+      "Never crush enteric-coated or extended-release medications.",
+      "Reassess patient's condition before administering — hold if contraindicated and notify provider.",
+      "Document any refused or held medications and clinical rationale."
+    ]
+  },
+  {
+    "id": "subcutaneous-injection",
+    "title": "Subcutaneous (SQ/SC) Injection",
+    "category": "Medication Safety",
+    "icon": "syringe",
+    "summary": "Administering medication into the subcutaneous tissue using a short needle.",
+    "equipment": ["Medication in syringe (drawn up per order)", "25–27g, 3/8–5/8 inch needle", "Alcohol swab", "Gauze", "Gloves", "Sharps container"],
+    "steps": [
+      "Verify 5 rights. Perform hand hygiene and don gloves.",
+      "Select injection site: abdomen (2 inches from umbilicus), outer thigh, upper outer arm, or upper back. Rotate sites systematically.",
+      "For insulin: abdomen provides fastest/most consistent absorption; thigh slowest.",
+      "Clean site with alcohol swab in circular motion. Allow to dry completely (30 seconds).",
+      "Pinch up a fold of subcutaneous tissue with non-dominant hand.",
+      "Insert needle at 45° (thin patient or short needle) or 90° angle (average to heavy patient with ≥1 inch of subcutaneous tissue). Insert at 90° for insulin pens.",
+      "Release the skin fold once needle is inserted.",
+      "Do NOT aspirate before injecting SQ medications — aspiration is no longer recommended for any SQ injection.",
+      "Inject medication slowly and steadily.",
+      "Withdraw needle at the same angle as insertion. Apply gentle pressure with gauze — do not rub (rubbing disperses medication and causes bruising).",
+      "Dispose of needle immediately in sharps container — do NOT recap.",
+      "Document site, time, dose, and patient response."
+    ],
+    "nursing_considerations": [
+      "Rotate injection sites consistently — injecting repeatedly into the same spot causes lipohypertrophy (fatty lumps) which impairs absorption.",
+      "Insulin should reach room temperature before injection — cold insulin stings and may alter absorption.",
+      "Heparin injections: apply pressure 1–2 min after but do NOT rub — rubbing causes hematomas.",
+      "Enoxaparin (Lovenox) pre-filled syringes: do NOT expel the air bubble before injection — it helps seal the drug in subcutaneous tissue.",
+      "If blood appears in syringe barrel, withdraw, discard, and prepare a new dose."
+    ]
+  },
+  {
+    "id": "intramuscular-injection",
+    "title": "Intramuscular (IM) Injection",
+    "category": "Medication Safety",
+    "icon": "syringe",
+    "summary": "Administering medication deep into muscle tissue for rapid absorption.",
+    "equipment": ["Medication in syringe", "20–25g, 1–3 inch needle (size based on patient and site)", "Alcohol swab", "Gauze", "Gloves", "Sharps container"],
+    "steps": [
+      "Verify 5 rights. Select appropriate site and needle length based on patient muscle mass and body habitus.",
+      "Perform hand hygiene and don gloves.",
+      "Select site (preference order): Ventrogluteal → Vastus lateralis → Deltoid.",
+      "  Ventrogluteal: Locate the greater trochanter with your palm. Point fingers toward the patient's head. The space between index and middle finger is the injection site. Use 1.5–2 inch needle.",
+      "  Deltoid: 3 finger-widths below the acromion process, on the lateral aspect. Limit to ≤1 mL. Use 1–1.5 inch needle.",
+      "  Vastus lateralis: Middle third of outer thigh. Use 1–1.5 inch needle.",
+      "  Dorsogluteal: NOT recommended — risk of sciatic nerve injury.",
+      "Clean site with alcohol swab. Allow to dry.",
+      "Spread or bunch skin (spread technique most common). Insert needle at 90° with a smooth, quick motion.",
+      "Inject medication steadily (10 seconds per mL).",
+      "Withdraw needle at 90°. Apply gentle pressure with gauze.",
+      "Do NOT massage — disperses medication, increases discomfort.",
+      "Dispose of needle immediately in sharps container.",
+      "Document site, dose, time, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Maximum volumes per site: deltoid 1 mL, vastus lateralis 1–3 mL, ventrogluteal up to 3–5 mL.",
+      "Ventrogluteal is the preferred site — furthest from major nerves and blood vessels, reliable muscle depth.",
+      "Avoid dorsogluteal (buttocks) — high risk of sciatic nerve damage and inconsistent muscle depth.",
+      "Z-track technique is recommended for irritating medications (iron dextran, hydroxyzine): pull skin 1–1.5 inches laterally before injecting, hold during/after, release after needle withdrawal.",
+      "Aspiration before IM injection is no longer routinely recommended — evidence does not support routine aspiration for most IM sites."
+    ]
+  },
+  {
+    "id": "iv-push",
+    "title": "IV Push (IVP) Medication Administration",
+    "category": "Medication Safety",
+    "icon": "syringe",
+    "summary": "Administering a medication directly into the bloodstream via IV access over a short defined time.",
+    "equipment": ["Prepared medication in syringe (per order)", "10 mL NS flush syringes (x2)", "Alcohol swabs", "Gloves", "MAR"],
+    "steps": [
+      "Verify 5 rights. Review safe IVP push rate for the specific medication (refer to pharmacy or drug guide).",
+      "Perform hand hygiene and don gloves.",
+      "Assess IV site for patency: no redness, swelling, or tenderness.",
+      "Clean IV access port (needleless connector or cap) with alcohol swab using friction for 15 seconds. Allow to dry.",
+      "Flush IV with 10 mL NS using push-pause technique to confirm patency. Note ease of flush and patient response.",
+      "Stop any infusing IV fluid or clamp primary line if medication is incompatible.",
+      "Connect medication syringe to the port. Inject at the prescribed rate (refer to push rate).",
+      "Many medications specify a per-minute rate: e.g., morphine 2–5 mg over 5 minutes = 1 mg per minute.",
+      "Observe patient throughout administration for adverse reactions.",
+      "After medication, flush with 10 mL NS using push-pause technique to ensure all medication clears the tubing.",
+      "Resume previous IV infusion if applicable.",
+      "Document medication, dose, time, push rate, and patient response."
+    ],
+    "nursing_considerations": [
+      "Never push medications faster than the recommended rate — rapid administration of many drugs causes serious adverse effects (e.g., phenytoin cardiac dysrhythmia, furosemide ototoxicity).",
+      "High-alert IVP medications (opioids, benzodiazepines, heparin, insulin) require independent double-check.",
+      "If patient reports pain, burning, or you feel resistance during flush — stop and reassess IV patency.",
+      "Avoid giving IVP medications through small peripheral IVs (24g) or into a port that has been sluggish.",
+      "Some medications require dilution before IVP (e.g., potassium chloride is NEVER given undiluted IV push — fatal)."
+    ]
+  },
+  {
+    "id": "pca-management",
+    "title": "Patient-Controlled Analgesia (PCA) Management",
+    "category": "Medication Safety",
+    "icon": "activity",
+    "summary": "Setting up, monitoring, and troubleshooting a PCA pump for patient-controlled opioid analgesia.",
+    "equipment": ["PCA pump and PCA tubing", "Opioid medication cassette (per order)", "Gloves", "Two-nurse verification form", "Naloxone (available at bedside)"],
+    "steps": [
+      "Verify complete PCA order: medication, concentration, demand dose, lockout interval, 1-hour and 4-hour limit, and basal rate (if ordered).",
+      "Perform two-nurse independent double-check before programming — verify drug, concentration, dose, lockout interval, and limit settings.",
+      "Load PCA cassette into pump. Attach PCA-specific tubing (anti-siphon and anti-reflux valves required).",
+      "Connect PCA tubing to patient's IV access. Ensure IV is patent.",
+      "Program pump per verified order. Second nurse confirms all settings.",
+      "Educate patient on PCA use: press the button only when pain occurs; do NOT allow others (family) to press the button for the patient.",
+      "Ensure call light is within reach. Ensure naloxone is accessible at bedside.",
+      "Assess pain level, respiratory rate, sedation score (RASS or Pasero), SpO2 per facility protocol (commonly every 1–2 hours).",
+      "Document PCA readings every shift: total doses attempted, doses delivered, cumulative drug volume used.",
+      "If sedation score is ≥3 (on Pasero scale) or respiratory rate <10, stop PCA, stimulate patient, call for help, and administer naloxone per protocol.",
+      "Resolve PCA alarms promptly. Document all interventions."
+    ],
+    "nursing_considerations": [
+      "Only the PATIENT should press the PCA button — family-assisted dosing (proxy dosing) bypasses the safety mechanism and can cause overdose.",
+      "Respiratory depression is the most serious PCA complication — monitor sedation level alongside respiratory rate; sedation precedes respiratory depression.",
+      "Basal rates are controversial — they increase risk of respiratory depression overnight in opioid-naive patients.",
+      "Monitor for constipation, urinary retention, nausea — common opioid side effects requiring management.",
+      "Waste any remaining opioid at end of shift with a witness. Document wastage."
+    ]
+  }
+]

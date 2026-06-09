@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.backups/
+models/
+data/openfda/
+public/songs/
+*.zip
+.env

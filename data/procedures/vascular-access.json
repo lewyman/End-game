@@ -1,0 +1,145 @@
+[
+  {
+    "id": "iv-insertion",
+    "title": "Peripheral IV Catheter Insertion",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Inserting a short peripheral IV catheter into a peripheral vein for medication/fluid administration.",
+    "equipment": ["IV catheter (18–22g)", "Tourniquet", "Alcohol/chlorhexidine swab", "Tegaderm/transparent dressing", "Tape", "Flush (10mL NS)", "Gloves", "Extension set/cap"],
+    "steps": [
+      "Perform hand hygiene and don gloves.",
+      "Identify appropriate vein — antecubital, forearm, or dorsal hand. Avoid areas of bruising, infection, or AV fistula side.",
+      "Apply tourniquet 4–6 inches above the insertion site.",
+      "Clean the site with chlorhexidine or alcohol swab using a circular or back-and-forth motion. Allow to fully dry.",
+      "Remove catheter needle cap. Bevel up, insert at 10–30° angle in the direction of blood flow.",
+      "Watch for flashback (blood in the catheter chamber). Once visible, lower the angle and advance 1–2mm further.",
+      "Slide the catheter off the needle while stabilizing the needle — do not reinsert needle once removed.",
+      "Release the tourniquet. Apply pressure proximal to the site with one finger while removing the needle.",
+      "Dispose of needle immediately in sharps container.",
+      "Attach extension set or cap. Flush with 10mL NS using a push-pause technique to confirm patency.",
+      "Apply transparent dressing (Tegaderm) and secure with tape. Label with date, time, gauge, and your initials.",
+      "Document site appearance, gauge, attempts, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Avoid the dominant arm, areas of edema, or the arm with a mastectomy.",
+      "If two attempts fail, have another nurse attempt or consider escalating.",
+      "Assess insertion site every shift for signs of infiltration, phlebitis, or infection.",
+      "Replace peripheral IVs per facility policy (typically every 72–96 hours).",
+      "Use smallest gauge appropriate for treatment — 18g for blood, 20–22g for general meds."
+    ]
+  },
+  {
+    "id": "peripheral-iv-removal",
+    "title": "Peripheral IV Catheter Removal",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Safely removing a peripheral IV catheter when no longer needed or when complications arise.",
+    "equipment": ["Gloves", "Gauze (2x2 sterile)", "Tape or bandage", "Biohazard container"],
+    "steps": [
+      "Verify order to discontinue IV or confirm IV is no longer needed.",
+      "Explain procedure to patient. Perform hand hygiene and don gloves.",
+      "Turn off any infusing fluids or clamp IV tubing.",
+      "Gently loosen and remove the dressing/tape securing the catheter. Avoid pulling on the catheter.",
+      "Place sterile gauze over the insertion site. Do NOT apply pressure yet.",
+      "Using a smooth, steady motion, withdraw the catheter parallel to the skin.",
+      "Immediately apply firm pressure with gauze for 2–3 minutes (longer for anticoagulated patients).",
+      "Inspect the removed catheter — confirm it is intact. Note the tip and length.",
+      "Inspect the site for hematoma, swelling, or redness.",
+      "Apply bandage or tape gauze in place. Instruct patient to keep bandage on for at least 30 minutes.",
+      "Dispose of catheter in appropriate sharps/biohazard container.",
+      "Document removal, site condition, catheter integrity, and patient tolerance."
+    ],
+    "nursing_considerations": [
+      "Never reinsert a catheter once removed — risk of introducing contamination.",
+      "If catheter tip appears broken or missing, notify provider immediately and apply pressure — do not massage.",
+      "Apply pressure for at least 5 minutes for patients on anticoagulants (heparin, warfarin, aspirin).",
+      "If the site shows signs of phlebitis (redness, warmth, pain, streak), document and notify provider.",
+      "Warm compresses to the site post-removal can help resolve discomfort or localized phlebitis."
+    ]
+  },
+  {
+    "id": "central-line-care",
+    "title": "Central Line / PICC Dressing Change",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Performing a sterile dressing change on a central venous catheter or PICC line.",
+    "equipment": ["CVAD dressing change kit (includes sterile gloves, CHG disc/swab, transparent dressing, Steri-strips, mask)", "Clean gloves", "Mask for patient"],
+    "steps": [
+      "Review order and last dressing change date. Check for signs of infection or dislodgement.",
+      "Perform hand hygiene. Don clean gloves and mask. Apply mask to patient.",
+      "Carefully remove old dressing by stabilizing catheter hub — pull dressing parallel to skin toward insertion site.",
+      "Inspect site: redness, swelling, discharge, catheter migration (check external length vs. documented).",
+      "Remove clean gloves. Perform hand hygiene. Don sterile gloves.",
+      "Clean insertion site with CHG swab using a back-and-forth scrub motion for 30 seconds. Allow to dry 30 seconds.",
+      "Apply CHG disc (if used) around catheter at insertion site.",
+      "Apply transparent semipermeable dressing over site, starting at insertion point and pressing outward.",
+      "Secure catheter hub and tubing to prevent tension on the line.",
+      "Label dressing with date, time, and initials.",
+      "Document dressing change, site assessment, and external catheter length."
+    ],
+    "nursing_considerations": [
+      "Change dressing every 7 days (transparent) or every 2 days (gauze) or when soiled/loosened.",
+      "Use CHG-based dressings when available — they significantly reduce CLABSI rates.",
+      "Never reinsert a migrated catheter — notify provider.",
+      "Assess for CLABSI signs: fever, rigors, erythema >2cm, purulent drainage.",
+      "Maintain strict sterile technique — central line infections are life-threatening."
+    ]
+  },
+  {
+    "id": "blood-transfusion",
+    "title": "Blood Transfusion Administration",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Safely administering packed red blood cells or other blood products to the patient.",
+    "equipment": ["Blood product (obtained from blood bank)", "Blood administration set (Y-tubing with filter)", "0.9% Normal Saline (only compatible IV fluid)", "18g or larger IV catheter", "Gloves", "Vital sign equipment", "Two-nurse verification form"],
+    "steps": [
+      "Verify provider order. Obtain signed informed consent if required by facility policy.",
+      "Retrieve blood product from blood bank no more than 30 minutes before administration.",
+      "Perform two-nurse verification at bedside: check patient name, DOB, MRN, blood type, Rh factor, unit number, expiration date, and product type against armband and blood bank tag.",
+      "Assess baseline vital signs: temperature, blood pressure, pulse, respirations, SpO2.",
+      "Ensure patent IV access — 18g or larger. Use a dedicated blood line (Y-tubing) primed with NS.",
+      "Hang NS on one arm of the Y-tubing. Hang blood product on the other arm. Prime the filter with NS.",
+      "Switch flow to blood product. Begin infusion SLOWLY for first 15 minutes (no faster than 2 mL/min).",
+      "Remain at bedside for first 15 minutes — most transfusion reactions occur early.",
+      "Recheck vital signs at 15 minutes. If stable, adjust rate to complete transfusion within 4 hours.",
+      "Monitor patient every 30 minutes during transfusion: vital signs, symptoms.",
+      "If any reaction signs appear (fever, chills, hives, back pain, hypotension, dyspnea) — STOP transfusion immediately, keep IV open with NS, notify provider, save blood bag.",
+      "Once transfusion complete, flush with NS. Document entire process and post-transfusion assessment."
+    ],
+    "nursing_considerations": [
+      "ONLY use 0.9% NS with blood — Lactated Ringer's, D5W, or medications in same line can cause hemolysis.",
+      "Complete each unit within 4 hours of leaving blood bank — bacterial growth risk increases after this.",
+      "Premedicate with diphenhydramine or acetaminophen only if ordered — not routine prophylaxis.",
+      "Acute hemolytic reaction is the most dangerous reaction — caused by ABO incompatibility. Symptoms: fever, chills, back/flank pain, dark urine. Stop immediately.",
+      "Febrile non-hemolytic is the most common reaction — mild fever/chills. Slow/stop infusion, notify provider."
+    ]
+  },
+  {
+    "id": "iv-piggyback",
+    "title": "IV Piggyback (IVPB) Medication Administration",
+    "category": "Vascular Access",
+    "icon": "syringe",
+    "summary": "Administering an IV medication via secondary/piggyback infusion through an existing IV line.",
+    "equipment": ["Premixed IVPB medication bag", "Secondary IV tubing (short)", "Alcohol swab", "IV pole with extension hook (to lower primary bag)", "Gloves", "MAR"],
+    "steps": [
+      "Verify the 5 rights of medication administration. Check medication compatibility with primary IV fluid.",
+      "Perform hand hygiene and don gloves.",
+      "Spike the IVPB bag with secondary tubing. Prime the secondary tubing with the medication.",
+      "Hang the IVPB bag on the primary IV pole. Lower the primary IV bag using the extension hook (or a secondary hook) so IVPB hangs higher.",
+      "Clean the upper secondary port on the primary IV tubing with an alcohol swab. Allow to dry.",
+      "Connect the secondary tubing to the upper port on the primary IV line.",
+      "Set the infusion pump for the correct IVPB rate and volume. Most IVPB medications infuse over 30–60 minutes.",
+      "Ensure the primary line is still patent and the IV site shows no infiltration or phlebitis.",
+      "Start the infusion. Verify the IVPB is infusing and primary fluid is on hold (automatic with gravity systems when IVPB is higher).",
+      "Monitor patient for adverse medication reactions during infusion.",
+      "Document medication, dose, time, route, and patient response."
+    ],
+    "nursing_considerations": [
+      "Always verify drug-drug and drug-fluid compatibility before piggyback — many medications are incompatible.",
+      "Flush line with compatible fluid before and after IVPB if compatibility is uncertain.",
+      "Do not piggyback through a TPN (total parenteral nutrition) line — dedicated TPN lines should remain exclusive.",
+      "For antibiotics, infuse over the ordered time to ensure therapeutic drug levels and prevent toxicity.",
+      "Discard partial bags — never store and rehang a partially-infused IVPB bag."
+    ]
+  }
+]
