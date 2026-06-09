@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { handle } from "hono/vercel";
 import { readFile } from "node:fs/promises";
 import { join, extname } from "node:path";
 import authRoutes from "../server/routes/auth";
@@ -72,4 +73,4 @@ app.get("/*", async (c) => {
   }
 });
 
-export default app;
+export default handle(app);
