@@ -1,3 +1,4 @@
+import { unlink, readFile } from "node:fs/promises";
 import { Hono } from "hono";
 import { ensureDir, readJsonFile } from "../lib/storage";
 import { getCurrentUser } from "../lib/auth-helpers";
@@ -45,7 +46,7 @@ app.delete("/api/conversations/:id", async (c) => {
   const user = getCurrentUser(c);
   if (!user) return c.json({ error: "Please sign in to delete conversations." }, 401);
   const filePath = conversationPath(user.id, c.req.param("id"));
-  try { await Bun.file(filePath).delete(); } catch {}
+  try { await unlink(filePath) } catch {}
   return c.json({ ok: true });
 });
 
@@ -55,7 +56,7 @@ let cachedDrugIndex: any | null = null;
 async function loadDrugIndex() {
   if (cachedDrugIndex) return cachedDrugIndex;
   try {
-    cachedDrugIndex = await Bun.file("./data/drug-index.json").json();
+    cachedDrugIndex = JSON.parse(await readFile("./data/drug-index.json", "utf-8"));
     return cachedDrugIndex;
   } catch (err) {
     console.error("Failed to load drug index:", err);

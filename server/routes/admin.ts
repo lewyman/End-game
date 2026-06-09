@@ -1,3 +1,4 @@
+import { unlink } from "node:fs/promises";
 import { Hono } from "hono";
 import { ensureDir, readJsonFile, safeId, writeJsonFile } from "../lib/storage";
 import { getCurrentUser, isPlatformAdmin, usageKey } from "../lib/auth-helpers";
@@ -93,7 +94,7 @@ app.delete("/api/admin/generated-tools/:id", async (c) => {
   const trashDir = path.join(DATA_ROOT, "deleted-generated-tools");
   await ensureDir(trashDir);
   await writeJsonFile(path.join(trashDir, `${id}-${Date.now()}.json`), { ...tool, deletedBy: user.email, deletedAt: new Date().toISOString() });
-  await Bun.file(filePath).delete().catch(() => {});
+  try { await unlink(filePath) } catch {};
   return c.json({ ok: true });
 });
 
